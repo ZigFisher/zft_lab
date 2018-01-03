@@ -1,0 +1,31 @@
+---
+layout:     post
+title:      "Статистика работы IoT серверов"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [vps]
+---
+
+
+h3. Сервер 'Araneus'
+
+p. Загрузка CPU
+
+!https://xenhost80.vps.reg.ru/munin/localhost/graphs/xen_cpu_time_25136991-day.png!
+
+p. Сетевая активность
+
+!https://xenhost80.vps.reg.ru/munin/localhost/graphs/xen_net_25136991-day.png!
+
+p. Операции ввода/вывода
+
+!https://xenhost80.vps.reg.ru/munin/localhost/graphs/xen_disk_25136991-day.png!
+
+---
+
+h3. Внешние ссылки
+
+* "Профессиональный VPS и VDS хостинг":https://hosting.reg.ru/vps/
+* "Scaleway pricing":https://www.scaleway.com/pricing/
+* "OVH pricing":https://www.ovh.ie/vps/

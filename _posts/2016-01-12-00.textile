@@ -1,0 +1,24 @@
+---
+layout:     post
+title:      "Подборка ссылок и проектов по MQTT"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [mqtt]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Внешние ссылки
+
+* "HiveMQ: A websockets based MQTT Client for your browser":https://github.com/hivemq/hivemq-mqtt-web-client
+* "HiveMQ: OnLine demo MQTT WEB-client":http://www.hivemq.com/demos/websocket-client/
+
+* "GitHub: Authentication plugin for Mosquitto with multiple back-ends":https://github.com/jpmens/mosquitto-auth-plug
+
+* "HTML5 canvas gauge for temperature obtained from an MQTT subscribe":https://github.com/jpmens/tempgauge

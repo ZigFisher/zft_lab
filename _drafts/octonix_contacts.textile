@@ -1,0 +1,12 @@
+---
+layout:     page
+title:      "Где купить ?"
+header:     "Contacts page"
+group:      navigation
+---
+{% include JB/setup %}
+
+
+h3. Мы работаем в странах: Україна, Россия, Italia, Eesti
+
+p. For details send your request to <a href=mailto:support@octonix.net>support@octonix.net</a> and <a href=mailto:sales@octonix.net>sales@octonix.net</a>

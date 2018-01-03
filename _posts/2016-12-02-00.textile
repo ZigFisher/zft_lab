@@ -1,0 +1,42 @@
+---
+layout:     post
+title:      "Ссылки на объявления Авито"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [avito]
+---
+
+
+h3. Автомобили
+
+* "ЗАЗ 1102 Таврия, 2002":https://www.avito.ru/simferopol/avtomobili/zaz_1102_tavriya_2002_885569940
+
+---
+
+h3. Блоки питания
+
+* "Блок питания LEI SNG 1-tec 220V - DC 15V 0.4A":https://www.avito.ru/simferopol/tovary_dlya_kompyutera/blok_pitaniya_lei_sng_1-tec_220v_-_dc_15v_0.4a_886599178
+* "Блок питания DVE DV-1250UP 220V - DC 12V 0.5A":https://www.avito.ru/simferopol/tovary_dlya_kompyutera/blok_pitaniya_dve_dv-1250up_220v_-_dc_12v_0.5a_886601954
+
+---
+
+h3. Модемы
+
+* "Промышленный GPRS модем Novacom GNS 30 CRA RS232":https://www.avito.ru/simferopol/tovary_dlya_kompyutera/prom._modem_gsm_gprs_-_novacom_gns_30_cra_rs232_886619242
+
+---
+
+h3. Радиостанции
+
+* "Радиостанция (рация) Kenwood TK-3260 UHF maximal":https://www.avito.ru/simferopol/telefony/radiostantsiya_ratsiya_kenwood_tk-3260_uhf_maximal_886463144
+
+---
+
+h3. Роутеры и точки доступа WiFi
+
+* "-":-
+
+---
+
+

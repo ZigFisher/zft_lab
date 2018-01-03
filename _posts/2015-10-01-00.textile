@@ -1,0 +1,145 @@
+---
+layout:     post
+title:      "Снятие показаний с преобразователя напряжения по WiFi"
+tagline:    ""
+category:   ""
+group:      smarthouse
+tags:       [esp8266, 12v]
+---
+
+
+h3. Аппаратная часть
+
+p. Несколько месяцев назад на распродаже Aliexpress был куплен преобразователь напряжения, позволяющий производить в т.ч. и зарядку различного рода аккумуляторов. 
+
+p. После экспериментов и чтения обзорных статей на "MySKU":http://mysku.ru (см. ссылки ниже) он был благополучно закинут в ящик стола.
+
+p. Однако, несколько дней назад, делая очередную поделку на ESP8266 при помощи прошивки "Homes-Smart":http://wifi-iot которая должна общаться по UART и передавать данные по WiFi, этот преобразователь был найден.
+
+p. Рассматривая его первоначально при покупке, я видел разъём, к которому можно было подключиться и получить данные. Даже нашел какую-то ссылку с польского форума, на котором были приведены примеры команд (впоследствии пригодились)
+
+p. Дальше принято было решение разобраться, научить ESP8266 принимать, обрабатывать и оправлять данные с преобразователя в Интернет.
+
+!/images/2015100101.jpg!
+
+---
+
+h3. Протокол обмена
+
+p. Первоначально гугление протокола обмена не предвещало успеха. Но повезло...
+
+p. Господа производители-китайцы, были немногословны, представив этот "мануал"
+
+pre. This module has the computer communication function.
+Computer can be easily read data of the module's current and voltage,
+Protocol as follows:
+Baud Rate: 9600 Bps
+BB CC ADDR 00 XX XX CRC (current return command)
+BB CC ADDR 01 XX XX CRC (voltage returns to the command)
+Among:
+BB CC for the header (2 bytes)
+ADDR for the module address (1 byte)
+00 to read the current command (1 byte)
+01 is a read voltage command (1 byte)
+XX XX arbitrary value (2 bytes)
+CRC CRC checksum (1 byte)
+
+p. На практике оказалось, что результат передаётся без контрольной суммы
+
+---
+
+h3. Успех номер раз
+
+p. Используя прошивку "Homes-Smart":http://wifi-iot.ru для ESP8266 и модуль *UART через GET* было решено попробовать получить какие-либо данные от преобразователя напряжения.
+
+p. К глубокому удивлению, данные были получены сразу.
+
+p. Отправив специальный запрос преобразователю на скорости 9600 через браузер
+
+pre. http://192.168.4.1/uartpro?speed=9600&send=BBCC00000000B4
+
+p. Был получен/считан ответ другой командой -  BBCC00003C00
+
+pre. http://192.168.4.1/uartpro?read=1
+
+p. BBCC - тип железки, 00 - номер на уарт шине, 00 - тип данных (ток), 3С00 - значение
+
+p. С напряжением всё просто - делаем точно так-же, но другая команда
+
+pre. http://192.168.4.1/uartpro?speed=9600&send=BBCC00010000DF
+
+p. И получаем результ - BBCC00015825
+
+pre. http://192.168.4.1/uartpro?read=1
+
+p. BBCC - тип железки, 00 - номер на уарт шине, 01 - тип данных (напряжение), 5825 - значение
+
+p. Полученные значения выводятся в милливольтах и миллиамперах.
+
+---
+
+h3. Успех номер два
+
+!/images/2015100102.jpg!
+
+p. Максим, автор прошивки "Homes-Smart":http://wifi-iot.ru любезно согласился создать модуль CC/CV для тестов
+
+!/images/2015100103.jpg!
+
+p. Передаваемые показания тока и напряжения, совпадают с индикатором на преобразователе и и отдельным тестовым измерительным прибором.
+
+p. Данные с этого модуля уже могут передаваться в систему мониторинга "FlyMon":http://esp8266.flymon.net и на *Majordomo*.
+
+p. Названия передаваемых метрик: cvv - напряжение, cvc - ток
+
+---
+
+h3. Планы на будущее
+
+p. В последнее время, много простых измерительных приборов делают на процессорах STM.
+
+!/images/2015100104.jpg!
+
+p. Имеется желание научить передавать различные дешевые измерители напряжения/тока.
+
+!/images/2015100105.jpg!
+
+p. При кажущейся схожести, порт для подключения данных есть не у всех.
+
+!/images/2015100106.jpg!
+
+p. Разборка была затруднительна, и для тестов пришлось припаяться на пятаки сверху
+
+p. Только этим типом приборов эксперименты не обойдутся - Charger Doctor-ы следующие..
+
+---
+
+h3. Внешние ссылки
+
+* "MySKU: Понижающий регулируемый преобразователь напряжения с индикацией":http://mysku.ru/blog/aliexpress/33891.html
+* "MySKU: Понижающий преобразователь с токограничением или зарядка на 5А":http://mysku.ru/blog/aliexpress/32986.html
+* "MySKU: ШИМ контроллер для DC-DC преобразователя XL4005E1":http://mysku.ru/blog/aliexpress/33647.html
+* "MySKU: Мелкий вольтметр с пределом измерения 99,9 Вольт":http://mysku.ru/blog/aliexpress/34795.html
+* "MySKU: LCD USB Тестер + Нагрузка 1-2А":http://mysku.ru/blog/aliexpress/28208.html
+* "Research protocol [PL]":http://arhiva.elitesecurity.org/t475483-ljudi-zna-li-ko-nesto-ovoj-skalameriji-Constant-Current-Voltage
+* -
+* "Подключение трёхсимвольного цифрового вольтметра":http://arduino.ru/forum/apparatnye-voprosy/podklyuchenie-trekhsimvolnogo-tsifrovogo-voltmetra
+* "Готовые решения на STM8s для своих переделок [LED вольтметры]":http://we.easyelectronics.ru/selevo/gotovye-resheniya-na-stm8s-dlya-svoih-peredelok-led-voltmetry-ot-60r.html
+* "Доработка модуля китайского вольтметра":http://datagor.ru/tuning/2244-tyuning-kitayskogo-voltmetra.html
+* "Реверс пятизначного вольтметра на STM":http://eddy-em.livejournal.com/73375.html
+* "Термометр из вольтметра":http://eddy-em.livejournal.com/80558.html
+* "Hacking a cheap LED voltmeter [I2C]":http://www.ba0sh1.com/hacking-a-cheap-led-voltmeter/
+* "I2C LED Display From Hacked Voltmeter":http://smokedprojects.blogspot.ru/2013/08/i2c-led-display-from-hacked-voltmeter.html
+* "GitHub: 7-segment LED display with I2C interface [1]":https://github.com/baoshi/I2C-LED
+* "GitHub: 7 segment LED display with I2C interface [2]":https://github.com/t0mpr1c3/I2C-LED
+
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'smarthouse' %}
+  {% include JB/pages_list %}
+</ul>

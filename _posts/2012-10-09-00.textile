@@ -1,0 +1,23 @@
+---
+layout:     post
+title:      "Активация PoE на портах D-Link DIR-100"
+tagline:    ""
+category:   ""
+group:      best
+tags:       [best, hwmod, dlink]
+---
+
+
+h3. Описание
+
+!/images/2012100901.jpg!
+
+!/images/2012100902.jpg!
+
+!/images/2012100903.jpg!
+
+!/images/2012100904.jpg!
+
+!/images/2012100905.jpg!
+
+!/images/2012100906.jpg!

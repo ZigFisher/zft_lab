@@ -1,0 +1,4 @@
+<center>
+<a title="Web Analytics" href="http://clicky.com/{{ site.JB.analytics.getclicky.site_id }}"><img alt="Web Analytics" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
+<img alt="Clicky" width="1" height="1" src="//in.getclicky.com/{{ site.JB.analytics.getclicky.site_id }}ns.gif" />
+</center>

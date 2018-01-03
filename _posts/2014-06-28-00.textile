@@ -1,0 +1,82 @@
+---
+layout:     post
+title:      "Установка Jekyll в Debian 7"
+tagline:    ""
+category:   ""
+group:      linux
+tags:       [debian, blog, jekyll]
+---
+
+
+h3. Быстрый старт
+
+p. **Обновить все пакеты в системе**
+
+pre. sudo apt-get -y update && apt-get -y upgrade
+
+p. **Установить в систему Ruby + Jekyll без документации**
+
+pre. sudo apt-get install --no-install-recommends ruby ruby-dev make g++
+sudo gem install jekyll --no-rdoc --no-ri
+sudo gem install jekyll-tagging --no-rdoc --no-ri
+sudo gem install RedCloth --no-rdoc --no-ri
+sudo gem install therubyracer --no-rdoc --no-ri
+
+p. **Создать каталог для работы с будущим сайтом используя jekyll-bootstrap**
+
+pre. cd ~
+git clone https://github.com/plusjade/jekyll-bootstrap.git you.blog.domain.name
+cd you.blog.domain.name
+
+p. **Установить Jekyll Bootstrap skin (данный блог использует theme-twitter)**
+
+pre. rake theme:install git="https://github.com/jekyllbootstrap/theme-twitter.git"
+# rake theme:install git="https://github.com/jekyllbootstrap/theme-the-program.git"
+# rake theme:switch name="the-program"
+#
+# In file _config.yml change pygments to highlighter
+# Set correct blog title and author settings
+# For disable categories remove file categories.html
+
+p. **Запустить Jekyll**
+
+pre. jekyll serve --port 4001 -w
+
+<hr>
+
+h3. Структура каталогов
+
+pre.    .
+    |-- _config.yml
+    |-- _includes
+    |-- _layouts
+    |   |-- default.html
+    |   |-- post.html
+    |-- _posts
+    |   |-- 2011-10-25-open-source-is-good.markdown
+    |   |-- 2011-04-26-hello-world.markdown
+    |-- _site
+    |-- index.html
+    |-- assets
+        |-- css
+            |-- style.css
+        |-- javascripts
+
+<hr>
+
+h3. Полезные ссылки
+
+* "Jekyll homepage":http://jekyllrb.com/
+* "Jekyll Bootstrap":http://jekyllbootstrap.com/
+* "Jekyll Bootstrap QuickStart":http://jekyllbootstrap.com/usage/jekyll-quick-start.html
+* "Jekyll Bootstrap API":ekyllbootstrap.com/api/bootstrap-api.html
+* "GitHub - jekyll-bootstrap":https://github.com/plusjade/jekyll-bootstrap
+* "Free themes for Bootstrap":http://bootswatch.com/
+* "Install Jekyll 2 on Ubuntu 14.04":http://michaelchelen.net/articles/install-jekyll-2-ubuntu-14-04.html
+* "Habrahabr - Практическое руководство по Jekyll":http://habrahabr.ru/post/207650/
+* "Habrahabr - Блог на Jekyll и Github":http://habrahabr.ru/post/133261/
+* "Сайты, сделанные при помощи Jekyll":https://github.com/jekyll/jekyll/wiki/sites
+* "Сводная таблица по генераторам статических сайтов":http://staticsitegenerators.net/
+* "Википедия - Textile, язык разметки":http://ru.wikipedia.org/wiki/Textile_%28%D1%8F%D0%B7%D1%8B%D0%BA_%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%29
+* "Пример блога на Jekyll":http://www.juev.org/tags/jekyll/
+* "Пример выполнения резюме":http://www.dueyfinster.com/cv/cv.html

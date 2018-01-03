@@ -1,0 +1,21 @@
+---
+layout:     post
+title:      "Заметки по Proxmox VE"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [proxmox]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+---
+
+h3. Внешние ссылки
+
+* "Мой первый опыт использования Proxmox VE":http://eax.me/proxmox/
+* "Установка Proxmox VE 4.2":http://yvision.kz/post/693009
+

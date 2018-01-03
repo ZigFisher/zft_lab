@@ -1,0 +1,29 @@
+---
+layout:     post
+title:      "Создание сертификата Let’s Encrypt для Nginx в Debian"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [letsencrypt,nginx,ssl]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+---
+
+h3. Внешние ссылки
+
+* "Let's Encrypt и настройка nginx":https://www.alexeykopytko.com/2017/free-ssl-from-letsencrypt/
+* "Let's Encrypt и nginx: настройка в Debian и Ubuntu":https://habrahabr.ru/post/318952/
+* "Создание сертификата Let’s Encrypt для Nginx в Debian 8":https://www.8host.com/blog/sozdanie-sertifikata-lets-encrypt-dlya-nginx-v-debian-8/
+* "Strong Ciphers for Apache, nginx and Lighttpd":https://cipherli.st/
+* "Let’s Encrypt is a free, automated, and open Certificate Authority":https://letsencrypt.org/
+* "How To Secure Nginx with Let's Encrypt on Ubuntu 14.04":https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-14-04
+* "Debian Wiki and LetsEncrypt":https://wiki.debian.org/ru/LetsEncrypt
+* "Let’s Encrypt and Apache on Debian 7":https://certbot.eff.org/all-instructions/#debian-7-wheezy-nginx
+
+
+

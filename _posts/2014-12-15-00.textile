@@ -1,0 +1,24 @@
+---
+layout:     post
+title:      "QSL карточки и значки"
+tagline:    ""
+category:   ""
+group:      hamradio
+tags:       [qsl]
+---
+
+
+h3. Мои QSL карточки
+
+!/images/2014121501.jpg!
+
+!/images/2014121502.jpg!
+
+
+<hr>
+
+
+h3. Юбилейный значок КСС Крыма
+
+!/images/2014121503.jpg!
+

@@ -1,0 +1,34 @@
+---
+layout:     post
+title:      "Радиосвязь на Rally Sochi 2000"
+tagline:    ""
+category:   ""
+group:      rally
+tags:       [rally]
+---
+
+
+h3. Фото техники и участников организации радиосвязи на авторалли
+
+!/images/2000052801.jpg!
+
+!/images/2000052802.jpg!
+
+!/images/2000052803.jpg!
+
+!/images/2000052804.jpg!
+
+---
+
+h3. Внутренние ссылки
+
+* -
+
+---
+
+h3. Внешние ссылки
+
+* "Antika Rally Club":http://www.arclub.ru/
+
+
+

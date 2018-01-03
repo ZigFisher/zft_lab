@@ -1,0 +1,64 @@
+---
+layout:     post
+title:      "Midge Linux (FlyRouter) дистрибутив - 10 лет работы"
+tagline:    ""
+category:   ""
+group:      best
+tags:       [best, linux, midge]
+---
+
+
+h3. У нас юбилей
+
+p. Сегодня исполняется ровно десять лет с момента выхода первой прошивки Midge Linux для некогда очень популярных роутеров Edimax BR-6104K(P), а так-же Planet XRT-401D и аналогов.
+
+p. За это время устройства на базе Midge Linux (FlyRouter) успели добросовестно потрудиться на площадках многих интернет-провайдеров, в офисах, в банках и банкоматах, на спортивных соревнованиях, и конечно-же у многих пользователей дома, без преувеличения, по всему миру.
+
+p=. **Спасибо всем разработчикам, тестировщикам и клиентам за участие в проекте !**
+
+pre.          _nnnn_
+        dGGGGMMb
+       @p~qp~~qMb
+       M|@||@) M|
+       @,----.JM|
+      JS^\__/  qKL                 _     _
+     dZP        qKRb     _ __ ___ (_) __| | __ _  ___
+    dZP          qKKb   | '_ ` _ \| |/ _` |/ _` |/ _ \
+   fZP            SMMb  | | | | | | | (_| | (_| |  __/
+   HZM            MMMM  |_| |_| |_|_|\__,_|\__, |\___|
+   FqM            MMMM                     |___/
+ __| ".        |\dS"qML
+ |    `.       | `' \Zq          2004-2014
+_)      \.___.,|     .'
+\____   )MMMMMP|   .'         I realy love it
+     `-'       `--' hjm
+
+p=. **Вот он, тот самый первый Edimax BR-6104K**
+
+!/images/2014070601.jpg!
+
+
+h3. Midge Linux - What is it ?
+
+p. Original Midge is a Linux OpenWRT-like mini-distribution for "ADM5120":http://www.linux-mips.org/wiki/Adm5120 SoC based routers, such as "Edimax BR-6104K":http://www.linux-mips.org/wiki/BR6104. It includes basic tools such as sh, ssh, inetd, syslogd, telnet, netcat, tftp, wget, udhcpd, vi, etc.
+
+p. Also Midge uses ipkg package manager, which can be used for installing new software. Midge use tmpfs root filesystem. It has big (1280k) initial rom filesystem, and small (256k) data partition.
+
+p. In 2008 Midge (new brand name is "FlyRouter":http://flyrouter.net) also support Realtek "RTL865xB":http://www.linux-mips.org/wiki/Realtek_SOC SoC and in 2009 also support Broadcom "BCM6345":http://www.linux-mips.org/wiki/BCM6345 & "BCM6348":http://www.linux-mips.org/wiki/BCM6348 SoC.
+
+
+h3. История
+
+* В феврале 2008 г. в Украине была зарегистрирована торговая марка "FlyRouter":http://flyrouter.net, дистрибутив был переименован, получил небольшое финансирование от украинских, российских и западных инвесторов, а после продуктивной работы в сжатые сроки значительно расширился функционал и список поддерживаемых устройств.
+
+
+h3. Ссылки
+
+* "Midge Linux in Wikipedia":http://en.wikipedia.org/wiki/Midge_Linux
+* "Midge Linux GPL sources on GitHub":https://github.com/zigfisher/midge
+* "Midge Linux book":http://books.google.com/books/about/Midge_Linux.html?id=JHZHYgEACAAJ
+
+* "Midge and the Edimax BR6104K(P)":http://jimmyg.org/blog/2008/embedded-linux-server-midge-and-the-edimax-br6104kp.html
+* "Sunspot - Sweex router project":http://www.sunspot.co.uk/Projects/sweexproject.htm"
+
+* "Промышленный 3G маршрутизатор M!DGE Racom":http://www.tms.ru/%D0%9F%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_3G_%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%B8%D0%B7%D0%B0%D1%82%D0%BE%D1%80_M!DGE

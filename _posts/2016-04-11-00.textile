@@ -1,0 +1,96 @@
+---
+layout:     post
+title:      "Заметки по i2c-tiny-usb"
+tagline:    ""
+category:   ""
+group:      notes
+tags:       [i2c, i2c-tiny-usb, notes]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+
+---
+
+h3. Краткая инструкция по прошивке Digispark
+
+p. Тестирование подключения Digispark к программатору USBasp
+
+pre. avrdude -c usbasp -p attiny85 -n
+
+p. Прошивка загрузчика micronucleus через программатор USBasp
+
+pre. avrdude -c usbasp -p attiny85 -U flash:w:digispark_micronucleus-v2.03.hex -U lfuse:w:0xe1:m -U hfuse:w:0x5d:m -U efuse:w:0xfe:m
+
+p. Прошивка Digispark через USB порт
+
+pre. ./micronucleus --run --dump-progress --type intel-hex digispark_i2c-tiny-usb.hex
+
+---
+
+h3. Сборка из исходников прошивки i2c-tiny-usb для Digispark
+
+p. Установка компилятора в систему
+
+pre. sudo apt-get install gcc-avr avr-libc
+
+p. Получение исходников проекта и переход в каталог
+
+pre. git clone https://github.com/nopdotcom/i2c_tiny_usb-on-Little-Wire
+cd i2c_tiny_usb-on-Little-Wire/firmware
+
+p. Так-же необходимо в файле usbconfig.h раскоментировать строки 162-165
+
+pre. #undef USB_CFG_VENDOR_ID
+#define  USB_CFG_VENDOR_ID       0x03, 0x04
+#undef USB_CFG_DEVICE_ID
+#define  USB_CFG_DEVICE_ID       0x31, 0xc6
+
+p. Сборка прошивки
+
+pre. make hex
+
+---
+
+h3. Digistark pin outs:
+
+p. All pins can be used as Digital I/O
+
+* Pin 0 → I2C SDA, PWM (LED on Model B)
+* Pin 1 → PWM (LED on Model A)
+* Pin 2 → I2C SCK, Analog In
+* Pin 3 → Analog In (also used for USB+ when USB is in use)
+* Pin 4 → PWM, Analog (also used for USB- when USB is in use)
+* Pin 5 → Analog In
+
+---
+
+h3. Внешние ссылки
+
+* "The i2c-tiny-usb - open source/open hardware project":http://www.harbaum.org/till/i2c_tiny_usb/index.shtml
+* "GitHub: i2c_tiny_usb on LittleWire/DigiSpark":https://github.com/nopdotcom/i2c_tiny_usb-on-Little-Wire
+* "Building i2c_tiny_usb firmware OnLinux":https://github.com/nopdotcom/i2c_tiny_usb-on-Little-Wire/wiki/BuildingOnLinux
+* "Gist: Make the i2c-tiny-usb driver recognize the Digispark/LittleWire version":https://gist.github.com/padcom/a4fd9836a04d7240ea6b
+* "OpenWRT: i2c_tiny_usb ported to LittleWire/Digispark ATtiny85":https://forum.openwrt.org/viewtopic.php?id=57325
+* "GitHub: micronucleus - ATTiny usb bootloader":https://github.com/micronucleus/micronucleus
+* "Fixing Pin P5 or 6 on Digispark Clones":http://thetoivonen.blogspot.com/2015/12/fixing-pin-p5-or-6-on-digispark-clones.html
+* "USBtemp project":https://github.com/gonium/mikrowerk/tree/master/usbtemp/trunk
+* "Беспроводной датчик температуры и влажности на базе радиомодулей 433/315":http://homes-smart.ru/index.php/oborudovanie/bez-provodov-433-315mgts/besprovodnoj-datchik-temperatury-i-vlazhnosti-na-baze-radiomodulej-433-315
+* "Circuit diagram of the ATtiny85 USB mini development board":http://www.electroschematics.com/wp-content/uploads/2015/08/Circuit-Diagram-of-the-ATtiny85-USB-Mini-Development-Board.png
+* "Digispark pinout":http://tuxamito.com/wiki/images/6/64/Digispark_with_pinout.jpg
+* "Little Wire":http://littlewire.cc/
+
+* "htu21df temperature and humidity sensor support mqtt & dweetio":https://github.com/bbx10/htu21dflib
+* "A simple program for comunicating with HTU21":https://github.com/balldir/HTU21D-orange-pi
+* -
+* "A simple library for ina219 to linux":https://github.com/rudimiv/ina219-linux-lib
+* "Examples ina219 support":https://github.com/alown/ina219
+* -
+* "OpenWRT driver for i2c-ch341":https://github.com/mkschreder/hack-ssd1306-openwrt/tree/master/i2c-ch341
+* "OpenWRT driver for i2c-ssd1306fb":https://github.com/mkschreder/hack-ssd1306-openwrt/tree/master/ssd1306fb
+* "":
+
+

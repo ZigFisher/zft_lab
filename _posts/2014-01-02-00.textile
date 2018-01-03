@@ -1,0 +1,34 @@
+---
+layout:     post
+title:      "Обновляемый прайс-лист для партнёров ZFT Lab."
+tagline:    ""
+category:   ""
+group:      other
+tags:       [price]
+---
+
+
+p=. С 01 января 2015 обновление в таблице будет происходить один раз в месяц.
+
+|                                                                               |         |         |
+|_=. Оборудование AirMax 5G и WiFi с настройкой "под ключ"                      |_=. UNO  |_=. RUB  |
+|Ubiquiti NanoStation M5 Loco + ZFT Lab. firmware (мониторинг, L2 tun)          |=.   89  |=. req.  |
+|Ubiquiti AirGrid M5 HP + ZFT Lab. firmware (мониторинг, L2 tun)                |=.   89  |=. req.  |
+|Ubiquiti AirGateway (WiFi приставка к блоку питания)                           |=.   33  |=. req.  |
+|                                                                               |         |         |
+|TP-Link TL-WR741ND (одна антенна), заводская прошивка                          |=.   31  |=. req.  |
+|TP-Link TL-WR841N (две антенны), заводская прошивка                            |=.   34  |=. req.  |
+|TP-Link TL-SF1005D свич Ethernet 5 портов (разветвитель)                       |=.   11  |=. req.  |
+|                                                                               |         |         |
+|TP-Link TL-WA5210G + ZFT Lab. AirOS firmware (мощная CPE для наруж. исп.)      |=.   70  |=. req.  |
+|TP-Link TL-MR3220 + ZFT Lab. T-plus firmware (мониторинг, L2 tun)              |=.   57  |=. req.  |
+|TP-Link TL-MR3220 + ZFT Lab. R-keeper firmware (мониторинг, L2 tun, фичи)      |=.   80  |=. req.  |
+|                                                                               |         |         |
+|_=. Услуги и сервисы                                                           |_=. UNO  |_=. RUB  |
+|Переделка TP-Link TL-WA5210G в Ubiquiti NS2 + настройка "под ключ"             |=.   20  |=. req.  |
+|Установка в TP-Link TL-MR3220 прошивки ZFT Lab. версий Lizard/T-plus           |=.   20  |=. req.  |
+|Установка в TP-Link TL-MR3220 прошивки ZFT Lab. версий Rkeeper/                |=.   50  |=. req.  |
+|                                                                               |         |         |
+|_=. Комплектующие и расходные материалы                                        |_=. UNO  |_=. RUB  |
+|Кронштейн настенно-мачтовый, серебристый дюраль                                |=.    6  |=. req.  |
+|                                                                               |         |         |

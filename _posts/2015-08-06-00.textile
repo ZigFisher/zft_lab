@@ -1,0 +1,23 @@
+---
+layout:     post
+title:      "Установка и настройка vsftpd на сервер WEB-камер"
+tagline:    ""
+category:   ""
+group:      linux
+tags:       [debian, services]
+---
+
+
+h3. Введение
+
+p. Для резервного сбора информации с WEB-камер (снапшоты), установленных на мачтах базовых станций в труднодоступных местах, был установлен и настроен FTP сервер.
+
+pre. apt-get install vsftpd
+
+---
+
+h3. Внешние ссылки
+
+* "Установка и настройка vsftpd в Debian 7":http://iantonov.me/page/ustanovka-i-nastrojka-vsftpd-v-debian-7
+* "Установка и настройка ftp-сервера vsftpd":https://wiki.debian.org/ru/vsftpd
+* "Настройка FTP сервера в Debian":http://www.aitishnik.ru/linux/ftp-server-debian.html

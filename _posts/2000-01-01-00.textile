@@ -1,0 +1,42 @@
+---
+layout:     post
+title:      "Перечень основных разработок ZFT Lab."
+tagline:    ""
+category:   ""
+group:      best
+tags:       [zftlab]
+---
+
+
+h3. Перечень основных разработок
+
+* "FlyMon DMS":http://flymon.net - система мониторинга и управления большим количеством embedded устройств на базе OS Linux
+* "FlyPay":http://flypay.cc - система быстрого пополнения мобильных телефонов, внутренних взаиморасчетов и микро-платежей
+* "FlyRouter":http://flyrouter.net - официально зарегистрированный в Украине торговый знак и ряд проектов с этим именем
+* "Midge Linux":http://flyrouter.net/#flyrouter_midge-ng1 - програмное обеспечение для роутеров на базе SoC ADM5120
+* "ZFT Lab.":http://zftlab.org - лаборатория по разработкам и экспериментам
+
+* "FlyAVR":/pages/2007031800.html - аппаратно-програмный комплекс защиты разработок
+* FlyLift -
+* "FlyPeek":http://monitor.flymon.net/#!/best - low-cost фото-наблюдение
+* FlyMon energy - контроль потребления энергоносителей и воды
+* FlyOS - hacked firmware version Ubiquiti
+* FlyRouter firmware - Linux-прошивки для устройств на базе SoC ADM5120, BCM6345, RTL8186, RTL8650B
+* FlyRouter pinger -
+* FlyRouter power - комплекс раннего оповещения переключения режимов работы удаленных UPS
+* FlyRouter tp2ub - програмное обеспечение для установки на роутеры TP-Link прошивок с AirOS от Ubiquiti
+* FlyRouter tunneler - програмное обеспечение для vtun/openvpn/ipsec/ser2net
+* FlyRouter weather -
+* "FlyStore":/store.html - минималистичный магазин
+* WiFi scales -
+
+
+<hr>
+
+h3. Популярные страницы
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'best' %}
+  {% include JB/pages_list %}
+</ul>

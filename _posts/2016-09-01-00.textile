@@ -1,0 +1,23 @@
+---
+layout:     post
+title:      "Восстановление Western Digital My Book World Edition 1TB NAS"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [hwmod, oxnas, nas, wd]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации об устройстве.
+
+---
+
+h3. Внешние ссылки
+
+* "Review: Western Digital My Book World Edition 1TB NAS":http://www.geek.com/review/review-western-digital-my-book-world-edition-1tb-nas-695912/
+* "Исходные тексты программ для накопителя WD My Book World Edition":http://support.wdc.com/downloads.aspx?p=116&lang=ru
+* "Wikipedia: Western Digital My Book":https://en.wikipedia.org/wiki/Western_Digital_My_Book
+* "OpenWRT: A family of ARM-based SoCs developed by Oxford Semi, later sold to PLXTECH":https://wiki.openwrt.org/doc/hardware/soc/soc.oxnas
+* "[PATCH 14/17] arm: boot: dts: Add PLX Technology OX810SE dtsi":http://www.gossamer-threads.com/lists/linux/kernel/2385645

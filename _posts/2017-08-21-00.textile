@@ -1,0 +1,70 @@
+---
+layout:     post
+title:      "Управление домашней автоматизацией через Telegram"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [telegram]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+---
+
+h3. Как создать Telegram бота
+
+* Откройте Telegram
+* Найдите в поиске "@BotFather", выберите его и нажмите Start
+* Отправьте команду /newbot чтобы создать нового бота
+* Придумайте и введите название своего бота (например, MoyaDacha)
+* Придумайте и введите уникальное имя (проверяется), без пробелов и заканчивающееся на bot MoyaDacha_bot
+* После регистрации вы получите сообщение, которое содержит в себе ключ (token) вашего нового бота
+* Перейдите в настройки Bricket-а (фаил oko.sh) и вставьте в поле Token скопированный ключ
+
+---
+
+h3. Как создать канал и добавить на него бота
+
+* Нажмите кнопку New Channel
+* Введите имя канала и его описание
+* Выберите тип канала, публичный (рекомендуется) или приватный и укажите уникальное имя канала
+* Откройте свойства канала и раздел Administrators
+* Добавьте в администраторы своего бота, воспользовавшись поиском
+* Теперь ваш бот может отправлять сообщения на канал
+* После проверок и тестирования можете сделать канал приватным (обратный переход невозможен)
+
+---
+
+h3. Заметки
+
+* Лучше всегда делать систему связи в Telegram через канал т.к. если писать напрямую, то пользователь не увидит сообщений от бота, пока сам ему не напишет впервые
+* Узнать ID канала вместо его буквенного имени можно получив ответ ботом от сервера в формате JSON
+
+pre. https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=@ChannelID&text="Test"
+
+---
+
+h3. Плюсы решения
+
+* Все уведомления приходят в привычный мессенджер, не нужна установка дополнительных програм
+* Бот от Telegram работает непосредственно на устройстве, нет промежуточных серверов и сервисов
+* Имеется возможность быстро дать (и забрать) доступ к каналу с ботом большому количеству пользователей
+* Telegram прекрасно работает в 2G сетях, очень устойчив к медленному интернету, расход трафика минимален
+* Возможны дополнительные функции по уведомлению о проблемах с питанием 220V, о разряде батарей и т.д.
+
+---
+
+h3. Внешние ссылки
+
+* "Telegram a new era of messaging":https://telegram.org/
+* "Telegram Bot API":https://core.telegram.org/bots/api
+* "Emoji Unicode Tables":https://apps.timwhitlock.info/emoji/tables/unicode
+* "Debian - Send your Server Notifications thru Telegram":http://bernaerts.dyndns.org/linux/75-debian/351-debian-send-telegram-notification
+* "Sending Telegram messages via bots!":http://community.onion.io/topic/499/sending-telegram-messages-via-bots
+* "GitHub: telegram-cli":https://github.com/vysheng/tg
+* "GitHub: telegram-cli make file for OpenWrt":https://github.com/Entware/rtndev/tree/master/telegram-cli
+* "GitHub: Telegram Scripts for OpenWrt":https://github.com/alexwbaule/telegramopenwrt
+* "GitHub: Debian - Send your Server Notifications thru Telegram":https://github.com/NicolasBernaerts/debian-scripts/blob/master/telegram/telegram-notify-install.sh

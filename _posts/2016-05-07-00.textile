@@ -1,0 +1,71 @@
+---
+layout:     post
+title:      "Энергомониторы на базе PZEM-004T и ESP8266"
+tagline:    ""
+category:   ""
+group:      modules
+tags:       [zftlab, esp8266]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Трёхканальный энергомонитор на DIN-рейку
+
+p. Энергомонитор занимает по ширине шесть модулей на DIN-рейке. Простейший I2C термодатчик показывает температуру внутри блока. Можно измерять сразу три канала (потребителя) или три фазы. Каждый измеритель работает в паре с отдельным WiFi приёмо-передатчиком. Питание - внешний источник 24-48V.
+
+p. Графики работы энергомонитора можно посмотреть "тут":http://esp8266.flymon.net/?macs=18FE34DE1372,18FE34DE1529,5CCF7F0A74B0&graphs=acvolt,temp,pres,rssi&period=24h#!/
+
+!/images/2016050711.jpg!
+
+!/images/2016050712.jpg!
+
+p. Пример установки энергомонитора c 12V UPS в силовой шкаф заказчиком
+
+!/images/2016050713.jpg!
+
+!/images/2016050714.jpg!
+
+!/images/2016050715.jpg!
+
+---
+
+h3. Одноканальный энергомонитор на DIN-рейку с термодатчиком
+
+p. Энергомонитор занимает по ширине три модуля на DIN-рейке. Простейший I2C термодатчик показывает температуру внутри блока. Может питаться (WiFi часть) от внешнего источника питания 5-12V или от блока измерителя (в этом случае отсутствует гальваническая развязка !)
+
+!/images/2016050721.jpg!
+
+!/images/2016050722.jpg!
+
+!/images/2016050723.jpg!
+
+!/images/2016050724.jpg!
+
+---
+
+h3. Минималистичный одноканальный энергомонитор на DIN-рейку
+
+p. Энергомонитор занимает по ширине два модуля на DIN-рейке. Может питаться (WiFi часть) от внешнего источника питания 5-12V или от блока измерителя (в этом случае отсутствует гальваническая развязка !)
+
+!/images/2016050731.jpg!
+
+!/images/2016050732.jpg!
+
+!/images/2016050733.jpg!
+
+!/images/2016050734.jpg!
+
+---
+
+h3. Внешние ссылки
+
+* "Графики работы трёхканального энергомонитора":http://esp8266.flymon.net/?macs=18FE34DE1372,18FE34DE1529,5CCF7F0A74B0&graphs=acvolt,temp,pres,rssi&period=24h#!/
+* "ESP8266: Общаемся с PZEM-004T по UART":https://github.com/kmaximv/Wi-Fi-Sensor/wiki/PZEM-004T-Energy-monitor
+* "GitHub: A simple util to read/write data PZEM-004T energy monitor":https://github.com/ZigFisher/Glutinium/tree/master/pzem004t
+* "GitHub: Arduino communication library for Peacefair PZEM-004T Energy monitor":https://github.com/olehs/pzem004t
+* "GitHub: Example get data fromPZEM-004T":https://github.com/alabamas/PEZM-004T

@@ -1,0 +1,71 @@
+---
+layout:     post
+title:      "MiWiFi mini - отличный роутер от Xiaomi"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, xiaomi]
+---
+
+
+h3. Краткие о возможностях роутера
+
+* Модель: Xiaomi Mi mini WiFi
+* Процессор: MT7620A 580MHz
+* ROM: 16MB SPI Flash
+* ОЗУ: 128MB DDR2 
+* 2.4 Ghz WiFi 2x2 (до 300 Мбит/сек) 
+* 5 Ghz WiFi 2x2 (до 867 Мбит/сек) 
+* Порты: 3*Rj45, 1*USB
+
+---
+
+h3. Хакинг железки
+
+p. Описание и хакинг роутера будут добавлены чуть позже.
+
+* Получите аккаунт на сайте Xiaomi
+* Нажмите кнопку *SSH* зайдя на страницу "активации доступа":http://www1.miwifi.com/miwifi_open.html (см. в нижней части)
+* Зайдите через Mi WiFi роутер в свой аккаунт Xiaomi
+* Получите пароль после входа в аккаунт
+* Зайдите на роутер по адресу 192.168.31.1 с использованием SSH (Putty/WinSCP) и введите логин *root* и полученный пароль
+
+---
+
+!/images/2015082201.jpg!
+
+---
+
+!/images/2015082202.jpg!
+
+---
+
+!/images/2015082203.jpg!
+
+---
+
+pre. http://192.168.31.1/cgi-bin/luci/;stok=961e58bfa91aa38bd8dad06c7ca5fe66/web/home#router
+
+pre. http://192.168.31.1/cgi-bin/luci/;stok=961e58bfa91aa38bd8dad06c7ca5fe66/api/xqsystem/upgrade_rom?url=|/usr/sbin/telnetd
+
+pre. 
+
+
+---
+
+h3. Внешние ссылки
+
+* "OpenWrt Wiki: Xiaomi MiWiFi Mini":https://wiki.openwrt.org/toh/xiaomi/mini
+* "MySKU: Xiaomi Mi nano, он же Youth Edition":http://mysku.ru/blog/china-stores/36211.html
+* "Генератор админских паролей":http://jsfiddle.net/p0rsche/tqz3eqru/
+* "Прошивка Xiaomi Mi-router mini на Padavan":http://admin-to-admin.info/blog/proshivka-xiaomi-mi-router-mini-na-padavan/
+* "5Ghz Xiaomi WiFi роутер из поднебесной":http://mysku.ru/blog/china-stores/30044.html
+* "Xiaomi Mi WiFi mini - обсуждение, настройки, прошивки, помощь":http://4pda.ru/forum/index.php?showtopic=596689
+* "Прошивка Xiaomi Mi WiFi mini Pandora ASUS":http://shopper.life/proshivka-xiaomi-mi-wifi-mini-pandora-asus-ili-pereproshivka-xiaomi-mi-router-mini-v-asus-iz-kitayskogo-dlya-novichkov-4265.html
+* "Mi WiFi Router Mini - Unboxing and Setup":http://en.miui.com/thread-91292-1-1.html
+* "Tutorial - start OpenWRT on mini MiWiFi router":http://en.miui.com/thread-64391-1-1.html
+* "Обзор роутера Xiaomi Mi WiFi mini":http://shopper.life/obzor-routera-xiaomi-mi-wifi-mini-xiaomi-mi-router-mini-ili-otlichnyy-5ggc-router-2740.html
+* "PandoraBox firmware for Xiaomi Mini R1CM":http://downloads.openwrt.org.cn/PandoraBox/Xiaomi-Mini-R1CM/
+* "Xiaomi Mi-router nano - Обсуждение":http://4pda.ru/forum/index.php?showtopic=684498&st=160#entry44060844
+* "Официальные прошивки для Xiaomi Mi WiFi":http://www1.miwifi.com/miwifi_download.html
+* "Обсуждение перевода роутера в ENG режим":http://en.miui.com/thread-64391-4-1.html

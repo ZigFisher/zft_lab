@@ -1,0 +1,71 @@
+---
+layout:     post
+title:      "Разработка MQTT топиков Homes-Smart ESP8266"
+tagline:    ""
+category:   ""
+group:      smarthouse
+tags:       [esp8266, mqtt]
+---
+
+
+h3. Введение
+
+p. Данный стандарт MQTT топиков разрабатывается активными участниками группы Homes-Smart: FlyRouter, MaksMS и OmIkRoNiXz.
+
+p{color:red}. Стандарт ещё не реализован, это только проект !
+
+p. В настоящее время используйте "рабочие примеры MQTT топиков Homes-Smart":http://zftlab.org/pages/2015080300.html.
+
+
+h3. Общая формула
+
+pre. [mac|email] / [devid|hostname] / [get|set] / [command|sensorX|gpio] / {metric|number}
+
+
+h3. Практические примеры
+
+|_. Login        |_. Hostname |_. Method |_. Type   |_. Metric |_. Param   |_. Note   |
+| user@gmail.com | /Pandora   | /get     | /sys     | /freemem | -         |          |
+| user@gmail.com | /Pandora   | /get     | /sys     | /mac     | "18fe34.."|          |
+| user@gmail.com | /Pandora   | /get     | /sys     | /type    | "esp8266" |          |
+| user@gmail.com | /Pandora   | /get     | /sys     | /uptime  | -         |          |
+| user@gmail.com | /Pandora   | /get     | /sys     | /ver     | -         |          |
+| user@gmail.com | /Pandora   | /get     | /sys     | /wanip   | -         |          |
+|                |            |          |          |          |           |          |
+| user@gmail.com | /Pandora   | /get     | /int     | /counter | -         |          |
+| user@gmail.com | /Pandora   | /get     | /int     | /vdd     | -         | ? adc    |
+|                |            |          |          |          |           |          |
+| user@gmail.com | /Pandora   | /get     | /amX     | /temp    | -         |          |
+| user@gmail.com | /Pandora   | /get     | /amX     | /hum     | -         |          |
+| user@gmail.com | /Pandora   | /get     | /bmpX    | /temp    | -         |          |
+| user@gmail.com | /Pandora   | /get     | /bmpX    | /pres    | -         |          |
+| user@gmail.com | /Pandora   | /get     | /dhtX    | /temp    | -         |          |
+| user@gmail.com | /Pandora   | /get     | /dhtX    | /hum     | -         |          |
+| user@gmail.com | /Pandora   | /get     | /dswX    | /temp    | -         |          |
+| user@gmail.com | /Pandora   | /get     | /pcfX    | /adc     | -         |          |
+|                |            |          |          |          |           |          |
+| user@gmail.com | /Pandora   | /set     | /reboot  | ?        | "1"       |          |
+| user@gmail.com | /Pandora   | /set     | /lcd     | /light   | "1"       |          |
+| user@gmail.com | /Pandora   | /set     | /lcdX    | /clean   | "1"       |          |
+| user@gmail.com | /Pandora   | /set     | /lcdX    | /msg     | "Welcome" |          |
+| user@gmail.com | /Pandora   | /set     | /pcfX    | /dac     | "253"     |          |
+|                |            |          |          |          |           |          |
+| user@gmail.com | /Pandora   | /get     | /motionX | /alarm   | -         | ! mapped |
+| user@gmail.com | /Pandora   | /get     | /reedX   | /alarm   | -         | ! mapped |
+| user@gmail.com | /Pandora   | /set     | /relayX  | ?        | "1"       | ! mapped |
+|                |            |          |          |          |           |          |
+
+* alarm - отработка события 0/1
+* hum  - влажность, проценты
+* pres - атмосферное давление, миллиметры ртутного столба
+* temp - температура, градусы цельсия
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'smarthouse' %}
+  {% include JB/pages_list %}
+</ul>

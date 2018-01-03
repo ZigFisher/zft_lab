@@ -1,0 +1,35 @@
+---
+layout:     post
+title:      "3D фрезерный станок - первый день"
+tagline:    ""
+category:   ""
+group:      zftlab
+tags:       [zftlab]
+---
+
+
+h3. Тестовый запуск
+
+!/images/2015051601.jpg!
+
+!/images/2015051602.jpg!
+
+!/images/2015051603.jpg!
+
+!/images/2015051604.jpg!
+
+!/images/2015051605.jpg!
+
+!/images/2015051606.jpg!
+
+!/images/2015051607.jpg!
+
+!/images/2015051608.jpg!
+
+!/images/2015051609.jpg!
+
+!/images/2015051610.jpg!
+
+!/images/2015051611.jpg!
+
+!/images/2015051612.jpg!

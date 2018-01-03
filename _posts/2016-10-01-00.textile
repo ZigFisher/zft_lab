@@ -1,0 +1,20 @@
+---
+layout:     post
+title:      "Обзор роутера/репитера на базе SoC MT7628KN"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [hwmod, ralink, mediatek]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации об устройстве.
+
+---
+
+h3. Внешние ссылки
+
+* "MediaTek MT7628 - SoC с поддержкой 802.11n 2T2R для домашних роутеров и IoT":http://www.ixbt.com/news/hard/index.shtml?18/28/33
+* "MT7628K/N/A - 802.11n 2T2R Wi-Fi AP SoC, Home Automation Bridge":http://www.mediatek.com/zh-TW/products/connectivity/wi-fi-new/home-network/0022/mt7628kna/

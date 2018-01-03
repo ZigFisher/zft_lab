@@ -1,0 +1,94 @@
+---
+layout:     post
+title:      "Просмотр 'псевдо-видео' с IP камеры в любом браузере"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, webcam]
+---
+
+
+h3. Введение
+
+p. Довольно часто меня просят друзья и знакомые заказчики сделать какой-нибудь 'костыль' для тех или иных железок. Сегодня речь пойдёт о IP видеокамерах, которые отдают как RTSP поток, так и умеют отдавать простую .jpg картинку (скриншот).
+
+p. Дешевые камеры очень часто не умеют показывать видео прямо в браузере. Для нормального видео, понимаемого любым браузером, нужно вещать или flash или html5, но китайцы экономят на всём и по-этому не хотят интегрировать в прошивку соответствующий модуль.  А иногда есть необходимость просто краем глаза просмотреть 'динамику' движения того или иного объекта, пусть и с небольшим временным лагом и малым FPS. Кнопку F5 в браузере можно просто устать постоянно жать для обновления страницы с картинкой.
+
+p. Ниже представлен код HTML страницы, в восьмой строке которой, необходимо указать полный путь к .jpg скриншоту вашей камеры. На данный момент там указана ссылка на скриншот самой порулярной и дешевой китайской камеры, стоящей на заводских настройках. Камера должна быть доступна с вашего ПК, находиться в одной и той-же сети или быть доступной через прописанный роутинг.  После исправления параметра в коде страницы, можно открыть её на своём ПК в любом браузере.
+
+p. В результат работы, в браузере несколько раз в секунду будет обновляться картинка и будет возможным сложить некоторое мнение о происходящем в зоне наблюдения видеокамеры. Данная фича, возможно, будет востребована у монтажников видеокамер, а так-же у ленивых сисадминов. При желании, этот скрипт можно вставить прямо в прошивку камеры, но это уже другая история...
+
+---
+
+h3. Код HTML страницы
+
+pre. <html>
+<head>
+  <title>Experiment</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+  <script type="text/javascript" language="javascript">
+    var img = new Image();
+    var imgObj;
+    var webcam = "http://192.168.1.10/webcapture.jpg?command=snap&channel=1?"
+    function preload()
+    {
+      img.src= webcam + new Date;
+    }
+    function changesrc()
+    {
+      img1.src=img.src;
+      preload();
+      setTimeout(changesrc,3500);
+    }
+    function update()
+    {
+      imgObj = document.getElementById('img1');
+      imgObj.src = img.src;
+      img.src = webcam + (new Date()).getTime();
+    }
+    function takeError()
+    {
+      img.src = webcam + (new Date()).getTime();
+    }
+    function startonload()
+    {
+      img.src = webcam + (new Date()).getTime();
+      img.onerror=takeError;
+      img.onload=update;
+    }
+    function load()
+    {
+      if (navigator.appName.indexOf("Microsoft IE Mobile") != -1)
+        {
+          preload();
+          changesrc();
+          return;
+        }
+      startonload();
+    }
+  </script>
+</head>
+<body onLoad="load()">
+  <center>
+    <h2>-= Experiment =-</h2>
+    <p><img id="img1" border="" width="640px" src="http://zftlab.org/images/2017102801.jpg"></p>
+  </center>
+</body>
+</html>
+
+---
+
+h3. Внутренние ссылки
+
+* "Хакинг IP-камер на базе SoC HI3518":https://zftlab.org/pages/2015090300.html
+* "Модернизация IP Web-камеры - passive PoE":https://zftlab.org/pages/2015082600.html
+* "Обновление заводских WEB-интерфейсов у IPC и NVR":https://zftlab.org/pages/2016110300.html
+* "Подбор оборудования для видеонаблюдения":https://zftlab.org/pages/2014041100.html
+
+---
+
+h3. Внешние ссылки
+
+* "MySKU: Самая дешевая HD IP-камера [by lolipop]":https://mysku.ru/blog/aliexpress/26552.html
+* "GitHub: Обновляемая подборка по производителям IPCam и NVR: пароли, MAC-адреса, пути к RTSP потокам":https://github.com/CamioCam/rtsp/blob/master/cameras/paths.csv
+

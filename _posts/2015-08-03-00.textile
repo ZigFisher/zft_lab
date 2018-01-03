@@ -1,0 +1,88 @@
+---
+layout:     post
+title:      "Рабочие примеры MQTT топиков Homes-Smart ESP8266"
+tagline:    ""
+category:   ""
+group:      smarthouse
+tags:       [esp8266, mqtt]
+---
+
+
+h3. Общая формула
+
+pre. [email] / [hostname] / [gpio|lcd|sensors] / [metric]
+
+pre. [email] / [hostname] / system/restart - рестарт модуля через MQTT
+
+p{color:red}. Формула и примеры для прошивок ESP8266, собранных в конструкторе начиная с 05.08.2015 !
+
+---
+
+h3. Практические примеры
+
+|_. Login        |_. Hostname |_. Group  |_. Metric  |_. Краткое описание                   |
+| user@email.com | /Pandora   | /gpio    | /inputX   |Чтение состояния GPIO, где X 0-15     |
+| user@email.com | /Pandora   | /gpio    | /outputX  |Управление GPIO, где X 0-15           |
+| user@email.com | /Pandora   | /gpio    | /pwmX     |Управление ШИМ (PWM), где X 0-2       |
+|                |            |          |           |                                      |
+| user@email.com | /Pandora   | /lcd     | /light    |Подсветка дисплея                     |
+| user@email.com | /Pandora   | /lcd     | /lineX    |Отправка сообщения, где X 0-7         |
+|                |            |          |           |                                      |
+| user@email.com | /Pandora   | /sensors | /adc      |Внутренний АЦП (ADC) - врем. отключен |
+| user@email.com | /Pandora   | /sensors | /adcX     |АЦП PCF8591, где X 0-3                |
+| user@email.com | /Pandora   | /sensors | /amh      |Влажность AM2321                      |
+| user@email.com | /Pandora   | /sensors | /amt      |Температура AM2321                    |
+| user@email.com | /Pandora   | /sensors | /bmeh     |Влажность BME280                      |
+| user@email.com | /Pandora   | /sensors | /bmep     |Давление BME280                       |
+| user@email.com | /Pandora   | /sensors | /bmet     |Температура BME280                    |
+| user@email.com | /Pandora   | /sensors | /bmpp     |Давление BMP085/180                   |
+| user@email.com | /Pandora   | /sensors | /bmpt     |Температура BMP085/180                |
+| user@email.com | /Pandora   | /sensors | /counter  |Счётчик импульсов                     |
+| user@email.com | /Pandora   | /sensors | /counter2 |Счётчик импульсов                     |
+| user@email.com | /Pandora   | /sensors | /countrst |Сбрасываемый счётчик импульсов        |
+| user@email.com | /Pandora   | /sensors | /countrst2|Сбрасываемый счётчик импульсов        |
+| user@email.com | /Pandora   | /sensors | /dhthX    |Влажность DHT11/22, где X 1-2         |
+| user@email.com | /Pandora   | /sensors | /dhttX    |Температура DHT11/22, где X 1-2       |
+| user@email.com | /Pandora   | /sensors | /dswX     |Температура DS18B20, где X 1-10       |
+| user@email.com | /Pandora   | /sensors | /freemem  |Свободная память                      |
+| user@email.com | /Pandora   | /sensors | /gpioint  |Прерывание (срабатывание)             |
+| user@email.com | /Pandora   | /sensors | /gpioint2 |Прерывание (срабатывание)             |
+| user@email.com | /Pandora   | /sensors | /host     |Название устройства (hostname)        |
+| user@email.com | /Pandora   | /sensors | /inav     |Напряжение INA219                     |
+| user@email.com | /Pandora   | /sensors | /inac     |Ток INA219                            |
+| user@email.com | /Pandora   | /sensors | /inpmcpX  |Чтение состояния MCP23017, где X 0-15 |
+| user@email.com | /Pandora   | /sensors | /lat      |Координаты широты, в градусах         |
+| user@email.com | /Pandora   | /sensors | /light    |Освещённость BH1750                   |
+| user@email.com | /Pandora   | /sensors | /lm       |Температура LM75                      |
+| user@email.com | /Pandora   | /sensors | /lng      |Координаты долготы, в градусах        |
+| user@email.com | /Pandora   | /sensors | /mac      |MAC модуля                            |
+| user@email.com | /Pandora   | /sensors | /nrfXaY   |АЦП, X номер nRF, Y метрика           |
+| user@email.com | /Pandora   | /sensors | /nrfXbY   |Байт, X номер nRF, Y метрика          |
+| user@email.com | /Pandora   | /sensors | /nrfXcY   |Счётчик, X номер nRF, Y метрика       |
+| user@email.com | /Pandora   | /sensors | /nrfXgY   |Состояние GPIO, X номер nRF, Y метрика|
+| user@email.com | /Pandora   | /sensors | /nrfXhY   |Влажность, X номер nRF, Y метрика     |
+| user@email.com | /Pandora   | /sensors | /nrfXtY   |Температура, X номер nRF, Y метрика   |
+| user@email.com | /Pandora   | /sensors | /outmcpX  |Управление MCP23017, где X 0-15       |
+| user@email.com | /Pandora   | /sensors | /shth     |Влажность SHT21                       |
+| user@email.com | /Pandora   | /sensors | /shtt     |Температура SHT21                     |
+| user@email.com | /Pandora   | /sensors | /uptime   |Время работы модуля (sec.)            |
+| user@email.com | /Pandora   | /sensors | /vdd      |Напряжение питания (встр. АЦП) - откл.|
+| user@email.com | /Pandora   | /sensors | /ver      |Версия прошивки модуля                |
+| user@email.com | /Pandora   | /sensors | /wanip    |IP адрес модуля                       |
+|                |            |          |           |                                      |
+
+---
+
+h3. Внешние ссылки
+
+* "Homes-Smart: Список метрик, передаваемых на сервера":http://homes-smart.ru/index.php/oborudovanie/bez-provodov-wi-fi/67-otpravka-dannykh-na-http-server-majordomo-na-esp8266
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'smarthouse' %}
+  {% include JB/pages_list %}
+</ul>

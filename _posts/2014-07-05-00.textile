@@ -1,0 +1,25 @@
+---
+layout:     post
+title:      "Фото-летопись развития AirMax 5G в ООО Крыминфоком"
+tagline:    ""
+category:   ""
+group:      other
+tags:       [infocom, airmax]
+---
+
+
+h3. Описание
+
+!/images/2014070504.jpg!
+
+!/images/2014070501.jpg!
+
+!/images/2014070502.jpg!
+
+!/images/2014070503.jpg!
+
+!/images/2014070505.jpg!
+
+
+
+

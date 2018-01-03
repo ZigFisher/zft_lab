@@ -1,0 +1,41 @@
+---
+layout:     post
+title:      "Переезд ZFT Lab. в новое помещение"
+tagline:    ""
+category:   ""
+group:      zftlab
+tags:       [zftlab]
+---
+
+
+h3. Фото
+
+!/images/2015072801.jpg!
+
+!/images/2015072802.jpg!
+
+!/images/2015072803.jpg!
+
+!/images/2015072804.jpg!
+
+!/images/2015072805.jpg!
+
+!/images/2015072806.jpg!
+
+!/images/2015072807.jpg!
+
+!/images/2015072808.jpg!
+
+!/images/2015072809.jpg!
+
+!/images/2015072810.jpg!
+
+---
+
+h3. Ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'zftlab' %}
+  {% include JB/pages_list %}
+</ul>

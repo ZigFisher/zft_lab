@@ -1,0 +1,37 @@
+---
+layout:     post
+title:      "Обзор бесперебойных 12V источников питания"
+tagline:    ""
+category:   ""
+group:      energy
+tags:       [energy, 12volt]
+---
+
+
+h3. Описание
+
+!/images/2014090401.jpg!
+
+---
+
+!/images/2014090411.jpg!
+
+---
+
+!/images/2014090412.jpg!
+
+---
+
+h3. Внешние ссылки
+
+* "12 Вольт 6-8 Ампер блок питания, который приятно удивил":http://mysku.ru/blog/china-stores/31148.html
+* "Блок питания 36 Вольт 10 Ампер 360 Ватт":http://mysku.ru/blog/china-stores/34369.html
+* "Правильный блок питания 5 Вольт 7.2 Ампера и 36 Ватт":http://mysku.ru/blog/china-stores/33910.html
+* "Блок питания 12 Вольт 180 Ватт":http://mysku.ru/blog/china-stores/28492.html
+* "S-180-12 180W 12V / 15A блок питания в непривычном формфакторе":http://mysku.ru/blog/china-stores/33572.html
+* "Блок питания 12 Вольт 3 Ампера и небольшой 'допилинг'":http://mysku.ru/blog/china-stores/25298.html
+* "Блок питания 24 Вольта 5 Ампер":http://mysku.ru/blog/china-stores/33464.html
+* "24 Вольта 100 Ватт блок питания с неплохим результатом":http://mysku.ru/blog/china-stores/33286.html
+* "Еще один 12 Вольт блок питания, но уже на 1 Ампер":http://mysku.ru/blog/china-stores/31248.html
+
+* "Фирма Omelta":http://www.omelta.com/ru/product/747

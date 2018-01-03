@@ -1,0 +1,30 @@
+---
+layout:     post
+title:      "Заметки по BIND"
+tagline:    ""
+category:   ""
+group:      notes
+tags:       [bind, linux, notes]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Фильтрация AAAA-записей
+
+p. Для включения фильтрации AAAA-записей в Debian 8.x необходимо добавить строку, указанную ниже, в файл /etc/bind/named.conf.options и перезапустить сервис.
+
+pre. filter-aaaa-on-v4 yes;
+
+---
+
+h3. Внешние ссылки
+
+* "NAG.ru: выпилить из ответов BIND IPV6":http://forum.nag.ru/forum/index.php?showtopic=80011
+* "Фильтрация AAAA-записей средствами bind9":http://klink0v.livejournal.com/235490.html
+* "Handy AAAA filter in BIND 9.8":http://ipamworldwide.blogspot.com/2011/09/handy-aaaa-filter-in-bind-98.html
+* "Linux, предпочитать IPv4 RR":http://klink0v.livejournal.com/227416.html

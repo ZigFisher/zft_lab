@@ -1,0 +1,15 @@
+---
+layout:     post
+title:      "Youtube"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [youtube]
+---
+
+
+h3. Музыка
+
+* "Барабанщик? да нет трубабанщик играющий тапочками":https://www.youtube.com/watch?v=Rm-sD-2tWbQ
+* "Виктор Цой 'Кукушка' исполнение на национальных инструментах":https://www.youtube.com/watch?v=xOhSG0u2bFc
+* "Корейские девушки, необычные инструменты и Мумий Тролль":https://www.youtube.com/watch?v=qfAtTQ_fR4s

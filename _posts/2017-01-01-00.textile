@@ -1,0 +1,27 @@
+---
+layout:     post
+title:      "Nortel Passport AC Power Converter NTEP26CA 02 LORAIN AF3S431"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [nortel,power]
+---
+
+
+h3. Техническое описание
+
+p. Источник питания от Nortel Networks Passport 7440 Multiservice Switch
+
+---
+
+h3. Фото
+
+! !
+
+---
+
+h3. Внешние ссылки
+
+* "Nortel Networks Passport 7440 Multiservice Switch":http://www.tech.proact.co.uk/nortel/nortel_networks_passport_7440_multiservice_switch.htm
+* "Nortel Passport AC Power Converter NTEP26CA 02 LORAIN AF3S431":https://www.thetelecomshop.com/au/nortel-passport-ac-power-converter-ntep26ca-02-lorain-af3s431
+* "Nortel Passport AC Power Converter GST & Del Inc NTEP26CA 02 LORAIN AF3S431":http://www.ebay.com/itm/Nortel-Passport-AC-Power-Converter-GST-Del-Inc-NTEP26CA-02-LORAIN-AF3S431-/201020903636

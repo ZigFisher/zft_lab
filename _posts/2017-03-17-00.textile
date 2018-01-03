@@ -1,0 +1,21 @@
+---
+layout:     post
+title:      "Краткий обзор xDSL модемов - Они боролись за канал..."
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [dynamix,planet,zyxel]
+---
+
+
+h3. Имеющиеся на руках xDSL модемы
+
+p. В процессе сбора информации.
+
+---
+
+h3. Zyxel Prestige 791R EE
+
+* "Zyxel: Prestige 791R EE":https://zyxel.ru/prestige-791r-ee/
+* "Настройка оборудования: Prestige 791R":http://nastroisam.ru/791r/
+

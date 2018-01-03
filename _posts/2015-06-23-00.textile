@@ -1,0 +1,36 @@
+---
+layout:     post
+title:      "Артезианская Археологическая Экспедиция (базовый лагерь)"
+tagline:    ""
+category:   ""
+group:      nature
+tags:       [nature]
+---
+
+
+h3. Фото
+
+!/images/2015062301.jpg!
+
+!/images/2015062302.jpg!
+
+!/images/2015062303.jpg!
+
+!/images/2015062304.jpg!
+
+!/images/2015062305.jpg!
+
+!/images/2015062306.jpg!
+
+!/images/2015062307.jpg!
+
+!/images/2015062308.jpg!
+
+!/images/2015062309.jpg!
+
+
+h3. Внешние ссылки
+
+* "Международная российско-украинская Артезианская Археологическая Экспедиция":http://artezian.info/info/
+* "Артезианская археологическая экспедиция (ААЭ VK)":http://vk.com/club11636478
+* "Лагерь при Артезианской Археологической Экспедиции":http://www.archae.ru/projects/artesian-expedition/

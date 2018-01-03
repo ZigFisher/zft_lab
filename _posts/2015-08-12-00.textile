@@ -1,0 +1,95 @@
+---
+layout:     post
+title:      "KanKun - WiFi розетка с управлением через интернет"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, kankun]
+---
+
+
+h3. Введение
+
+p. Описание и хакинг розетки будут добавлены чуть позже.
+
+---
+
+h3. Фото
+
+!/images/2015081201.jpg!
+
+p. Устройство пришло ко мне из Китая в простейшей пупырчатой упаковке. Вилка не европейская, нужен переходник.
+
+---
+
+!/images/2015081202.jpg!
+
+p. На передней панели универсальная розетка, к ней подходят любые типы вилок. Так-же видны индикаторы и кнопка управления. Один из индикаторов горит синим когда загружается и мигает синим когда готов к работе. Второй горит красным, когда включена нагрузка. Кнопка позволяет управлять нагрузкой локально, без интернета.
+
+---
+
+!/images/2015081203.jpg!
+
+p. Kankun разбирается легко, достаточно в любом месте просунуть в щель между корпусом и крышкой что-либо тонкое. Открывал устройство старой пластиковой картой.
+
+---
+
+!/images/2015081204.jpg!
+
+p. Устройство состоит из двух основных частей. Розетка-вилка с силовой частью и блоком питания, а так-же WiFi модуль, подключаемый шести-контактным микроразьёмом.
+
+---
+
+!/images/2015081205.jpg!
+
+p. Устройство, несмотря на свою цену, сделано достаточно добротно.
+
+---
+
+!/images/2015081206.jpg!
+
+p. Используется полноценный импульсный блок питания с трансформатором и гальванической развязкой.
+
+---
+
+!/images/2015081207.jpg!
+
+p. Слева на фото виден микроразъём. Качество пайки именно его было среднее, единственное проблемное место, если придираться. Пришлось добавить припоя и прогреть феном.
+
+---
+
+!/images/2015081208.jpg!
+
+p. При разборке силовой части случился казус. Отверстия розетки прикрывала шторка на пружинках. Естественно, при разборке всё развалилось и одна пружинка ускакала. Пришлось шторку исключить из обратной сборки устройства как лишнюю деталь.
+
+---
+
+!/images/2015081209.jpg!
+
+p. К плате мини-роутера нареканий нет. Качество на уровне.
+
+---
+
+!/images/2015081210.jpg!
+
+p. Используется дешевый и распространённый процессор AR9331. Прошивка - OpenWRT годичной давности.
+
+---
+
+h3. Внешние ссылки
+
+* "Wifi розетка KanKun":http://www.wofc.ru/kankun.html
+* "WiFi розетка Kankun":http://mysku.ru/blog/china-stores/28305.html
+* "Kankun KK-SP3 - OpenWrt Webserver and Comandline Hacks":https://www.htlinux.com/kankun-kk-sp3-openwrt-webserver-and-commandline-hacks/
+* "Hacking Kankun Smart Wifi Plug":http://www.anites.com/2015/01/hacking-kankun-smart-wifi-plug.html
+* "Kankun KK-SP3 Wi-Fi Smart Socket Hacked, Based on Atheros AR9331, Running OpenWRT":http://www.cnx-software.com/2014/07/28/kankun-kk-sp3-wi-fi-smart-socket-hacked-based-on-atheros-ar9331-running-openwrt/
+* "The Kankun Smart WiFi Plug/Outlet":http://benlo.com/esp8266/KankunSmartPlug.html
+* "Kankun wifi switch plug":https://plus.googleapis.com/101991536055898098963/posts/bWqaLnM9sya
+* "OpenHAB HTTP Binding & The KanKun Wifi Plug":http://www.homeautomationforgeeks.com/openhab_http.shtml
+* "Getting Started With The Kankun Small K / KK-SP3":http://homedash.org/2014/08/28/getting-started-with-the-kankun-small-k-kk-sp3/
+* "Kankun-Json CGI Script":http://homedash.org/2014/08/31/kankun-json-cgi-script/
+* "Kankun Firmware Downloads":http://homedash.org/2014/09/21/firmware-downloads/
+* "Kankun mini-manual ENG":https://www.dropbox.com/s/8sq4caf2iivcmmc/manual-english.png?dl=0
+* -
+* "Умная розетка от Сяоми - версия номер 2":http://mysku.ru/blog/china-stores/40018.html
+* "4pda: Xiaomi MiHome версия: 3.9.5":http://4pda.ru/forum/index.php?showtopic=661250

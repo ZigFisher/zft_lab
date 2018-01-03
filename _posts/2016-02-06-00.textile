@@ -1,0 +1,20 @@
+---
+layout:     post
+title:      "Wi-Fi Sensor на базе ESP8266"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [esp8266]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Внешние ссылки
+
+* "Wi-Fi Sensor Screenshot":http://paradox.flymon.net/wifi_sensor.png
+* "Wi-Fi Sensor Web интерфес":https://github.com/kmaximv/Wi-Fi-Sensor/wiki/Web-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D1%81

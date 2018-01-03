@@ -1,0 +1,27 @@
+---
+layout:     post
+title:      "Портирование OpenWrt на ZyXEL Keenetic Extra II"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [openwrt]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+p. Железо: MediaTek MT7628 (1 × MIPS24KEc 580 МГц) + MT7612 (5GHz) + RAM 128 Mb + ROM 32 Mb
+
+---
+
+h3. Внешние ссылки
+
+* "4PDA: ZyXEL Keenetic Extra II – Обсуждение":https://4pda.ru/forum/index.php?showtopic=796445&st=60
+* "Обзор маршрутизаторов Zyxel Keenetic Air и Extra II: Wi-Fi 802.11ac 2×2, недорого!":https://3dnews.ru/945254
+
+* "GitHub: MTK MT7628 802.11n wifi driver":https://github.com/chaokw/mt7628-p4rev-113862
+* "GitHub: OpenWrt on MT7628":https://github.com/snailwft/openwrt-mt7628
+* "OpenWrt and MT7610E MT7612E":http://www.crashcourse.ca/wiki/index.php/OpenWrt_MT7610E_MT7612E
+

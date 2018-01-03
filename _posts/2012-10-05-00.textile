@@ -1,0 +1,64 @@
+---
+layout:     post
+title:      "Заметки при настройке и работе в Debian"
+tagline:    ""
+category:   ""
+group:      linux
+tags:       [linux, debian]
+---
+
+
+p. **Настройка переключателя клавиатуры**
+
+Как-то, устанавливая Debian, по-невнимательности указал раскладку клавиатуры ru_UA и потом мучился - каждый раз при подключении клавиатуры была возможность переключаться только между us и ua раскладками. Выполнение dpkg-reconfigure locales не помогло, приходилось каждый раз после входа в систему исправлять вручную. Все решилось указанием нужных раскладок переменной XKBLAYOUT="us,ru" в файле /etc/default/keyboard.
+
+
+p. **Для отключения кеша в Google Chrome добавить опции в командной строке :**
+
+pre. --disk-cache-size=1 --media-cache-size=1
+
+
+p. **Код для переадресации страницы**
+
+pre. <script language="JavaScript" type="text/javascript">
+  location="/pages/2012100300.html"
+</script>
+
+
+p. **Пример "шапки" для самописных скриптов в /etc/init.d/**
+
+p. Часто возникает вот такое сообщение об ошибках :
+
+pre. script 'nexus' missing LSB tags and overrides
+
+p. Что-бы его небыло, добавьте в "шапку" скрипта данный пример и подправьте под свои параметры
+
+pre. ### BEGIN INIT INFO
+# Provides:          nexus
+# Required-Start:    $remote_fs $syslog $network
+# Required-Stop:     $remote_fs $syslog $network
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Nexus Maven Proxy
+# Description:       Nexus Maven Proxy
+### END INIT INFO
+
+
+p. **Просмотр списка коннектов к vbox**
+
+pre. (clear; cat /var/log/syslog | grep -e "vbox3254" | grep -e ":" | tr ':[]' ' ' | awk '{print $9,$10,$11}' | sort | uniq; >/var/log/syslog)
+
+
+p. **Примеры вызова iptables**
+
+pre. iptables -I INPUT -j ACCEPT -p TCP --dport 5000
+iptables -I INPUT -j REJECT -p TCP --dport 5000 -s 178.93.55.200
+iptables -I INPUT -j REJECT -p TCP -s 195.20.154.125
+
+---
+
+h3. Внешние ссылки
+
+* "Current Debian CD I386 [2017.07.22]":https://cdimage.debian.org/debian-cd/current/i386/iso-cd/
+* "Current Debian CD AMD64 [2017.07.22]":https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
+

@@ -1,0 +1,32 @@
+---
+layout:     post
+title:      "Контроль напряжения и тока при помощи INA219"
+tagline:    ""
+category:   ""
+group:      modules
+tags:       [zftlab, modules, i2c]
+---
+
+
+h3. Спецификация
+
+* 0.1 ohm 1% 2W current sense resistor
+* Up to +26V target voltage
+* Up to ±3.2A current measurement, with ±0.8mA resolution
+* This chip uses I2C 7-bit addresses 0x40, 0x41, 0x44, 0x45, selectable with jumpers
+
+---
+
+h3. Фото сборки модуля
+
+!/images/2014111001.jpg!
+
+---
+
+!/images/2014111002.jpg!
+
+---
+
+h3. Внешние ссылки
+
+* "arduino.ru - Мини-обзор монитора тока INA219 с выходом I2C":http://arduino.ru/forum/apparatnye-voprosy/mini-obzor-monitora-toka-ina219-s-vykhodom-i2c

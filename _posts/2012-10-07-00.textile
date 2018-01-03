@@ -1,0 +1,50 @@
+---
+layout:     post
+title:      "Заметки по настройке Asterisk"
+tagline:    ""
+category:   ""
+group:      linux
+tags:       [voip, asterisk]
+---
+
+
+p. **Распределение исходящих звонков по направлениям :**
+
+pre. exten => _050.,1,NoOp("Voice via MTS")
+exten => _050.,2,Dial(SIP/gsm-mts)
+exten => _050.,3,Hangup)
+;
+exten => _067.,1,NoOp("Voice via KS")
+exten => _067.,2,Dial(SIP/gsm-ks)
+exten => _067.,3,Hangup()
+
+p. **Строгий шаблон для мобильных Life (начало 063 и 10 знаков) :**
+
+pre. exten => _063XXXXXXX,1,Dial(SIP/gsm-life)
+
+p. **Маршрутизация звонка с удалением префикса (начало 000) :**
+
+pre. exten => _00.,1,Dial(SIP/${EXTEN:2}@pbx.zadarma.com,20,r)
+
+---
+
+h3. Музыка при холде и пустой конференции
+
+p. Файлы в формате .mp3 положить в каталог /usr/share/asterisk/mohmp3/
+
+p. **Фаил /etc/asterisk/extensions.conf**
+
+pre. exten => 1111,1,Answer
+same => n,Wait(1)
+same => n,Background(beep)               ; Бип
+same => n,Background(conf-waitforleader) ; Конференция начнётся после прихода её инициатора
+same => n,ConfBridge(1111,Mpc)           ; M - музыка, p - отбой по "#", c - кол-во пользователей
+same => n,Hangup()
+
+p. **Фаил /etc/asterisk/musiconhold.conf**
+
+pre. [default]
+mode=custom
+directory=/usr/share/asterisk/mohmp3
+application=/usr/bin/madplay -Q -o raw:- --mono -R 8000 -a -12
+

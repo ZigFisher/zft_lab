@@ -1,0 +1,59 @@
+---
+layout:     post
+title:      "Базовые настройки MikroTik RB941 hAP lite"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [mikrotik]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Сброс конфигурации на минимальные заводские настройки:
+
+pre. #
+/system reset-configuration
+
+h3. Настройка на первом этапе:
+
+pre. #
+/ip route add distance=1 dst-address=188.191.19.246/32 gateway=10.255.255.254
+/ip route add distance=2 dst-address=188.191.19.246/32 gateway=10.255.255.255
+/ip route add distance=1 dst-address=10.255.255.0/24 gateway=10.255.255.254
+/ip route add distance=2 dst-address=10.255.255.0/24 gateway=10.255.255.255
+/interface pptp-client add connect-to=vpn0.hotspot.crimea-com.net disabled=no mrru=1600 name=pptp-out1 user=$LOGIN password=$PASSWORD
+/interface pptp-client add connect-to=vpn1.hotspot.crimea-com.net disabled=no mrru=1600 name=pptp-out2 user=$LOGIN password=$PASSWORD
+/ip firewall nat add action=masquerade out-interface=pptp-out1 chain=srcnat
+/ip firewall nat add action=masquerade out-interface=pptp-out2 chain=srcnat
+/radius add service=hotspot address=188.191.19.246 secret=$RADIUS_SECRET
+
+pre. #
+/interface wireless security-profiles add name=HOTSPOT
+/interface wireless add master-interface=wlan1 ssid=Neapol_free security-profile=HOTSPOT name=HOTSPOT disabled=no
+/ip address add interface=HOTSPOT address=192.168.55.1/24
+/ip pool add name=hotspot-clients ranges=192.168.55.2-192.168.55.254
+/ip dhcp-server add name=dhcp_hotspot interface=HOTSPOT address-pool=hotspot-clients disabled=no
+/ip dhcp-server network add address=192.168.55.0/24 gateway=192.168.55.1 dns-server=192.168.55.1
+/ip hotspot profile add name=hotspot hotspot-address=192.168.55.1 dns-name=hotspot html-directory=hotspot use-radius=yes radius-accounting=no nas-port-type=ethernet
+/ip hotspot add name=hotspot interface=HOTSPOT address-pool=hotspot-clients profile=hotspot disabled=no
+/ip hotspot walled-garden ip add action=accept disabled=no dst-address=188.191.19.246 server=hotspot src-address=192.168.55.0/24
+/tool fetch url=http://main.hotspot.crimea-com.net/login.html dst-path=([/ip hotspot profile get hotspot html-directory ] . "/login.html")
+
+pre. #
+/tool traceroute fishki.net count=3
+#
+/ip dhcp-server network set numbers=0 comment=hotspot address=192.168.55.0/24 dns-server=192.168.55.1 gateway=192.168.55.1
+
+---
+
+h3. Внешние ссылки
+
+* "Обновление прошивок для оборудования MikroTik":http://mikrotik.spb.ru/index.php?route=information/information&information_id=8
+* "Как обновить Firmware на Mikrotik rb2011":http://www.ekzorchik.ru/2015/09/how-to-update-the-firmware-on-the-mikrotik-rb2011/
+* "Russian FAQ по RouterOS":http://wiki.mikrotik.com/wiki/Russian/FAQ
+

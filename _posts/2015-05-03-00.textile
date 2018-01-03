@@ -1,0 +1,37 @@
+---
+layout:     post
+title:      "Полезные устройства"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [lab]
+---
+
+
+h3. Паяльники под жало Hakko T12
+
+* "Паяльная станция Bakon 950D c жалом hakko T12":http://mysku.ru/blog/china-stores/34035.html
+* "Очередная инкарнация паяльника с жалом T12":http://mysku.ru/blog/aliexpress/30211.html
+
+---
+
+h3. IMax B6
+
+* "Imax B6 - Универсальный зарядочный комбайн":http://habrahabr.ru/post/150213/
+* -
+* "Хорошая копия Imax B6 - обзор, исследования":http://mysku.ru/blog/china-stores/29307.html
+* "Краткий обзор копии зарядного устройства IMax B6":http://mysku.ru/blog/china-stores/30095.html
+* "Поиск 'Imax B6 на mysku.ru'":http://searchsku.ru/s?q=Imax%20B6
+
+---
+
+h3. Opus BT-C3100 V2.2
+
+* "Зарядное устройство Opus BT-C3100 V2.2":http://mysku.ru/blog/china-stores/31782.html
+* "Зарядное устройство Opus BT-3100 V2.2, часть вторая":http://mysku.ru/blog/russia-stores/34124.html
+
+---
+
+h3. IP WEB-камеры
+
+* "Самая дешевая HD IP-камера":http://mysku.ru/blog/aliexpress/26552.html

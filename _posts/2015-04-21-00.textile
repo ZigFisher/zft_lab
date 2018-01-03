@@ -1,0 +1,39 @@
+---
+layout:     post
+title:      "FlyStore - минималистичный магазин"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [store]
+---
+
+
+h3. Подборка фото для магазина
+
+!/images/2015042101.jpg!
+
+!/images/2015042102.jpg!
+
+!/images/2015042103.jpg!
+
+!/images/2015042104.jpg!
+
+!/images/2015042105.jpg!
+
+!/images/2015042106.jpg!
+
+!/images/2015042107.jpg!
+
+!/images/2015042108.jpg!
+
+!/images/2015042109.jpg!
+
+!/images/2015042110.jpg!
+
+!/images/2015042111.jpg!
+
+!/images/2015042112.jpg!
+
+!/images/2015042113.jpg!
+
+!/images/2015042114.jpg!

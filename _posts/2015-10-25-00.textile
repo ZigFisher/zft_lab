@@ -1,0 +1,119 @@
+---
+layout:     post
+title:      "Заметки по Docker"
+tagline:    ""
+category:   ""
+group:      notes
+tags:       [linux, docker, notes]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Установка Docker в Debian 8 (Jessie)
+
+p. Вписать строку в /etc/apt/sources.list
+
+pre. deb http://ftp.debian.org/debian jessie-backports main
+
+p. Выполнить обновление списка пакетов
+
+pre. apt-get update
+
+p. Установить Docker
+
+pre. apt-get -t jessie-backports install --no-install-recommends docker.io  [make]
+
+p. Будет предложено установить пакеты
+
+pre. aufs-tools ca-certificates cgroupfs-mount libapparmor1 libdrm2 libnih-dbus1 libnih1 makedev mountall plymouth xz-utils
+
+---
+
+h3. Создание и запуск контейнера
+
+p. Скачать архив и зайти в него
+
+pre. git clone https://github.com/ZigFisher/MyDocker.git
+cd ./MyDocker
+
+p. Создать имидж из файла Dockerfile_micro
+
+pre. docker build -t micro_20160503 -f ./Dockerfile_micro .
+
+p. Вывести список всех доступных имиджей
+
+pre. docker images
+
+p. Создать из имиджа micro и запустить контейнер testserv с пробросом портов
+
+pre. docker run -d --name microserv --hostname microserv -p 1022:22/tcp --restart=always micro_20160503
+
+p. Создать из имиджа micro и запустить контейнер testserv без собственной сетевой подсистемы
+
+pre. docker run -d --name microserv --hostname microserv --net=host --restart=always micro_20160503
+
+p. Вывести список всех доступных контейнеров (microserv)
+
+pre. docker ps -a
+
+p. Войти в контейнер
+
+pre. docker exec -it microserv bash
+
+---
+
+pre. docker stop container01
+docker commit container01 image01
+docker rm container01
+docker run -d -P --name container01 image01
+
+---
+
+p. Скрипт от Docker для создания базовой системы
+
+pre. https://raw.githubusercontent.com/docker/docker/master/contrib/mkimage.sh
+
+p. Пример выполнения скрипта
+
+pre. mkimage.sh -d . debootstrap --variant=minbase --components=main --include=inetutils-ping,iproute2 --force-check-gpg jessie http://httpredir.debian.org/debian
+
+---
+
+p. Как узнать IP контейнера ?
+
+pre. zig@clipeus:~$ docker ps
+CONTAINER ID        IMAGE                       COMMAND                CREATED             STATUS              PORTS               NAMES
+b81bd00ef102        openwrt_2016062304:latest   "/usr/sbin/runsvdir-   3 months ago        Up 36 hours         22/tcp              openwrt04
+
+pre. zig@clipeus:~$ docker inspect --format '{{ .NetworkSettings.IPAddress }}' b81bd00ef102
+10.0.0.1
+
+
+---
+
+h3. Внешние ссылки
+
+* "Зачем нужен Docker и практика работы с ним":http://eax.me/docker/
+* "Управление сетевыми интерфейсами в Docker":https://b.sattellite.me/2015/02/docker-network/
+* "Введение в Docker":http://xgu.ru/wiki/Docker
+* "Команды для работы с Docker":https://ivan.bessarabov.ru/blog/docker-commands
+* "Learn the right way to build your Dockerfile":http://phusion.github.io/baseimage-docker/
+* "A minimal Ubuntu base image modified for Docker-friendliness":https://github.com/phusion/baseimage-docker
+* "Automating the creation of docker images":https://www.debian-administration.org/article/698/Automating_the_creation_of_docker_images
+
+* "Debian Backports - Instructions":http://backports.debian.org/Instructions/
+* "Docker on Debian Jessie 8.0":https://docs.docker.com/v1.8/installation/debian/
+
+* "Dockerising a Rails App":https://woss.name/dockerising-a-rails-app/
+* "How to Run your Rails App on Docker":https://www.packet.net/blog/how-to-run-your-rails-app-on-docker/
+
+* "UniFi controller runnning in Docker":https://github.com/rednut/docker-unifi-controller
+
+* "GitHub: My view of the Docker [ZigFisher]":https://github.com/ZigFisher/MyDocker
+* "GitHub: Запуск Chromium в Docker контейнере":https://github.com/jessfraz/dockerfiles/blob/master/chromium/Dockerfile
+

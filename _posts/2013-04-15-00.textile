@@ -1,0 +1,100 @@
+---
+layout:     post
+title:      "Заметки по оборудованию Ubiquiti"
+tagline:    ""
+category:   ""
+group:      notes
+tags:       [ubiquiti, notes]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Команды
+
+p. Сброс на заводские настройки
+
+pre. cp /usr/etc/system.cfg /tmp/system.cfg; save; reboot
+
+p. Редактировать конфигурационный фаил
+
+pre. vi /tmp/system.cfg
+
+p. Сохранить изменения в конфигурационном файле
+
+pre. cfgmtd -f /tmp/system.cfg -w
+
+p. Програмный рестарт устройства (быстрая замена reboot)
+
+pre. /usr/etc/rc.d/rc.softrestart save
+
+p. Сканирование эфира на предмет поиска БС
+
+pre. iwlist ath0 scan
+
+p. Узнать версионный ID платы устройства Ubiquiti
+
+pre. awk -F '=' '/board.sysid/ {print $2}' /etc/board.info
+
+p. Выгрузить и скачать все mpd разделы флешки
+
+pre. ssh ubnt@192.168.1.20 'for bl in 0 1 2 3 4 5; do echo "Dump /dev/mtd$bl:"; dd if=/dev/mtd$bl of=/tmp/mtd$bl.bin; done'
+scp ubnt@192.168.1.20:/tmp/mtd* .
+
+p. Добавление русского языка в WEB-интерфейс
+
+pre. mkdir -p /etc/persistent/lang
+wget -O /etc/persistent/lang/Russian http://website.wihh.lang.file/Russian.txt
+save
+
+p. Включение Compliance Test в разделе WiFi (начиная с прошивок 5.6)
+
+pre. sshpass -p ubnt ssh ubnt@192.168.1.20 'enable_ct'
+
+p. Получение данных о клиентах на БС в формате JSON
+
+pre. sshpass -p ubnt ssh ubnt@192.168.1.20 'wstalist'
+
+p. Получение данных в формате JSON
+
+pre. /usr/www/status.cgi
+
+pre. /usr/www/sta.cgi
+
+pre. /usr/www/signal.cgi
+
+pre. /usr/www/iflist.cgi
+
+pre. /usr/www/ifstats.cgi
+
+---
+
+h3. Отказ в доступе по HTTPS на устройства Ubiquiti
+
+p. В связи с обновлением алгоритмов шифрации и отключением поддержки устаревших версий SSL в современных браузерах возникает проблема захода на старые устройства Ubiquiti через WEB.
+
+p. Для решения проблемы, необходимо зайти на пациента по SSH, отключить HTTPS в конфиге, сохранить изменения и перезагрузить устройство.
+
+pre. httpd.https.status=disabled
+
+---
+
+h3. Внешние ссылки
+
+* "Управление оборудованием Ubiquiti по SSH":http://ixnfo.com/upravlenie-oborudovaniem-ubiquiti-po-ssh.html
+* "Как переподключить HTTP сервер/службу из SSH/CLI":http://www.ubnt.su/FAQ/airmax/airmax-kak-perepodkluchit-http-server-iz-ssh-cli.htm
+* "Edit Ubiquiti config via SSH":http://gregsowell.com/?p=3457
+
+* "Ремонт Ubiquiti восстановлением прошивки. Возврат Compliance Test Ubnt.":http://lantorg.com/article/remont-ubiquiti-vosstanovleniem-proshivki-vozvrat-compliance-test
+* "UniFi firmware BZ2-2.2.5.1080":http://www.callrich.com/download/unifi/2.2.5/linux/UniFi/dl/firmware/BZ2/2.2.5.1080/
+
+* "Модуль ядра tun.ko для XW устройств от бразильской компании":http://www.wkve.net.br/Ubiquiti/eoip/
+* "Как перевести Web-интерфейс устройств Ubiquiti на нужный язык":http://asp24.com.ua/blog/kak-perevesti-web-interfejs-ustrojstv-proizvodstva-kompanii-ubiquiti-na-nuzhnyj-vam-jazyk/
+
+* "Firmware without verification counterfeit for XM ubiquiti device":http://www.lan23.ru/forum/showthread.php?t=12776
+* "Dump Ubiquiti Analisse":http://www.lan23.ru/forum/showthread.php?t=9571
+* "Ubiquiti hardware detect":http://ubnt.repair/detect/

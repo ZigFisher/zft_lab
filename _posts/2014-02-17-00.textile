@@ -1,0 +1,56 @@
+---
+layout:     post
+title:      "Извлечение настроек из конфигов TP-Link"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [linux, tplink]
+---
+
+
+h3. Введение
+
+p. Иногда возникает необходимость извлечь полезную информацию из бекапов - логины, пароли и ключи WiFi и т.д. Семейство простых бюджетных роутеров TP-Link шифруют файл бекапа config.bin перед его отправкой браузеру. Для расшифровки файла можно воспользоваться простым скриптом на Python.
+
+p. Скопируйте приведенный ниже текст в фаил, дайте ему права на запуск (chmod 755), положите в этот-же каталог фаил config.bin от TP-Link и запустите скрипт. После запуска, будет сформирован текстовый файл с настройками роутера, часть которого приведена ниже для примера. Так-же, в некоторых случаях, нужно будет предварительно установить криптографическую библиотеку для Python.
+
+pre. apt-get install python-crypto
+
+
+
+h3. Пример скрипта на Python
+
+pre. #!/usr/bin/python
+#
+from Crypto.Cipher import DES
+from hashlib import md5
+#
+key = '\x47\x8D\xA5\x0B\xF9\xE3\xD2\xCF'
+crypto = DES.new( key, DES.MODE_ECB )
+#
+data = open('config.bin', 'rb').read()
+data_decrypted = crypto.decrypt( data ).rstrip('\0')
+assert data_decrypted[:16] == md5(data_decrypted[16:]).digest()
+open('config.bin.txt', 'wb').write(data_decrypted[16:])
+
+
+
+h3. Пример части распакованного файла
+
+pre. lan_ip 192.168.1.2
+lan_msk 255.255.255.0
+wan_dyn_hostname 1 TL-WR841N
+wan_stc_ip 1 192.168.1.2
+wan_stc_msk 1 255.255.255.0
+wan_stc_gw 1 192.168.1.1
+wan_stc_mtu 1 1500
+wan_stc_dns1 1 8.8.8.8
+rmt_en 1
+rmt_ip 255.255.255.255
+wlan_en 1
+wlan_curent_region 83
+wlan_chnnl 3
+wlan_mbssid_str 1 Rodnichok
+wlan_PskSecret 1 klyuchik
+lgn_usr root
+lgn_pwd mypass

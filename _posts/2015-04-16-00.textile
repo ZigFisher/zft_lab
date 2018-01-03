@@ -1,0 +1,43 @@
+---
+layout:     post
+title:      "Преобразователи питания для ESP8266"
+tagline:    ""
+category:   ""
+group:      smarthouse
+tags:       [esp8266, price]
+---
+
+
+h3. DC/DC понижающий стабилизатор MP1584EN
+
+p. Значения резистора (вместо регулировочного) для установки напряжений:
+
+* 3,3V - 25,6k
+* 5,0V - 43k
+* 9,0V - 84k
+
+p. Формула для расчётов: *R1=10.25(Vout-0.8)*
+
+
+---
+
+h3. Внешние ссылки
+
+* "MySku: Понижающий регулируемый DC-DC преобразователь [MP1584EN]":http://mysku.ru/blog/aliexpress/35938.html
+* -
+* "Aliexpress: Стабилизаторы HT7333 HT7333-A SOT-89 HOLTEK":http://ru.aliexpress.com/item/100pcs-lot-HT7333-HT7333-A-SOT-89-HOLTEK-Free-shipping/1122289785.html
+* ---
+* "Texas Instruments: TPS63031 1,8V-5,5V to 3,3V":http://www.ti.com/lit/ds/symlink/tps63031.pdf
+* ---
+* "5252F LED lawn lamp driver chip":http://hu364362808.sell.everychina.com/p-100162288-2014-chip-patch-of-lawn-lamp-5252f-led-lawn-lamp-driver-chip-5252f-sot23-5-smt-packaging-ic-chips-sw5252d.html
+* "Solar panel charger with auto shutoff & Solar LED drivers":http://www.petesqbsite.com/phpBB3/viewtopic.php?f=4&t=3745&sid=76810c65a2208981b7659bf10127ad52
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'smarthouse' %}
+  {% include JB/pages_list %}
+</ul>

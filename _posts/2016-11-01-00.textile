@@ -1,0 +1,51 @@
+---
+layout:     post
+title:      "Использование fetchmail+procmail+munpack для выполнения скриптов"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [linux,mail]
+---
+
+
+h3. Введение
+
+p. Тестовый сервис, предоставляющий услуги автоматической перепаковки прошивок IPC и NVR.
+
+p. Пример файла ~.fetchmailrc
+
+pre. #
+poll pop3.yandex.ru
+port 995
+proto POP3
+user 'login@yandex.com'
+pass 'mypass'
+ssl
+sslproto ssl3
+mda "/usr/bin/procmail -d %T"
+set syslog set logfile "fetchmail.log"
+
+p. Пример файла ~.procmailrc
+
+pre. #
+:0
+*^content-Type:
+{
+# делать копию принятого письма
+:0c:
+$HOME/fetchmail/backup
+#
+# распаковка всех файлов из письма
+:0fw
+| munpack -f -q -C $HOME/NVR/mail
+}
+
+---
+
+h3. Внешние ссылки
+
+* "Используем fetchmail для автоматизации разбора почты":http://youngblog.hoster-ok.com/ispolzuem-fetchmail-dlya-avtomatizatsii-razbora-pochty/
+* "Extract Email Attachments With Procmail and Munpack":https://blog.lundscape.com/2009/10/extract-email-attachments-with-procmail-and-munpack/
+* "Проблема: fetchmail получает почту только для одного пользовател":http://ru.stackoverflow.com/questions/489230/fetchmail-получает-почту-только-для-одного-пользователя
+
+

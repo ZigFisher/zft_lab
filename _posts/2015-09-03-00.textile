@@ -1,0 +1,337 @@
+---
+layout:     post
+title:      "Хакинг IP-камер на базе SoC HI3518"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, webcam]
+---
+
+
+h3. Введение
+
+p. Целью данной публикации является сбор и анализ различной информации, которая разбросана по сети Интернет, а так-же практические эксперименты на имеющемся оборудовании.
+
+p. Все имеющиеся в наличии WEB-камеры попадают в категорию 720p (по железу), однако, перечисленные ниже наработки подойдут и к большинству аналогичного оборудования, произведенного в Китае.
+
+---
+
+h3. Типы камер и их WEB-интерфейсы
+
+p. Как правило, камеры имеют либо почти герметичный корпус для установки на улице, либо предназначены для работы внутри помещений.
+
+p. Несмотря на одинаковую электронную "начинку", камеры весьма значительно отличаются WEB-интерфейсом, прошивками и функционалом.
+
+---
+
+h3. Камера #1
+
+!/images/2015090301.jpg!
+
+p. Отличительные особенности:
+
+* множество настроек на камере можно сделать непосредственно из браузера
+* поддерживаются любые браузеры
+* медиапорт 34567 для CMS данной камерой НЕ поддерживается
+
+p. Заводские настройки:
+
+* 192.168.1.88
+* admin/admin
+
+p. Открытые TCP порты:
+
+pre. # pscan 192.168.1.10
+Scanning  192.168.1.10
+ Port   Proto   State   Service
+   80   tcp     open    www
+  554   tcp     open    rtsp
+ 8080   tcp     open    onvif
+
+p. Получение снапшотов:
+
+* http://login:password@192.168.1.88/tmpfs/auto.jpg
+* http://login:password@192.168.1.88/tmpfs/snap.jpg
+
+p. Утилита управления (смена IP, сброс на заводские настройки):
+
+* SearchTool_setup.exe
+
+---
+
+h3. Камера #2
+
+!/images/2015090302.jpg!
+
+p. Hardware
+
+pre. # dvrHelper
+****************************************************
+|                      SYSTEM INFO
+|                 ID:           8043420004048425
+|            product:           HI3518E_50H10L_S39
+| forward video chip:           OV9712
+| wireless interface:           USB
+|   hardware version:           1
+|      net_interface:           Ethernet
+****************************************************
+
+p. Отличительные особенности:
+
+* интерфейс достаточно аскетичен
+* поддерживается только IE браузер с плагином QuickTime (или хаки)
+* поддерживается медиапорт 34567 для CMS
+
+p. Заводские настройки:
+
+* 192.168.1.10
+
+p. Открытые TCP порты:
+
+pre. # pscan 192.168.1.10
+Scanning  192.168.1.10
+ Port   Proto   State   Service
+   80   tcp     open    www
+  554   tcp     open    rtsp
+ 8899   tcp     open    onvif
+ 9527   tcp     open    unknown
+ 9530   tcp     open    unknown
+34567   tcp     open    for_cms
+
+p. Получение снапшотов:
+
+* http://192.168.1.10/webcapture.jpg?command=snap&channel=1
+
+p. Утилита управления (смена IP, сброс на заводские настройки, обновление прошивки):
+
+* General_DeviceManage_V2.5.2.1.T.20150820.exe
+
+---
+
+h3. Структурные схемы
+
+p. В процессе описания..
+
+!/images/2015090311.jpg!
+
+---
+
+!/images/2015090312.jpg!
+
+---
+
+pre. Image Sensor:1/4" Progressive Scan CMOS OV9712
+Effective Pixels: 1280(H)x720(V)
+Min. Illumination:Color: 0. 1Lux, B/W: 0.01Lux ; 0Lux(IR on)
+Max. IR LEDs Length:Φ5 36pcs IR Led , IR Range 15m
+Day/Night:Auto(ICR) / Color / B/W
+White Balance:Auto
+Gain Control:Auto/Manual
+Focal Length:6mm
+Max Aperture:F1.6
+Angle of View:39.8
+Mount Type:MTV mount (Interchangeable Lens)
+Compression:H.264
+Main Stream:HD 720P (1280*720) 25fps
+Sub Stream:VGA 640*360 25FPS
+
+---
+
+h3. Получение изображений
+
+p. Пример получения маленького изображения
+
+pre. http://login:password@webcam_ip_address/tmpfs/auto.jpg
+
+---
+
+p. Пример получения изображения в формате HD
+
+pre. http://login:password@webcam_ip_address/tmpfs/snap.jpg
+
+
+|_. Префикс: IP/cgi-bin/hi3510/param.cgi?         |_. Описание                                |
+|cmd=setmobilesnapattr&-msize=1                   | Размер картинки: 1 - 640x, 2 - 320x       |
+|cmd=setinfrared&-infraredstat=auto               | Режим IR подсветки: auto, open, close     |
+|cmd=setoverlayattr&-region=1&-show=1&-name=MyCam | Изменить надпись на изображении (overlay) |
+
+
+---
+
+h3. Справочник
+
+|_. Login |_. Password | Telnet | WEB |
+| root    | xmhdipc    |    y   |  ?  |
+| root    | klv123     |    y   |  ?  |
+| root    | xc3511     |    y   |  ?  |
+| root    | 123456     |    y   |  ?  |
+| root    | jvbzd      |    y   |  ?  |
+| default | OxhlwSG8   |    ?   |  y  |
+| defaul  | tlJwpbo6   |    ?   |  y  |
+| defaul  | S2fGqNFs   |    ?   |  y  |
+|         |            |        |     |
+
+
+pre. rtsp://192.168.1.15/user=admin_password=mypass_channel=1_stream=0.sdp?real_stream
+
+pre. rtsp://192.168.1.15:554/user=admin&password=mypass&channel=0&stream=0.sdp?real_stream--rtp-caching=100
+
+pre. rtsp://<ip address>:554/11 -> 720P resolution or "MainFlow"
+rtsp://<ip address>:554/12 -> VGA or "MinorFlow"
+rtsp://<ip address>:554/13 -> the lowest "mobile phone" QVGA resolution
+
+p. Очистка настроек - (cd /mnt/mtd ; rm -rf *)
+
+p. Поддерживает вайфайные свистки на чипсете rt3070sta
+
+p. Прошивка поддерживает три чипсета WiFi: MT7601U, RT5370 и RT2870
+
+
+pre. 1. Захотим в загрузчик. (Включили питание и в течении 1 сек нужно нажать любую кавишу)
+2. Добавляем к командной строке ядра опцию init и загружаемся.
+hisilicon # setenv bootargs mem=43M console=ttyAMA0,115200 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=hi_sfc:512K(boot),2560K(kernel),13M(rootfs) init=/bin/sh
+hisilicon # sf probe 0
+16384 KiB hi_sfc at 0:0 is now current device
+hisilicon # sf read 0x82000000 0x80000 0x280000
+hisilicon # bootm 0x82000000
+# cat /etc/shadow
+# echo "root:\$1\$tiaLlxGM\$dYNMJJQRKN2buGE0u/R88/:16199:0:99999:7:::" > /etc/shadow
+# echo "admin:\$1\$tiaLlxGM\$uIJ4ahSynKJuzEzWdw7sp/:16199:0:99999:7:::" >> /etc/shadow
+# sync
+Парезагружаем, всё! Теперь у камеры пароль для root стал root и для admin стал admin.
+
+---
+
+p. Список открытых портов
+
+pre. # netstat -an
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address   Foreign Address   State
+tcp        0      0 0.0.0.0:34599   0.0.0.0:*         LISTEN
+tcp        0      0 0.0.0.0:34567   0.0.0.0:*         LISTEN
+tcp        0      0 0.0.0.0:34561   0.0.0.0:*         LISTEN   <= CMS
+tcp        0      0 0.0.0.0:9527    0.0.0.0:*         LISTEN
+tcp        0      0 0.0.0.0:8899    0.0.0.0:*         LISTEN   <= ONVIF
+tcp        0      0 0.0.0.0:554     0.0.0.0:*         LISTEN   <= RTSP
+tcp        0      0 0.0.0.0:80      0.0.0.0:*         LISTEN   <= HTTP
+tcp        0      0 0.0.0.0:23      0.0.0.0:*         LISTEN   <= TELNET
+
+
+p. Монтирование каталогов
+
+pre. # mount
+rootfs on / type rootfs (rw)
+/dev/root on / type cramfs (ro,relatime)
+proc on /proc type proc (rw,relatime)
+sysfs on /sys type sysfs (rw,relatime)
+tmpfs on /dev type tmpfs (rw,relatime)
+devpts on /dev/pts type devpts (rw,relatime,mode=600,ptmxmode=000)
+/dev/mtdblock2 on /usr type squashfs (ro,relatime)
+/dev/mtdblock3 on /mnt/web type squashfs (ro,relatime)
+/dev/mtdblock4 on /mnt/custom type cramfs (ro,relatime)
+/dev/mtdblock5 on /mnt/mtd type jffs2 (rw,relatime)
+/dev/mem on /var type ramfs (rw,relatime)
+/dev/mem2 on /utils type ramfs (rw,relatime)
+usbfs on /proc/bus/usb type usbfs (rw,relatime)
+
+
+---
+
+h3. Заметки
+
+p. Получение информации о процессоре камеры
+
+pre. cat /mnt/custom/ProductDefinition | grep -e "Hardware"
+"Hardware" : "HI3518E_50H10L_S39",
+
+p. Раздел mtd4 монтируется в системе в папку /mnt/custom
+
+pre. mount -t squashfs /dev/mtdblock4 /mnt/custom
+
+p. В этой папке можно создать специальный файл, который будет выполнен при старте камеры
+
+pre. /mnt/custom/extapp.sh
+
+p. Для того, что-бы получить shell на консоли, можно выполнить команду, зайдя по Telnet
+
+pre. /sbin/getty -L ttyS000 115200 vt100 -n root -I "Auto login as root ..."
+
+p. Настройки сети находятся тут /mnt/mtd/Config/network и их можно изменить командами
+
+pre. echo "HOSTIP = 172.17.32.101" >/mnt/mtd/Config/network
+echo "SUBMASK = 255.255.255.0" >>/mnt/mtd/Config/network
+echo "GATEWAYIP = 172.17.32.1" >>/mnt/mtd/Config/network
+
+
+
+---
+
+h3. Таблица устройств [DeviceType C6F0SeZ3N0P0L0]
+
+|_. Software Version  |_. Web Ver. |_. MAC address     |_. IP address   |_. Descrtiption |
+| V7.1.9.2.1-20140612 | -          | 00:E0:F8:10:26:18 | 172.28.160.101 | Funduk-01      |
+| V7.1.0.2.1-20150626 | V1.0.1     | 00:E0:F8:03:85:A4 | 172.28.160.102 | Funduk-02      |
+| V7.1.9.2.1-20140612 | -          | 00:E0:F8:10:01:A7 | 172.28.160.103 | Funduk-03      |
+| V7.1.0.2.1-20150710 | V1.0.1     | 00:E0:F8:03:F8:6C | 172.28.160.104 | Funduk-04      |
+|  |  |  |  |  |
+| V7.1.9.2.1-20150204 | -          | 00:E0:F8:01:70:72 | 172.17.32.51   | Alley-01       |
+| V7.1.9.2.1-20150204 | V1.0.1     | 00:E0:F8:00:B7:06 | 172.17.32.52   | Alley-02       |
+| V7.1.9.2.1-20150204 | V1.0.1     | 00:E0:F8:01:7E:E8 | 172.17.32.54   | Alley-04       |
+|  |  |  |  |  |
+
+---
+
+h3. Внешние ссылки
+
+
+* "MySku: Самая дешевая HD IP-камера":http://mysku.ru/blog/aliexpress/26552.html
+* "Yandex.Disk: Свежие прошивки для камер IPC_HI3518E_50H10L_S38":https://yadi.sk/d/bl8C6poek9mqJ
+* "MySku: Настройка фокуса камеры на бесконечность":http://mysku.ru/blog/aliexpress/26552.html#comment932385
+* "Geektimes: Из аналога в цифру, или IP-камера своими руками":http://geektimes.ru/post/258780/
+* "Форум: Как прошить камеру через загрузчик U-Boot по Telnet":http://forum.videon.spb.ru/viewtopic.php?f=20&t=7550
+* "Форум: Обсуждение камер 1мп на процессоре Hi3518C":http://forum.videon.spb.ru/viewtopic.php?f=20&t=6616
+* "Иследование китайской IP камеры":https://darkbyte.ru/2015/77/china-ipcam-hipcam-ov9712-arm926ej-hisilicon-linux/
+* "Китайская NoName IP-видеокамера на основе чипа HI3518E_50H10L_S39":http://blog.kvv213.com/2015/08/domashnij-mikroserver-apparatnoe-obespechenie-kitajskaya-noname-ip-videokamera-na-osnove-chipa-hi3518e_50h10l_s39/
+* "Видеонаблюдение на основе IP-камер и Xeoma":http://blog.kvv213.com/2015/05/domashnij-mikroserver-programmnoe-obespe-chenie-videonablyudenie-na-osnove-ip-kamer-i-xeoma/
+* "Разбираемся с настройками камеры с медиапортом 34567":http://forum.videon.spb.ru/viewtopic.php?f=20&t=6677
+* "Конфигурация и прошивки Китайских IP-камер":http://ru.hkvstar.com/technology-news/china-ip-camera-configuration-firmware.html
+* "Прошивки для регистраторов и камер от XM [порт 34567]":http://forum.videon.spb.ru/viewtopic.php?f=24&t=8761
+* -
+* "IP Camera CGI Application Guide [pdf]":http://wiki.instar.de/images/6/6f/INSTAR_CGI_H264_Chipset_English.pdf
+* "Hacking Cheap eBay IP Camera [Best]":http://marcusjenkins.com/linux/hacking-cheap-ebay-ip-camera/
+* "IPCAM review – IPR1631, Hi3516 [SDK, Toolchain]":http://nemon.org/ipcam-ipr1631x/
+* "Part 1: Hacking HI3518 based IP camera":http://felipe.astroza.cl/hacking-hi3518-based-ip-camera/
+* "Hacking a cheap Chinese IP Camera HRX-I5024":https://docs.google.com/document/d/1rRNz4g6zmaq4gs0aUxNpYDoAZ7hRzHE3E4SLv8xcj0I/edit?pli=1#heading=h.np5s9z91vlg8
+* "Super Mini 720P HD IP-Cam":https://www.ipcamtalk.com/showthread.php/1812-Review-TOP-201-Super-Mini-720P-HD-IP-Cam-(The-Cheapest-IP-Cam-So-Far-!!)/page5?p=19499&viewfull=1#post19499
+* "XMeye Hi3518E-based camera module":http://www.openipcam.com/forum/index.php?topic=1183.0
+* "China IP camera configuration & firmware":http://www.hkvstar.com/technology-news/china-ip-camera-configuration-firmware.html
+* "IP camera SoC - HI3518E vs HI3518C":http://www.unifore.net/ip-video-surveillance/ip-camera-soc-hi3518e-vs-hi3518c.html
+* -
+* "GitHub: HI35XX buildroot [!]":https://github.com/hi35xx/hi35xx-buildroot
+* "GitHub: HI3518E camera":https://github.com/f2hex/HI3518E_camera
+* "GitHub: HI3518E buildroot":https://github.com/hi35xx/hi3518e-buildroot
+* "GitHub: HI3518E osdrv":https://github.com/xuhuashan/hi3518-osdrv
+* -
+* "Linux boot log from a cheap Hi3518 chinese IP Camera":https://acassis.wordpress.com/2014/05/25/boot-log-for-a-cheap-hi3518-chinese-ip-camera/
+* "I got new Hi3518 IP Camera modules":https://acassis.wordpress.com/2014/08/10/i-got-a-new-hi3518-ip-camera-modules/
+* "Open IP Camera Forum":http://www.openipcam.com/
+* "Cheap ONVIF Chinese Camera - quickie review UPDATED":http://www.openipcam.com/forum/index.php?topic=1128.0
+* -
+* "Hi3518E 720p IP-Cam SOC - pdf document":http://support.hkvstar.com/file/Hi3518E.pdf
+* "Hi3518E buildroot":https://github.com/hi35xx/hi3518e-buildroot
+* -
+* "$15 RobinCore WiFi IoT модуль работает под управлением OpenWrt, поддерживает 720p видео кодирование":http://www.cnx-software.ru/2016/03/27/15-robincore-wifi-iot-module-runs-openwrt-supports-720p-video-encoding-crowdfunding/
+* "$15 RobinCore WiFi IoT Module Runs OpenWrt, Supports 720p Video Encoding":http://www.cnx-software.com/2016/03/27/15-robincore-wifi-iot-module-runs-openwrt-supports-720p-video-encoding-crowdfunding/
+* "RobinCore home page":http://robincore.org/
+* -
+* "Habrahabr: Burn-in рутовый шелл в IP-камерах Vesta и не только":http://habrahabr.ru/post/173501/
+* "Исправляем ошибки своими руками, или баг, который «никого не колышет»":https://habrahabr.ru/post/219491/
+* "Что нам стоит пофиксить баг, которого «нет»":https://habrahabr.ru/post/219537/
+* "Распаковка, редактирование и упаковка прошивок видеорегистраторов и IP камер из Китая":https://habrahabr.ru/post/213411/
+* "Распаковка, редактирование и упаковка прошивок видеорегистраторов и IP камер из Китая":http://gigamir.net/techno/pub622371
+* "Распаковка, редактирование и упаковка прошивок видеорегистраторов и IP камер из Китая":https://special.habrahabr.ru/kyocera/p/213411/
+* -
+* "Hot firmware for HI3518E based devices !":http://wiki.xm030.com/index.php/IPC%E7%A8%8B%E5%BA%8F%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80
+* "Best software archive":http://www.cctvdiscover.com/download/Files/IPC/
+* "Firmware for IPC18E_50H10L_S38 V4.0.R12.00006510.1":https://pan.sohu.net/f/MTY2NzYsaGRkaWQ.htm
+* "Обновляемые прошивки на IP-камеры и мини-NVR":http://www.ipcam-cd.com/

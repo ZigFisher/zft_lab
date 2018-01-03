@@ -1,0 +1,20 @@
+---
+layout:     post
+title:      "Простой логический анализатор"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [logic]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Внешние ссылки
+
+* "ПО для логического анализатора от Saleae":https://www.saleae.com/downloads
+

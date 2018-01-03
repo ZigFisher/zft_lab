@@ -1,0 +1,36 @@
+---
+layout:     post
+title:      "Активация USB порта в Ubiquiti Loco M5"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, ubiquiti]
+---
+
+
+h3. Описание
+
+!/images/2013101101.jpg!
+
+---
+
+!/images/2013101102.jpg!
+
+---
+
+!/images/2013101103.jpg!
+
+---
+
+!/images/2013101104.jpg!
+
+---
+
+!/images/2013101105.jpg!
+
+---
+
+h3. Внешние ссылки
+
+* "AR7240 pełny pinout datasheet [PL]":http://eko.one.pl/forum/viewtopic.php?id=11464
+* "AR7240-AH1A - schemat pinów [PL]":http://tplink-forum.pl/tp-link-schematy/ar7240-ah1a-schemat-pinow/

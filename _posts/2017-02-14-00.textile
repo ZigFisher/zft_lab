@@ -1,0 +1,40 @@
+---
+layout:     post
+title:      "Демонстрационный OnLine мониторинг инкубатора"
+tagline:    ""
+category:   ""
+group:      smarthouse
+tags:       [energy, 12volt]
+---
+
+
+h3. Описание
+
+p. Демонстрационный OnLine мониторинг инкубатора.
+
+p. Железо разработано в компании "U-M.biz":http://u-m.biz/shop
+
+p. Програмное обеспечение от "FlyMon DMS":http://flyhub.org
+
+
+<html>
+<br><br>
+
+<iframe width="640" height="320" style="border: 1px solid #cccccc;" src="http://zftlab.org/assets/flymon/example_chart_canvas_v12c.html"></iframe><br>
+<center><b>Температура в инкубаторе. Период - Realtime.</b></center><br><br>
+
+<iframe width="640" height="320" style="border: 1px solid #cccccc;" src="http://esp8266.flymon.net/console.html?macs=18FE34E0C1DF&graphs=temp&period=3h"></iframe><br>
+<center><b>Температура в инкубаторе. Период - 3 часа.</b></center><br><br>
+
+<iframe width="640" height="320" style="border: 1px solid #cccccc;" src="http://esp8266.flymon.net/console.html?macs=18FE34E0C1DF&graphs=co2&period=3h"></iframe><br>
+<center><b>Контроль CO2 в инкубаторе. Период - 3 часа.</b></center><br><br>
+
+</html>
+
+---
+
+h3. Внешние ссылки
+
+* "YouTube: 1 й день испытний самодельного инкубатора с телеметрией":https://www.youtube.com/watch?v=AKtdmHNF2jg
+* "YouTube: 2-й день испытний самодельного инкубатора с телеметрией":https://www.youtube.com/watch?v=CfPfHAZWBng
+* "YouTube: 4-й день испытний самодельного инкубатора с телеметрией":https://www.youtube.com/watch?v=u8EeMBM0CpU

@@ -1,0 +1,76 @@
+---
+layout:     post
+title:      "А Баба-яга против - Crimea Internet Boycott"
+tagline:    ""
+category:   ""
+group:      other
+tags:       [boycott]
+---
+
+
+h3. Как это всё уже достало...
+
+!/images/2015010101.jpg!
+
+
+h3. Список сервисов, где нас, возможно, ждёт пушной зверь
+
+* "DigitalOcean":https://www.digitalocean.com
+* "Dropbox":https://www.dropbox.com
+* "eBay":http://www.ebay.com - йок
+* "Facebook":https://www.facebook.com
+* "GitHub":https://github.com
+* "GoDaddy":https://godaddy.com - йок
+* "Google":https://google.com - отключена установка и обновление ПО Android, Chrome и платные сервисы
+* "Google Code":https://code.google.com - отключен доступ
+* "IFTTT":https://ifttt.com
+* "LinkedIn":https://www.linkedin.com
+* "Linode":https://www.linode.com
+* "Payoneer":https://www.payoneer.com - уведомление о закрытии аккаунта, дали время на вывод средств
+* "PayPal":https://www.paypal.com - уведомление о закрытии аккаунта, до этого успел вывести средства
+* "Skrill":https://www.skrill.com - йок
+* "Sourceforge":http://sourceforge.net - "As per Executive Order 13685" - доступ запрещен
+* "Trello":https://trello.com
+
+
+h3. Ссылки
+
+* "ru.wikipedia.org - Бойкот":https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%B9%D0%BA%D0%BE%D1%82
+* "geektimes.ru - Жителей Крыма хотят лишить доступа к американским сервисам и ПО":http://geektimes.ru/post/243589/
+* "geektimes.ru - Steam закрыл для крымчан возможность покупать игры":http://geektimes.ru/post/244410/
+* "geektimes.ru - PayPal заблокировал счета жителей Крыма":http://geektimes.ru/post/244686/
+* "geektimes.ru - Крымские аккаунты AdSense заморожены":http://geektimes.ru/post/244704/
+* "geektimes.ru - Apple больше не будет продавать свои устройства в Крыму":http://geektimes.ru/post/244634/
+* "geektimes.ru - Apple ограничили доступ к App Store пользователям из Крыма":http://geektimes.ru/post/245014/
+* "geektimes.ru - Почта США отказывается отправлять посылки в Крым":http://geektimes.ru/post/244912/
+* "geektimes.ru - HP и Dell тоже запретили продажи техники в Крыму":http://geektimes.ru/post/244832/
+* "geektimes.ru - Google Chrome в Крыму всё":http://geektimes.ru/post/245116/
+* "geektimes.ru - Компания eBay прекращает работать с крымчанами":http://geektimes.ru/post/245110/
+* "habrahabr.ru - Apple заблокировала аккаунты разработчиков в Крыму":http://habrahabr.ru/post/248121/
+* "habrahabr.ru - Google AdSense присоединился к санкциям в Крыму":http://habrahabr.ru/post/248625/
+* "habrahabr.ru - Google Apps прекращает доступ к своим сервисам из Крыма":http://geektimes.ru/post/244768/
+* "habrahabr.ru - GoDaddy прекращает обслуживание доменных имен крымчан":http://habrahabr.ru/post/249257/
+* "lenta.ru - Обама ввел экономическую блокаду Крыма":http://lenta.ru/news/2014/12/20/usasanctions/
+* "lenta.ru - Американским компаниям дали месяц на прекращение бизнеса с Крымом":http://lenta.ru/news/2014/12/31/companies/
+* "lenta.ru - СМИ сообщили об удалении приложений крымских программистов из App Store":http://lenta.ru/news/2015/01/19/apple/
+* "lenta.ru - Крупнейший регистратор доменных имен GoDaddy уйдет из Крыма":http://lenta.ru/news/2015/01/30/godaddy/
+* "lenta.ru - eBay прекратил обслуживать пользователей в Крыму":http://lenta.ru/news/2015/01/30/ebaycrimea/
+* "lenta.ru - Крым в интернет-изоляции":http://lenta.ru/articles/2015/02/03/intercrimea/
+* "lenta.ru - ЕС заявил о сохранении санкций против Крыма":http://lenta.ru/news/2015/03/16/sanctions/
+* "lenta.ru - Жителям Крыма закрыли доступ к World of Warcraft":http://lenta.ru/news/2015/04/07/crimeanobattlenet/
+* "crimea.comments.ua - Google AdSense заблокировал Крым":http://crimea.comments.ua/news/2015/01/23/121200.html
+* "crimea.comments.ua - Британская платежная система Skrill уходит из Крыма":http://crimea.comments.ua/news/2015/01/22/123800.html
+* "kommersant.ru - Крым попал в технологическое окружение":http://kommersant.ru/Doc/2653939
+* "kommersant.ru - Финансовый сервис Payoneer прекращает обслуживать жителей Крыма":http://www.kommersant.ru/doc/2654814
+* "kommersant.ru - Amazon прекращает работу в Крыму":http://kommersant.ru/doc/2661452
+* "news.allcrimea.net - PayPal перестал принимать переводы на крымские счета":http://news.allcrimea.net/news/2015/1/21/platezhnaya-sistema-PayPal-perestala-prinimat-perevody-na-krymskie-scheta-29515/
+* "top.rbc.ru - Apple запретила продавать свою технику в Крыму":http://top.rbc.ru/technology_and_media/21/01/2015/54bfbd8d9a7947678c17c724
+* "itar-tass.com - Google ограничит доступ к ряду своих сервисов для жителей Крыма":http://itar-tass.com/ekonomika/1716942
+* "krymedia.ru - Регистратор доменных имен GoDaddy закроет аккаунты крымчан":http://krymedia.ru/economics/3369308-krupneishyi-v-myre-rehystrator-domennykh-ymen-GoDaddy-zakroet-akkaunty-krymchan
+* "siliconrus.com - GoDaddy выставит на продажу домены пользователей из Крыма":http://siliconrus.com/2015/01/godaddy-block/
+* "news.mail.ru - Доменный регистратор GoDaddy отключит сайты в Крыму":https://news.mail.ru/inregions/crimea/110/society/20919759/?frommail=1
+* "news.mail.ru - Международные домены, принадлежащие крымчанам, удалят к 15 марта":https://news.mail.ru/inregions/crimea/110/economics/21217731/?frommail=1
+* "cit.ua - Все доменные имена крымчан в международных зонах, должны быть удалены":http://cit.ua/article/44076/
+* "blackseanews.net - Под санкции попал главный банк Крыма - РНКБ":http://www.blackseanews.net/read/96460
+* "c-inform.info - Все международные домены, принадлежащие крымчанам, будут удалены к 15 марта":http://www.c-inform.info/news/id/19577
+* "krymedia.ru - Крупнейший китайский интернет-магазин ввел санкции в отношении Крыма":http://krymedia.ru/economics/3385778-krupneishyi-kytaiskyi-ynternet-mahazyn-vvel-sanktsyy-v-otnoshenyy-kryma

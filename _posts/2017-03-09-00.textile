@@ -1,0 +1,20 @@
+---
+layout:     post
+title:      "Ремонт и обслуживание роутеров D-Link"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [openwrt]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+---
+
+h3. Внешние ссылки
+
+* "OpenWrt: D-Link DIR-300Bx/DIR-600Bx":https://wiki.openwrt.org/ru/toh/d-link/dir-300revb
+

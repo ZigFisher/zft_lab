@@ -1,0 +1,15 @@
+---
+layout:     post
+title:      "Список платёжных систем и сервисов"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [price]
+---
+
+
+|_=. Сервисы и услуги различных компаний                            |_=. PayPal  |_=. WebMoney  |_=. YandexMoney  |_=. Qiwi  |
+|                                                                   |            |              |                 |          |
+|Магазин китайских товаров "AliExpress.com":https://aliexpress.com  |=. да       |=. да         |=. да            |=. да     |
+|Магазин китайских товаров "TinyDeal.com":https://tinydeal.com      |=. да       |=. да         |=. да            |=. да     |
+|                                                                   |            |              |                 |          |

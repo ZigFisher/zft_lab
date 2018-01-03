@@ -1,0 +1,42 @@
+---
+layout:     post
+title:      "HiLink HLK-RM04 - WiFi модуль с возможностью установки OpenWrt"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [hilink, hlk-rm04]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+p. Служебный адрес, по которому можно заменить загрузчик, поддерживающий OpenWrt
+
+p. http://192.168.16.254/adm/hlk_update_www_hlktech_com.asp
+
+p. pre. make kernel_menuconfig' -> Kernel hacking -> 'rootfstype=squashfs,jffs2 mem=32M'
+
+p. @make kernel_menuconfig' -> Kernel hacking -> 'rootfstype=squashfs,jffs2 mem=32M'@
+
+---
+
+h3. Сравнение с роутером "Брикет"
+
+p. *
+
+
+---
+
+h3. Внешние ссылки
+
+* "MySKU: Путешествия из COM в Wi-Fi и обратно":https://mysku.ru/blog/china-stores/27123.html
+* "OpenWrt: Hi-Link HLK-RM04":https://wiki.openwrt.org/toh/hilink/hlk-rm04
+* "GitHub: OpenWrt patch and installation guide for HiLink HLK-RM04":https://github.com/JiapengLi/OpenWrt-HiLink-HLK-RM04
+* "GitHub: Patches to compile OpenWrt Linux on Ralink RT5350-based routers":https://github.com/Squonk42/OpenWrt-RT5350
+* "OpenWrt Forum: Hi-Link wireless module HLK-RM04":https://forum.openwrt.org/viewtopic.php?id=42142
+* "HLK-RM04 Embedded Linux":http://www.dnclabs.com/?p=1246
+* "OpenWrt patch and installtion guide for HiLink HLK-RM04":https://libraries.io/github/ntavish/OpenWrt-HiLink-HLK-RM04
+* "First Impression on HLK-RM04 Serial-to-WiFi Module":https://rayshobby.net/first-impression-on-hlk-rm04-serial-to-wifi-module/
+* Upgrade memory to 32M discussion: "one":https://forum.openwrt.org/viewtopic.php?id=37002&p=18 "two":https://forum.openwrt.org/viewtopic.php?pid=196176#p196176

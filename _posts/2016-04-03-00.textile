@@ -1,0 +1,40 @@
+---
+layout:     post
+title:      "Заметки по Wine"
+tagline:    ""
+category:   ""
+group:      notes
+tags:       [wine, linux, notes]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Установка и настройка Wine
+
+p. Установка
+
+pre. sudo apt-get install wine
+
+p. Установить необходимые пакеты
+
+pre. sudo apt-get install cabextract
+
+p. Скачать и установить инсталлятор библиотек winetricks
+
+pre. wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+chmod +x winetricks
+
+p. Установить необходимые библиотеки Windows
+
+pre. ./winetricks mfc42
+
+---
+
+h3. Внешние ссылки
+
+* -

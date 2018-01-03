@@ -1,0 +1,22 @@
+---
+layout:     post
+title:      "Использование GO в Linux"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [go]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Внешние ссылки
+
+* "Habrahabr: С чего начать новичку в Go":http://habrahabr.ru/post/269355/
+* "Download Go installer":https://golang.org/dl/
+
+* "Gogs: легковесный git-сервис на GO":https://habrahabr.ru/company/selectel/blog/305422/

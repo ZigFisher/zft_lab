@@ -1,0 +1,15 @@
+---
+layout:     post
+title:      "GPRS термометр на базе роутера Asus"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [flymon, energy]
+---
+
+
+h3. Описание
+
+
+h3. Фото сборки конструкции
+

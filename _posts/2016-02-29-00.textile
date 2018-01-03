@@ -1,0 +1,86 @@
+---
+layout:     post
+title:      "Модули на базе ESP8266"
+tagline:    ""
+category:   ""
+group:      smarthouse
+tags:       [esp8266]
+---
+
+
+
+h3. Модули NodeMCU
+
+* В процессе описания..
+
+!/images/2016022933.jpg!
+
+!/images/2016022934.jpg!
+
+!/images/2016022935.jpg!
+
+---
+
+h3. Модули и шилды WeMos
+
+* В процессе описания..
+
+!/images/2016022937.jpg!
+
+!/images/2016022938.jpg!
+
+!/images/2016022939.jpg!
+
+---
+
+h3. Измерительный стенд
+
+* В процессе описания..
+
+!/images/2016022941.jpg!
+
+!/images/2016022942.jpg!
+
+---
+
+h3. Другие платы
+
+* В процессе описания..
+
+!/images/2016022951.jpg!
+
+!/images/2016022952.jpg!
+
+!/images/2016022953.jpg!
+
+!/images/2016022954.jpg!
+
+!/images/2016022955.jpg!
+
+!/images/2016022956.jpg!
+
+!/images/2016022957.jpg!
+
+!/images/2016022958.jpg!
+
+---
+
+h3. Добавление внешнего стабилизатора питания на плату AI-thinker
+
+* В процессе описания..
+
+!/images/2016022961.jpg!
+
+!/images/2016022962.jpg!
+
+!/images/2016022963.jpg!
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'smarthouse' %}
+  {% include JB/pages_list %}
+</ul>

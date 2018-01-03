@@ -1,0 +1,94 @@
+---
+layout:     post
+title:      "Подключение передатчика RCremote 315/433 MHz"
+tagline:    ""
+category:   ""
+group:      smarthouse
+tags:       [esp8266]
+---
+
+
+h3. Введение
+
+p. Модуль ESP8266, при наличии передатчика 315/433 MHz, имеет возможность управления беспроводными розетками и лампочками.
+
+---
+
+h3. Коды команд (системный код 11111 - все в положении ON)
+
+|_. Кнопка |_. ON                                                          |_. OFF                                                         |
+| A        | "1361":http://172.17.32.100/rcremote?bits=24&per=350&cmd=1361 | "1364":http://172.17.32.100/rcremote?bits=24&per=350&cmd=1364 |
+| B        | "4433":http://172.17.32.100/rcremote?bits=24&per=350&cmd=4433 | "4436":http://172.17.32.100/rcremote?bits=24&per=350&cmd=4436 |
+| C        | "5201":http://172.17.32.100/rcremote?bits=24&per=350&cmd=5201 | "5204":http://172.17.32.100/rcremote?bits=24&per=350&cmd=5204 |
+| D        | "5393":http://172.17.32.100/rcremote?bits=24&per=350&cmd=5393 | "5396":http://172.17.32.100/rcremote?bits=24&per=350&cmd=5396 |
+|          |                                                               |                                                               |
+
+---
+
+h3. Практические примеры команд для браузера
+
+* "http://172.17.32.245/rcremote?pin=12&bits=24&per=350&cmd=1361":http://172.17.32.245/rcremote?pin=12&bits=24&per=350&cmd=1361
+* "http://172.17.32.245/rcremote?pin=12&bits=24&per=350&cmd=1364":http://172.17.32.245/rcremote?pin=12&bits=24&per=350&cmd=1364
+
+---
+
+h3. Типы оборудования
+
+
+p. Наиболее распространённый комплект дешёвого передатчика и приёмника.
+
+!/images/2015032401.jpg!
+
+---
+
+p. Второй по популярности комплект. Может использоваться как простейший блокировщик зажигания на мопед и т.д.
+
+!/images/2015032402.jpg!
+
+!/images/2015032403.jpg!
+
+!/images/2015032404.jpg!
+
+---
+
+p. Пульт управления от радиоуправляемых розеток, изготавливаемых в Польше.
+
+!/images/2015032405.jpg!
+
+!/images/2015032406.jpg!
+
+!/images/2015032407.jpg!
+
+---
+
+p. Небольшая коллекция устройств.
+
+!/images/2015032408.jpg!
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'smarthouse' %}
+  {% include JB/pages_list %}
+</ul>
+
+---
+
+h3. Внешние ссылки
+
+* "MySKU: Удаленное управление устройствами по радиоканалу на ATiny85 и приемнике 433 MHz":http://mysku.ru/blog/aliexpress/39707.html
+* "MySKU: Обзор сравнение доступных приемников и передатчиков диапазона 433 MHz":http://mysku.ru/blog/aliexpress/46221.html
+* "Geektimes: Тысяча первый способ управления радиорозетками":http://geektimes.ru/company/masterkit/blog/264766/
+* "Habrahabr: Туннель WiFi-RcSwitch для управления светом":http://geektimes.ru/post/263556/
+* "Homes-Smart: Прием сигналов 433/315мгц на esp8266":http://homes-smart.ru/index.php/component/kunena/4-zhelezo/844-priem-signalov-433-315mgts-na-esp8266
+* "Instructables: Decoding and sending 433MHz RF codes with Arduino and rc-switch":http://www.instructables.com/id/Decoding-and-sending-433MHz-RF-codes-with-Arduino-/?ALLSTEPS
+* "GitHub: RCSwitch Linux Kernel module - operates 434MHz RCSwitches":https://github.com/wendlers/rcswitch-kmod
+* "GitHub: Port of RCswitch for any kind of GPIO module [without WiringPi]":https://github.com/apiel/rcswitch
+* "GitHub: Simple tools for handling OOK RF transmission/reception on ISM bands [old]":https://github.com/tandersson/rf-bitbanger
+* "GitHub: Linux driver and control tool for 433 MHz communication on Raspberry Pi [no_check]":https://github.com/troglobit/rfctl
+* "GitHub: A simple GPIO-based OOK modulation driver for OpenWrt [no_check]":https://github.com/jcrona/ook-gpio
+* "GitHub: A command-line tool to control 433MHz OOK based devices [no_check]":https://github.com/jcrona/rf-ctrl
+

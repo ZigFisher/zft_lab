@@ -1,0 +1,168 @@
+---
+layout:     post
+title:      "Система автоматического отображения графиков"
+tagline:    ""
+category:   ""
+group:      flymon
+tags:       [esp8266, smarthouse, graph]
+---
+
+
+h3. Общее описание
+
+p. Тестовая система автоматического отображения "графиков":http://esp8266.flymon.net предназначена для удобной визуализации поступающих телеметрических данных с проектов "Homes-Smart":http://homes-smart.ru, "FlyMon":http://flymon.net, FlyPeek, OctoniX и других.
+
+!/images/2014120801.jpg!
+
+---
+
+h3. Групповые графики - Примеры использования
+
+* "Графики с роутеров Ralink на сервере мониторинга ESP8266":http://esp8266.flymon.net/?macs=000C4370AAD3,2C67FBD26324,2C67FBD273FC,2C67FBD3B41E,2C67FBD28BAA,2C67FBD3B38C&period=6h
+* "Демонстрационные устройства Chrille":http://esp8266.pw/?macs=18FE349BBE63,18FE349D69B6,18FE349C9D88,18FE349BC1DC,18FE349D6A47&period=6h
+* "демонстрационные утройства Umka":http://esp8266.flymon.net/?macs=18FE34A6D32F,18FE34A6D2CA&graphs=hum,temp,pres&period=6h
+* "Графики с датчиков: Vegetary + Weather + ZFT_Lab. + Agronom-1 [6h]":http://esp8266.flymon.net/?macs=000C4370AAD3,2C67FBD273FC,2C67FBD28BAA,18FE349CC3D1&period=6h
+* "Графики с датчиков: Health + Serejka [6h]":http://esp8266.flymon.net/?macs=18FE3499A3D1,2C67FBD3B13A&period=6h
+* "Графики с датчиков: Semenovka [6h]":http://esp8266.flymon.net/?macs=2C67FBD3B38C&period=6h
+* "Графики с датчиков: Dacha-GW + Bricket-electro + Bricket-gas + Weather [6h]":http://esp8266.flymon.net/?macs=647002F037C5,2C67FBD26324,2C67FBD3B41E,18FE34A041F9&period=6h
+* "Графики с датчиков: PowerMonitor [6h]":http://esp8266.flymon.net/?macs=18FE349F8559&period=6h
+* -
+* "Эталонные графики с контрольными метками [6h]":http://zftlab.org/charts.html?macs=18FE34000000&period=6h
+
+---
+
+h3. Список аргументов period, для отображения графиков
+
+p. Для предоставления возможности отображения графиков за указанный интервал времени введена переменная *period*.
+
+p. На примере ниже, будут отображаться групповые графики за последние 3 часа (3h).
+
+pre. http://esp8266.flymon.net/?macs=000C4370AAD3,2C67FBD273FC,18FE349CC3D1&period=3h
+
+|_. Аргумент |_. Значения    |
+| m          | Минуты        |
+| h          | Часы          |
+| d          | Дни           |
+| w          | Недели        |
+|            |               |
+
+---
+
+h3. Список аргументов start, для отображения графиков
+
+p. Для предоставления возможности отображения графиков с запрашиваемой даты введена переменная *start*.
+
+p. Переменная *start* всегда используется совместно с переменной *period*, указывающей какой промежуток времени необходимо отображать на графике с начала даты.
+
+p. На примере ниже, будут отображаться групповые графики за первые 3 часа 01 января 2016г.
+
+pre. http://esp8266.flymon.net/?macs=000C4370AAD3,2C67FBD273FC,18FE349CC3D1&start=2016-01-01&period=3h
+
+---
+
+h3. Список аргументов graphs, для отображения графиков
+
+p. Для предоставления возможности отображения только необходимых графиков введена переменная *graphs*. При указании аргументов, система показывает необходимые графики, вне зависимости от типов и количества датчиков, подключенных к устройствам.
+
+p. Порядок отображения графиков соответствует порядку их указания в URL.
+
+p. Все метрики сгруппированы по их сущности, а собственно аргументы переменной вводятся через запятую как и MAC-адреса устройств. На примере ниже, будут отображаться только групповые графики hum (влажность) и temp (температура) перечисленных в URL устройств.
+
+pre. http://esp8266.flymon.net/?macs=000C4370AAD3,2C67FBD273FC,18FE349CC3D1&graphs=hum,temp
+
+|_. Аргумент |_. Значения                       |_. Метрики                                       |
+| accurr     | AC Current (A)                   | pmc                                             |
+| acpwh      | AC Power/Hours (Wt/H)            | pmwh                                            |
+| acpwr      | AC Power (Wt)                    | pmw                                             |
+| acvolt     | AC Voltage (V)                   | pmv                                             |
+| adc        | Analog-to-digital converter      | adc adcX nrfXaY                                 |
+| bright     | Brightness (Lux)                 | light                                           |
+| co2        | CO2 control (ppm)                | co2 ccsco2                                      |
+| count      | Counter (ps)                     | counter countrst nrf1c1                         |
+| curr       | Current (mA)                     | inac cvc                                        |
+| gpio       | GPIO Monitor                     | mcpgpioX gpioint gpioX gpioutX nrfXgY           |
+| hum        | Humidity (%)                     | amh dhthX bmeh nrfXhY shth                      |
+| mem        | Free Memory                      | freememory                                      |
+| pres       | Atmospheric pressure (mmHg)      | bmpp bmep                                       |
+| pwm        | Pulse-Width Modulation status    | pwm pwmX                                        |
+| rssi       | RSSI level (dBm)                 | rssi                                            |
+| scale      | Scale (?)                        | scale                                           |
+| temp       | Temperature (C)                  | amt lm bmpt bmet dhttX ds dswX heat nrfXtY shtt |
+| up         | Uptime & Connections (sec)       | uptime                                          |
+| usound     | Ultrasound distance (mm)         | hcsr04                                          |
+| voc        | Volatile Organic Compounds (ppm) | ccstvoc                                         |
+| volt       | Voltage (mV)                     | vdd inav cvv                                    |
+|            |                                  |                                                 |
+
+---
+
+h3. Отключение "шапки" при отображении графиков
+
+p. Для отключения "шапки" сервиса, т.е. лого проекта и информационных сообщений, добавьте */console.html* в конец URL
+
+p. На примере ниже, будут отображаться групповые графики температуры и влажности за последние 30 минут и без "шапки".
+
+pre. http://esp8266.flymon.net/console.html?macs=18FE349B8FB1&graphs=temp,hum&period=30m
+
+---
+
+h3. Новые возможности
+
+* По основной ссылке работают как групповые, так и индивидуальные графики
+* Для индивидуальных необходимо в конце URL добавить MAC нужного устройства
+* Графики разбиты на типы и отображают показания всех сенсоров: temp, hum и т.д.
+* В "легенде" (подпись и балун) помимо Hostname отображается и имя сенсора
+* Чёткий порядок в отображении графиков (раньше был случайный)
+* Возможно указать один или несколько MAC в URL для отображения всех устройств
+* Введена переменная period, время задаётся в часах (по-умолчанию - 12h)
+* Порядок переменных в URL не критичен
+* Добавлена метрика gpioint (датчик движения или сухой контакт на gpio1)
+* Добавлена метрика adc (встроенный АЦП на ESP8266)
+* Добавлены метрики counter и countrst (сбрасываемый счётчик)
+* Добавлены графики и метрики rssi, pwm, cvv, nrfXYZ
+* Добавлены дополнительные графики для отображения счётчиков
+* Добавлены графики для AC EnergyMonitor-ов
+* Добавлены графики и метрики heat, mcpgpioX
+* Появилась возможность указания аргументов для отображения графиков
+
+---
+
+h3. Планы на будущее
+
+* В личном кабинете задать любому датчику, например dsw1 произвольное имя "Прихожая" и т.д.
+* Оновление графиков каждую минуту без перезагрузки страницы
+* Интеграция графиков на Dashboard-ы FlyPeek
+
+p. Предложения, пожелания, замечания приветствуются.
+
+---
+
+h3. Разработка графиков для счётчиков импульсов
+
+!/images/2014120802.jpg!
+
+---
+
+!/images/2014120803.jpg!
+
+---
+
+!/images/2014120804.jpg!
+
+---
+
+h3. Внешние ссылки
+
+* "YouTube: Как настроить FlyMon в прошивке wifi-iot.ru":https://www.youtube.com/watch?v=9ElaIpWBbUw
+* "Homes-Smart: Список метрик, передаваемых на сервера":http://homes-smart.ru/index.php/oborudovanie/bez-provodov-wi-fi/67-otpravka-dannykh-na-http-server-majordomo-na-esp8266
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'smarthouse' %}
+  {% include JB/pages_list %}
+</ul>
+

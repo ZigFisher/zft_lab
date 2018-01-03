@@ -1,0 +1,81 @@
+---
+layout:     post
+title:      "Используем дома Xiaomi MiFlora Sensor "
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, miflora]
+---
+
+
+h3. Введение
+
+p. Описание и хакинг будут добавлены чуть позже.
+
+---
+
+h3. Фото
+
+!/images/2017012501.jpg!
+
+p. Устройство пришло ко мне из Китая в простейшей пупырчатой упаковке.
+
+---
+
+h3. Интеграция
+
+p. Инсталляция пакетов в Debian
+
+pre. sudo apt-get install --no-install-recommends bluetooth
+
+p. Сканирование и обнаружение устройств
+
+pre. #
+hcitool lescan
+LE Scan ...
+XX:XX:XX:XX:XX:XX Flower mate
+
+p. You can simply try to read from command line:
+
+pre. gatttool --device=MAC_ADDRESS --char-read -a 0x35
+
+p. Другие примеры
+
+pre. #
+hciconfig hci0 down
+hciconfig hci0 up
+python3 flower.py C4:7C:8D:61:9C:C8
+
+pre. #
+Getting data from MiFlora
+FW: 2.6.6
+Name: Flower care
+Temperature: 27.9
+Moisture: 75
+Light: 40
+Conductivity: 1953
+Battery: 100
+pi@raspberrypi:~/miflora $
+
+
+
+---
+
+h3. Внешние ссылки
+
+* "Обзор Xiaomi FlowerMonitor":http://xiaomiru.blogspot.ru/2016/07/xiaomi-flowermonitor_14.html
+* "MySKU: Xiaomi Flower Monitor - устройство для заботы о цветах":http://mysku.ru/blog/china-stores/43295.html
+* "Node-RED: Xiaomi Miflora sensor integration":http://flows.nodered.org/flow/b1af1d000ff5bf854afa97f025d33feb
+* "Xiaomi Miflora Sensor Integration":https://community.openhab.org/t/xiaomi-miflora-sensor-integration/17453
+* "Xiaomi Flora Plant Monitor teardown and analysis":https://wiki.hackerspace.pl/projects:xiaomi-flora
+* "Monitor your plants with Home Assistan":https://www.open-homeautomation.com/2016/08/29/monitor-your-plants-with-home-assistant/
+* "Xiaomi MI Plants Monitor Flower":https://community.home-assistant.io/t/xiaomi-mi-plants-monitor-flower/3388/3
+* -
+* "Get started with Bluetooth Low Energy":http://www.jaredwolff.com/blog/get-started-with-bluetooth-low-energy/
+* "RPi Bluetooth LE":http://www.elinux.org/RPi_Bluetooth_LE
+* "Bluetooth LE scan as non root?":http://unix.stackexchange.com/questions/96106/bluetooth-le-scan-as-non-root
+* -
+* "GitHub: Script to read Xiaomi Flora values and publish it via MQTT":https://github.com/marcelrv/miflora
+* "GitHub: MQTT Flora daemon":https://github.com/janwh/miflora-mqtt-daemon
+
+* "":

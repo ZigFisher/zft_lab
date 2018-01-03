@@ -1,0 +1,43 @@
+---
+layout:     post
+title:      "Использование mjpg-streamer и различные USB UVC видеокамеры"
+tagline:    ""
+category:   ""
+group:      bricket
+tags:       [video, uvc]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+---
+
+h3. Получение текущих параметров и доступных разрешений UVC камер
+
+p. Для получения информации о камере в формате json выполните команду:
+
+pre. http://192.168.1.1:8080/input_0.json
+
+p. Изменение параметров для корректного баланса белого (-wb auto)
+
+pre. procd_set_param command "$PROG" --input "$input_arg -wb auto" --output "$output_arg"
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'bricket' %}
+  {% include JB/pages_list %}
+</ul>
+
+---
+
+h3. Внешние ссылки
+
+* "":
+* "":
+

@@ -1,0 +1,29 @@
+---
+layout:     post
+title:      "Получение RTSP потока и трансляция на сайте в HTML5"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [h264,webm,html5,ffmpeg]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+* В ffmpeg существуют ключ, который устанавливает метаданные в начало файла: -movflags +faststart
+
+---
+
+h3. Внешние ссылки
+
+* "Какой бывает HTML5-стриминг и почему mp4-стриминга не существует":https://erlyvideo.ru/post/2016-12-13-html5-streaming
+* "HabraHabr: HTML5 Video — от А до Я":https://habrahabr.ru/post/104591/
+* "HabraHabr: 19 команд ffmpeg для любых нужд":https://habrahabr.ru/post/171213/
+* "GeekTimes: Конвертер аудио/видео файлов FFmpeg":https://geektimes.ru/post/119834/
+* "HTML Video Example. Courtesy of Big Buck Bunny.":https://www.w3schools.com/html/html5_video.asp
+* "Streaming live WebM video with FFmpeg":https://www.virag.si/2012/11/streaming-live-webm-video-with-ffmpeg/
+* "Video for everybody generator":http://v4e.thewikies.com/
+* "GitHub: H5S is a HTML5 streaming server, HTML5 RTSP Gateway":https://github.com/veyesys/h5stream
+* "Kerberos.io is a free video surveillance solution":https://kerberos.io/

@@ -1,0 +1,21 @@
+---
+layout:     post
+title:      "Создание OpenWRT прошивки для камеры DCS-932L"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, dlink]
+---
+
+
+h3. Введение
+
+p. В процессе..
+
+---
+
+h3. Внешние ссылки
+
+* "Продолжил играть с IP-камерой D-Link DCS-930":http://hedgeov.livejournal.com/341235.html?thread=1132787
+* "OpenWRT Wiki: D-Link DCS-930L/932L/933L":https://wiki.openwrt.org/toh/d-link/dcs-930l#dcs-932l-a1
+* "BestManual: Sitecom WL-326 OpenWrt update":http://linuxehacking.ovh/2015/10/08/sitecom-wl-326-openwrt-update/

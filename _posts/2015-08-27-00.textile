@@ -1,0 +1,79 @@
+---
+layout:     post
+title:      "Увеличение количества GPIO в MR3220 при помощи I2C"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, gpio, i2c]
+---
+
+
+h3. Справочник команд
+
+p. Активировать расширитель портов gpio на чипе pcf8574, с адресом 0x27 (0x20) на шине I2C
+
+pre. echo "pcf8574 0x27" >/sys/bus/i2c/devices/i2c-0/new_device
+
+---
+
+p. Зарегистрировать в системе gpio59
+
+pre. echo 59 >/sys/class/gpio/export
+
+---
+
+p. Перевести gpio59 в режим выхода, для управления светодиодом или реле
+
+pre. echo out >/sys/class/gpio/gpio59/direction
+
+---
+
+p. Зажечь светодиод, подключенный на gpio59 (или подсветку LCD дисплея)
+
+pre. echo 1 >/sys/class/gpio/gpio59/value
+
+---
+
+p. Перевести gpio59 в режим входа, для подключения датчиков или кнопки
+
+pre. echo in >/sys/class/gpio/gpio59/direction
+
+---
+
+p. Считать статус gpio59 (0 или 1)
+
+pre. cat /sys/class/gpio/gpio59/value
+
+---
+
+p. Просмотреть статус всех gpio в системе
+
+pre. cat /sys/kernel/debug/gpio
+
+---
+
+h3. Фото
+
+!/images/2014082701.jpg!
+
+---
+
+!/images/2014082702.jpg!
+
+---
+
+h3. Внешние ссылки
+
+* "Описание особенностей OpenWrt на TP-Link TL-MR3420 & TL-MR3220":http://wiki.openwrt.org/ru/toh/tp-link/tl-mr3420
+* "Linux: кнопки, светодиоды и GPIO":http://habrahabr.ru/post/236251/
+* "Работа с таймерами и прерываниями GPIO в OpenWRT":http://habrahabr.ru/company/blackswift/blog/259357/
+* "Обработка последовательного нажатия кнопок в hotplug.d":http://tt.erinome.net/2013/03/490
+* "Использование аппаратных кнопок в OpenWrt Barrier Breaker":http://defblog.tk/2013/11/30/ispolzovanie-apparatnyh-knopok-v-openwrt-barrier/
+* "Adding an I2C interface to the TL-WR703N":http://www.pragti.ch/kippycam/2012/08/15/Adding-an-I2C-interface-to-the-TL-WR703N/
+* "How to use GPIO signals":https://developer.ridgerun.com/wiki/index.php/How_to_use_GPIO_signals
+* "OpenWrt Wiki: GPIO manual":http://wiki.openwrt.org/doc/hardware/port.gpio
+* "OpenWrt Wiki: Attach functions to a push button":http://wiki.openwrt.org/doc/howto/hardware.button
+* "Add sensors to your router. Use GPIO and sensors on OpenWrt":http://www.instructables.com/id/Use-GPIO-and-sensors-on-OpenWrt/?ALLSTEPS
+* "Playing with GPIO and sensors on OpenWrt":http://hacklabos.org/2014/04/playing-with-gpio-and-sensors-on-openwrt/
+* "OpenWrt GPIO":http://trac.gateworks.com/wiki/OpenWrt/gpio
+* "How to register a GPIO as Led or Button":http://wiki.wrtnode.com/index.php?title=How_to_register_a_GPIO_as_Led_or_Button

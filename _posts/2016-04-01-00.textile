@@ -1,0 +1,86 @@
+---
+layout:     post
+title:      "Авторские работы на тему IoT от neorender"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [logo]
+---
+
+
+h3. Вайфаюшка - сеть WiFi хотспотов 
+
+p. Вариант логотипа № 1
+
+!/images/2016042701.jpg!
+
+---
+
+p. Вариант логотипа № 2
+
+!/images/2016042702.jpg!
+
+---
+
+h3. WiFi-IoT - конструктор прошивок для ESP8266
+
+p. Вариант логотипа
+
+!/images/2016040101.jpg!
+
+---
+
+h3. Homes-Smart - сайт домашней автоматизации
+
+p. Вариант логотипа
+
+!/images/2016040105.jpg!
+
+---
+
+h3. OctoniX [UA] - Научно-производственное объединение
+
+p. Вариант логотипа № 1
+
+!/images/2016040102.jpg!
+
+---
+
+p. Вариант логотипа № 2
+
+!/images/2016040103.jpg!
+
+---
+
+h3. Баг-трекер от mr.Dolfik
+
+p. Вариант логотипа
+
+!/images/2016040104.jpg!
+
+---
+
+h3. Дизайн интерфейса для прошивки ESP8266
+
+p. Вариант № 1
+
+!/images/2014110103.jpg!
+
+!/images/2014110104.jpg!
+
+---
+
+p. Вариант № 2
+
+!/images/2014110105.jpg!
+
+!/images/2014110106.jpg!
+
+---
+
+h3. Внешние ссылки
+
+* "Вайфаюшка":http://mywifi.cc
+* "WiFi-IoT":http://wifi-iot.com
+* "Octonix":http://octonix.net
+* "BugNet":http://dolfik-001-site1.btempurl.com

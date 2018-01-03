@@ -1,0 +1,46 @@
+---
+layout:     post
+title:      "Upgrade TP-Link WA7510N to Ubiquiti NanoStation M5"
+tagline:    ""
+category:   ""
+group:      best
+tags:       [best, hwmod, firmware, tplink, ubiquiti, airmax]
+---
+
+
+h3. Введение
+
+p. Так как "начинка" TP-Link WA7510N не соответствует принятым в Ubiquiti стандартам (GPIO управления приемо-передающим трактом, кнопкой Reset и т.д.), а микросхема SPI flash всего 4 Mb (в Ubiquiti M-серии всегда 8 Mb), сменой программного обеспечения не обойтись - нужна аппаратная модификация.
+
+p. **Переделка устройства понятна, проста и состоит из нескольких этапов :**
+
+* Удалить резистор и припаять длинную перемычку в радио-тракте вдоль земляной шины для экрана
+* Перерезать дорожку и припаять перемычку на Reset (достаточно тонкая и сложная работа)
+* Выпаять старую 4 Mb и запаять новую 8 Mb микросхему SPI flash (прошитую на программаторе)
+
+<hr>
+
+h3. Фотографии аппаратной переделки
+
+!/images/2013051101.jpg!
+
+!/images/2013051102.jpg!
+
+!/images/2013051103.jpg!
+
+!/images/2013051104.jpg!
+
+!/images/2013051105.jpg!
+
+<hr>
+
+h3. Прошивки
+
+All firmware for upgrade TP-Link's you can download "here":http://flyrouter.net/downloads/software/
+Last stable version - "XM.v5.5.0.06.wa7510n.12536.131202.2302.bin":http://flyrouter.net/downloads/software/wa7510n/firmware/XM.v5.5.0.06.wa7510n.12536.131202.2302.bin
+More info about new firmware "here":/pages/2013032500.html
+
+Все прошивки для переделываемых устройств можно брать "тут":http://flyrouter.net/downloads/software/
+Последняя стабильная версия - "XM.v5.5.0.06.wa7510n.12536.131202.2302.bin":http://flyrouter.net/downloads/software/wa7510n/firmware/XM.v5.5.0.06.wa7510n.12536.131202.2302.bin
+Full_Flash для программатора будет доступен несколько позже.
+Подробнее о изменениях в прошивках можно прочитать "тут":/pages/2013032500.html

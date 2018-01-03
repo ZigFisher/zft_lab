@@ -1,0 +1,31 @@
+---
+layout:     post
+title:      "OnLine мониторинг автономной энергосистемы"
+tagline:    ""
+category:   ""
+group:      smarthouse
+tags:       [energy, 12volt]
+---
+
+
+h3. Описание
+
+p. Измерительный модуль выполнен на микросхеме INA219 и подключен по шине I2C к модулю ESP8266. Ранее модуль был подключен к роутеру Siemens SL2-141i (RTA1025W board). Отрисовка графиков реализована при помощи ThingSpeak.
+
+
+<html>
+<br><br>
+
+<iframe width="640" height="360" style="border: 1px solid #cccccc;" src="http://api.thingspeak.com/channels/18220/charts/1?width=640&height=360&timescale=15&days=1&dynamic=true&type=spline&color=%232EF200&title=<b>Voltage</b>"></iframe><br>
+<center><b>Напряжение на аккумуляторных батареях</b></center><br><br>
+
+<iframe width="640" height="360" style="border: 1px solid #cccccc;" src="http://api.thingspeak.com/channels/18220/charts/2?width=640&height=360&timescale=15&days=1&dynamic=true&type=spline&color=red&title=<b>Current</b>"></iframe><br>
+<center><b>Ток заряда и разряда аккумуляторных батарей</b></center><br><br>
+
+<iframe width="640" height="360" style="border: 1px solid #cccccc;" src="http://api.thingspeak.com/channels/18220/charts/3?width=640&height=360&timescale=15&days=1&dynamic=true&type=spline&color=orange&title=<b>Temperature</b>"></iframe><br>
+<center><b>Температура в мастерской</b></center><br><br>
+
+<iframe width="640" height="360" frameborder="0" scrolling="no" src="http://api.thingspeak.com/channels/18220/maps/channel_show?width=640&height=360"></iframe><br>
+<center><b>Пример отображения на карте</b></center><br><br>
+
+</html>

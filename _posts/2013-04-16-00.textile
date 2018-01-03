@@ -1,0 +1,19 @@
+---
+layout:     post
+title:      "Заметки по оборудованию Mikrotik"
+tagline:    ""
+category:   ""
+group:      notes
+tags:       [mikrotik, notes]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Внешние ссылки
+
+* "Mikrotik - дополнительный функционал и настройка":https://mstream.com.ua/mikrotik-dopolnitelniy-funkzional-i-nastroyka.html

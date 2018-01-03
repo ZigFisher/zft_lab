@@ -1,0 +1,153 @@
+---
+layout:     post
+title:      "Обновляемая подборка интересных ссылок"
+tagline:    ""
+category:   ""
+group:      other
+tags:       [links]
+---
+
+
+h3. Хабрахабр
+
+* "Хитрая канистра [анализатор спектра I2C]":http://habrahabr.ru/post/228771/
+* "Как услышать электромагнитные волны":http://habrahabr.ru/post/228729/
+* "DIY для детей. Собираем USB-микроскоп":http://habrahabr.ru/post/203166/
+* "Цифровой окуляр для микроскопа своими руками":http://habrahabr.ru/post/135571/
+* "Как определить местоположение по сетям сотовой связи [Cell ID]":http://habrahabr.ru/post/223635/
+* "Установка VNC-сервера на VDS и рекомендации по тюнингу":http://habrahabr.ru/post/77159/
+* "Pautomount - демон монтирования, запуска скриптов [читать комменты]":http://habrahabr.ru/post/220301/
+* "Десятимиллионный скрипт резервного копирования [python+rsync]":http://habrahabr.ru/post/228787/
+* "Умный дом - дешево и сердито, часть 2 [семистор + оптопара]":http://habrahabr.ru/post/223089/
+* "Онлайн тепловизор CamIRa":http://habrahabr.ru/company/camira/blog/222053/
+* "Как мы первый прототип строили [CamIRa]":http://habrahabr.ru/company/camira/blog/226351/
+* "Домофонный мультиключ и всё про имитацию «таблеток»":http://habrahabr.ru/post/229843/
+* "Никогда не «не делай» того, о чем пожалеешь или умный дом с CCU.IO":http://habrahabr.ru/post/227435/
+* "Sentri: домашняя система безопасности для гиков":http://habrahabr.ru/company/medgadgets/blog/229863/
+* "Netatmo - стильное ядро для умного дома [метеостанция]":http://habrahabr.ru/company/madrobots/blog/224663/
+* "Cue: медицинская диагностика на дому":http://habrahabr.ru/company/medgadgets/blog/226449/
+* "Простой wifi бот для мониторинга помещений или «кухонное» роботостроение":http://habrahabr.ru/post/153017/
+* "Как мы собирали Робоголову":http://habrahabr.ru/company/makeitlab/blog/227363/
+* "Модифицирование преобразователя USB-UART на чипе CP2102 для Arduino":http://habrahabr.ru/post/239401/
+* "Музыкальный программируемый школьный звонок «Школьник-4» [mr3020]":http://habrahabr.ru/post/228479/
+* "Мой опыт построения промышленной сети 1-Wire":http://habrahabr.ru/post/238501/
+* "mHealth — «мобильное» здравоохранение в современном мире":http://habrahabr.ru/company/medgadgets/blog/227159/
+* "Моя реализация «умного дома»":http://habrahabr.ru/post/228151/
+* "Управление домашними электроприборами («умный дом») через чат бот на Raspberry Pi":http://habrahabr.ru/post/238907/
+* "Начато производство беспроводных датчиков nooLite PM111 и PT111":http://habrahabr.ru/post/228343/
+* "Sensibo может любой кондиционер сделать «умным»":http://habrahabr.ru/company/medgadgets/blog/229695/
+* "Мой web-интерфейс управления умной квартирой":http://habrahabr.ru/post/229235/
+* "Sensibo может любой кондиционер сделать «умным» [irda]":http://habrahabr.ru/company/medgadgets/blog/229695/
+* "Хаб AnyMote Home сделает любое устройство в доме умным":http://habrahabr.ru/company/medgadgets/blog/238307/
+* "Съёмка показаний счетчика на телефон с последующим распознаванием":http://habrahabr.ru/post/220869/
+* "Автоматизация снятия показаний со счетчиков воды":http://habrahabr.ru/post/232903/
+* "Подключаем Arduino к счетчику электроэнергии":http://habrahabr.ru/post/234679/
+* "Создаем видеостену с трансляцией изображения с ip-камер через спутник с минимумом трафика":http://habrahabr.ru/post/239853/
+* "Открытый Терминальный Клиент ОТК-110 — уже продаём":http://habrahabr.ru/company/itfb/blog/218903/
+* "Умные часы своими руками за 1500 рублей. Часть 2 – плата и компоненты":http://habrahabr.ru/post/218645/
+* "Очередная умная розетка для очередного умного дома":http://habrahabr.ru/post/221247/
+* "Делаем управление «Умным домом» через интернет за пару минут":http://habrahabr.ru/post/219107/
+* "Съёмка показаний счетчика на телефон с последующим распознаванием":http://habrahabr.ru/post/220869/
+* "Домашняя автоматизация":http://habrahabr.ru/post/194402/
+* "Фотонаблюдение или timelapse видео на Raspberry Pi":http://habrahabr.ru/post/196598/
+* "Исследуем китайские роутеры на RT5350":http://habrahabr.ru/post/238713/
+* "Мелкосерийное производство микроэлектроники в Шэньчжэне (VoCore)":http://habrahabr.ru/company/makeitlab/blog/239625/
+* "Определитель типа блокировки сайтов у провайдера":http://habrahabr.ru/post/228305/
+* "Как IPv6 помогает роутеры ломать":http://habrahabr.ru/post/225539/
+* "Как я по кампусу ходил: заметки стороннего наблюдателя":http://habrahabr.ru/company/navigatorcampus/blog/227933/
+* "Интернет вещей приближается":http://habrahabr.ru/company/madrobots/blog/236115/
+
+
+* "Подключаем Arduino к счетчику электроэнергии":http://habrahabr.ru/post/234679/
+* "Дистанционное управление освещением на штатной проводке":http://habrahabr.ru/company/masterkit/blog/256839/
+
+h3. Гаджеты
+
+* "CliMate: самая маленькая в мире метеостанция":http://geektimes.ru/company/medgadgets/blog/249816/
+* -
+* "ПЛК Ace: маленький контроллер для 'умного дома'":http://habrahabr.ru/post/256911/
+
+
+* "Программно регулируемая люстра на Arduino":http://habrahabr.ru/post/247151/
+* "Мод USB-COM переходника, который сэкономит вам нервы при прошивке Arduino Pro Mini и не только":http://habrahabr.ru/post/249391/
+* "Как подружить OpenHAB и Arduino. Способ #3: MQTT":http://habrahabr.ru/post/250833/
+* "Arduino Pro Mini + токовый датчик GY-712 ведут контроль перегорания ламп":http://habrahabr.ru/post/249811/
+* "Управляем чайником из браузера или как я интернет-розетку делал":http://habrahabr.ru/post/149289/
+* "Бесплатная отправка SMS из Arduino без GSM модуля":http://habrahabr.ru/post/245805/
+* "Arduino за 1$":http://habrahabr.ru/post/245429/
+* -
+* "Контроллер центральный домашний, всемогущий КЦД-В-2-12":http://habrahabr.ru/post/210830/
+* -
+* "Создаем полностью автоматическую ферму":http://habrahabr.ru/company/minirobot/blog/253079/
+* -
+* "Что нам стоит сделать китайский роутер?":http://habrahabr.ru/post/247513/
+* -
+* "Добавление Wi-Fi к различным устройствам":http://habrahabr.ru/post/251167/
+* -
+* "Простой диспетчер задач с веб-интерфейсом, на GO":http://habrahabr.ru/post/247727/
+* -
+* "Искусственный рассвет (система доп. освещения окна)":http://habrahabr.ru/post/249535/
+* -
+* "Термометр на Raspberry pi с беспроводным датчиком на rf 433 и МК attiny85":http://habrahabr.ru/post/252381/
+* "Интернет термометр или телеметрия загородного дома":http://habrahabr.ru/post/155869/
+* "Архитектура умного дома - с Black Swift и не только":http://habrahabr.ru/company/blackswift/blog/251837/
+* "Еще один термостат на Arduino, но с OpenTherm":http://habrahabr.ru/post/251539/
+* "Удалённое управление для Arduino, проба пера":http://habrahabr.ru/post/251589/
+* "Полная энергетическая автономия или как выжить с солнечными батареями в глубинке":http://habrahabr.ru/post/251449/
+
+* "Как мы (не) нашли снайпера при помощи квадрокоптера":http://geektimes.ru/company/neuronspace/blog/242755/
+
+* "Трёхканальный UART АЦП на ATtiny13":http://habrahabr.ru/post/237543/
+* "Ещё один программный UART на ATtiny13":http://habrahabr.ru/post/251141/
+* -
+* "6 применений в 'умном доме' платы USBasp":http://habrahabr.ru/post/208470/
+* "Программируем nRF24LE1 через Raspberry PI и USBasp":http://habrahabr.ru/post/210974/
+* "Программирование диммера на радиомодуле nrf24le1 от COOLRF":http://habrahabr.ru/company/coolrf/blog/230785/
+* -
+* "UniFi мой опыт использования":http://geektimes.ru/post/217721/
+* -
+* "Time Series, метрики и статистика: знакомство с InfluxDB":http://habrahabr.ru/company/selectel/blog/245515/
+
+
+
+h3. Geektimes
+
+
+* "Как не переплачивать за Умный Дом. Защита от потопа (антипротечка)":http://geektimes.ru/post/245086/
+* "Voltera V-One: быстрое изготовление печатных плат для прототипов":http://geektimes.ru/company/dadget/blog/246644/
+* "":
+* "":
+* "":
+* -
+* "Мы и подключенные устройства":http://geektimes.ru/post/243525/
+* "Следим за людьми через Wi-Fi [best]":http://geektimes.ru/post/242979/
+* "":
+
+
+
+h3. Sohabr
+
+* "Первый шаг к умному дому или удаленное управление домашней техникой":https://sohabr.ru/post/233723/
+
+
+h3. Другое
+
+* "Определение координат по базовым станциям ОПСОСов":http://xinit.ru/bs/
+
+* "Open Energy Monitor":http://openenergymonitor.org/emon/
+* "POWER MONITOR на Arduino":http://smartliving.ru/forum/viewtopic.php?f=8&t=73
+
+* "Аппаратные решения для OpenWrt":http://h-wrt.com/ru
+
+* "Расчет светодиодов - калькулятор":http://cxem.net/calc/ledcalc.php
+
+* "LCD I2C модуль для Arduino сделай сам (DIY)":http://zelectro.com.ua/LCD_I2C_module_DIY
+
+* "Gotenna - беспроводная Bluetooth UHF приставка к смартфону":http://www.gotenna.com/pages/features
+
+
+h3. mysku.ru
+
+* "Термо принтер для печати на кассовой ленте":http://mysku.ru/blog/aliexpress/19181.html
+* "Как сделать самодельное зарядное устройство для 18650":http://mysku.ru/blog/china-stores/22464.html
+* "Профессиональный ультразвуковой мини-очиститель":http://mysku.ru/blog/china-stores/22560.html

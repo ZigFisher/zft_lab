@@ -1,0 +1,29 @@
+---
+layout:     post
+title:      "Вегетарий и система капельного орошения"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [plants]
+---
+
+
+h3. Капельное орошение
+
+!/images/2015041701.jpg!
+
+!/images/2015041702.jpg!
+
+!/images/2015041703.jpg!
+
+!/images/2015041704.jpg!
+
+---
+
+h3. Внешние ссылки
+
+* "Geektimes: 'Интернет растений' для фермерства в городе":http://geektimes.ru/post/242941/
+* "Geektimes: Аквапоника своими руками с применением микроконтроллера":http://geektimes.ru/post/255486/
+* "Geektimes: Гидропоника на подоконнике":http://geektimes.ru/post/263724/
+* -
+* "Instructables: Auto plant watering system":http://www.instructables.com/id/Auto-plant-watering-system/

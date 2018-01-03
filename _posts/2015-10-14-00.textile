@@ -1,0 +1,53 @@
+---
+layout:     post
+title:      "Получение данных с Peacefair EnergyMonitor AC 100A"
+tagline:    ""
+category:   ""
+group:      smarthouse
+tags:       [esp8266, 220v]
+---
+
+
+h3. Аппаратная часть
+
+* В процессе описания..
+
+!/images/2015101401.jpg!
+
+!/images/2015101402.jpg!
+
+!/images/2015101407.jpg!
+
+---
+
+!/images/2015101411.jpg!
+
+!/images/2015101412.jpg!
+
+!/images/2015101413.jpg!
+
+!/images/2015101414.jpg!
+
+---
+
+h3. Внешние ссылки
+
+* "Aliexpress: Плата Peacefair AC 100A с COM-портом и катушкой [10,06 USD]":http://ru.aliexpress.com/item/PEACEFAIR-AC-100A-Electric-power-monitoring-and-communication-module-power-meter-power-energy-Volt-Ammeter-with/32405328185.html
+* "Aliexpress: Устройство Peacefair AC 100A с дисплеем, без катушки [12,24 USD]":http://ru.aliexpress.com/item/PEACEFAIR-New-product-Digital-AC-20A-4IN1-voltage-current-power-energy-Voltmeter-Ammeter/32336476838.html
+* "Aliexpress: Устройство Peacefair AC 100A с дисплеем и катушкой [13,19 USD]":http://ru.aliexpress.com/item/PEACEFAIR-New-product-Digital-AC-100A-4IN1-voltage-current-power-energy-Voltmeter-Ammeter-CT/32324593073.html
+* "Aliexpress: Устройство Peacefair AC 100A с дисплеем, катушкой и компортом [18,03 USD]":http://ru.aliexpress.com/item/PEACEFAIR-AC-100A-Digital-LCD-power-meter-power-energy-Volt-Ammeter-with-CT-coil/32404726761.html
+
+* "GitHub: PowerMeter_PZEM & Arduino":https://github.com/gazier20/PowerMeter_PZEM
+* "GitHub: Arduino communication library for Peacefair PZEM-004T Energy monitor":https://github.com/olehs/PZEM004T
+
+* "MySKU: ВольтАмперВаттметр с функцией счётчика [PZEM-004]":http://mysku.ru/blog/china-stores/38717.html
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'smarthouse' %}
+  {% include JB/pages_list %}
+</ul>

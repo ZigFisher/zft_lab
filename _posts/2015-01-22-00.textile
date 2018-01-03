@@ -1,0 +1,64 @@
+---
+layout:     post
+title:      "Простой KISS TNC для APRS на базе Arduino"
+tagline:    ""
+category:   ""
+group:      hamradio
+tags:       [arduino, ax25]
+---
+
+
+h3. Прошивка Arduino
+
+p. Для прошивки Arduino достаточно выполнить команду:
+
+pre. avrdude -c arduino -p m328p -P /dev/ttyUSB0 -b 57600 -U mobilinkd-473-arduino.hex
+
+
+h3. Настройка консольного порта
+
+p. В фаил /etc/sysctl.conf добавить строку
+
+pre. kernel.printk = 0 4 1 7
+
+p. Закомментировать приглашение входа в систему в файле /etc/inittab
+
+pre. #ttyS0::askfirst:/bin/ash --login
+
+
+h3. Настройки AX.25 в Linux
+
+p. Фаил /etc/ax25/axports
+
+pre. uhf1   MYCALL-15   38400   255   2   144,800 MHz APRS
+
+p. Создаем порт uhf1 с KISS TNC подключенным на /dev/ttyUSB0
+
+pre. kissattach /dev/ttyUSB0 uhf1 44.188.196.101
+
+p. Проверяем работу KSS TNC единоразовой отправкой маяка
+
+pre. beacon -c UU8JA -d ALL -s uhf1 "Testing"
+
+
+h3. Ссылки
+
+* "Что есть APRS ?":http://habrahabr.ru/post/249901/
+* "Радиолюбительская пакетная связь (Packet Radio) и APRS":http://hamcmw.qrz.ru/pr/index.html
+* "SmallMeteo + роутер в APRS и не только...":http://hamcmw.qrz.ru/techn/smallmeteo.htm
+* "APRX - шлюз и ретранслятор для aprs":http://hamcmw.qrz.ru/pr/aprs/aprx.htm
+* "MySKU: WINBOND W25Q128 - расширяем память роутеру TL-MR3020 для APRS":https://mysku.ru/blog/ebay/59201.html
+* -
+* "Google Maps APRS":http://aprs.fi/#!lat=44.9341&lng=34.0999
+* "CB APRS":http://cbaprs.de/
+* "APRSdroid downloads":http://aprsdroid.org/download/
+* "APRS symbol table":http://www.zl2ko.org.nz/usefullinfo/APRS_Symbol_Chart.pdf
+* "APRS-IS Callsign Passcode Generator":http://www.george-smart.co.uk/wiki/APRS_Callpass
+* "Форум: APRS и другие виды пакетной связи":http://www.cqham.ru/forum/forumdisplay.php?28-APRS-%E8-%E4%F0%F3%E3%E8%E5-%E2%E8%E4%FB-%EF%E0%EA%E5%F2%ED%EE%E9-%F1%E2%FF%E7%E8
+* -
+* "The unsigned.io website":http://unsigned.io/
+* "GitHub: An APRS library for the Arduino IDE":https://github.com/markqvist/LibAPRS
+* "GitHub: General purpose firmware for MicroModem with forward error correction and larger packet sizes":https://github.com/markqvist/MicroModemGP
+* "GitHub: Atmega328p-based 1200 Baud AFSK radio modem":https://github.com/markqvist/MicroModem
+* "GitHub: APRS fork of MicroModem":https://github.com/markqvist/MicroAPRS
+* "GitHub: Standalone digipeater firmware for MicroModem":https://github.com/markqvist/MicroDigi

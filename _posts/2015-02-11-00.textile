@@ -1,0 +1,385 @@
+---
+layout:     post
+title:      "Подборка ссылок по ESP8266, MQTT, модулям"
+tagline:    ""
+category:   ""
+group:      smarthouse
+tags:       [esp8266, mqtt]
+---
+
+
+h3. homes-smart.ru
+
+* "Демонстрационное устройство":http://demo.wifi-iot.ru/
+* "Проект нового дизайна WEB-интерфейса для ESP8266 от Neorender":http://109.111.184.197:8081/espdemo/index.html
+* -
+* "Беспроводной датчик на базе ESP8266 с отправкой данных на удаленные сервера":http://homes-smart.ru/index.php/oborudovanie/bez-provodov-wi-fi/62-besprovodnoj-datchik-na-baze-esp8266-dlya-servisa-narodmon-ru
+* "Сверхдешевый WI-FI модуль ESP8266":http://homes-smart.ru/index.php/oborudovanie/bez-provodov-wi-fi/sverkhdeshevyj-wi-fi-modul-esp8266
+* "Прошивка и запуск модуля ESP8266":http://homes-smart.ru/index.php/oborudovanie/bez-provodov-wi-fi/65-proshivka-i-zapusk-modulya-esp8266-s-proshivkoj-homes-smart-ru
+* "UART bridge на ESP8266. Подключаем свои м/к к сети":http://homes-smart.ru/index.php/oborudovanie/bez-provodov-wi-fi/72-uart-bridge-na-esp8266
+* -
+* "Форум: Бета тест версии прошивки ESP8266 0.1.1":http://homes-smart.ru/index.php/component/kunena/4-zhelezo/843-beta-test-versii-proshivki-esp8266-0-1-1
+* "Форум: Прием сигналов 433/315мгц на ESP8266":http://homes-smart.ru/index.php/component/kunena/4-zhelezo/844-priem-signalov-433-315mgts-na-esp8266
+* "Форум: Заявки на добавление опций в конструктор прошивки ESP8266":http://homes-smart.ru/index.php/component/kunena/4-zhelezo/845-zayavki-na-dobavlenie-optsij-v-konstruktor-proshivki-esp8266
+* "Форум: Проблемы прошивки ESP8266 и их решения":http://homes-smart.ru/index.php/component/kunena/4-zhelezo/861-problemymy-proshivkt-esp8266-i-ikh-resheniya
+* "Форум: Обновление прошивки через интернет. Проблемы и вопросы":http://homes-smart.ru/index.php/component/kunena/4-zhelezo/862-obnovlenie-proshivki-cherez-internet-problemy-i-voprosy
+* "Форум: ESPmeteo – устройство сбора метеоданных":http://www.homes-smart.ru/index.php/component/kunena/4-zhelezo/837-espmeteo-ustrojstvo-sbora-meteodannykh?limitstart=0
+* "Форум: Логический модуль в конструкторе прошивки ESP8266. Обсуждение":homes-smart.ru/index.php/component/kunena/4-zhelezo/919-logicheskij-modul-v-konstruktore-proshivki-esp8266-obsuzhdenie
+
+---
+
+h3. Ссылки и сайты партнёров
+
+* "UM - Умная Автоматика для сельского хозяйства":https://u-m.biz/shop/index.php?route=common/home
+* "Wi-Fi метеостанция ESPmeteo":http://espmeteo.ru/index.html ; "Группа в VK":http://vk.com/diy32
+* "Магазин ONtOSboх":http://vk.com/ontosbox_shop
+
+---
+
+h3. Документация с сайта u-m.biz
+
+* "Система рассвет-закат на базе ESP8266":https://drive.google.com/file/d/0B0vRuSZ7oRUeNG56WUk5MjlsWDA/view
+
+---
+
+h3. esp8266.ru
+
+* "IoT Manager – мобильное приложение для DIY устройств":http://esp8266.ru/iot-manager-for-diy/
+* "ESP8266 - подключение и обновление прошивки":http://esp8266.ru/esp8266-podkluchenie-obnovlenie-proshivki/
+* "Arduino IDE для ESP8266":http://esp8266.ru/arduino-ide-esp8266/
+* "Разработка 'библиотеки' малого webсервера на esp8266":http://esp8266.ru/forum/threads/razrabotka-biblioteki-malogo-webservera-na-esp8266.56/
+* "Прошивка TCP2UART переходника с настройкой по Web":http://esp8266.ru/forum/threads/proshivka-tcp2uart-perexodnika-s-nastrojkoj-po-web.146/
+* "Недорогой ESP8266 NodeMCU выключатель":http://esp8266.ru/esp8266-nodemcu-low-cost-switch/
+* "Sming Open Source Framework для нативной разработки прошивок ESP8266":http://esp8266.ru/forum/threads/sming-open-source-framework-dlja-nativnoj-razrabotki-proshivok-esp8266.167/
+
+---
+
+h3. ESP32 - новый тип SoC
+
+* "WI-FI модуль ESP32":http://homes-smart.ru/index.php/oborudovanie/bez-provodov-wi-fi/71-wi-fi-modul-esp32
+* "ESP32 pin's":http://cs629302.vk.me/v629302310/25da1/LcqQ12j-0NU.jpg
+* "ESP32 pinout":http://www.pighixxx.com/test/2015/12/esp32-pinout/
+* "ESP32 breakout board spotted in the wild":https://twitter.com/Amica_IO/status/675348522565173251
+* "Just a other picture of the ESP32 testboard":https://twitter.com/Amica_IO/status/675536333595480065
+* "New kid in town - meet ESP32":http://myesp8266.blogspot.ru/2015/11/new-kid-in-town-meet-esp32-esp-on.html
+* "Espressif ESP32 Dual Core SoC - Faster WiFi, Bluetooth 4.0 LE, and More...":http://www.cnx-software.com/2015/11/05/espressif-esp32-dual-core-soc-features-faster-wifi-bluetooth-4-0-le-and-more-peripherals/
+* "ESP32 will be beta testing soon":https://twitter.com/EspressifSystem/status/662205725125414912
+
+---
+
+h3. habrahabr.ru & geektimes.ru
+
+* "Интернет Вещей (IoT) и водопровод":http://habrahabr.ru/company/masterkit/blog/258469/
+* "ESP-8266 и уровень сигнала: выбор типа антенны":http://geektimes.ru/post/265170/
+* "Wi-Fi термометр на ESP8266 + DS18B20 всего за 4$":http://geektimes.ru/post/255450/
+* "Wi-Fi измеритель CO2 на ESP8266 + K-30":http://geektimes.ru/post/255562/
+* "Управление шторой по интерфейсу RS-485. Часть 2: добавляем WiFi":http://geektimes.ru/post/267650/
+* "Программируемая Wi-Fi лампочка-ночник на ESP8266":http://geektimes.ru/post/255558/
+* "Smart.js – [больше чем] новая прошивка для ESP8266":http://geektimes.ru/post/259260/
+* "Работа WiFi-модулей «Мастер Кит» с OpenHAB. Часть 1: Подключение и настройка":http://geektimes.ru/company/masterkit/blog/262212/
+* "Умный реле модуль":http://geektimes.ru/post/260802/
+* "Знакомьтесь, DMMR2":http://geektimes.ru/post/259008/
+* "ESP8266 — сбор данных с датчиков с питанием от солнечных батарей":http://habrahabr.ru/post/259809/
+* "ESP8266: Революция в мире интернета вещей":http://habrahabr.ru/company/coolrf/blog/235881/
+* "Arduino + ESP8266 с нуля на примере Wi-Fi термометра, часть первая":http://habrahabr.ru/post/259925/
+* "Многофункциональный датчик температуры/влажности на ESP8266":http://habrahabr.ru/post/255359/
+* "Особенности создания программ в NODEMCU ESP8266 для 'интернета вещей'":http://habrahabr.ru/post/255625/
+* "Еще один проект на ESP8266 и счетчик воды":http://habrahabr.ru/post/256247/
+* "ESP8266: Что внутри 'народного wi-fi' ?":http://habrahabr.ru/company/coolrf/blog/238443/
+* "IoT за копейки, или Что может DeviceHive":http://habrahabr.ru/company/dataart/blog/260115/
+* "Reverse Engineering ESP8266 — часть 1":http://habrahabr.ru/post/255135/
+* "Reverse Engineering ESP8266 — часть 2":http://habrahabr.ru/post/255153/
+
+---
+
+h3. easyelectronics.ru
+
+* "WIFI Модуль ESP8266 за 3,5 $ первые впечатления":http://we.easyelectronics.ru/electro-and-pc/wifi-modul-esp8266-za-35-pervye-vpechatleniya-most-udp-uart-na-lua.html
+
+---
+
+h3. instructables.com
+
+* "WIFI Battery Monitor System - ESP8266":http://www.instructables.com/id/WIFI-Battery-Monitor-System-ESP8266/?ALLSTEPS
+* "ESP8266 WiFi Controlled Aircon Remote":http://www.instructables.com/id/ESP8266-WiFi-Controlled-Aircon-Remote/?ALLSTEPS
+* "CBDBv2 Evolution - ESP8266 Development Board meets ARDUINO IDE":http://www.instructables.com/id/CBDBv2-Evolution-ESP8266-Development-Board-meets-A/?ALLSTEPS
+* "WiFi Smoke Detector":http://www.instructables.com/id/WiFi-Smoke-Detector/?ALLSTEPS
+* "DIY Automatic Grow Box":http://www.instructables.com/id/DIY-Automatic-Grow-Box/?ALLSTEPS
+* "Blink for ESP8266 native, like arduino using Windows":http://www.instructables.com/id/Blink-for-ESP8266-native-like-arduino-using-Window/?ALLSTEPS
+* "Low cost WIFI temperature data logger based on ESP8266":http://www.instructables.com/id/Low-cost-WIFI-temperature-data-logger-based-on-ESP/
+* "ESP8266 Wifi Temperature Logger":http://www.instructables.com/id/ESP8266-Wifi-Temperature-Logger/
+* "ESP8266 WiFi touch screen thermostat":http://www.instructables.com/id/ESP8266-WiFi-touch-screen-thermostat/
+* "ESP8266+Arduino+thingspeak.com environment monitors":http://www.instructables.com/id/ESP8266Arduinothingspeakcom-environment-monitors/
+* "ESP8266 WiFI water leak sensor":http://www.instructables.com/id/ESP8266-WiFI-water-leak-sensor/
+* "ESP8266 WiFi temperature and humidity sensor":http://www.instructables.com/id/ESP8266-WiFi-temperature-and-humidity-logger/
+* "Arduino Wifi Temperature Logger":http://www.instructables.com/id/Arduino-Wifi-Temperature-Logger/
+* "ESP8266 WiFi relay switch":http://www.instructables.com/id/ESP8266-WiFi-relay-switch/
+* "Envolysis (Based on ESP8266)":http://www.instructables.com/id/Envolysis/
+* "An inexpensive IoT enabler using ESP8266":http://www.instructables.com/id/An-inexpensive-IoT-enabler-using-ESP8266/
+* "Easy ESP8266 WiFi Debugging with Python":http://www.instructables.com/id/Easy-ESP8266-WiFi-Debugging-with-Python/
+* "Use ESP8266 to Internet enabled AC Appliances":http://www.instructables.com/id/Use-ESP8266-to-Internet-enabled-AC-Appliances/
+* "Send sensor data to ThingSpeak with an Arduino, using cable or ESP8266":http://www.instructables.com/id/Send-sensor-data-DHT11-BMP180-to-ThingSpeak-with-a/
+* "Smart Plug with Esp8266, Attiny 85 & PIR Sensor":http://www.instructables.com/id/Wifi-Switch-board-with-Esp8266-Attiny-85-PIR-Senso/
+
+
+h3. scargill.net
+
+* "Nextion and ESP8266":http://tech.scargill.net/nextion-and-esp8266/
+* "ESP8266 MQTT Success":http://tech.scargill.net/esp8266-mqtt-success/
+* "ESP8266 Progress":http://tech.scargill.net/esp8266-progress/
+* "ESP8266 FLASH SIZES and SDK issues":http://tech.scargill.net/esp8266-flash-sizes-and-sdk-issues/
+* "Node Red UI":http://tech.scargill.net/node-red-ui/
+* "Home Control 2015":http://tech.scargill.net/home-control-2015/
+* "Pi 2 Pocket Control":http://tech.scargill.net/pi-2-pocket-control/
+* "A new Day – A new Board":http://tech.scargill.net/a-new-day-a-new-board/
+* "Testing ESP8266 WIFI":http://tech.scargill.net/testing-esp8266-wifi/
+* "QD Tech Displays on the ESP8266":http://tech.scargill.net/qd-tech-displays-on-the-esp8266/
+* "Automatic Router Selection for ESP8266":http://tech.scargill.net/automatic-router-selection-for-esp8266/
+
+---
+
+h3. ncrmnt.org
+
+* "ESP8266: Say 'hello' to Frankenstein":http://ncrmnt.org/wp/2014/11/09/esp8266-say-hello-to-frankenstein/
+* "ESP8266 and PL2303HX-gpio adventures":http://ncrmnt.org/wp/2014/11/04/esp8266-and-pl2303hx-gpio-adventures/
+* "Just an ESP8266 dev board":http://ncrmnt.org/wp/2014/10/30/just-an-esp8266-dev-board/
+
+---
+
+h3. espmeteo.ru
+
+* "Wi-Fi метеостанция ESPmeteo":http://espmeteo.ru/
+* "Метеомодуль ESPMeteo":http://espmeteo.ru/espmeteo.html
+* "Интеграция ESPMeteo в систему MajorDoMo":http://espmeteo.ru/text2.html
+* "ESPmeteo на канале VK":http://vk.com/albums-82131279
+
+---
+
+h3. masterkit.ru
+
+* "MP3500 - Wi-Fi реле, 2 канала [на базе ESP8266]":http://masterkit.ru/shop/smarthome/smarthouse/1910043
+
+---
+
+h3. hackaday.com
+
+* "Menu list: ESP8266 Projects":https://hackaday.io/list/3553-esp8266-projects
+* "Inject packets with an ESP8266":http://hackaday.com/2016/01/14/inject-packets-with-an-esp8266/
+* "How to directly program an inexpensive ESP8266 WiFi module":http://hackaday.com/2015/03/18/how-to-directly-program-an-inexpensive-esp8266-wifi-module/
+* "Mapping WiFi signals in 3 dimensions":http://hackaday.com/2015/02/17/mapping-wifi-signals-in-3-dimensions/
+* "Wifi power mapping":https://hackaday.io/project/4329-wifi-power-mapping
+* "Wirelessly weighing plants with the ESP8266":http://hackaday.com/2015/06/28/wirelessly-weighting-plants-with-the-esp8266/
+* "WiFi power monitor":http://hackaday.com/2015/10/04/wifi-power-monitor/
+* "Push blood pressure data to the cloud via ESP8266":http://hackaday.com/2015/10/11/push-blood-pressure-data-to-the-cloud-via-esp8266/
+
+---
+
+h3. olimex.com
+
+* "ESP8266-EVB-BAT-BOX":https://www.olimex.com/Products/IoT/ESP8266-EVB-BAT-BOX/open-source-hardware
+* "Olimex ESP8266 board schematic":https://github.com/OLIMEX/ESP8266/blob/master/HARDWARE/ESP8266-EVB-BAT/ESP8266-EVB-BAT_Rev_A.pdf
+
+---
+
+h3. sparkfun.com
+
+* "ESP8266 Thing Development Board Hookup Guide":https://learn.sparkfun.com/tutorials/esp8266-thing-development-board-hookup-guide
+* "SparkFun ESP8266 Thing":https://www.sparkfun.com/products/13231
+* "SparkFun ESP8266 Thing: обсуждение esp8266.ru":http://esp8266.ru/forum/threads/sparkfun-esp8266-thing.366/
+
+---
+
+h3. hackster.io
+
+* "IoT Home Security Model":https://www.hackster.io/aaronkow/iot-home-security-model-71e48e
+* "A WiFI-enabled cord switch with the ESP8266 in 10 minutes":https://www.hackster.io/alinan/a-wifi-enabled-cord-switch-with-the-esp8266-in-10-minutes-6fa700
+* "Mapping Household Temperature Flow with Cheap Sensors":https://www.hackster.io/humblehacker/mapping-household-temperature-flow-with-cheap-sensors-6a36c3
+* "ESP8266 Access Point using Arduino IDE":https://www.hackster.io/rayburne/esp8266-access-point-using-arduino-ide
+
+---
+
+h3. taobao.com
+
+* "ESP8266 Display System v.1":http://world.taobao.com/item/522187696393.htm?fromSite=main&spm=2013.1.20141001.1.fI9yw9&scm=1007.10115.11446.100200300000000&pvid=6b198332-74d7-4423-b868-c6e4ef0b5d10
+* "ESP8266 Display System v.2":http://world.taobao.com/item/522185493162.htm?fromSite=main&spm=2013.1.20141001.2.fI9yw9&scm=1007.10115.11446.100200300000000&pvid=6b198332-74d7-4423-b868-c6e4ef0b5d10
+
+---
+
+h3. youtube.com
+
+* "Канал MaksMS":https://www.youtube.com/channel/UCagnKjxkcPE_JIoBZQem_-w
+* "Демонстрация LED матрицы на прошивке wifi-iot.ru":https://www.youtube.com/watch?v=PX6ZNvDqYuY
+
+* "Канал Umka":https://www.youtube.com/channel/UCR97Hj16algdqzho5uWIzeQ
+* "Настройка OpenDevBoard для поддержания температуры в подвале":https://www.youtube.com/watch?v=UVV90crfmNQ
+
+* "Часы ESP8266 homes-smart":https://www.youtube.com/watch?v=fwKMr550bOg
+* "WiFi метеостация на базе ESP8266":https://www.youtube.com/watch?v=twF-Vc0TKJs
+* "Программирование (прошивка) ESP-12":https://www.youtube.com/watch?v=JU_OGULnAY0
+* "ESP8266 Weather Info Desktop Display":https://www.youtube.com/watch?v=Kw6XJw8otIw
+* "WebSockets for awesome on the ESP8266":https://www.youtube.com/watch?v=8ISbmQTbjDI
+
+---
+
+h3. vimeo.com
+
+* "WebSocket to ESP8266":https://vimeo.com/150929166
+
+---
+
+h3. twitter.com/#esp8266
+
+* "ESP8266 channel":https://twitter.com/esp8266
+* "ESPlant WiFi gardening+weather sense platform":https://twitter.com/projectgus/status/684985804301533184/photo/1
+
+---
+
+h3. GitHub
+
+* "The ESP8266 build helper tool by Christian Klippel":https://github.com/igrr/esptool-ck/releases
+* "ESP8266 core for Arduino":https://github.com/esp8266/Arduino
+* "ESP8266 Community Forum":https://github.com/esp8266
+* "ESP8266 pin definition":https://github.com/esp8266/esp8266-wiki/wiki/Pin-definition
+* "Chat fabric, with direct, relayed, and P2P/adhoc modes":https://github.com/daviddpd/dpdChatFabric
+* "ESPlant - Environment Sensor Plant":https://github.com/mage0r/ESPlant
+* "Ultrasonic sensor driver for the esp8266":https://github.com/eadf/esp8266_ping
+* "ESP8266 ROM Bootloader utility":https://github.com/themadinventor/esptool
+* "ESP82666 wifi-serial bridge, outbound TCP, and arduino/AVR/LPC/NXP programmer":https://github.com/jeelabs/esp-link
+* "Unofficial Development Kit for Espressif ESP8266":https://github.com/CHERTS/esp8266-devkit
+* "Open Source framework for ESP8266":https://github.com/anakod/Sming
+* "Alternative firmware for ESP8266 modules":https://github.com/nekromant/esp8266-frankenstein
+* "ESP8266-based touchscreen clock and light controller with WiFi":https://github.com/spapadim/ESPClock
+* "Majormo+ESP8266 experiment's by Lstt":https://github.com/Lstt2005/ESP8266_MajorDoMo
+* "I.O.Broker+Majormo+ESP8266 bi Lstt":https://github.com/Lstt2005/ESP8266_I.O.Broker
+* "ESP8266 based serial to udp bridge":https://github.com/dyum/esp8266-serial
+* "ESP8266 SmartWatch":https://github.com/shantanugoel/esp8266-smartwatch
+* "Three Channel WiFi Relay/Thermostat Board":https://github.com/Ignat99/ESP8266_Relay_Board
+* "Bridge between UART and MQTT":https://github.com/mrizvic/nodemcu-uart2mqtt
+* "Sample COAP test server":https://github.com/anupak/esp8266-samplecode/tree/master/coap_test
+* "Subscribe to MQTT topics and notifiy pluggable services":https://github.com/jpmens/mqttwarn
+* "ESP8266 WiFi scale [HX711]":https://github.com/squix78/esp8266-projects/blob/master/arduino-ide/wifi-scale/wifi-scale.ino
+* "Micro Python port to ESP8266":https://github.com/micropython/micropython/tree/master/esp8266
+* "OLIMEX ESP8266 examples and toolchain setup":https://github.com/OLIMEX/ESP8266
+* "Arduino Weather Infomation Display":https://github.com/mike-rankin/ESP8266_Weather_Info
+* "Meteostation on ESP8266":https://github.com/VGCH/ESP8266_cobe2_bmp180_AP
+* "Geiger counter on ESP8266 with send data to remote server":https://github.com/VGCH/Radiation_on_ESP8266-1
+* "ESP8266 + MajorDoMo + IObroker":https://github.com/Lstt2005/ESP8266_I.O.Broker
+* "Driver and sample code for ILI9341 TFT displays designed for ESP8266 chip":https://github.com/Sermus/ESP8266_Adafruit_ILI9341
+* "ESP8266 wifi-serial bridge, outbound TCP, and arduino/AVR/LPC/NXP programmer":https://github.com/jeelabs/esp-link
+* "NodeMCU ESP8266 RF Gateway and Display Board":https://github.com/hallard/NodeMCU-Gateway
+* "Arduino-PID-Library ported to esp8266":https://github.com/eadf/esp8266_pid
+
+---
+
+h3. MQTT
+
+* "Domoticz and MQTT":https://www.domoticz.com/wiki/MQTT
+* "Subscribe to MQTT topics and notifiy pluggable services":https://github.com/jpmens/mqttwarn
+* "MQTT shell script client, for bash, dash, BusyBox ash and others":https://github.com/raphaelcohn/bish-bosh
+* "CloudMQTT - Hosted broker for the Internet of Things":http://www.cloudmqtt.com/
+* "An exec plugin for collectd: mqttcollect":http://jpmens.net/2015/05/15/an-exec-plugin-for-collectd-mqttcollect/
+* "Power Profiling: HTTPS Long Polling vs. MQTT with SSL, on Android":http://stephendnicholas.com/archives/1217
+* "MQTT Essentials Special: MQTT over WebSockets":http://www.hivemq.com/mqtt-essentials-special-mqtt-over-websockets/
+* "Introducing the MQTT Security Fundamentals":http://www.hivemq.com/introducing-the-mqtt-security-fundamentals/
+* "MQTT Security Fundamentals: Authentication with Username and Password":http://www.hivemq.com/mqtt-security-fundamentals-authentication-username-password/
+* "MQTT Smart Home Wall Controller Code Published":http://www.automatedhome.co.uk/hardware/video-mqtt-smart-home-wall-controller-code-published.html
+
+---
+
+h3. samopal.pro
+
+* "ESP8266 в качестве WiFi шлюза к «умному дому»":http://samopal.pro/esp8266-1/
+* "ESP8266 — дешевый WFi модуль к «умному дому»":http://samopal.pro/esp8266-0/
+* "Умный дом. Управление светом":http://samopal.pro/smart-home1/
+* "Самодельный люксметр":http://samopal.pro/luxometer1/
+* "Самодельный люксметр 2":http://samopal.pro/luxmeter2/
+
+---
+
+h3. Other
+
+* "Увеличение памяти на ESP8266 ESP-01":http://lineus.ru/increasing-memory-on-esp8266-01/
+* "Беспроводной датчик на базе ESP8266":http://wiki.barxatperm.ru/index.php?title=ESP8266
+* "Smart Life - Беспроводной модуль автоматизации - умный дом ESP8266":aga.in.ua/products/smart-life-wifi-module-for-home-remote-control-weather-station
+* "ESP8266 - основные возможности":http://wiki.baga.in.ua/index.php?title=ESP8266_-_%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5_%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8
+* "! Интернет для вещей [ESP8266]":http://jager-f.livejournal.com/48624.html
+* "Датчик для проекта «Народный мониторинг»":http://www.drive2.ru/b/1990544/
+* "Датчик температуры для «народного мониторинга» на ESP8266":http://arduinolab.pw/index.php/2015/12/30/datchik-temperatury-dlya-narodnogo-monitoringa-na-esp8266/
+* "Автономный уличный метеодачик на основе китайского модуля esp8266":http://27kb.ru/zou.php?f=901&message=25283
+* "Платформа ESP8266 для Катеров и Яхт":http://forum.katera.ru/index.php?/topic/48974-platforma-esp8266-dlia-katerov-i-iakht/
+* "Твердотельное реле OMRON G3MB-202P или делаем WiFi розетку с минимумом компонентов":http://mysku.ru/blog/aliexpress/36014.html
+* "Самый дешевый Ардуино для поднятия праздничного настроения":http://mysku.ru/blog/aliexpress/36695.html
+* "Рулонные жалюзи и ESP8266":https://yadi.sk/a/55wPlVu4mLCBA
+* -
+* "ESP8266-01 Pin Magic. How to use the ESP8266-01 pins":http://www.forward.com.au/pfod/ESP8266/GPIOpins/ESP8266_01_pin_magic.html
+* "Kolban's Book on the ESP8266 and ESP32":https://leanpub.com/ESP8266_ESP32
+* "Adafruit example code Adruino IDE for ESP8266":https://learn.adafruit.com/esp8266-temperature-slash-humidity-webserver/code
+* "Getting Started with NodeMCU Board Powered by ESP8266 WiSoC":http://www.cnx-software.com/2015/10/29/getting-started-with-nodemcu-board-powered-by-esp8266-wisoc/
+* "ESP8266 in the wild, WiFi LED controller hack":http://chaozlabs.blogspot.co.za/2015/08/esp8266-in-wild-wifi-led-controller-hack.html
+* "ESP8266 pinout [красочно]":http://www.pighixxx.com/test/portfolio-items/esp8266/?portfolioID=360
+* "New version software and development kit for ESP8266 EVB":http://homedevice.pro/new-version-software-and-development-kit-for-esp8266-evb/
+* "ESPToy 1.21 [ESP8266 included]":http://rayshobby.net/cart/rftoy/esptoy
+* "LYT8226: an Arduino LED Bulb based on ESP8266 WiFi":http://souliss.net/media/esp8266-wifi-multicolor-bulb/
+* "Utilizando o LCD Nokia 5110 no ESP8266":http://pedrominatel.com.br/esp8266/utilizando-o-lcd-nokia-5110-no-esp8266/
+* "Watering Plant on ESP8266 and Home-Smarts firmware":http://smart-home-systems.blogspot.co.il/2015/11/iot-watering-plant-on-esp8266home.html
+* "RFM69 to MQTT gateway using ESP8266":https://harizanov.com/2015/11/rfm69-to-mqtt-gateway-using-esp8266/
+* "Internet WiFi Thermostat Relay Project":https://harizanov.com/product/internet-wifi-relay-thermostat-board/
+* "WiFi Relay/Thermostat PCB":https://harizanov.com/product/wifi-relay-thermostat-pcb/
+* "ESP8266 ESP-201 module - freeing up GPIO9 and GPIO10":http://smarpl.com/content/esp8266-esp-201-module-freeing-gpio9-and-gpio10
+* "Internal ADC - ESP8266":http://www.esp8266-projects.com/2015/03/internal-adc-esp8266.html
+* "ESP8266 IoT Energy Monitor [ADS1115]":http://www.seeedstudio.com/recipe/377-esp8266-iot-energy-monitor.html
+* "ESP8266 WiFi plant irrigation system":http://iot-playground.com/2-uncategorised/58-esp8266-wifi-plant-irrigation-system
+* "ESP8266 WiFi module":http://tomeko.net/other/ESP8266/
+* "ESP-201 breakout board review":http://blog.squix.ch/2015/02/esp8266-esp-201-breakout-board-review.html
+* "A Connected Lamp to Wake Me Up":http://www.limpkin.fr/index.php?post/2015/08/30/A-Connected-Clock-to-Wake-Me-Up
+* "ESP8266 touchscreen WiFi light controller and clock":http://bitquill.net/blog/esp8266-light-controller-clock/
+* "ESP8266 with AT Commands – Flashing/Updating the Firmware":http://flower-platform.com/2015/12/16/esp8266-with-at-commands-flashingupdating-the-firmware-step-by-step/
+* "ESP8266 Projects":http://benlo.com/esp8266/esp8266Projects.html
+* "WiFi scales based on ESP8266+HX711":http://blog.heredero.org/pese-personne-wifi/
+* "Low Power ESP8266 - Sleeping at 78 micro Amps":http://tim.jagenberg.info/2015/01/18/low-power-esp8266/
+* "ESP8266 BASIC: Make programming your ESP8266 module fun and simple":http://www.esp8266basic.com/
+* "4×1 WiFi Wireless Antenna Switch":http://www.electronics-lab.com/project/4x1-wifi-wireless-antenna-switch/
+* "ARDUINO + ESP8266 BASED MPPT SOLAR CHARGE CONTROLLER":http://www.electronicslovers.com/2015/09/arduino-based-mppt-solar-charge.html
+* "Temperature logger on ESP8266 + DS18B20 and ThingsPeak":http://www.diygoodies.org.ua/?p=898
+* "ESP8266 ADC – Reading Analog Values with NodeMCU":http://randomnerdtutorials.com/esp8266-adc-reading-analog-values-with-nodemcu/
+* "ESP8266 WiFi LED dimmer Part 1 of X: The setup":http://blog.quindorian.org/2014/12/esp8266-wifi-led-dimmer-part-1-of-x.html
+* "ESP8266 WiFi LED dimmer Part 2 of X: The Hardware":http://blog.quindorian.org/2014/12/esp8266-wifi-led-dimmer-part-1-of-x_30.html
+* "ESP8266 WiFi LED dimmer Part 8 of X: Version 2 of the PCB design":http://blog.quindorian.org/2015/04/esp8266-wifi-led-dimmer-part-8-of-x.html
+* "Comparing IoT Wi-Fi Modules – ESP8266 vs CC3000 vs RN131 vs HDG204":http://43oh.com/2015/06/comparing-iot-wi-fi-modules-esp8266-vs-cc3000-vs-rn131-vs-hdg204/
+* "Wemos D1 board based on the ESP-8266EX":http://www.wemos.cc/d1/Main_Page
+* "ESP8266 Weather sensor [Yet another MQTT]":https://bitbucket.org/esp8266/sensor-v2
+* "ESP8266 512k flash: compiling using RTOS SDK 1.3":http://kacangbawang.com/esp8266-512k-flash-compiling-using-rtos-sdk-1-3/
+* "ESP8266 WIFI with Attiny85 & Relay for IOT":https://www.tindie.com/products/Armtronix/esp8266-wifi-with-attiny85-and-relay-for-iot/
+* "Wifi Esp8266 ,Solid State Relay Board for IoT":https://www.tindie.com/products/Armtronix/wifi-esp8266-solid-state-relay-board-for-iot/
+
+---
+
+h3. Модули, датчики и т.д.
+
+* "Датчик движения (PIR Motion sensor) HC-SR501":http://flprog.ru/FLProg/pid144781676/vpi224423694
+* "Драйвер OLED SSD1306":http://catcatcat.d-lan.dp.ua/shemotehnika/oled-displei/drayver-oled-ssd1306/
+* -
+* "Эмулятор DS2423 на ATtiny25 v.1":http://www.tm3d.de/index.php/1-wire-device-mit-avr
+* "Эмулятор DS2423 на ATtiny25 v.2":http://piotr.elektroda.eu/2014/02/zamiennik-licznika-impulsow-ds2423-na-attiny25/
+
+---
+
+h3. Программы и печатные платы на заказ
+
+* "SchemeIt from DigiKey":http://www.digikey.com/schemeit/#1qw7
+* "DipTrace - система разработки схем и печатных плат":http://diptrace.com/rus/diptrace-software/
+* -
+* "Система Reason-It":http://newservice.rezonit.ru/
+* "OSH Park - Shared projects":https://oshpark.com/shared_projects
+* "Dirt Cheap Dirty Boards":http://dirtypcbs.com/view.php?share=5691&accesskey
+* "iMall innovation studio - DEMO":http://imall.iteadstudio.com/open-pcb/bare-open-pcb/pcb-process-capability-demonstrate-card.html
+* "iMall PCB prototyping":http://imall.iteadstudio.com/open-pcb/pcb-prototyping.html
+
+
+h3. zftlab.org & octonix.net
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'smarthouse' %}
+  {% include JB/pages_list %}
+</ul>

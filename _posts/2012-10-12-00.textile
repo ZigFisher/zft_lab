@@ -1,0 +1,17 @@
+---
+layout:     post
+title:      "Кластер из модемов Siemens Sinus-1054"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, broadcom]
+---
+
+
+h3. Описание
+
+!/images/2012101201.jpg!
+
+!/images/2012101202.jpg!
+
+!/images/2012101203.jpg!

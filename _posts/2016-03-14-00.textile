@@ -1,0 +1,332 @@
+---
+layout:     post
+title:      "Прошивка для роутера 'брикет' на базе SoC Ralink - Home IoT edition"
+tagline:    ""
+category:   ""
+group:      bricket
+tags:       [openwrt, ralink]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Возможности устройства после прошивки
+
+* Организация доступа в Интернет через любой 3G EVDO/UMTS или Yota LTE модем
+* Локальный MQTT брокер с возможностью проксирования данных и клиент к нему
+* Работа WiFi в режиме точки доступа (multi-SSID), клиента или репитера
+* Отправка снапшотов с любых USB UVC камер по протоколу FlyPeek на сервер FlyHub и/или Яндекс.Диск
+* Отправка данных на сервер FlyMon (графики, дашборд) по протоколам FlyMon и MQTT
+* И еще куча всего...
+
+---
+
+h3. Поддерживаемые роутеры и их типы
+
+---
+
+h3. Первичная прошивка
+
+---
+
+h3. Обновление прошивки
+
+p. Данный метод предназначен для тех, у кого роутер уже прошит в OpenWRT или "Домовёнок".
+
+p. Скачайте файл прошивки с файлового архива (адрес см. ниже).
+
+p. Установите на роутере пароль командой passwd. Это автоматически включит возможность доступа по ssh.
+
+p. Запишите файл на роутер в каталог /tmp при помощи програмы WinSCP (включите протокол scp).
+
+p. Если ваш роутер имеет доступ в интернет, получить на него свежую прошивку, без WinSCP, можно так:
+
+pre. wget -O /tmp/openwrt-ramips-rt305x-bricket-zftlab-flypeek-current http://zftlab.org/files/firmware_bricket/openwrt-ramips-rt305x-bricket-zftlab-flypeek-v20161010c.bin
+
+p. Зайдите на роутер используя ssh и наберите команду, дополнив ее нажатием TAB и ENTER:
+
+pre. sysupgrade -n /tmp/openwrt-ramips-rt305x-bricket-zftlab [TAB и Enter]
+
+p. Нажатие на TAB нужено для автоматического продления имени записываемого файла.
+
+p. Если все было сделано правильно, то в процессе прошивки роутер будет сообщать следующее:
+
+pre. #
+killall: watchdog: no process killed
+Sending TERM to remaining processes ... vtund dnsmasq sleep ubusd askfirst logd netifd sh ntpd 
+Sending KILL to remaining processes ... sleep askfirst
+Switching to ramdisk...
+Performing system upgrade...
+Unlocking firmware ...
+Writing from <stdin> to firmware ...
+Upgrade completed
+Rebooting system...
+
+p. После прошивки и перезагрузки роутер будет доступен по адресу 192.168.1.1 (только ping и telnet).
+
+p. С целью исключения проблем, DHCP сервер на роутере по-умолчанию отключен. Для того, что-бы зайти на него, установите IP адрес, например, 192.168.1.100 на своем ПК.
+
+---
+
+h3. Базовая настройка
+
+---
+
+h3. 
+
+---
+
+h3. 
+
+---
+
+h3. Файлы проекта
+
+* "Обсуждение проекта в Slack [нужно приглашение]":https://flymon.slack.com/messages/zftlab/
+* "Прошивки для роутеров BRICKET":http://zftlab.org/files/firmware_bricket/
+* "Исходный код компонентов на GitHub":https://github.com/ZigFisher/Glutinium
+
+---
+
+h3. Примеры
+
+p. Включение встроеннного DHCP сервера на LAN порту:
+
+pre. #
+uci set dhcp.lan.start='192.168.1.101'
+uci set dhcp.lan.limit='10'
+uci set dhcp.lan.leasetime='1h'
+uci set dhcp.lan.ignore='0'
+uci commit dhcp
+
+p. Настройка имени роутера и временной зоны:
+
+pre. #
+uci set system.@system[0].hostname='MyRouter'
+uci set system.@system[0].timezone='UTC'
+uci commit system
+
+p. #
+Настройка Ethernet для локальной сети :
+
+pre. uci set network.lan='interface'
+uci set network.lan.ifname='eth0.1'
+uci set network.lan.force_link='1'
+uci set network.lan.type='bridge'
+uci set network.lan.proto='static'
+uci set network.lan.ipaddr='192.168.136.200'
+uci set network.lan.netmask='255.255.255.0'
+#uci set network.lan.gateway='192.168.136.1'
+#uci set network.lan.dns='77.88.8.8 8.8.8.8'
+uci commit network
+
+p. Настройка WiFi интерфейса в режиме AP:
+
+pre. uci set wireless.radio0.channel='7'
+uci set wireless.radio0.disabled='0'
+uci set wireless.@wifi-iface[0].device='radio0'
+uci set wireless.@wifi-iface[0].network='lan'
+uci set wireless.@wifi-iface[0].mode='ap'
+uci set wireless.@wifi-iface[0].ssid='IoT'
+uci set wireless.@wifi-iface[0].encryption='psk2+ccmp'
+uci set wireless.@wifi-iface[0].key='wifi2016iot'
+uci commit wireless
+
+p. Настройка доступа в Интернет через 3G EVDO модем:
+
+pre. uci set network.wan='interface'
+uci set network.wan.ifname='ppp0'
+uci set network.wan.device='/dev/ttyACM0'
+uci set network.wan.proto='3g'
+uci set network.wan.service='evdo'
+uci set network.wan.username='IT'
+uci set network.wan.password='IT'
+uci commit network
+
+---
+
+p. Настройка доступа в Интернет через 3G UMTS модем:
+
+pre. #
+uci set network.wan='interface'
+uci set network.wan.ifname='ppp0'
+uci set network.wan.device='/dev/ttyUSB0'
+uci set network.wan.proto='3g'
+uci set network.wan.service='umts'
+uci set network.wan.apn='www.kyivstar.net'
+uci set network.wan.username='igprs'
+uci set network.wan.password='internet'
+uci commit network
+
+p. Таблица настроек для разных операторов:
+
+|Оператор   |apn             |username|password|
+|Билайн RU  |internet        |beeline |beeline |
+|Киевстар UA|www.kyivstar.net|igprs   |internet|
+
+---
+
+p. Настройка доступа в Интернет через Yota LTE модем:
+
+pre. uci set network.wan='interface'
+uci set network.wan.ifname='eth1'
+uci set network.wan.force_link='1'
+uci set network.wan.proto='static'
+uci set network.wan.ipaddr='10.0.0.10'
+uci set network.wan.netmask='255.255.255.0'
+uci set network.wan.gateway='10.0.0.1'
+uci set network.wan.dns='77.88.8.8 8.8.8.8'
+uci commit network
+
+p. Настройка USB UVC камеры:
+
+pre. uci set mjpg-streamer.core.enabled='1'
+uci set mjpg-streamer.core.yuv='1'
+uci set mjpg-streamer.core.quality='100'
+uci delete mjpg-streamer.core.username
+uci delete mjpg-streamer.core.password
+#uci set mjpg-streamer.core.username='user'
+#uci set mjpg-streamer.core.password='pass'
+uci commit mjpg-streamer
+
+---
+
+h3. Настройка VLAN
+
+pre. config interface 'infocom'
+  option ifname       'eth0.490'
+  option force_link   '1'
+  option proto        'static'
+  option ipaddr       '172.28.200.79'
+  option netmask      '255.255.255.128'
+
+pre. config switch_vlan
+  option device       'switch0'
+  option vlan         '490'
+  option ports        '0t 6t'
+
+pre. swconfig dev switch0 show
+
+---
+
+h3. Настройка DNS (local) для программы MQTT IoT for Android
+
+pre. #
+  uci set dhcp.@domain[0]=domain
+  uci dhcp.@domain[0].name='mqtt.flyhub.org'
+  uci dhcp.@domain[0].ip='192.168.xxx.xxx'
+
+pre. #
+  uci set dhcp.@domain[0]=domain
+  uci dhcp.@domain[0].name='esp8266.flymon.net'
+  uci dhcp.@domain[0].ip='192.168.xxx.xxx'
+
+---
+
+h3. Отправка файлов на облачные сервера по WebDAV (прототип)
+
+pre. #
+  uci set webdav.yandex.login='bricket'
+  uci set webdav.yandex.password='abc123'
+  uci set webdav.yandex.folder='Public'
+  uci set webdav.yandex.system='5m'
+  uci commit webdav
+
+---
+
+h3. Настройка VTUN
+
+pre. (while true ; do sleep 5; /usr/sbin/vtund -n -f /etc/vtund.conf link-name you.server.name -P 5000 >/dev/null 2>&1; done) &
+
+
+h3. Контроль уровня сигнала GSM
+
+pre. watch "echo `comgt -d /dev/ttyUSB1 sig | tr ',' ' ' | awk '{print $3}'`"
+
+---
+
+h3. Список програмных пакетов
+
+p. MQTT сервер + клиент:
+
+* libmosquitto-nossl
+* mosquitto-client-nossl
+* mosquitto-nossl
+
+p. Поддержка модемов 3G EVDO/UMTS и Yota LTE:
+
+* comgt
+* chat
+* kmod-mii
+* kmod-usb-net
+* kmod-usb-net-cdc-ether
+* kmod-ppp
+* ppp
+* usb-modeswitch
+
+p. Телеметрия (вся):
+
+* httping
+* i2c-telemetry
+* i2c-tools
+
+p. Туннели VTUNd:
+
+* kmod-tun
+* vtun-lite
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'bricket' %}
+  {% include JB/pages_list %}
+</ul>
+
+---
+
+h3. Приобретение комплектующих (поставщики проверены пользователями)
+
+p. Роутеры "Bricket", средняя цена 6,5-7,5 USD
+
+* "Aliexpress: Mini WiFi RJ45 USB 3G router [v.1a]":https://ru.aliexpress.com/item/Brand-New-M1-Mini-Portable-150Mbps-RJ45-Wireless-Support-3G-USB-Modems-WiFi-Hotspot-IEEE-802/32284801741.html
+* "Aliexpress: Mini WiFi RJ45 USB 3G router [v.1b]":https://ru.aliexpress.com/item/Portable-Mini-3G-4G-WiFi-Router-Wlan-Hotspot-LAN-Client-for-AP-150Mbps-RJ45-USB-Wireless/32636365558.html
+* "Aliexpress: Mini WiFi RJ45 USB 3G router [v.1c]":https://ru.aliexpress.com/item/SimpleStone-Mini-3G-4G-WiFi-Wlan-Hotspot-AP-Client-150Mbps-RJ45-USB-Wireless-Router-60325B13/32637610301.html
+* "Aliexpress: Mini WiFi RJ45 USB 3G router [v.1d]":https://ru.aliexpress.com/item/CEL-Mini-3G-4G-WiFi-Wlan-Hotspot-AP-Client-150Mbps-RJ45-USB-Wireless-Router-DEC10/32566084078.html
+* "Aliexpress: Mini WiFi RJ45 USB 3G router [v.1e]":https://ru.aliexpress.com/item/Portable-3G-Wifi-Router-Mini-Wireless-Wifi-Router-3G-4G-Hotspot-RJ45-150Mbps-Roteador-Repeater-Wifi/32601583086.html
+
+p. USB UVC WEB-камеры, средняя цена 3,5-4,5 USD
+
+* "Aliexpress: USB UVC WebCam [v.1]":https://ru.aliexpress.com/item/UN2F-8-0-Mega-30-M-USB-6-LED-Webcam-Web-Cam-Camera-Laptop-Computer-With/1208746713.html
+
+p. USB Ethernet адаптеры, средняя цена 1,5-2,0 USD
+
+* "Aliexpress: USB Ethernet RJ45 adaptor [v.1a]":https://ru.aliexpress.com/item/USB-Ethernet-RJ45-Adaptor-Network-Lan-Card-Hot-Selling-Ethernet-External-Lan-Card-Adapter-10-100/1648925117.html
+* "Aliexpress: USB Ethernet RJ45 adaptor [v.1b]":https://ru.aliexpress.com/item/USB-2-0-To-LAN-RJ45-Ethernet-10-100Mbps-Network-Card-Adapter-USB-to-RJ45-Ethernet/32630879032.html
+* "Aliexpress: USB Ethernet RJ45 adaptor [v.2a]":https://ru.aliexpress.com/item/USB-2-0-Ethernet-10-100-RJ45-Network-Lan-Adapter-Card-for-PC-laptop-for-XP/1245943432.html
+* "Aliexpress: USB Ethernet RJ45 adaptor [v.2b]":https://ru.aliexpress.com/item/Hot-Sale-New-USB-2-0-Ethernet-10-100-Mbps-RJ45-Network-Card-Lan-Adapter-High/32655002854.html
+
+---
+
+h3. Внешние ссылки
+
+* "Добавление 3G модема в качестве WAN интерфейса на примере роутеров TP-Link":http://devhead.ru/read/dobavlenie-3g-modema-v-kachestve-wan-interfejsa-na-primere-routerov-tp-link-3420-i-3220
+* "OpenWRT: Использование 3g/UMTS USB модема для WAN соединений":https://wiki.openwrt.org/ru/doc/recipes/3gdongle
+
+* "Настройка TL-MR3420 + Yota LU150":http://forum.tp-linkru.ru/viewtopic.php?p=11972&sid=a6ccfa27859fee63b650f2910379289c#p11972
+* "Yota LTE модем LU150":http://archlinux.org.ru/forum/topic/1836/?page=1
+* "Раздача интернета от Yota в локальную сеть через Debian 7":https://debianforum.ru/index.php?topic=7032.0
+
+* "Монтирование облачного диска по WebDav":http://tt.erinome.net/2012/11/360
+* "cadaver – консольный клиент WebDav":http://tt.erinome.net/2012/11/375
+* "OpenWRT forum: Mount Cloud Drive on OpenWrt Router":https://forum.openwrt.org/viewtopic.php?id=40607
+* "OpenWRT forum: Mounting Box.com, Google Drive and other WebDAV-accessed clouds":https://forum.openwrt.org/viewtopic.php?id=36994
+* -
+* "Using Curl commands with Webdav":http://www.qed42.com/blog/using-curl-commands-webdav
+* "Curl http commands with WebDAV":http://fibrevillage.com/storage/117-curl-http-commands-with-webdav

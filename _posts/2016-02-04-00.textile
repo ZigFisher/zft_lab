@@ -1,0 +1,21 @@
+---
+layout:     post
+title:      "Linux: systemd"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [linux]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Внешние ссылки
+
+* "Habrahabr: Systemd за пять минут":https://habrahabr.ru/company/centosadmin/blog/255845
+
+

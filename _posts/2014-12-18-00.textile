@@ -1,0 +1,25 @@
+---
+layout:     post
+title:      "Список программ для Android"
+tagline:    ""
+category:   ""
+group:      other
+tags:       [android]
+---
+
+
+h3. MQTT
+
+* "MQTT Dash [IoT, Smart Home]":https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=ru
+
+h3. Сервисы
+
+* "Отслеживание отправлений c AliExpress по Почте РФ":https://play.google.com/store/apps/details?id=com.octopod.russianpost.client.android&hl=ru
+
+h3. Финансы
+
+* "Mycelium Bitcoin Wallet":https://play.google.com/store/apps/details?id=com.mycelium.wallet
+
+h3. Тех.поддержка
+
+* "TeamViewer QuickSupport - удаленное управление":https://play.google.com/store/apps/details?id=com.teamviewer.quicksupport.market

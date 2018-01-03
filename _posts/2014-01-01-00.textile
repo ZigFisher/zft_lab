@@ -1,0 +1,32 @@
+---
+layout:     post
+title:      "Примеры и заметки по форматированию в Textile"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [blog]
+---
+
+
+h3. Цвет
+
+p{color:red}. Oki-doki
+
+
+h3. Список
+
+* Пункт 2
+## Подпункт 2-1
+## Подпункт 2-2
+
+
+h3. Таблица
+
+|_. Кто сделал  |_. Кому сделал  |_. Зачем сделал  |
+|первый|=. ряд|>. таблицы|
+|второй|ряд|таблицы|
+
+
+h3. Ссылки
+
+* "Руководство по Textile":http://www.headlab.ru/articles/rukovodstvo-po-textile

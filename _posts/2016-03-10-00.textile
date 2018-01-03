@@ -1,0 +1,119 @@
+---
+layout:     post
+title:      "Отличные железки на SoC ESP8266 от Itead Studio"
+tagline:    ""
+category:   ""
+group:      smarthouse
+tags:       [esp8266,sonoff]
+---
+
+
+h3. Введение
+
+p. Во всех устройствах стоит микросхема FLASH памяти 25Q80DVSIG
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Sonoff
+
+p. Дополнительная информация будет немного позже.
+
+pre. #
+gpio0  - кнопка
+gpio1  - TX UART
+gpio3  - RX UART
+gpio12 - красный светодиод, работает параллельно с реле
+gpio13 - зелёный светодиод, смело можно подключить второе реле
+gpio14 - только на новых устройствах TH серии, пятый вывод на UART гребёнке
+
+p. При наличии соответствующих методик и навыков вы можете получить несколько дополнительных GPIO подпаявшись к деталям на плате.
+
+!/images/2016031011.jpg!
+
+!/images/2016031012.jpg!
+
+!/images/2016031013.jpg!
+
+!/images/2016031014.jpg!
+
+!/images/2016031015.jpg!
+
+---
+
+h3. Slampher
+
+p. Дополнительная информация будет немного позже.
+
+!/images/2016031021.jpg!
+
+!/images/2016031022.jpg!
+
+!/images/2016031023.jpg!
+
+!/images/2016031024.jpg!
+
+p. Приёмник 433MHz собран на микросхеме SYN470R (300-450MHz ASK Receiver). Помимо микросхемы приёмника, на плате есть еще микросхема энкодера для управления частотой приёмника и микросхема с ПЗУ, которая записывает и запоминает номер команды на включение/выключение при программировании.
+
+!/images/2016031025.jpg!
+
+p. С десятого вывода микросхемы RF приёмника можно брать сигнал для подачи на GPIO ESP8266.
+
+---
+
+h3. Управляемая розетка
+
+p. Дополнительная информация будет немного позже.
+
+pre. #
+gpio0  - кнопка
+gpio1  - TX UART
+gpio3  - RX UART
+gpio12 - красный светодиод, работает параллельно с реле
+gpio13 - зелёный светодиод, смело можно подключить второе реле
+
+p. При наличии соответствующих методик и навыков вы можете получить несколько дополнительных GPIO подпаявшись к деталям на плате.
+
+!/images/2016031031.jpg!
+
+!/images/2016031032.jpg!
+
+!/images/2016031033.jpg!
+
+!/images/2016031034.jpg!
+
+!/images/2016031035.jpg!
+
+!/images/2016031036.jpg!
+
+!/images/2016031037.jpg!
+
+!/images/2016031038.jpg!
+
+---
+
+h3. Внешние ссылки
+
+* "Itead Studio - Smart Home":https://www.itead.cc/smart-home.html
+* "Wiki Itead Studio - Sonoff":http://wiki.iteadstudio.com/Sonoff
+* "Wiki Itead Studio - Sonoff RF":http://wiki.iteadstudio.com/Sonoff_RF
+* "Wiki Itead Studio - Sonoff SV":http://wiki.iteadstudio.com/Sonoff_SV
+* "Wiki Itead Studio - Sonoff TH":http://wiki.iteadstudio.com/Sonoff_TH
+* "Wiki Itead Studio - Sonoff DEV":http://wiki.iteadstudio.com/Sonoff_DEV
+* "Wiki Itead Studio - Sonoff POV":https://www.itead.cc/smart-home/sonoff-pow.html
+* "Wiki Itead Studio - Sonoff LED":https://www.itead.cc/smart-home/sonoff-led.html
+* "Wiki Itead Studio - Sonoff Touch":https://www.itead.cc/smart-home/sonoff-touch.html
+* "Wiki Itead Studio - Slampher":http://wiki.iteadstudio.com/Slampher
+* -
+* "Itead Slampher and Sonoff":http://tech.scargill.net/itead-slampher-and-sonoff/
+* "Sonoff & Slampher: Low Cost Smart Home Solution":https://www.indiegogo.com/projects/sonoff-slampher-low-cost-smart-home-solution#/
+* "GitHub: Provide ESP8266 based itead Sonoff with MQTT and OTA firmware":https://github.com/arendst/Sonoff-MQTT-OTA
+* -
+* "MySKU: Гибридный [WiFi/RF] выключатель Itead Sonoff RF":http://mysku.ru/blog/china-stores/39547.html
+* "MySKU: Ломаем выключатель Itead Sonoff TH":http://mysku.ru/blog/aliexpress/40475.html
+* "MySKU: WiFi реле для умного дома":http://mysku.ru/blog/china-stores/40863.html
+* "MySKU: Управление и измерение мощности нагрузки по WiFi":http://mysku.ru/blog/china-stores/45762.html
+* "MySKU: Все варианты Sonoff TH + новые железки":http://mysku.ru/blog/china-stores/46334.html
+* -
+* "SYN470R Datasheet - 300-450MHz ASK Receiver - Synoxo":http://www.datasheetcafe.com/syn470r-datasheet-receiver/

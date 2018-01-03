@@ -1,0 +1,38 @@
+---
+layout:     post
+title:      "Установка таймаутов для telnet/ssh при выполнении скриптов"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [telnet,ssh,linux]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+p. Пример скрипта
+
+pre. #
+timeout 10s ssh -q harigm@8.19.71.238 exit
+if [ $? -eq 124 ]; then
+    echo "Timeout out"
+fi
+
+pre. #
+for host in host1 host2 host3
+do
+  ssh -o BatchMode=yes -o StrictHostKeyChecking=no -o ConnectTimeout=5 \
+      user@$host  'uptime' || echo "problem: host=$host"
+done
+
+---
+
+h3. Внешние ссылки
+
+* "Using Timeout in a Script with One Command, but Multiple Hosts":http://unix.stackexchange.com/questions/249573/using-timeout-in-a-script-with-one-command-but-multiple-hosts
+* "How to setup SSH timeout in shell script":http://stackoverflow.com/questions/4936807/how-to-setup-ssh-timeout-in-shell-script
+* "How to make SSH command execution to timeout":http://stackoverflow.com/questions/15785832/how-to-make-ssh-command-execution-to-timeout
+* "sshpass 1.05 with timeouts and debug output":https://github.com/thread13/sshpass-debug
+

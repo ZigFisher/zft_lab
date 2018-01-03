@@ -1,0 +1,68 @@
+---
+layout:     post
+title:      "Заметки по InfluxDB"
+tagline:    ""
+category:   ""
+group:      notes
+tags:       [influxdb, database, linux, notes]
+---
+
+
+h3. Введение
+
+p. Система мониторинга "esp8266.flymon.net":http://esp8266.flymon.net построена с использованием InfluxDB. Дополнительная информация будет немного позже.
+
+---
+
+h3. InfluxDB 0.8.9
+
+p. Установка для 64-битных систем
+
+pre. wget http://get.influxdb.org.s3.amazonaws.com/influxdb_0.8.9_amd64.deb
+sudo dpkg -i influxdb_0.8.9_amd64.deb
+sudo /etc/init.d/influxdb start
+
+p. Первичная настройка
+
+* Duration - длина временного отрезка (шарды) [1d]
+* Retention - срок хранения шарда [90d]
+
+!/images/2015082801.jpg!
+
+!/images/2015082802.jpg!
+
+!/images/2015082803.jpg!
+
+---
+
+h3. Примеры запросов в WEB-интерфейсе InfluxDB
+
+pre. SELECT * FROM srach GROUP BY time(5m) WHERE mac ='18FE3498CCF0'  AND time > NOW() - 24h;
+#
+SELECT host, counter FROM srach GROUP BY host, time(10m) fill(0) WHERE ( mac = '18FE349CDBD4' ) AND time > NOW() - 12h;
+#
+SELECT * FROM srach GROUP BY host, time(10m) fill(0) WHERE ( mac = '18FE349CDBD4' ) AND time > NOW() - 12h;
+
+---
+
+h3. InfluxDB Chronograf
+
+p. Установка для 64-битных систем
+
+pre. wget https://s3.amazonaws.com/get.influxdb.org/chronograf/chronograf_0.1.0_amd64.deb 
+sudo dpkg -i chronograf_0.1.0_amd64.deb
+
+---
+
+h3. Внешние ссылки
+
+* "InfluxDB: Open-source distributed time series database with no external dependencies":https://influxdb.com/index.html
+* "InfluxDB: Installation v.0.8.X":https://influxdb.com/docs/v0.8/introduction/installation.html
+* "InfluxDB: Aggregate Functions":http://influxdb.com/docs/v0.8/api/aggregate_functions.html
+* -
+* "InfluxDB: Announcing Telegraf, a metrics collector":https://influxdb.com/blog/2015/06/19/Announcing-Telegraf-a-metrics-collector-for-InfluxDB.html
+* "InfluxDB: Chronograf, а new data visualization tool for InfluxDB":https://influxdb.com/chronograf/index.html
+* "InfluxDB: Installing Chronograf":https://influxdb.com/chronograf-download/index.html
+* -
+* "Time Series, метрики и статистика: введение в InfluxDB":https://blog.selectel.ru/time-series-metriki-i-statistika-vvedenie-v-influxdb/
+* "Релиз InfluxDB 0.9":http://habrahabr.ru/post/262565/

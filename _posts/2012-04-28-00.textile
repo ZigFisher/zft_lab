@@ -1,0 +1,20 @@
+---
+layout:     post
+title:      "Переделка TP-Link WA-5210G в Ubiquiti NS2"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, tplink, ubiquiti]
+---
+
+
+h3. Введение
+
+p. Информация будет перенесена из старого блога в новый. Пока только ссылки ниже.
+
+---
+
+h3. Внешние ссылки
+
+* "Переделка TP-Link WA-5210G в Ubiquiti NS2":http://blog.flyrouter.net/2012/04/tp-link-wa-5210g-ubiquiti-nanostation-2.html
+* "Видео на YouTube - Firmware upgrade TP-Link TL-WA5210G":https://www.youtube.com/watch?v=T-Bx9CAJFZA

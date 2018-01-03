@@ -1,0 +1,28 @@
+---
+layout:     post
+title:      "Заметки по GitHub"
+tagline:    ""
+category:   ""
+group:      notes
+tags:       [githubx, notes]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Чтение RSS по пользователю и проектам на GitHub
+
+pre. https://github.com/zigfisher.atom
+
+pre. https://github.com/ZigFisher/Glutinium/commits/master.atom
+
+---
+
+h3. Внешние ссылки
+
+* "Setting up an Github Commit RSS feed":http://stackoverflow.com/questions/7353538/setting-up-an-github-commit-rss-feed
+

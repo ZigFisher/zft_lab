@@ -1,0 +1,78 @@
+---
+layout:     post
+title:      "Настройка SIP на телефонах Cisco 7905g/06g/11g/12g"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [cisco,voip]
+---
+
+
+h3. Сброс на заводские настройки Cisco 7905g и 7912g
+
+* Войти в меню телефона - это кнопка с глобусом
+* Перейти по пунктам меню: Settings => Network Configuration => Erase Configuration
+* Ввести код "**#" и затем ввести пароль "1234" или "cisco" в зависимости от прошивки
+* Подтвердить нажатием "Yes", затем "Save"
+* ---
+* Войти в меню телефона - это кнопка с глобусом
+* Ввести код "**2" и подтвердить нажатием "Yes", а затем "Save"
+
+---
+
+h3. Сброс на заводские настройки Cisco 7906g и 7911g
+
+* Подключить телефон в LAN с настроенным TFTP сервером
+* Выключить питание телефона, нажать клавишу "#" и не отпуская ее подать питание
+* После того как индикатор на трубке начнёт мигать, отпустить "#"
+* Ввести на клавиатуре код прошивки "123456789*0#"
+* Если все выполнено правильно, на экране будет показан процесс прошивки
+
+---
+
+h3. Сброс на заводские настройки Cisco 7940
+
+* Подключить телефон в LAN с настроенным TFTP сервером
+* Выключить питание телефона, нажать клавишу **#** и не отпуская ее подать питание
+* После того как индикаторы кнопок микрофона и динамика начнут мигать, отпустить "#"
+* Ввести на клавиатуре код прошивки "123456789*0#"
+* На вопрос, сохранить-ли данные - ответить нажатием "2", т.е. нет.
+* Если все выполнено правильно, на экране будет показан процесс прошивки
+
+---
+
+h3. TFTP logging...
+
+pre. Serving term06.default.loads
+Serving jar11sip.8-4-1-23.sbn
+Serving cnu11.8-4-1-23.sbn
+Serving apps11.8-4-1-23.sbn
+Serving dsp11.8-4-1-23.sbn
+Serving cvm11sip.8-4-1-23.sbn
+
+pre. Serving CTLSEP0024973408C0.tlv
+Serving SEP0024973408C0.cnf.xml
+Serving XMLDefault.cnf.xml
+
+---
+
+h3. Внешние ссылки
+
+* "Hard reset Cisco IP Phone. Сброс настроек до заводских.":http://admindoc.ru/600/hard-reset-cisco-ip-phone-sbros-nastroek-do-zavodskix/
+* "Прошивка телефонов Cisco 7905 под протокол SIP для работы с АТС Asterisk":http://www.shkerka.ru/proshivka-telefonov-cisco-7905-pod-protokol-sip-dlya-raboty-s-ats-asterisk.html
+* "Сброс настроек на Cisco 7912G/7905G [Cisco 7912G factory reset]":http://www.voxlink.ru/kb/ip-phones-configuration/cisco/cisco-7912G-factory-reset/
+* "Прошивка и настройка телефона 7912 SCCP to SIP":http://voxlink.ru/kb/ip-phones-configuration/cisco/cisco-7912-7905-from-sccp-to-sip-firmware/
+* "Flashing cisco 7912 to SIP":http://itblog.su/flashing-cisco-7912-to-sip.html
+* "Cisco 7912 from SCCP to SIP and provisioning":http://itblog.su/cisco-7912-from-sscp-to-sip-and-provisioning.html
+* "Перепрошивка Cisco 7912G":http://habrahabr.ru/post/37473/
+* "Прошивка Cisco 7906 и 7911 на SIP":http://itgalaxy.net/flashing-cisco-7906-and-7911-to-sip/
+* "Cisco 7911 SIP":http://www.svm-zone.ru/2012/12/cisco-7911-sip.html
+* "Невозможно зайти в меню на IP-телефонах Cisco 79xx":https://toster.ru/q/37393
+* "Прошивка телефонов Cisco 7940/7960 на SIP":http://voxlink.ru/kb/ip-phones-configuration/cisco/cisco-7940-7960-sip-firmware/
+* "Как я программировал Cisco 7940G":http://www.volvo850.ru/bytovaj/cisco.htm
+* "Habrahabr: Телефоны CISCO 7942G и 7940 в связке с Asterisk 11":http://habrahabr.ru/post/268821/
+* "Habrahabr: Настройка телефона Cisco серии 79XX для работы с Asterisk":http://habrahabr.ru/post/121140/
+* "Rutracker: Последние версии прошивок SCCP и SIP для IP-телефонов Cisco":http://rutracker.org/forum/viewtopic.php?pg=1&t=2042456
+* "Rutracker: SIP прошивки за май 2009 года для Cisco 79xx":http://rutracker.org/forum/viewtopic.php?t=2118161
+* "Cisco 7940/7960 SIP firmware":http://radiotwenterand.nl/~graver/cisco/SIP-7960/
+* "Asterisk phone Cisco 79x1 xml configuration files for SIP":http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+79x1+xml+configuration+files+for+SIP

@@ -1,0 +1,51 @@
+---
+layout:     post
+title:      "Создание фотоснимков и Timelapse Video за 9,5$"
+tagline:    ""
+category:   ""
+group:      flymon
+tags:       [router, flypeek, timelapse, video]
+---
+
+
+h3. Введение
+
+* В процессе описания..
+
+---
+
+h3. Пример кода на сервере
+
+pre. #!/bin/sh
+#
+SOURCES="/var/www/webcam"
+ARCHIVE="/var/www/webcam/archive"
+#
+CMD=$1
+FPS="1"
+BIT="1200"
+#
+#
+ls -l --full-time $SOURCES/*.jpg | tr './' ' ' | tr ':' '-' | awk '{print $6,$7,$16}' |  while read date time mac; do
+  if [ "$CMD" = "archive" ] ; then
+    mkdir -p $ARCHIVE/$mac
+    cp $SOURCES/$mac.jpg $ARCHIVE/$mac/$date-$time.jpg
+    ln -sf $ARCHIVE/$mac/$date-$time.jpg $ARCHIVE/$mac/last.jpg
+  elif [ "$CMD" = "timelapse" ]; then
+    mkdir -p $ARCHIVE/$mac
+    mencoder mf://$ARCHIVE/$mac/$date-*.jpg -mf fps=$FPS:type=jpg -ovc x264 \
+     -x264encopts bitrate=$BIT:threads=2 -o $ARCHIVE/$mac/$date-timelapse.mkv >/dev/null 2>&1
+    # For music: -oac copy -audiofile audiofile.mp3
+  fi
+done
+exit 0
+
+---
+
+h3. Внешние ссылки
+
+* "How to Create a Time-Lapse Video from Still Images":http://thescientistvideographer.com/wordpress/how-to-create-a-time-lapse-video-from-still-images/
+* "Make Time Lapse Video":http://www.jpgmovie.com/
+* -
+* "Фотосигнализация":http://geektimes.ru/company/dadget/blog/265536/
+* "Как сделать WI-FI камеру видеонаблюдения за 1200 рублей":http://mainloop.ru/linux-os/make-lowcost-wifi-webcam.html

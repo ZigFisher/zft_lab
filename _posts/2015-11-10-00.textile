@@ -1,0 +1,30 @@
+---
+layout:     post
+title:      "Вторая жизнь ADSL модемов с OpenWRT"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, dlink]
+---
+
+
+h3. Введение
+
+p. В процессе..
+
+p. DSL-2500U P/N ISL2500USBRU6D2G H/W Ver: D2
+
+p. DSL-2500U P/N RSL2500UEBRU9D3G H/W Ver: D3
+
+---
+
+h3. Внешние ссылки
+
+* "OpenWrt Forum: Dlink DSL-2500 support in brcm63xx":https://forum.openwrt.org/viewtopic.php?id=50322
+* "OpenWrt Wiki: D-Link DSL 2500U":https://wiki.openwrt.org/toh/d-link/dsl-2500u
+* "OpenWrt Wiki: Broadcom BCM63xx":https://wiki.openwrt.org/doc/hardware/soc/soc.broadcom.bcm63xx
+* "OpenWrt Wiki: CFE":https://wiki.openwrt.org/doc/techref/bootloader/cfe
+* "GitHub: Broadcom CFE Bootloader":https://github.com/Noltari/cfe_bcm63xx
+* "Ethernet to UART мост на DSL 2500U + arduino":http://roboforum.ru/forum40/topic10143.html
+* "Новогоднее исследование ADSL-роутера на базе Linux - 0x7 - заключение":http://robocraft.ru/blog/electronics/416.html
+* "Превращаем ADSL-модем в Ethernet-шилд для Arduino/CraftDuino":http://robocraft.ru/blog/electronics/538.html

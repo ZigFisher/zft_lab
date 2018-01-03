@@ -1,0 +1,20 @@
+---
+layout:     post
+title:      "Работа с Google.Forms"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [google]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Внешние ссылки
+
+* "Submit google forms by curl command":http://eureka.ykyuen.info/2014/07/30/submit-google-forms-by-curl-command/
+* "Устанавливаем и стилизуем Google Форму под свой сайт":http://blog.bozzbox.com/2014/11/googleformynasayte.html

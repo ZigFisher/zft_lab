@@ -1,0 +1,65 @@
+---
+layout:     post
+title:      "Автоматическая публикация информации в соц.сетях, месенджерах и др."
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [facebook]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+---
+
+h3. Мессенджеры, социальные сети и другое
+
+
+* Месенджеры
+** Hangouts
+** ICQ
+** Skype
+** Telegram
+** WhatsApp
+
+* Социальные сети
+** Facebook
+** Google+
+** Instagram
+** OK
+** Twitter
+** VK
+
+* Другое
+** IRC
+** Slack
+
+---
+
+h3. Facebook
+
+* "Страница-заглушка zftlab.org":https://ru-ru.facebook.com/zftlaborg-1712837745690043
+* "Страница-заглушка crimeainfo.com":https://ru-ru.facebook.com/crimeainfocom-165917007310842
+* "Страница-заглушка mywifi.cc":https://ru-ru.facebook.com/mywificc-467261953651032
+* "Страница-заглушка ayan.su":https://ru-ru.facebook.com/ayansu-1449862145105798/
+* --
+* "Страница проекта Octonix":https://www.facebook.com/octonix.net/
+
+---
+
+h3. Внешние ссылки
+
+* "GitHub: A collective list of public JSON APIs for use in web development":https://github.com/toddmotto/public-apis
+* -
+* "Dropbox for developers":https://www.dropbox.com/developers
+* "Facebook for developers":https://developers.facebook.com/
+* "GoogleDrive for developers":https://developers.google.com/drive/
+* "Instagram for developers":https://www.instagram.com/developer/
+* "LinkedIn for developers":https://developer.linkedin.com/docs/rest-api
+* "Telegram for developers":https://core.telegram.org/bots/api
+* "Twitter for developers":https://dev.twitter.com/rest/public
+* "VK for developers":https://vk.com/dev/sites
+* -
+* "Начало работы с API Pages Facebook":https://developers.facebook.com/docs/pages/getting-started

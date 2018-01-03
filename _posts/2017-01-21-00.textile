@@ -1,0 +1,43 @@
+---
+layout:     post
+title:      "Заметки по Node-RED"
+tagline:    ""
+category:   ""
+group:      notes
+tags:       [nodered,node-red]
+---
+
+
+h3. Введение
+
+p. Домашняя автоматизация на базе Node-RED. Дополнительная информация будет немного позже.
+
+---
+
+h3. Внешние ссылки
+
+* "GeekTimes: Программируем управление освещением по датчикам движения и освещения на Node-RED":https://m.geektimes.ru/post/279814/
+* -
+* "Бот Telegram для умного дома на Node-Red":https://andreyosipchuk.wordpress.com/2016/03/16/telegram-bot-smart-home-node-red/
+* "Home automation with Raspberry Pi 2 and Node-RED":https://www.rs-online.com/designspark/home-automation-with-raspberry-pi-2-and-node-red
+* "Rapid dashboarding with Node-RED":http://embeddedexperience.blogspot.ru/2016/02/rapid-dashboarding-with-node-red.html
+* -
+* "Запускаем Alpine Linux и Node-RED в контейнере Docker":https://github.com/ZigFisher/MyDocker/tree/master/project_alpine-3.5.0_nodered
+* "Node-RED Docker Images":http://jamesthom.as/blog/2016/07/27/node-red-docker-images/
+* -
+* "YouTube: Raspberry Pi with Node-RED Tutorial #1 – First Test":https://www.youtube.com/watch?v=M0Mjo0J1X_Q
+* "YouTube: Raspberry Pi with Node-RED Tutorial #2 – Make a user interface":https://www.youtube.com/watch?v=UKv4_jvPtr4
+* "YouTube: Raspberry Pi with Node-RED Tutorial #3 – unix command with exec node":https://www.youtube.com/watch?v=TlPOQHjNqwk
+* "YouTube: Raspberry Pi with Node-RED Tutorial #4 - interacting with Arduino UNO":https://www.youtube.com/watch?v=snLZKcecgGI
+* "YouTube: Raspberry Pi with Node-RED Tutorial #5 – backup and import a project":https://www.youtube.com/watch?v=9e7GNxllPXQ
+* -
+* "Node-RED":http://nodered.org/
+* "Node-RED Library":http://flows.nodered.org/
+* "Node: node-red-node-ping":http://flows.nodered.org/node/node-red-node-ping
+* "Node: node-red-contrib-orvibo":http://flows.nodered.org/node/node-red-contrib-orvibo
+* "Flow: System Information Dashboard":http://flows.nodered.org/flow/9b9f68f6641a42452e848a37da5df972
+* "Flow: Xiaomi Miflora sensor integration":http://flows.nodered.org/flow/b1af1d000ff5bf854afa97f025d33feb
+* "Flow: Orvibo S20 WiFi Mains Sockets":http://flows.nodered.org/flow/7dd0f897e7ea7c600165
+* "Flow: PIR Sensor to MQTT - Raspberry Pi and Orvibo":http://flows.nodered.org/flow/3c0bbbe3e32f15512fc2
+
+

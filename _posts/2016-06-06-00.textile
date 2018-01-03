@@ -1,0 +1,55 @@
+---
+layout:     post
+title:      "Борьба с 'вирусами' на Ubiquiti устройствах"
+tagline:    ""
+category:   ""
+group:      notes
+tags:       [ubiquiti, notes]
+---
+
+
+h3. Введение
+
+p. В процессе..
+
+---
+
+h3. Лечение
+
+p. Заход на устройство
+
+pre. #
+moth3/fucker
+moth3r/fucker
+moth3r/fuck.3r
+
+---
+
+p. Остановка всех сервисов вируса
+
+pre. killall -9 mother sprd infect curl
+
+---
+
+p. Очистка /etc/persistent/ и немедленная перезагрузка устройства
+
+pre. cfgmtd -w; reboot -f
+
+---
+
+h3. Внешние ссылки
+
+* "Поймали вирус на UBNT? Тогда вам сюда":http://asp24.com.ua/blog/pojmali-virus-togda-vam-syuda/
+* "Вирус на устройствах Ubiquiti Networks":http://forum.nag.ru/forum/index.php?showtopic=117263&st=0
+* "ВАЖНО! Вирус атакует устройства UBIQUITI":http://its-wifi.ru/blog/vazhno-virus-atakuet-ustrojstva-ubiquiti
+* "Старые прошивки AirOS Ubiquiti поражаются вирусом":http://lantorg.com/article/starye-proshivki-airos-ubiquiti-porazhayutsya-virusom
+* "Важная информация о вирусной атаке на оборудование Ubiquiti":http://wifimag.ru/news/10262/
+* "Ubiquiti Вирус Skynet. Решение проблемы.":http://www.ubnt.su/forum/threads/ubiquiti-virus-skynet-reshenie-problemy.578/
+* "Правда и вымысел о вирусе на Ubiquiti":http://asp24.com.ua/blog/ubiquiti-virus/
+* "Информация о Skynet vs ubnt":https://habrahabr.ru/sandbox/49461/
+* -
+* "BEST: This script is used to remove the virus to ubiquiti radios":https://github.com/diegocanton/remove_ubnt_mf
+* "Malware Removal Tool 05-15-2016":https://community.ubnt.com/t5/airMAX-General-Discussion/Malware-Removal-Tool-05-15-2016/m-p/1564953#U1564953
+* "Virus attack - URGENT @UBNT":https://community.ubnt.com/t5/airMAX-General-Discussion/Virus-attack-URGENT-UBNT/td-p/1562940
+* "Re: Virus atack v2":http://community.ubnt.com/t5/airMAX-General-Discussion/Virus-atack-v2/m-p/1583511
+* "UBNT vírus útok":http://lokalnyisp.net/viewtopic.php?f=35&t=576

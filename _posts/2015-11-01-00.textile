@@ -1,0 +1,76 @@
+---
+layout:     post
+title:      "Вторая жизнь Ubiquiti AirCam - запускаем FTP"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [video, ubiquiti, webcam]
+---
+
+
+h3. Введение
+
+* В процессе описания..
+
+/openwrt/tools/Makefile
+
+ifneq ($(CONFIG_TARGET_gm812x),)
+tools-y += ubnt-mkfwimage
+endif
+
+
+/openwrt/target/linux/gm812x/image
+
+---
+
+p. Получаем базовую информацию о процессоре.
+
+pre. AirCam.v1.2# cat /proc/cpuinfo
+Processor       : FA626TE rev 1 (v5l)
+BogoMIPS        : 532.48
+Features        : swp half thumb
+CPU implementer : 0x66
+CPU architecture: 5TE
+CPU variant     : 0x0
+CPU part        : 0x626
+CPU revision    : 1
+|
+Hardware        : Faraday GM8126
+Revision        : 0000
+Serial          : 0000000000000000
+
+p. Процессоры GM812x поддерживаются в OpenWrt. В нём-же собраны программы vtun и ftp.
+
+---
+
+p. Копирование файлов
+
+pre. scp rc.start ncftpput more admin@aircam_ip:/etc/persistent/
+
+---
+
+p. Сохранение записанных файлов и настроек
+
+pre. AirCam.v1.2# save
+
+pre. Found  Active on[1] ...
+Found Backup1 on[2] ...
+Storing Active[2] ... [%100]
+Active->Backup[1] ... [%100]
+AirCam.v1.2#
+
+---
+
+p. Запуск скрипта отправки снапшотов по FTP
+
+pre. /etc/persistent/rc.start
+
+---
+
+h3. Внешние ссылки
+
+* "Adding FTP To The Ubiquiti AirCam Mini":https://blog.linitx.com/adding-ftp-ubiquiti-aircam-mini/
+* "Как получить снапшот с Ubiquiti AirCam Snapshot":http://blog.wildhouse.ru/2013/04/ubiquiti-aircam-snapshot.html
+* -
+* "Grain Media, GM812x SoC, embedded with FA626TE ARM9 V5TE CPU":http://www.grain-media.com/html/8126.html
+* "GitHub: OpenWRT for Ubiquiti AirCam":https://github.com/fedya/aircam-openwrt

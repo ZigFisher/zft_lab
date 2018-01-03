@@ -1,0 +1,32 @@
+---
+layout:     post
+title:      "Создание сайта на базе Bootstrap 3"
+tagline:    ""
+category:   ""
+group:      linux
+tags:       [debian, web]
+---
+
+
+h3. Введение
+
+p. За выходные был создан черновой набросок сайта для ESP8266 - "esp8266.flymon.net":http://esp8266.flymon.net и параллельно поднят домен второго уровня "esp8266.pw":http://esp8266.pw
+
+p. Основной упор делался на подбор цветовой палитры сайта, выпадающее меню с разделами и списками, а так-же миниатюрными иконками от Font Awesome.
+
+
+h3. Внешние ссылки
+
+* "Bootstrap":http://getbootstrap.com/
+* "Download bootstrap-3.3.4-dist.zip":https://github.com/twbs/bootstrap/releases/download/v3.3.4/bootstrap-3.3.4-dist.zip
+* "Font Awesome icons":http://fortawesome.github.io/Font-Awesome/icons/
+* "Download font-awesome-4.3.0.zip":http://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.3.0.zip
+* "Bootswatch - free themes for Bootstrap":http://bootswatch.com/cerulean/
+* "Textile live web editor":http://borgar.github.io/textile-js/
+* "A fully featured Textile parser in JavaScript":https://github.com/borgar/textile-js
+* "pushState + ajax = pjax":https://github.com/defunkt/jquery-pjax
+* -
+* "Bootstrap 3 – Выпадающие списки (dropdowns)":http://itchief.ru/lessons/bootstrap-3/98-bootstrap-3-dropdown-lists
+* "Bootstrap 3 – Настройка компонента Navbar":http://itchief.ru/lessons/bootstrap-3/119-bootstrap-3-customize-the-navbar
+* "Как сделать выпадающее меню (Bootstrap Dropdown) по hover эффекту":http://hypercoder.ru/bootstrap-dropdown-kak-sdelat-vypadaushee-menu-po-hover-effektu.html
+* "Полезные компоненты Bootstrap":http://mybootstrap.ru/components/

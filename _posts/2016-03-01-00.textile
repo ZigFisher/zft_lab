@@ -1,0 +1,34 @@
+---
+layout:     post
+title:      "Заметки по Slack"
+tagline:    ""
+category:   ""
+group:      notes
+tags:       [slack, notes]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Текущие доступные каналы на ресурсе "flymon.slack.com":https://flymon.slack.com
+
+* flyhub_org
+* hard_and_soft
+* wifi-iot_com
+* zftlab_org
+
+---
+
+h3. Внешние ссылки
+
+* "Habrahabr: Slack. Небольшой обзор отличного сервиса.":https://habrahabr.ru/post/223709/
+* "8 советов для тех, кто пользуется Slack":http://www.lookatme.ru/mag/live/things/214459-slack-tips-and-tricks
+* "Sameroom.io - connect channel manager":https://sameroom.io/manage
+* "The ultimate open source web chat platform":https://rocket.chat/
+* "Mattermost is an open source, self-hosted Slack-alternative":http://www.mattermost.org/
+* -
+* "SlackHelp: XMPP and IRC Client Support":https://flymon.slack.com/account/gateways

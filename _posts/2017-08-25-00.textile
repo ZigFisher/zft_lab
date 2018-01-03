@@ -1,0 +1,28 @@
+---
+layout:     post
+title:      "Высокопроизводительный шлюз для соединения чатов - matterbridge"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [matterbridge]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+---
+
+h3. About
+
+p. Matterbridge - bridge between mattermost, IRC, gitter, xmpp, slack, discord, telegram, rocket.chat,hipchat (via xmpp), steam and matrix with REST API
+
+p. В настоящее время тестовый шлюз соединяет между собой чат-каналы проекта "wifi-iot.com":wifi-iot.com в IRC, Slack и Telegram
+
+---
+
+h3. Внешние ссылки
+
+* "GitHub: Matterbridge":https://github.com/42wim/matterbridge
+* "Matterbridge - Gateway config (channel rules)":https://github.com/42wim/matterbridge/wiki/Gateway-config-(channel-rules)

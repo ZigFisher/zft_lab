@@ -1,0 +1,61 @@
+---
+layout:     post
+title:      "Dashboard для отображения общего статуса системы"
+tagline:    ""
+category:   ""
+group:      flymon
+tags:       [esp8266, smarthouse, dashboard]
+---
+
+
+h3. Примеры использования
+
+* "Тестовая панель мониторинга [azs]":http://console.flymon.net/#source=dashboard/azs.json
+* "Тестовая панель мониторинга [dacha]":http://console.flymon.net/#source=dashboard/dacha.json
+* "Тестовая панель мониторинга [energy]":http://console.flymon.net/#source=dashboard/energy.json
+* "Тестовая панель мониторинга [khlon_av]":http://console.flymon.net/#source=dashboard/khlon_av.json
+* "Тестовая панель мониторинга [meteo]":http://console.flymon.net/#source=dashboard/meteo.json
+* "Тестовая панель мониторинга [power]":http://console.flymon.net/#source=dashboard/power.json
+* "Тестовая панель мониторинга [sigma]":http://console.flymon.net/#source=dashboard/sigma.json
+* "Тестовая панель мониторинга [zav]":http://console.flymon.net/#source=dashboard/zav.json
+* "Тестовая панель мониторинга [zig]":http://console.flymon.net/#source=dashboard/zig.json
+* "Полностью пустая панель":http://console.flymon.net/
+* -
+* "Каталог скриншотов с камер, подключенных к роутерам (с архивом)":http://ubnt.flymon.net/webcam/
+* "Статья и графики ThingSpeak по вегетарию":http://www.skilur.net/2014/09/online.html
+* "Графики ThingSpeak по ZFT Lab.":http://zftlab.org/pages/2014102100.html
+
+---
+
+h3. Скриншоты интерфейсов
+
+p. Приборная панель (dashboard) предназначена для отображения общего статуса системы.
+
+!/images/2015091101.jpg!
+
+!/images/2015091102.jpg!
+
+!/images/2015091103.jpg!
+
+---
+
+h3. План-задачи по дашборду
+
+* На индикаторе включения (светодиод), в положении OFF сделать светящимся красный ободок
+* Добавить в дашборд новый блок (Pane) с текущими графиками esp8266.flymon.net
+* Добавить в дашборд новый источник данных (datasources) с привязкой к InfluxDB и MAC
+* Упростить процедуру выбора метрик из источников данных при создании новых блоков
+* -
+* Контроль параметров с уведомлением по SMS и Email (выбор метрик и пороговых значений)
+* -
+* Добавить возможность полосы прокрутки на боарде
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'smarthouse' %}
+  {% include JB/pages_list %}
+</ul>

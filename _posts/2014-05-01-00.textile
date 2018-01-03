@@ -1,0 +1,34 @@
+---
+layout:     post
+title:      "Курсы валют Нацбанка Украины и ЦБ России"
+tagline:    ""
+category:   ""
+group:      other
+tags:       [finance]
+---
+
+
+h3. События
+
+p. В связи последними событиями, которые изменили статус АР Крым, пришлось задуматься о получении оперативной информации по курсам валют. Это нужно в основном для расчетов при поставках оборудования и компектующих из-за рубежа, однако может пригодиться и для общего развития.
+
+
+h3. Нацбанк Украины
+
+!http://curr.proext.com/images/chart/usd.png(USD)!:http://curr.proext.com/images/chart/usd.png
+!http://curr.proext.com/images/chart/eur.png(EUR)!:http://curr.proext.com/images/chart/eur.png
+!http://curr.proext.com/images/chart/rub.png(RUB)!:http://curr.proext.com/images/chart/rub.png
+
+
+h3. ЦБ России
+
+!http://news.yandex.ru/quotes/1.png(USD)!:http://news.yandex.ru/quotes/1.html
+!http://news.yandex.ru/quotes/23.png(EUR)!:http://news.yandex.ru/quotes/23.html
+!http://news.yandex.ru/quotes/10006.png(UAH)!:http://news.yandex.ru/quotes/10006.html
+!http://news.yandex.ru/quotes/6.png(EUR/USD)!:http://news.yandex.ru/quotes/6.html
+
+
+h3. Ссылки
+
+* "Курс валют в Симферополе":http://valuta.simf.com.ua/
+* "Украинский валютный аукцион":http://minfin.com.ua/currency/auction/usd/buy/kiev/

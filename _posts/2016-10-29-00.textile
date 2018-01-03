@@ -1,0 +1,102 @@
+---
+layout:     post
+title:      "Комплект Xiaomi Mi Smart Home + дополнительные модули "
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [xiaomi,mi]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+p. Плюсы:
+
+* Малые размеры
+* Отличная эргономика и дизайн
+* Питание от батарейки (обещают минимум год работы)
+
+p. Минусы:
+
+* Закрытый протокол
+* Удодное китайское приложение для мобилок
+
+---
+
+h3. Устройства снаружи и внутри
+
+!/images/2016102901.jpg!
+
+!/images/2016102902.jpg!
+
+!/images/2016102903.jpg!
+
+!/images/2016102904.jpg!
+
+!/images/2016102905.jpg!
+
+!/images/2016102906.jpg!
+
+!/images/2016102907.jpg!
+
+!/images/2016102908.jpg!
+
+!/images/2016102909.jpg!
+
+!/images/2016102910.jpg!
+
+!/images/2016102911.jpg!
+
+!/images/2016102912.jpg!
+
+!/images/2016102913.jpg!
+
+!/images/2016102914.jpg!
+
+!/images/2016102915.jpg!
+
+!/images/2016102916.jpg!
+
+!/images/2016102917.jpg!
+
+!/images/2016102918.jpg!
+
+!/images/2016102919.jpg!
+
+!/images/2016102920.jpg!
+
+!/images/2016102921.jpg!
+
+!/images/2016102922.jpg!
+
+!/images/2016102923.jpg!
+
+!/images/2016102924.jpg!
+
+---
+
+h3. Внешние ссылки
+
+* "IXBT: Домашняя автоматизация Xiaomi Smart Home Suite":http://www.ixbt.com/home/xiaomi-smart-home-suite.shtml
+* "Обзор Xiaomi Mi Multifunctional Gateway: ворота 'умного' дома":http://gagadget.com/22377-obzor-xiaomi-mi-multifunctional-gateway-vorota-umnogo-doma/
+* "4PDA: Xiaomi MiHome версия: 3.9.10":http://4pda.ru/forum/index.php?showtopic=661250&st=0#entry39794641
+* "4PDA: Xiaomi MiHome - Обсуждение системы":http://4pda.ru/forum/index.php?showtopic=680062
+* "4PDA: Скриншоты Mi Flower Monitor":http://4pda.ru/forum/index.php?showtopic=680062&st=1360#entry53784027
+* "4PDA: Xiaomi Flower Care версия: 1.0.1 | 2.3.0":http://4pda.ru/forum/index.php?showtopic=754502&st=0
+* "Habrahabr: Сети ZigBee. Зачем и почему ?":https://habrahabr.ru/post/155037/
+* "Highly configurable home automation with new Xiaomi Smart Home Kit":http://blog.alansoon.com/technology-gadget-software/highly-configurable-home-automation-with-new-xiaomi-smart-home-kit-it-gadget-review
+* "Zigbee Xiaomi Door/Window Sensors [probably won’t work with SmartThings]":https://community.smartthings.com/t/9-zigbee-xiaomi-door-window-sensors-probably-wont-work-with-smartthings/28607/2
+* "Xiaomi Zigbee Door/Window Sensor, Motion Sensor, & Smart Button Device Type [beta]":https://community.smartthings.com/t/xiaomi-zigbee-door-window-sensor-motion-sensor-smart-button-device-type-beta/31948
+* "GitHub: An official list of SmartApps and Device Types from SmartThings":https://github.com/erocm123/SmartThingsPublic
+
+* "Intelligent IoT gateway on OpenWRT [slides]":http://www.slideshare.net/MateuszBabiarz/intelligent-iot-gateway-on-openwrt
+* "Превращаем роутер в XBee-to-Ethernet Gateway":https://habrahabr.ru/post/154185/
+* "Rijware: ZigBee, XBee and MQTT":http://rijware.com/zigbee-and-mqtt/
+* "Rijware: Connecting the Last 100 Metres to the Cloud using Mosquitto":http://rijware.com/mosquitto-bridge-to-secure-mqtt-broker/
+* "GitHub: lowpan-tools for OpenWRT":https://github.com/kyak/openwrt-packages/tree/master/lowpan-tools
+* "GitHub: linux-zigbee repo":https://github.com/hoerman/linux-zigbee
+* "An open source ZigBee plug for your own smart home":https://github.com/makerdiary/Smart-Plug
+
+

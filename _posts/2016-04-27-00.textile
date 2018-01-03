@@ -1,0 +1,29 @@
+---
+layout:     post
+title:      "Сеть хотспотов Вайфаюшка"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [mywifi, logo]
+---
+
+
+h3. Авторский дизайн от **neorender** (прототип)
+
+---
+
+p. Вариант логотипа № 1
+
+!/images/2016042701.jpg!
+
+---
+
+p. Вариант логотипа № 2
+
+!/images/2016042702.jpg!
+
+---
+
+h3. Внешние ссылки
+
+* "Вайфаюшка [mywifi.cc]":http://mywifi.cc

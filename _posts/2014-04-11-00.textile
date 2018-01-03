@@ -1,0 +1,17 @@
+---
+layout:     post
+title:      "Подбор оборудования для видеонаблюдения"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [video]
+---
+
+
+h3. Ссылки
+
+* "Escam MINI NVR N6200 - компактный FullHD NVR для IP камер":http://mysku.ru/blog/china-stores/28719.html
+* "Обзор 4 канального мини NVR  HTV-IP-M04":http://htvision.ru/4-kanala-htv-ip-m04.html
+* "Инструкция для NVR N6200 (.doc)":http://kb-sb.ru/file/NVR6200_manual_WEB_v1.doc
+* "Обновление ПО для 8_CH_Mini_NVR_N6200_4E":http://www.urcctvstore.com/Download.html
+

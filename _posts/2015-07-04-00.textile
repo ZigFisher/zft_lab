@@ -1,0 +1,24 @@
+---
+layout:     post
+title:      "Проверка AirMax 5G на нижнем плато Чатыр-Дага"
+tagline:    ""
+category:   ""
+group:      nature
+tags:       [nature]
+---
+
+
+h3. Фото
+
+!/images/2015070401.jpg!
+
+!/images/2015070402.jpg!
+
+!/images/2015070403.jpg!
+
+!/images/2015070404.jpg!
+
+
+h3. Внешние ссылки
+
+* "Чатыр-Даг [Википедия]":https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D1%82%D1%8B%D1%80-%D0%94%D0%B0%D0%B3

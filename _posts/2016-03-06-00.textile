@@ -1,0 +1,138 @@
+---
+layout:     post
+title:      "Nodogsplash - быстрый старт для создания FreeHotSpot"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [hotspot, openwrt, nodogsplash, wifi]
+---
+
+
+h3. Введение
+
+p. Дополнительная информация будет немного позже.
+
+---
+
+h3. Алгоритм работы
+
+p. Если включена опция enablepreauth, то после ввода ваучера абонент сразу попадает на запрашиваемую страницу, без просмотра сайта переадресации.
+
+p. Если ваучер не введен, то доступ в интернет запрещён и скрипт BinVoucher не вызывается. Включение опции forcevoucher позволяет выполнять скрипт в любом случае.
+
+---
+
+h3. Пример настройки через uci: Network + Wireless + DHCP + Firewall + Nodogsplash
+
+pre. #
+#
+uci set network.hotspot=interface
+uci set network.hotspot.type=bridge
+uci set network.hotspot.proto=static
+uci set network.hotspot.ipaddr=10.0.0.1
+uci set network.hotspot.netmask=255.255.255.0
+#
+uci set wireless.radio0.channel='7'
+uci set wireless.radio0.disabled='0'
+uci set wireless.@wifi-iface[0].device=radio0
+uci set wireless.@wifi-iface[0].mode=ap
+uci set wireless.@wifi-iface[0].ssid=FreeHotSpot
+uci set wireless.@wifi-iface[0].network=hotspot
+uci set wireless.@wifi-iface[0].encryption=none
+uci set wireless.@wifi-iface[0].hidden=0
+uci set wireless.@wifi-iface[0].isolate=1
+#
+uci set dhcp.hotspot=dhcp
+uci set dhcp.hotspot.interface=hotspot
+uci set dhcp.hotspot.start=101
+uci set dhcp.hotspot.limit=199
+uci set dhcp.hotspot.leasetime=1h
+#uci add_list dhcp.hotspot.dhcp_option=6,10.0.0.1
+#
+uci add firewall zone
+uci set firewall.@zone[-1].name=hotspot
+uci add_list firewall.@zone[-1].network=hotspot
+uci set firewall.@zone[-1].input=REJECT
+uci set firewall.@zone[-1].forward=REJECT
+uci set firewall.@zone[-1].output=ACCEPT
+#
+uci add firewall forwarding
+uci set firewall.@forwarding[-1].src=hotspot
+uci set firewall.@forwarding[-1].dest=wan
+#
+uci add firewall rule
+uci set firewall.@rule[-1].name=icmp-echo-request
+uci set firewall.@rule[-1].src=hotspot
+uci set firewall.@rule[-1].target=ACCEPT
+uci set firewall.@rule[-1].proto=icmp
+uci set firewall.@rule[-1].icmp_type=echo-request
+#
+uci add firewall rule
+uci set firewall.@rule[-1].name=dhcp
+uci set firewall.@rule[-1].src=hotspot
+uci set firewall.@rule[-1].target=ACCEPT
+uci set firewall.@rule[-1].proto=udp
+uci set firewall.@rule[-1].src_port=67-68
+uci set firewall.@rule[-1].dest_port=67-68
+#
+uci add firewall rule
+uci set firewall.@rule[-1].name=dns
+uci set firewall.@rule[-1].src=hotspot
+uci set firewall.@rule[-1].target=ACCEPT
+uci set firewall.@rule[-1].proto=tcpudp
+uci set firewall.@rule[-1].dest_port=53
+#
+#uci delete nodogsplash.@instance[0]
+#uci add nodogsplash instance
+uci set nodogsplash.@instance[0]=instance
+uci set nodogsplash.@instance[0].enabled='1'
+uci set nodogsplash.@instance[0].network='hotspot'
+uci set nodogsplash.@instance[0].gatewayname='ZFTLab-001'
+uci set nodogsplash.@instance[0].maxclients='50'
+uci set nodogsplash.@instance[0].clientidletimeout='1800'
+uci set nodogsplash.@instance[0].redirecturl='http://wifi.flymon.net'
+#
+#uci set nodogsplash.@instance[0].authenticated_users='block to 192.168.0.0/16' 'block to 10.0.0.0/8' 'allow tcp port 22' 'allow tcp port 53' 'allow udp port 53' 'allow tcp port 80' 'allow tcp port 443' 'allow tcp port 22' 'allow icmp'
+#uci add_list nodogsplash.@instance[0].preauthenticated_users='allow tcp port 53' 'allow udp port 53'
+#uci add_list nodogsplash.@instance[0].preauthenticated_users[0]='allow tcp port 53'
+#uci add_list nodogsplash.@instance[0].preauthenticated_users[1]='allow udp port 53'
+#uci set nodogsplash.@instance[0].users_to_router='allow tcp port 22' 'allow tcp port 23' 'allow tcp port 53' 'allow udp port 53' 'allow udp port 67' 'allow tcp port 80' 'allow tcp port 443'
+#uci set nodogsplash.@instance[0].users_to_router='allow tcp port 53' 'allow udp port 53' 'allow udp port 67' 'allow icmp'
+#
+#
+uci commit network
+uci commit wireless
+uci commit dhcp
+uci commit firewall
+uci commit nodogsplash
+
+---
+
+h3. Пример скрипта для BinVoucher
+
+pre. #!/bin/bash
+#
+client_mac="$1"
+voucher="$2"
+#
+if [ "$voucher" = "some_password" ]; then
+  # grant 600 seconds of Internet access
+  echo 600
+else
+  # no acccess
+  echo 0
+fi
+
+---
+
+h3. Внешние ссылки
+
+* "OpenWRT: Nodogsplash - simple way to open a free Hotspot":https://wiki.openwrt.org/doc/howto/wireless.hotspot.nodogsplash
+* "GitHub: Nodogsplash - simple way to open a free Hotspot":https://github.com/nodogsplash/nodogsplash
+
+* "Turris - OpenWRT and guest access":http://linux.xvx.cz/2014/05/turris-openwrt-and-guest-access.html
+* "GitHub: Guest WiFi configuration script":https://gist.github.com/ruzickap/fedcc47bc52b6fac8496#file-openwrt_guest_wifi-sh
+
+* "Nodogsplash example BinVoucher script":http://ml.ninux.org/pipermail/nodogsplash/2015-July/000121.html
+* "GitHub: Nodogsplash example file splash.html":https://github.com/nodogsplash/nodogsplash/blob/master/resources/splash.html#L42
+* "GitHub: Nodogsplash example file nodogsplash.conf":https://github.com/nodogsplash/nodogsplash/blob/master/resources/nodogsplash.conf#L355

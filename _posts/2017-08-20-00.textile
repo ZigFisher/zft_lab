@@ -1,0 +1,27 @@
+---
+layout:     post
+title:      "Интернет-шлюз для сети LoRa и всё, что с ним связано"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [lora,lora,arduino]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+
+---
+
+h3. Внешние ссылки
+
+* "LoRa® Product Family":http://www.semtech.com/wireless-rf/lora.html
+* "Использование частоты 868 МГц для LPWAN":https://strij.tech/publikatsii/tehnologiya/ispolzovanie-chastoty-868-mhz.html
+* "LG01-S LoRa Gateway":http://www.dragino.com/products/lora/item/119-lg01-s.html
+* "LG01 LoRa OpenWrt IoT Gateway":https://www.tindie.com/products/edwin/lg01-lora-openwrt-iot-gateway/
+* "GitHub: Driver/HAL to build a LoRa gateway":https://github.com/Lora-net/lora_gateway
+* "GitHub: A LoRa packet forwarder":https://github.com/Lora-net/packet_forwarder
+* "GitHub: Low-cost LoRa IoT & gateway with SX1272/76, Raspberry and Arduino":https://github.com/CongducPham/LowCostLoRaGw
+* "GitHub: An Arduino library for sending and receiving data using LoRa radios":https://github.com/sandeepmistry/arduino-LoRa

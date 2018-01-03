@@ -1,0 +1,56 @@
+---
+layout:     post
+title:      "Считыватель карт RFID RC522"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [modules, i2c ]
+---
+
+
+h3. Подключение интерфейсов
+
+p. Платы на базе RC522 бывают с UART, SPI и I2C интерфейсами. 
+
+p. SPI - самый дешевый и распространённый вариант.
+
+!/images/2014110501.jpg!
+
+---
+
+h3. Переделка интерфейса
+
+p. Сравнение плат со сдутыми чипами I2C (красная) и SPI (синяя). 
+
+p. Отдельное спасибо mr.**Kuslik** за сдув чипов !
+
+!/images/2014110502.jpg!
+
+p. Для переделки SPI версии в I2C необходимо сдуть чип и отрезать pin 1 от GND (земляной шины), переподключив затем на VCC (питание).
+
+p. Камрад **N0GooD** сообщает, что при переделке MFRC-522 на I2C необходимо ОБЯЗАТЕЛЬНО сажать ноги EA(32), ADR_0(30), ADR_1(29) и ADR_2(28) на 0 (землю), ибо в противном случае из-за наводок при сбросе или включении модуля, у него может установиться произвольный адрес.
+
+p. Камрад **d77** сообщает, что нужно сделать для переделки, после отпайки феном чипа - "1 ногу перевесить на плюс, дорожка под чипом. Лапы 25,26,27,28,29,30 на землю и отрезать дорожку 32 ножки от плюса и соеденить с землей".
+
+---
+
+!/images/2014110504.jpg!
+
+p. На данном фото показан один из возможных вариантов изменения адресации (перемычка) при I2C подключении.
+
+---
+
+!/images/2014110505.jpg!
+
+---
+
+h3. Ссылки
+
+* "raspberrypi.org - How to connect 2 RFID readers (RC522)":https://www.raspberrypi.org/forums/viewtopic.php?f=91&t=70756
+* "arduino.ru - Помогите с RFID Mifare RC522 module":http://arduino.ru/forum/obshchii/pomogite-s-rfid-mifare-rc522-module
+* "forum.arduino.cc - Need help with MFRC522":http://forum.arduino.cc/index.php?topic=108087.0
+* "mysku.ru - Считыватель карточек RFID RC522 в домашнем хозяйстве":http://mysku.ru/blog/aliexpress/23114.html
+* "apache.kiev.ua - Arduino Mega + RFID RC522":http://apache.kiev.ua/495-arduino-mega-rfid-rc522.html
+* "asio5.ru - RFID RC522 для Arduino":http://asio5.ru/?p=297
+* "robocraft.ru - CraftDuino и RFID-модуль RC522":http://robocraft.ru/blog/3004.html
+* "github.com - NFC_Shield_I2C":https://github.com/adafruit/Adafruit_NFCShield_I2C

@@ -1,0 +1,35 @@
+---
+layout:     post
+title:      "Ремонт и обслуживание роутеров TP-Link"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [openwrt]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+p. Прошивку без boot, можно получить вырезав его из исходного файла при помощи команды dd в Linux:
+
+pre. dd if=original_flash.bin of=flash_without_boot.bin skip=257 bs=512
+
+---
+
+h3. Внешние ссылки
+
+* "Default settings for TP-LINK routers":https://www.routerdefaults.org/tp-link
+
+* "Восстановление слетевшей прошивки TP-LINK":https://proadminz.ru/vosstanovlenie-sletevshey-proshivki-tp-link-tl-wr842nd/
+* "TP-Link stripped firmware":http://www.friedzombie.com/tplink-stripped-firmware/
+
+* "4PDA: TP-Link TL-WR740N - Обсуждение":https://4pda.ru/forum/index.php?showtopic=447586
+* "4PDA: Модернизированные загрузчики UBOOT для маршрутизаторов":https://4pda.ru/forum/index.php?showtopic=678446
+
+* "OpenWrt: TP-Link TL-WR841ND":https://wiki.openwrt.org/ru/toh/tp-link/tl-wr841nd
+* "OpenWrt: Deep MMC Mod":https://wiki.openwrt.org/toh/tp-link/tl-mr3420/deep.mmc.hack
+
+* "GitHub: U-Boot 1.1.4 modification for routers":https://github.com/pepe2k/u-boot_mod
+* "U-boot loaders from pepe2k":http://projects.dymacz.pl/?dir=u-boot_mod

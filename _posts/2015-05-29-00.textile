@@ -1,0 +1,23 @@
+---
+layout:     post
+title:      "Настройка SSL в Nginx"
+tagline:    ""
+category:   ""
+group:      linux
+tags:       [debian, nginx, web]
+---
+
+
+h3. Введение
+
+p. В связи с плановой заменой SSL сертификата на сервисе "FlyPay":http://flypay.cc была произведена настройка сервера Nginx и получен класс A+ по безопасности.
+
+
+h3. Внешние ссылки
+
+* "Nginx и https. Получаем класс А+":http://habrahabr.ru/post/252821/
+* "Переходим на HTTPS на Nginx: шпаргалка":http://habrahabr.ru/post/250931/
+* "Лучшие настройки HTTPS (TLS) Nginx":https://terrty.net/2014/ssl-tls-in-nginx/
+* "Средство проверки конфигурации SSL от GlobalSign":https://sslcheck.globalsign.com/ru/sslcheck/?host=flypay.cc
+
+* "Установка и настройка SSL сертификата под pound, nginx и apache":http://sysadm.pp.ua/linux/shifrovanie/pound-apache-nginx-ssl-setup.html

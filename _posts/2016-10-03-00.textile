@@ -1,0 +1,21 @@
+---
+layout:     post
+title:      "Портирование OpenWRT на "
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [openwrt]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+---
+
+h3. Внешние ссылки
+
+* "":
+* "":
+

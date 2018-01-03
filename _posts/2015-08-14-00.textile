@@ -1,0 +1,23 @@
+---
+layout:     post
+title:      "Подключение GSM модулей SIM800L и M590к роутерам"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, gsm]
+---
+
+
+h3. Введение
+
+p. Фото, описание и хакинг модулей будут добавлены чуть позже.
+
+---
+
+h3. Внешние ссылки
+
+* "GSM/GPRS модуль SIM800":http://mt-system.ru/catalog/besprovodnye-reshenija/gsm-moduli-simcom/linejka-modulej-i-dokumentacija/sim800
+* "Новый GSM/GPRS-модуль SIM800H: больше функций при меньших габаритах":http://www.wireless-e.ru/preview/pre_08_03_13_SIMCom_800_ws.php
+* "GSM/GPRS модуль SIM900. Часть вторая.":http://we.easyelectronics.ru/part/gsm-gprs-modul-sim900-chast-vtoraya.html
+* "New SIM800 library aimed at HTTP communication & GSM location":http://forum.arduino.cc/index.php?topic=325325.0
+* "This library provides easy access to SIM800 based GSM/GPRS module":https://github.com/stanleyhuangyc/Freematics/tree/master/libraries/SIM800

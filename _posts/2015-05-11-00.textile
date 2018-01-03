@@ -1,0 +1,103 @@
+---
+layout:     post
+title:      "Заметки по OpenWRT"
+tagline:    ""
+category:   ""
+group:      notes
+tags:       [debian, openwrt, notes]
+---
+
+
+
+|_=. Версия OpenWrt                                                                      |_=. Ядро   |_=. ADM5120 |_=. AR71xx |_=. BRCM63xx |_=. RAMIPS |_=. x86  |
+|=. "Attitude Adjustment 12.09":https://downloads.openwrt.org/attitude_adjustment/12.09/ |=. 3.3.8   |=. *        |=. *       |=. *         |=. ---     |=. *     |
+|=. "Barrier Breaker 14.07":https://downloads.openwrt.org/barrier_breaker/14.07/         |=. 3.10.49 |=. ---      |=. *       |=. *         |=. *       |=. *     |
+|=. "Chaos Calmer 15.05":https://downloads.openwrt.org/chaos_calmer/15.05-rc1/           |=. 3.18.11 |=. *        |=. *       |=. *         |=. *       |=. *     |
+|                                                                                        |           |            |           |             |           |         |
+
+
+
+---
+
+h3. Сборка прошивки при помощи ImageBuilder
+
+p. 1. Скачать (wget) и распаковать (tar -xvjf) архив "ImageBuilder-15.05-rc1-brcm63xx":https://downloads.openwrt.org/chaos_calmer/15.05-rc1/brcm63xx/generic/OpenWrt-ImageBuilder-15.05-rc1-brcm63xx-generic.Linux-x86_64.tar.bz2
+
+p. 3. Положить в каталог Araneus_RTA1025W_default необходимые файлы
+
+p. 3. Создать файл с содержанием ниже и дать ему права на запуск (chmod +x)
+
+<pre>
+#!/bin/sh
+#
+## Profile name:
+PROFILE="RTA1025W"
+#
+## Packages to skip, packages to install:
+PACKAGES="-6relayd -hostapd -ip6tables -kmod-ip6tables -kmod-ipv6 -kmod-ipv6 \
+-libip6tc -odhcp6c -odhcpd -wpad -wpad-mini -block-mount -kmod-fs-ext4 \
+-kmod-fs-vfat -kmod-usb-net-cdc-ether -kmod-usb-serial-wwan -kmod-usb-storage \
+-kmod-usb-serial -kmod-usb-serial-option -ppp -ppp-mod-pppoe -usb-modeswitch \
+-luci-proto-3g -luci-proto-ppp -dnsmasq \
+\
+kmod-usb2 kmod-usb-ohci hostapd-mini libuci libxtables luci netifd procd \
+swconfig uboot-envtools ubox ubus ubusd uci mtd opkg \
+kmod-i2c-tiny-usb kmod-i2c-gpio-custom wpa-supplicant-mini ip"
+#
+## Directory with files:
+FILES="Araneus_RTA1025W_default"
+#
+## Clean and compile:
+clear
+make clean
+make -j4 image PROFILE="$PROFILE" PACKAGES="$PACKAGES" FILES="$FILES"
+</pre>
+
+---
+
+h3. Полезные команды
+
+pre. mtd -r write /tmp/orig_firmware.bin firmware  # Восстановить заводскую прошивку в устройстве
+
+pre. echo "24" >/sys/class/gpio/export             # Создать нужный gpio в системе
+
+pre. echo "out" >/sys/class/gpio/gpio24/direction  # Установить режим работы gpio24 (in/out)
+
+pre. echo "1" > /sys/class/gpio/gpio24/value       # Отправить данные на gpio
+
+pre. cat /sys/class/gpio/gpio29/value              # Чтение данных о статусе gpio
+
+---
+
+h3. Внешние ссылки
+
+* "OpenWrt supported devices":http://wiki.openwrt.org/toh/start
+* "OpenWrt download area":http://downloads.openwrt.org/
+* "OpenWrt git repositories":http://git.openwrt.org/
+* "OpenWrt source repository downloads [use it]":https://dev.openwrt.org/wiki/GetSource
+* "OpenWrt Image Builder [manual]":http://wiki.openwrt.org/doc/howto/obtain.firmware.generate
+* -
+* "OpenWrt Packages Repository":https://github.com/openwrt/packages
+* "OpenWrt Routing Packages":https://github.com/openwrt-routing/packages
+* "OpenWrt Telephony Packages":https://github.com/openwrt/telephony
+* "OpenWrt Management Packages":https://github.com/openwrt-management/packages
+* "Feed for abandoned OpenWrt packages":https://github.com/openwrt/packages-abandoned
+* "LuCI - OpenWrt Configuration Interface":https://github.com/openwrt/luci
+* -
+* "OpenWrt Wiki: История версий OpenWRT":https://wiki.openwrt.org/ru/about/history
+* "OpenWrt Wiki: Buildroot – Установка":http://wiki.openwrt.org/ru/doc/howto/buildroot.exigence
+* "OpenWrt Wiki: Buildroot – Использование":http://wiki.openwrt.org/ru/doc/howto/build
+* "OpenWrt Wiki: Init Scripts":https://wiki.openwrt.org/doc/techref/initscripts
+* "OpenWrt Wiki: TR-069/CWMP":https://wiki.openwrt.org/doc/howto/tr-069
+* -
+* "Multiple USB to UART devices on OpenWRT":http://hacklabos.org/2014/02/usb-aliases-multiple-arduinos-on-an-openwrt-device/
+* "OpenWRT and VLANs":https://synack.me/blog/openwrt-and-vlans
+* -
+* "OpenWRT - GPIO":http://eko.one.pl/?p=openwrt-gpio2
+* "OpenWRT scripts":https://gist.github.com/adamvr/3180032
+* -
+* "Сборка прошивки Black Swift из исходников":http://www.black-swift.ru/wiki/index.php/%D0%A1%D0%B1%D0%BE%D1%80%D0%BA%D0%B0_%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B8_%D0%B8%D0%B7_%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2
+* "OpenWRT — Сборка из исходников":https://www.denisyuriev.ru/linux/openwrt-linux/openwrt-sborka-iz-isxodnikov/
+* "Скриптуем под OpenWRT":http://illumium.org/node/130
+* "Writing and Compiling A Simple Program For OpenWRT":http://gargoyle-router.com/old-openwrt-coding.html
+* "BestManual: Sitecom WL-326 OpenWrt update":http://linuxehacking.ovh/2015/10/08/sitecom-wl-326-openwrt-update/

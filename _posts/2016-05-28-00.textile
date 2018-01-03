@@ -1,0 +1,20 @@
+---
+layout:     post
+title:      "Создание OpenWRT прошивки для роутера MR-3020"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, tplink]
+---
+
+
+h3. Введение
+
+p. В процессе..
+
+---
+
+h3. Внешние ссылки
+
+* "OpenWRT Wiki: TP-Link TL-MR3020":https://wiki.openwrt.org/toh/tp-link/tl-mr3020
+

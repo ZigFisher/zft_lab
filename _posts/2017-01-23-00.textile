@@ -1,0 +1,44 @@
+---
+layout:     post
+title:      "Orvibo S20 - WiFi розетка с управлением через интернет"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [hwmod, orvibo]
+---
+
+
+h3. Введение
+
+p. Описание и хакинг розетки будут добавлены чуть позже.
+
+---
+
+h3. Фото
+
+!/images/2017012301.jpg!
+
+p. Устройство пришло ко мне из Китая в простейшей пупырчатой упаковке. Вилка и розетка - европейские.
+
+---
+
+h3. Внешние ссылки
+
+* "Orvibo S20 - WiFi розетка":http://mysku.ru/blog/china-stores/28366.html
+* "Orvibo S20 Wifi розетка":http://mysku.ru/blog/china-stores/35573.html
+* "Reverse engineering Orvibo S20 socket [!]":https://stikonas.eu/wordpress/2015/02/24/reverse-engineering-orvibo-s20-socket/
+* "Orvibo S20 plugs integrated successfully into Domoticz!":https://www.domoticz.com/forum/viewtopic.php?t=8212&start=20
+* "GitHub: Orvibo script":https://github.com/franc-carter/bauhn-wifi/blob/master/bauhn.pl
+* "Orvibo S20 socket manager":https://git.stikonas.eu/andrius/s20
+* "Majordomo: Модуль работы с wifi-модулями Orvibo":http://majordomo.smartliving.ru/forum/viewtopic.php?f=5&t=2130&hilit=orvibo
+* -
+* "Orvibo S20 WiFi Mains Socket with Node-RED":https://nathan.chantrell.net/20160101/orvibo-s20-wifi-mains-socket-with-node-red/
+* "Node: node-red-contrib-orvibo":http://flows.nodered.org/node/node-red-contrib-orvibo
+* "Flow: Orvibo S20 WiFi Mains Sockets":http://flows.nodered.org/flow/7dd0f897e7ea7c600165
+* "Flow: PIR Sensor to MQTT - Raspberry Pi and Orvibo":http://flows.nodered.org/flow/3c0bbbe3e32f15512fc2
+* -
+* "Aliexpress: WiFi Smart Power Plug v.1":https://ru.aliexpress.com/item/Travel-EU-US-Power-Plug-Wifi-Smart-Plug-Power-Socket-App-Wireless-Remote-Control-Wall-Plug/32708492953.html
+* "Aliexpress: WiFi Smart Power Plug v.2":https://ru.aliexpress.com/item/Wi-Fi-App/32674804298.html
+* "Aliexpress: WiFi Smart Power Plug v.3":https://ru.aliexpress.com/item/2016-EU-US-Standard-White-Wifi-Smart-Plug-Power-Socket-App-AC110-240V-10A-Wireless-Remote/32694703761.html
+
+

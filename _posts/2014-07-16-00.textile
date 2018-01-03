@@ -1,0 +1,188 @@
+---
+layout:     post
+title:      "Реверс-инжениринг микро-роутеров на SoC RT5350F"
+tagline:    ""
+category:   ""
+group:      router
+tags:       [ralink, hwmod]
+---
+
+
+h3. Роутер "Mifi-Storage-3G"
+
+pre.. zig@builder:~$ telnet 192.168.100.1
+Trying 192.168.100.1...
+Connected to 192.168.100.1.
+Escape character is '^]'.
+BoC Login: admin
+Password: admin
+
+BusyBox v1.12.1 (2013-06-20 00:48:37 HKT) built-in shell (msh)
+Enter 'help' for a list of built-in commands.
+
+BoC Router> show system revision
+
+  software version: 2.1.3.8
+     product model: Mifi-Storage-3G
+     serial number: ZJL130501099
+  hardware version: 1.0
+  f/w release date: Aug. 23, 2013 15:27:22
+
+BoC Router>
+
+---
+
+h3. Снижение энергопотребления
+
+p. Отключение неиспользуемых портов свича
+
+pre. swconfig dev switch0 port 1 set disable 1
+swconfig dev switch0 port 2 set disable 1
+swconfig dev switch0 port 3 set disable 1
+swconfig dev switch0 port 4 set disable 1
+swconfig dev switch0 set apply
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Chipset: RT5350F
+* Memory:  16MB
+* Flash:   4MB
+* Serial:  57600bd
+* Wifi:    Integrated 1T1R 802.11b/g/n
+* USB-1:   Integrated USB 2.0 Host
+* USB-2:   MicroUSB for powering
+* 4 LED:   Power, Ethernet, WiFi
+
+
+pre. ============================================
+Ralink UBoot Version: 3.6.0.0
+--------------------------------------------
+ASIC 5350_MP (Port5<->None)
+DRAM_CONF_FROM: Boot-Strapping
+DRAM_TYPE: SDRAM
+DRAM_SIZE: 128 Mbits
+DRAM_WIDTH: 16 bits
+DRAM_TOTAL_WIDTH: 16 bits
+TOTAL_MEMORY_SIZE: 16 MBytes
+Flash component: SPI Flash
+Date:Dec 13 2011  Time:13:49:42
+============================================
+
+
+pre. BoC Router> show system revision
+
+  software version: 2.1.3.9
+     product model: Mifi-Storage-3G
+     serial number: ZJL140213851
+  hardware version: 1.0
+  f/w release date: Dec. 24, 2013 18:55:14
+
+BoC Router> show system uptime
+
+  system up: 0 days 0 hours 6 minutes 52 seconds
+
+BoC Router> show system date
+
+  2014 07 17 Thr. 01:35:43
+
+---
+
+h3. Фото
+
+!/images/2014071602.jpg!
+
+---
+
+!/images/2014071603.jpg!
+
+---
+
+pre. telnet 172.17.32.193
+Trying 172.17.32.193...
+Connected to 172.17.32.193.
+Escape character is '^]'.
+
+M1 login: admin
+Password: admin
+
+BusyBox v1.12.1 (2012-08-27 10:10:44 CST) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+#
+
+
+pre. # free
+
+pre.      total         used         free       shared      buffers
+Mem:          28616        17408        11208            0            0
+Swap:             0            0            0
+Total:        28616        17408        11208
+
+
+pre. mtd_write write /media/sda1/uboot256.img Bootloader
+
+pre. Unlocking Bootloader ...
+Writing from /media/sda1/uboot256.img to Bootloader ...  [w]
+#
+
+pre. mtd_write write /media/sda1/a5_lite_10.bin Kernel
+
+pre. Unlocking Kernel ...
+Writing from /media/sda1/a5_lite_10.bin to Kernel ...  [w]
+#
+
+---
+
+h3. Ссылки
+
+* "OpenWrt Wiki: A5-V11 3G/4G Router":http://wiki.openwrt.org/toh/unbranded/a5-v11
+* "OpenWrt Wiki: NEXX wt1520":http://wiki.openwrt.org/toh/nexx/wt1520
+* "OpenWrt Forum: Nexx WT1520 support":https://forum.openwrt.org/viewtopic.php?id=48481
+* "OpenWrt Forum: A5-V11 3G/4G [antenna, heat, power]":https://forum.openwrt.org/viewtopic.php?id=57377
+* "OpenWrt Forum: Packtool usage":https://forum.openwrt.org/viewtopic.php?pid=251675
+* "GitHub: Nexx-wt1520-openwrt":https://github.com/hackruu/nexx-wt1520-openwrt
+* "GitHub: Uboot and openwrt firmwares of RT5350":https://github.com/JiapengLi/OpenWrt-RT5350
+* "GitHub: RT5350F cheap router - Building OpenWrt":https://github.com/sternlabs/RT5350F-cheap-router
+* "GitHub: Patches to compile OpenWrt Linux on Ralink RT5350-based routers":https://github.com/Squonk42/OpenWrt-RT5350
+* -
+* "Mini USB Portable 3G/4G router - RT5350F - 16M version":http://my-embedded.blogspot.com/2013/12/mini-4g-router-rt5350f.html
+* "Mini USB Portable 3G/4G router - RT5350F - 32M version":http://my-embedded.blogspot.com/2014/01/mini-usb-portable-3g4g-router-rt5350f.html
+* "A5-V11 mini router runs OpenWRT for just $8":http://www.cnx-software.com/2015/03/29/a5-v11-mini-router-runs-openwrt-linux-for-just-8/
+* "RCC - Revision 346: /trunk/projects/rt5350_mini_router":http://rcc.googlecode.com/svn/trunk/projects/rt5350_mini_router/
+* "OpenWrt on Hame MPR-A5":http://lnxpps.de/openwrt/hame-mpra5/
+* "OpenWrt - GPIO usage":http://eko.one.pl/?p=openwrt-gpio2
+* -
+* "MySKU: Мегаобзор-взлом 5 китайских дешевых портативных роутеров на чипе RT5350":http://mysku.ru/blog/aliexpress/27796.html
+* "MySKU: Клон hame a15, который меня удивил, или когда копия бывает лучше оригинала":http://mysku.ru/blog/aliexpress/26886.html
+* "MySKU: Обзор дешевого универcального роутера upvel ur-322n4g":http://mysku.ru/blog/russia-stores/28585.html
+* "MySKU: Обзор миниатюрного Wi-Fi роутера+делаем из него карманный роутер":http://mysku.ru/blog/aliexpress/33239.html
+* "MySKU: 3G/4G роутер [RT5350]":http://mysku.ru/blog/china-stores/35982.html
+* "MySKU: 3G/4G Wi-Fi роутер или последствия быстрых и непродуманных действий":http://mysku.ru/blog/ebay/37023.html
+* "MySKU: Мини роутер 3G/4G/LAN":http://mysku.ru/blog/ebay/38307.html
+* "MySKU: Мини WiFi роутер Hame A5":http://mysku.ru/blog/china-stores/36343.html
+* "MySKU: Обновление прошивки на роутерах с интерфейсом Qualcomm":http://mysku.ru/blog/aliexpress/27796.html#comment1060950
+* "MySKU: Загрузчик с поддержкой TFTP":http://mysku.ru/blog/aliexpress/27796.html#comment1179800
+* "4pda: Обсуждение мобильного роутера Hame MPR-A1":http://4pda.ru/forum/index.php?showtopic=377187&st=2540#entry34469244
+* "4pda: Обсуждение HAME MPR-A1, A5, A15 и других клонов на чипе RT5350":http://4pda.ru/forum/index.php?showtopic=377187&st=1740#entry30981645
+* "4pda: Прошивка OpenWRT для Hame-A1, A15 и клонов - Хитрый Домовенок":http://4pda.ru/forum/index.php?showtopic=709298&st=0
+* "Habrahabr: Исследуем китайские роутеры на RT5350":http://habrahabr.ru/post/238713/
+* "Прошивка роутера Hame-A1, Hame-A15 и его клонов":http://2012.3dn.ru/forum/3-3-1
+* "CyberWRT для роутеров на CPU RT5350":http://cyber-place.ru/showthread.php?t=1470
+* "GPIO на роутере с SoC RT5350":http://cyber-place.ru/showpost.php?p=22964&postcount=74
+* -
+* "Running Go programs on $15 device - Beyond Hello World":http://www.sajalkayan.com/post/golang-openwrt-mips.html

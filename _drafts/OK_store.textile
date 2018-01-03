@@ -1,0 +1,24 @@
+---
+layout:     page
+title:      "Магазин"
+header:     "Store page"
+group:      navigation
+---
+{% include JB/setup %}
+
+
+h3=. Мы работаем в Италии, России и Украине !
+
+p=. For details send your request to <a href=mailto:esp8266@flymon.net>esp8266@flymon.net</a> or <a href=mailto:sales@octonix.net>sales@octonix.net</a>
+
+p={color:red}. Акция! Купившему какой-либо товар на сумму от 500 руб. - антенна 2,4 GHz с разъёмом uFL в подарок.
+
+<hr>
+
+<html>
+<div id="my-store-6931483"></div>
+<div>
+<script type="text/javascript" src="http://app.ecwid.com/script.js?6931483" charset="utf-8"></script>
+<script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(3,3) list(10) table(20)","categoryView=grid","searchView=list","id=my-store-6931483");</script>
+</div>
+</html>

@@ -1,0 +1,207 @@
+---
+layout:     post
+title:      "Универсальный IoT контроллер на базе ESP8266"
+tagline:    ""
+category:   ""
+group:      best
+tags:       [best, esp8266, energy, plants, 12volt]
+---
+
+
+h3. Исполнение (бета)
+
+p. На данный момент контроллер выполнен на односторонней печатной плате. Питание можно подавать от любого источника +5V (разъем USB).
+
+!/images/2014110120.jpg!
+
+
+h3. Поддерживаемые датчики и дисплеи
+
+* DHT11/DHT22 (влажность)
+* 1-Wire DS18B20 (температура)
+* I2C LM75 (температура)
+* I2C DS1621 (температура)
+* I2C BMP085/BMP180 (температура+давление)
+* I2C BH1750 (освещённость)
+* I2C INA219 (ток и напряжение для слаботочных цепей)
+* I2C AM2313 (температура+влажность), в процессе
+* I2C конвертор для дисплеев 1602, 1604, 2004
+
+
+h3. Поддерживаемые сервисы
+
+* "Народный Мониторинг - визуализация показаний датчиков на карте мира":http://narodmon.ru
+* "ThingSpeak - сервис метрик для Интернета Вещей":https://thingspeak.com/channels/public?tag=homes-smart
+* "MajorDoMo - умный дом и домашняя автоматика своими руками":http://smartliving.ru
+* "FlyMon DMS - система управления устройствами":http://flymon.net (demo@flymon.net & demo2014)
+
+
+h3. Возможные варианты использования
+
+* Домашняя метеостанция - атмосферное давление, влажность, температура в доме и на улице
+* Управление насосом в отопительной системе (Heatpump monitor)
+* Управление системой получения и накопления солнечной энергии (Solar Monitoring)
+* Контроль расхода электроэнергии (Electricity monitor)
+
+
+h3. Стартовая страница модуля
+
+!/images/2014110102.jpg!
+
+
+
+h3. Разработка нового дизайна страниц модуля (прототип)
+
+
+!/images/2014110103.jpg!
+
+!/images/2014110104.jpg!
+
+!/images/2014110105.jpg!
+
+!/images/2014110106.jpg!
+
+
+
+h3. Благодарности
+
+* Автору уникальной "прошивки для ESP8266":http://homes-smart.ru/esp8266
+* Автору первоклассного сервиса "Народный Мониторинг":http://narodmon.ru
+* -
+* eeyura - за помощь в разработке первых макетов и схем печатной платы для ESP8266
+* sergg - за помощь в изготовлении печатных плат ESP8266 для проекта Homes-Smart
+* neorender - за помощь в отрисовке наглядных и красивых схем для начинающих
+
+
+h3. Правила хорошего тона
+
+p. При включении отправки данных на сервис "ThingSpeak":http://thingspeak.com, пожалуйста установите теги "homes-smart" и "esp8266" в своем канале. Это очень поможет разработчикам ПО. После активации тегов, вы можете проверить наличие своего устройства в группе "Homes-Smart":https://thingspeak.com/channels/public?tag=homes-smart
+
+
+h3. Виды прошивок
+
+
+h3. FlyMon DMS - система мониторинга
+
+!/images/2014110115.jpg!
+
+
+h3. Отправка данных на Народный Мониторинг
+
+p. Для активации режима отправки данных, достаточно установить соответствующую галочку во вкладке Servers.
+
+p. С 07.01.2015 набор-конструктор "Homes-Smart 01" официально представлен в разделе hardware на сайте "narodmon.ru":http://narodmon.ru
+
+!/images/2014110114.jpg!
+
+
+h3. Отправка данных на ThingSpeak
+
+p. К сожалению, на сервис ThingSpeak можно отправить всего 8 параметров, привязанных к датчикам.
+
+* field1 => DHT1 / AM2321 temp
+* field2 => DHT1 / AM2321 humidity
+* field3 => BMP temp
+* field4 => BMP pressure
+* field5 => DHT2 temp
+* field6 => DHT2 humidity
+* field7 => DS18B20 / LM75 temp
+* field8 => BH1750 light
+
+
+h3. Подключение датчиков к модулю ESP-01
+
+!/images/2014110101.jpg!
+
+p. Расширенный вариант, схема кликабельна.
+
+!/images/2014110111.jpg!:/files/schematics/2014110111B.jpg
+
+
+h3. Плата для базовых экспериментов - Homes-Smart-01
+
+p. На первом варианте платы (размер 30x75 мм) размещены :
+
+* Модуль ESP-01 (основной)
+* Модуль BMP180 (датчик температуры и давления)
+* Модуль BH17150 (датчик освещенности)
+* Преобразователь DC/DC 5V/3,3V LD1117
+* Датчик температуры LM75 или DS1621
+* Клеммы для подключения внешнего датчика DS18B20
+* Кнопка перевода модуля ESP в режим прошивки
+* Гребёнка для подключения датчиков, дисплеев, устройств и ПК для прошивки
+
+p. Добавлено описание и номиналы деталей, перемычки выделены синим цветом.
+
+!/images/2014110152.jpg!:/files/schematics/2014110152B.jpg
+
+p. Рисунок печатной платы ver.0.1.1 в формате Sprint Layout доступен по "данной ссылке":/files/sprintlayout/2014110101.lay .
+
+p. Добавлен второй вариант печатной платы.
+
+!/images/2014110153.jpg!:/files/schematics/2014110153B.jpg
+
+p. Рисунок печатной платы ver.0.1.2 в формате Sprint Layout доступен по "данной ссылке":/files/sprintlayout/2014110102.lay .
+
+
+
+h3. Фото сборки первых тестовых плат Homes-Smart-01
+
+!/images/2014110121.jpg!
+
+!/images/2014110122.jpg!
+
+!/images/2014110123.jpg!
+
+!/images/2014110124.jpg!
+
+
+h3. Подключение модуля к ПК
+
+
+h3. Источники питания
+
+!/images/2014110112.jpg!
+
+
+h3. Ссылки
+
+* "esp8266.flymon.net - Экспериментальные графики":http://esp8266.flymon.net/#/dashboard/db/flymon-dms-esp8266
+* "flymon.net - Система мониторинга":http://flymon.net/dashboard/mon/host_group/23 (login: demo@flymon.net & pass: demo2014)
+* -
+* "homes-smart.ru - Основной сайт проекта по ESP8266":http://homes-smart.ru
+* "mysku.ru - Модуль Wifi на базе чипа ESP8266":http://mysku.ru/blog/aliexpress/29741.html
+* "mysku.ru - WiFi модуль ESP8266 ESP07 для домашней автоматизации":http://mysku.ru/blog/ebay/30626.html
+* "geektimes.ru - «Интернет растений» для фермерства в городе":http://geektimes.ru/post/242941/
+* "habrahabr.ru - SuperDuino: миниатюрная плата с цветным дисплеем и акселерометром":http://habrahabr.ru/company/medgadgets/blog/246807/
+* "habrahabr.ru - Wi-Fi термометр на ESP8266+DS18B20 всего за 4$":http://habrahabr.ru/post/252481/
+* -
+* "l0l.org.uk - ESP8266 modules hardware guide":http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/
+* "rayshobby.net - First Impression on the ESP8266 Serial-to-WiFi Module":http://rayshobby.net/?p=9734
+* "mcuoneclipse.com - Cheap and Simple WiFi with ESP8266 for the FRDM Board":http://mcuoneclipse.com/2014/10/15/cheap-and-simple-wifi-with-esp8266-for-the-frdm-board/
+* "hackerspace.pbworks.com - Some info about the ESP8266 wifi modules":http://hackerspace.pbworks.com/w/page/88183850/ESP8266
+* "smartliving.ru - Обсуждение ESP8266":http://smartliving.ru/forum/viewtopic.php?f=8&t=1937&sid=5d99529e968b27c3f73d953ae5206e84&start=40
+* "roboforum.ru - ESP8266 WiFi модуль за 200 рублей":http://roboforum.ru/forum4/topic14556.html
+* "forum.easyelectronics.ru - ESP8266":http://forum.easyelectronics.ru/viewtopic.php?f=8&t=20044&start=50
+* "instructables.com - ESP8266 Wifi Temperature Logger":http://www.instructables.com/id/ESP8266-Wifi-Temperature-Logger/
+* "instructables.com - WIFI temperature logger based on ESP8266 send data to thingspeak.com":http://www.instructables.com/id/Low-cost-WIFI-temperature-data-logger-based-on-ESP/
+* "electronix.ru - Обсуждение ESP8266 и MJPEG камера":http://electronix.ru/forum/index.php?showtopic=125438&st=15
+* -
+* "arduino.ru - Мини обзор АЦП MCP3421 с выходом I2C":http://arduino.ru/forum/apparatnye-voprosy/mini-obzor-atsp-mcp3421-s-vykhodom-i2c
+* -
+* "mignews.com.ua - Компания TP-LINK презентовала устройства для умного дома":http://mignews.com.ua/science/nauka/4538662.html
+* -
+* "thingspeak.com - FlyRouter":https://thingspeak.com/users/FlyRouter
+* -
+* "smarpl.com - ESP8266 ESP-201 module: first impressions":http://smarpl.com/content/esp8266-esp-201-module-first-impressions
+* "blog.squix.ch - ESP8266: ESP-201 breakout board review":http://blog.squix.ch/2015/02/esp8266-esp-201-breakout-board-review.html
+* "":
+* "github.com - ESP8266 Pin definition":https://github.com/esp8266/esp8266-wiki/wiki/Pin-definition
+* "github.com - darkbyte-ru/esp8266-frankenstein":https://github.com/darkbyte-ru/esp8266-frankenstein
+* "":
+* "prosto-wlan.blogspot.ru - WiFi люстра на esp8266":http://prosto-wlan.blogspot.ru/2015/02/wifi-esp8266.html
+* "benuks.flyboard.ru - Benuks и поддержка ESP8266":http://benuks.flyboard.ru/viewtopic.php?p=1493#p1493
+*
+* "wiki.barxatperm.ru - Беспроводной датчик на базе ESP8266 с отправкой данных на сервера":http://wiki.barxatperm.ru/index.php?title=ESP8266
+* "darkbyte.ru - Возвращаем к жизни esp8266 после неудачного обновления":https://darkbyte.ru/2015/78/esp8266-debrick-after-ciupdate-fatal-exception/
+* "esp8266.ru - ESP8266 - подключение и обновление прошивки":http://esp8266.ru/esp8266-podkluchenie-obnovlenie-proshivki/#more-718

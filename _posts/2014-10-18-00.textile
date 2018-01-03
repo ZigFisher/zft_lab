@@ -1,0 +1,180 @@
+---
+layout:     post
+title:      "Настройка VPS от DigitalOcean или CloudMouse"
+tagline:    ""
+category:   ""
+group:      linux
+tags:       [vps, linux, debian]
+---
+
+
+h3. Цена вопроса
+
+p. Минимальная стоимость серверов на **DO** - 5$/мес., а у **CM** - 3,6$/мес.
+
+p. Оплатить **DO* можно только через пластиковую карту и PayPal, а **CM** можно оплатить через **WebMoney**, **YandexMoney**, **Qiwi**, пластиковой картой и другими способами.
+
+
+
+h3. Основные фичи и используемые приемы
+
+p. Выбор образа системы однозначен - только Debian 7 64 bit.
+
+p. Так как оба сервиса **DO** и **CM** присылают первоначальные пароли на Email, желательно сразу-же после первого захода на новый VPS сменить пароль на свой.
+
+p. Для минимализации используемых систем, при вызове **apt-get install** можно использовать дополнительный ключ **--no-install-recommends**, который позволяет не устанавливать дополнительное ПО.
+
+
+
+h3. Конфигурационные файлы и редактор
+
+p. Первые пакеты, которые желательно сразу уставить - это система контроля версий конфигурационных файлов и текстовый редактор. В данном примере это **git**, **etckeeper** и **mc** :
+
+pre. sudo apt-get install --no-install-recommends git etckeeper mc
+
+p. После установки пакетов необходимо скачать и активировать скрипт для ежечасного отслеживания изменений в конфигурационных файлах, выполнив команды :
+
+pre. cd /etc/cron.hourly
+git clone ...
+service cron restart
+
+
+
+h3. Настройка ssmtp
+
+p. Пример конфигурационного файла **/etc/ssmtp/ssmtp.conf** для работы с локальным MX :
+
+pre. # Config file for sSMTP sendmail
+#
+root=root
+mailhub=smtp.domain.my
+hostname=server.domain.my
+FromLineOverride=NO
+
+p. Пример конфигурационного файла **/etc/ssmtp/ssmtp.conf** для работы с Gmail :
+
+pre. # Config file for sSMTP sendmail
+#
+root=myname@gmail.com
+mailhub=smtp.gmail.com:587
+hostname=server.domain.my
+rewriteDomain=gmail.com
+UseSTARTTLS=Yes
+UseTLS=Yes
+AuthUser=myname@gmail.com
+AuthPass=mypass
+FromLineOverride=Yes
+
+p. Пример конфигурационного файла **/etc/ssmtp/ssmtp.conf** для работы с Yandex :
+
+pre. # Config file for sSMTP sendmail
+#
+root=myname@yandex.ru
+mailhub=smtp.yandex.ru:465
+hostname=server.domain.my
+rewriteDomain=yandex.ru
+UseSTARTTLS=Yes
+UseTLS=Yes
+AuthUser=myname@yandex.ru
+AuthPass=mypass
+FromLineOverride=Yes
+
+
+
+
+h3. Обновление системы и удаление неиспользуемых пакетов
+
+p. Во время первых заходов на VPS имеет смысл заменить полноценный почтовый сервер на простой релей, обновить систему, а так-же удалить неиспользуемые пакеты (nfs, dhcp и т.д) и архивы :
+
+pre. sudo apt-get install ssmtp bsd-mailx
+sudo dpkg --purge nfs-common rpcbind libtirpc1
+sudo dpkg --purge exim4 exim4-base exim4-config exim4-daemon-light mutt procmail
+sudo apt-get update && apt-get upgrade && apt-get clean
+sudo apt-get autoremove
+
+
+
+h3. Настройка имени сервера и DNS
+
+p. Для настройки имени сервера откройте фаил **/etc/hostname** и впишите имя
+
+pre. sudo mcedit /etc/hostname
+
+pre. sudo mcedit /etc/hosts
+
+pre. sudo service hostname.sh start
+
+
+
+h3. Отключение поддержки IPv6 на сервере
+
+p. В большинстве случаев на серверах **DO** и **CM** имеет смысл отключить поддержку IPv6.
+
+p. В файле **/etc/hosts** удалить все строки, относящиеся к IPv6
+
+p. В файле **/etc/sysctl.conf** добавить строки :
+
+pre. net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+net.ipv6.conf.eth0.disable_ipv6 = 1
+
+p. В файле **/etc/ssh/sshd_config** раскоментировать строку :
+
+pre. ListenAddress 0.0.0.0
+
+p. После этого перезагрузить сервер или выполнить команды :
+
+pre. sysctl -p
+service ssh restart
+
+p. Посмотреть, какие порты и протоколы используются программами на сервере :
+
+pre. netstat -pan
+lsof -i
+
+
+
+h3. Создание ключей для SSH
+
+
+h3. Создание swap
+
+p. Микро-сервера на **DO** и **CM** имеют достаточно мало памяти. Для того, что-бы немного облегчить им жизнь при увеличивающейся нагрузке, можно создать и подключить swap :
+
+pre. sudo dd if=/dev/zero of=/home/swap-tmp bs=1024 count=1024K
+sudo mkswap /home/swap-tmp
+sudo swapon /home/swap-tmp
+echo "/home/swap-tmp swap swap defaults 0 0" | sudo tee -a /etc/fstab
+
+p. Выполнив команду **free** можно проверить подключение и использование swap :
+
+pre. zig@server:/home/zig$ free
+             total       used       free     shared    buffers     cached
+Mem:        508828     502448       6380          0       4788     453888
+-/+ buffers/cache:      43772     465056
+Swap:      1048572          0    1048572
+
+
+
+h3. Установка програмного обеспечения
+
+p. **Nginx + PHP**
+
+pre. sudo apt-get install --no-install-recommends nginx php5-fpm fcgiwrap php5
+service nginx restart
+
+p. **Nagios**
+
+pre. sudo apt-get install --no-install-recommends nagios3
+service nagios3 restart
+
+p. **NagMap**
+
+pre. sudo mkdir -p /var/www
+sudo cd /etc/www/
+sudo git clone https://github.com/hecko/nagmap.git
+sudo chown -R www-data.www-data nagmap
+
+p. **Сборка OpenWRT**
+pre. sudo apt-get install --no-install-recommends build-essential libncurses5-dev zlib1g-dev gawk unzip subversion rsync

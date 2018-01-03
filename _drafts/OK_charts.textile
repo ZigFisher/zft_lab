@@ -1,0 +1,28 @@
+---
+layout:     page
+title:      "Графики"
+header:     "Charts page"
+group:      navigation
+---
+{% include JB/setup %}
+
+
+h3. Система отображения графиков (<a href="/charts.html?macs=18FE34000000&period=6h">пример</a>)
+
+<div id="content"></div>
+
+<!-- Add styles -->
+<link href="/assets/flymon/main.css" rel="stylesheet" type="text/css" />
+
+<!-- Add scripts -->
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+
+<script src="http://esp8266.flymon.net/assets/javascripts/lodash.min.js"></script>
+<script src="http://esp8266.flymon.net/assets/javascripts/async.js"></script>
+<script src="http://esp8266.flymon.net/assets/javascripts/influxdb-latest.js"></script>
+<script src="http://esp8266.flymon.net/assets/javascripts/highcharts.js"></script>
+<script src="http://esp8266.flymon.net/assets/javascripts/gray.js"></script>
+<script src="http://esp8266.flymon.net/assets/javascripts/graphs.js"></script>
+<script src="http://esp8266.flymon.net/assets/javascripts/crutch.js"></script>
+

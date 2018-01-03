@@ -1,0 +1,41 @@
+---
+layout:     post
+title:      "IRC канал (чат) разработчиков Homes-Smart ESP8266 "
+tagline:    ""
+category:   ""
+group:      smarthouse
+tags:       [esp8266]
+---
+
+
+<html>
+  <iframe src="http://chat.forestnet.org/?channels=esp8266&uio=d4" width="640" height="400"></iframe>
+<html>
+
+h3. Вход и регистрация
+
+p. Первоначально для входа на IRC канал каких-либо паролей не требуется. Просто укажите свой ник (приветствуется использование логина с форума).
+
+p. Однако в дальнейшем, настоятельно рекоммендуется защитить свой ник паролем. Для этого в чате выполните команду:
+
+pre. /msg NickServ register you_new_password you@email.address
+
+p. Для подтверждения и окончания регистрации введите полученный на Email код, выполнив команду:
+
+pre. /msg NickServ confirm received_code
+
+p. Далее при каждом входе на сервер можете идентифицироваться командой:
+
+pre. /msg NickServ identify you_password
+
+p. Все вышеперечисленное относится в большей степени к WEB-версии входа на канал #esp8266. При использовании специализированных программ для IRC, как правило, все настройки и действия производятся автоматически.
+
+
+h3. Ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'smarthouse' %}
+  {% include JB/pages_list %}
+</ul>
+

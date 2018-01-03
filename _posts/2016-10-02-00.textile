@@ -1,0 +1,24 @@
+---
+layout:     post
+title:      "Портирование OpenWRT на Tigercel WG-226"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [openwrt]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+---
+
+h3. Внешние ссылки
+
+* "Tigercel WG-226":http://www.tigercel.com/index.php/en/2015-06-09-10-09-41/wg226-256
+
+* "GitHub: OpenWRT on HC-5x61":https://github.com/rssnsj/openwrt-hc5x61/issues
+* "OpenWrt and MT7610E MT7612E":http://www.crashcourse.ca/wiki/index.php/OpenWrt_MT7610E_MT7612E
+* "OpenWrt-Devel, RFC ramips: Add support for HiWiFi HC5761":https://patchwork.ozlabs.org/patch/462375/
+

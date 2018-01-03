@@ -1,0 +1,23 @@
+---
+layout:     post
+title:      "Переделка галогенного прожектора с сенсором"
+tagline:    ""
+category:   ""
+group:      energy
+tags:       [energy, 12volt]
+---
+
+
+h3. Описание
+
+!/images/2014090801.jpg!
+
+!/images/2014090802.jpg!
+
+!/images/2014090803.jpg!
+
+!/images/2014090804.jpg!
+
+!/images/2014090805.jpg!
+
+!/images/2014090806.jpg!

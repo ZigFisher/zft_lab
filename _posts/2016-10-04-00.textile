@@ -1,0 +1,169 @@
+---
+layout:     post
+title:      "Использование Little Wire в проектах на базе OpenWRT"
+tagline:    ""
+category:   ""
+group:      bricket
+tags:       [digispark, littlewire, openwrt, tiny85]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+Добавьте, пожалуйста, в базовую прошивку пакет libusb-compat. Он занимает всего 6кб в архиве. 
+Это позволит запускать на "CyberWRT" "из коробки" приложения для домашней автоматизации (управление ШИМ, RGB лентами ws2812, подключать датчики 1Wire и I2c, кнопки, реле и т.д.) 
+Сами бинарные файлики программ управления маленькие, под конкретную задачу их можно закидывать прямо на роутер. Хотелось-бы что-бы и библиотека USB была на борту.
+К роутеру в USB порт подключается стик с установленной на нем tiny85, загрузчиком (micronucleus) и прошивкой (littlewire). 
+Причем прошивки на тиньке можно менять прямо с роутера. В результате получаем с роутера 5 gpio с кучей вкуснейших плюшек в виде ШИМ, 1Wire, I2C и т.д. 
+Портирование Makefile проектов Micronucleus и LittleWire под OpenWRT произведено. 
+Исходники здесь - https://github.com/ZigFisher/Glutinium Там, кстати, есть и другие интересные фичи портированые под OpenWRT. 
+Например, утилиты и прошивки для переходника USBasp на котором уважаемый MaksMS с проекта http://Homes-smarT.ru делает и описывает интересные вещи (приемники и передатчики 433MHz, датчики, а так-же работа с линейкой модулей nRF24). 
+Нужен основной libusb + libusb-compat. Насколько я понял, это библиотека для работы с низкоуровневыми устройствами.
+Digispark это просто платка, с распаянным tiny85 и обвязкой для подключения к USB порту.
+Micronucleus - бутлоадер и одноименная утилита загрузки прошивок
+LittleWire - прошивка, заливаемая в тиньку при помощи утилиты micronucleus и дающая возможность получить на любом роутере с USB:
+Не буду спорить, но сомневаюсь, что в китайских платках стоит именно Micronucleus. Возможно какой-то другой загрузчик. Хотя лично у меня было впечатление что микросхема была "пустой".
+Вполне возможно, что LittleWire можно влить в Digispark просто через Arduino IDE, но тут фишка в другом - залить (или сменить) загрузчик на Micronucleus и затем иметь возможность заливать прошивки в Digispark утилиткой прямо с роутера без использования avrdude (он жирноват).
+Ссылка на архив с готовыми пакетами для платформы Ralink - http://zftlab.org/files/firmware_bricket/packages/
+Да, Digispark и LittleWire по хардварной части ничем не отличаются. LittleWire был разработан еще на обычных элементах (первые образцы), а потом уже Digispark и китайцы начали штамповать SMD клоны. Прелесть вся в простой реализации нужного функционала на чистом Си (малый размер кода на выходе) и с простой аппаратной интеграцией (воткнул в USB и пользуй).
+P.S. Так-же предлагаю подумать над модулем RCswitch, который будет позволять подавать команды радиоуправляемым розеткам 315/433 MHz. 
+Одна из рабочих программ уже так-же есть у меня в примерах на GitHub.
+
+
+---
+
+h3. Возможности
+
+* USBtinyisp compatible AVR programmer
+* 4 channel GPIO
+* ADC with 10 bit resolution
+* 2 parallel hardware PWM outputs
+* SPI interface
+* I2C interface
+* 1-Wire interface
+* WS2812 RGB LED interface
+* Multiple device support
+
+---
+
+h3. Прошивка загрузчика на Digispark (выполняется при помощи USBasp)
+
+!/images/2016100401.jpg!
+
+!/images/2016100402.jpg!
+
+pre. avrdude -c usbasp -p t85 -U flash:w:digispark_t85_micronucleus-v2.03.hex -U lfuse:w:0xe1:m -U hfuse:w:0xdd:m -U efuse:w:0xfe:m
+
+p. Если вы хотите намертво вшить загрузчик в Digispark, используйте hfuse:w:0x5d:m (не рекомендуется)
+
+---
+
+h3. Прошивка проекта на Disispark (выполняется на роутере)
+
+pre. micronucleus --run --type intel-hex /usr/share/little-wire/digispark_t85_littlewire_v13.hex
+
+---
+
+h3. Тстовые утилиты Little Wire
+
+* adc - отображает напряжение на GPIO
+* blink - мигает светодиодом на плате
+* blink_ws2812
+* button - отображает нажатие кнопки
+* debugConsole
+* fade_ws2812
+* hardwarePWM
+* i2c_blinkM
+* i2c_nunchuck
+* lwbuttond
+* onewire - сканирует шину 1-Wire и показывает температуру датчика
+* rgb_cycle_ws2812
+* servo
+* softPWM
+* spi_LTC1448
+
+---
+
+h3. Подключение устройств и датчиков к Digispark с прошивкой Little Wire
+
+|Digispark |USBtinyisp |Hard PWM |Soft PWM |ADC  |I2C  |SPI  |OneWire |WS2812 |CDC-232 |
+|pin1      |MISO       |CH_B     |CH_2     |-    |-    |DO   |-       |DATA   |TX      |
+|pin2      |SCK        |-        |CH_3     |CH_1 |SCL  |SCK  |DATA    |DATA   |RX      |
+|pin3      |RESET      |-        |-        |CH_0 |-    |CS   |-       |DATA   |-       |
+|pin4      |MOSI       |CH_A     |CH_1     |-    |SDA  |DI   |-       |DATA   |-       |
+
+---
+
+h3. Получение тестовых бинарных сборок
+
+pre. wget -O /usr/bin/octonix_gpio http://zftlab.org/files/firmware_bricket/binary/octonix_gpio && chmod 755 /usr/bin/octonix_gpio
+
+---
+
+h3. Разработчикам прошивок на базе OpenWRT
+
+p. Если вы хотите сделать поддержку пакетов Glutinium в своей среде разработки, добавьте в файл feeds.conf, находящийся в корне проекта, строку:
+
+pre. src-git glutinium https://github.com/ZigFisher/Glutinium.git
+
+p. Затем, обновите список пакетов командой:
+
+pre. ./scripts/feeds update glutinium
+
+p. Выберите, какие именно пакеты вы хотите интегрировать. Рекомендуемые и полулярные пакеты:
+
+pre. #
+./scripts/feeds install homes-smart
+./scripts/feeds install httping
+./scripts/feeds install i2c-telemetry
+./scripts/feeds install littlewire
+./scripts/feeds install micronucleus
+./scripts/feeds install rcswitch
+
+p. После этого можно выполнить команду **make menuconfig** и указать, какие из вновь установленных пакетов собирать.
+
+p. Перед сборкой очередного релиза своей прошивки, желательно выполнять команду обновления списка пакетов, что-бы они сохраняли свою актуальность.
+
+p. Предложения о интеграции пакетов сделаны разработчикам прошивок "'Хитрый Домовенок'":http://4pda.ru/forum/index.php?s=&showtopic=709298&view=findpost&p=53980437 и "'CyberWRT'":http://cyber-place.ru/showthread.php?p=34579
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'bricket' %}
+  {% include JB/pages_list %}
+</ul>
+
+---
+
+h3. Внешние ссылки
+
+* "Краткая история появления Little Wire [!]":http://microsin.net/programming/avr-working-with-usb/little-wire.html
+* "Little Wire home":http://littlewire.cc/index.html
+* "Little Wire download page":http://littlewire.cc/downloads.html
+* "Little Wire documentation":http://littlewire.cc/documentation/index.html
+* "Little Wire on Digispark Shield Kit Tutorial":http://digistump.com/wiki/digispark/tutorials/littlewire
+* "GitHub: Micronucleus - ATTiny usb bootloader":https://github.com/micronucleus/micronucleus
+* "GitHub: Little Wire official":https://github.com/littlewire/Little-Wire
+* "GitHub: Little Wire update by kehribar":https://github.com/kehribar/Little-Wire/tree/newStructure
+* "OpenWrt - ATtiny w zastosowaniach":http://eko.one.pl/?p=openwrt-attiny
+* "PL forum: ATtiny85 z LittleWire":http://eko.one.pl/forum/viewtopic.php?id=9763
+* "PL forum: Attiny85 i sterownik":http://eko.one.pl/forum/viewtopic.php?id=9759
+* "PL forum: Połączenie routera z centralą alarmową - jak najprościej?":http://eko.one.pl/forum/viewtopic.php?id=8902&p=2
+* "Attiny85 - Little Wire nie reaguje po wgraniu bootloadera micronucleus":http://www.elektroda.pl/rtvforum/topic3109721.html#15115633
+* "New gpio driver for LittleWire USB devices":https://www.mail-archive.com/linux-gpio@vger.kernel.org/msg01353.html
+* "DS18B20 / 1-wire via Little Wire [USB] / OpenWrt on TL-WR841ND":http://jjmz.free.fr/?p=124
+* "MySKU: Клон Digispark. Тот же ATtiny85, только с USB":http://mysku.ru/blog/china-stores/36691.html
+* "Загрузчики [bootloader] для микроконтроллеров AVR":http://microsin.net/programming/avr/bootloaders.html
+* -
+* "Kickstarter: Digispark - The tiny, Arduino enabled, usb dev board!":https://www.kickstarter.com/projects/digistump/digispark-the-tiny-arduino-enabled-usb-dev-board
+* "Kickstarter: Digispark - Case Prototypes":https://www.kickstarter.com/projects/digistump/digispark-the-tiny-arduino-enabled-usb-dev-board/posts/306680
+* "Kickstarter: Digispark - Shield PCBs and Kits":https://www.kickstarter.com/projects/digistump/digispark-the-tiny-arduino-enabled-usb-dev-board/posts/289122
+* "Kickstarter: Digispark - Shipping Begins":https://www.kickstarter.com/projects/digistump/digispark-the-tiny-arduino-enabled-usb-dev-board/posts/370094
+* "Kickstarter: Digispark - Production Photos":https://www.kickstarter.com/projects/digistump/digispark-the-tiny-arduino-enabled-usb-dev-board/posts/365312
+* "Kickstarter: Digispark - Final Shield PCB Prototypes":https://www.kickstarter.com/projects/digistump/digispark-the-tiny-arduino-enabled-usb-dev-board/posts/312827
+
