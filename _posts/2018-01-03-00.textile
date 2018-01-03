@@ -1,0 +1,26 @@
+---
+layout:     post
+title:      "Current version of ZFT_Lab site"
+tagline:    ""
+category:   ""
+group:      github
+tags:       [github, zftlab]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+---
+
+p. Внутренние ссылки
+
+* -
+
+---
+
+h3. Внешние ссылки
+
+* "GitHub: /ZigFisher/ZFT_Lab":https://github.com/ZigFisher/ZFT_Lab
+
