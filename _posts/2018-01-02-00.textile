@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Current version of ZFT_Lab site - http://zftlab.org"
+title:      "FlyBlog - simple blog realisation with textile markup support"
 tagline:    ""
 category:   ""
 group:      github
@@ -22,5 +22,5 @@ p. Внутренние ссылки
 
 h3. Внешние ссылки
 
-* "GitHub: /ZigFisher/ZFT_Lab":https://github.com/ZigFisher/ZFT_Lab
+* "GitHub: /ZigFisher/FlyBlog":https://github.com/ZigFisher/FlyBlog
 
