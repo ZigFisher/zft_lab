@@ -1,0 +1,16 @@
+---
+layout:     page
+title:      "ESP8266"
+header:     "ESP8266"
+group:      navigation
+---
+{% include JB/setup %}
+
+
+<html>
+ <head>
+  <title>REFRESH</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+  <meta http-equiv="REFRESH" content="0;url=http://monitor.flymon.net">
+ </head>
+</html>

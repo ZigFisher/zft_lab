@@ -1,0 +1,73 @@
+---
+layout:     page
+title:      "Распродажа склада"
+header:     "Sell-out"
+group:      sale
+---
+
+
+h3=. Cписок комплектующих, доступных для приобретения
+
+p={color:red}. Акция! Купившему товар на сумму от 1000 руб. - три корда LG в подарок.
+
+<br><br>
+
+|_\5=. Блоки питания постоянного тока, трансформаторные, адаптерный форм-фактор                                |
+|_=. Производитель         |_=. Модель         |_=. Краткое описание и параметры     |_=. Наличие |_=. Цена    |
+|LEI I.T.E. Power Supply   |SNG 1-tec          |220V / 15V DC, 400mA, OEM pack       |>.   +30 шт.|>.   60 руб.|
+|DVE AC Adaptor            |DV-1250UP          |220V / 12V DC, 500mA, OEM pack       |>.   +30 шт.|>.   60 руб.|
+|Transformer               |SA41-92            |220V / 12V DC, 500mA, OEM pack       |>.     1 шт.|>.   50 руб.|
+|LEI I.T.E. Power Supply   |A48120100-C5       |220V / 12V DC, 1000mA, OEM pack      |>.     1 шт.|>.   50 руб.|
+|DVE AC Adaptor            |DV-91AUP modem ver.|220V / 9V DC, 1000mA, OEM pack       |>.     5 шт.|>.   60 руб.|
+|DVE AC Adaptor            |DV-91AUP SNG 2-acc |220V / 9V DC, 1000mA, OEM pack       |>.    13 шт.|>.   60 руб.|
+|Amigo I.T.E. Power Supply |AM-0900500V        |220V / 9V DC, 500mA, OEM pack        |>.     1 шт.|>.   50 руб.|
+|SIL AC Adaptor            |VD09003DC          |220V / 9V DC, 300mA, OEM pack        |>.     3 шт.|>.   50 руб.|
+|Yuyao Jiatang Adaptor     |LT-DC-9V-300       |220V / 9V DC, 300mA, OEM pack        |>.     1 шт.|>.   50 руб.|
+|D-Link I.T.E. Power Supply|AM-0751500V        |220V / 7,5V DC, 1500mA, OEM pack     |>.     5 шт.|>.   60 руб.|
+|MKE AC/DC Adaptor         |MKD-751000GS       |220V / 7,5V DC, 1000mA, OEM pack     |>.     1 шт.|>.   50 руб.|
+|DVE AC Adaptor            |DVR-0620UP-3512    |220V / 6V DC, 200mA, OEM pack        |>.     1 шт.|>.   50 руб.|
+|_\5=. Блоки питания постоянного тока, импульсные, адаптерный форм-фактор                                      |
+|FoxLink AC Adapter white  |FA-1201600ST       |220V / 12V DC, 1600mA, OEM pack      |>.     1 шт.|>.  150 руб.|
+|CB AC/DC Adapter          |GA18W-120150       |220V / 12V DC, 1500mA, OEM pack      |>.     1 шт.|>.  150 руб.|
+|CB AC Adapter             |CB-512             |220V / 12V DC, 1000mA, OEM pack      |>.     1 шт.|>.   80 руб.|
+|Zhhange AC Adapter        |HNBB120050WE       |220V / 12V DC, 500mA, OEM pack       |>.     8 шт.|>.  150 руб.|
+|I.T.E AC Adapter          |NLA050120W1U1      |220V / 12V DC, 500mA, OEM pack       |>.   +20 шт.|>.  150 руб.|
+|DVE Switching Adapter     |DSA-5W-12FEU       |220V / 12V DC, 400mA, OEM pack       |>.   +20 шт.|>.   80 руб.|
+|TP-Link Technologies      |T090060-2c1        |220V / 9V DC, 600mA, OEM pack        |>.   +30 шт.|>.   80 руб.|
+|Amigo I.T.E. Power Supply |AMS3-0751500FV     |220V / 7,5V DC, 1500mA, OEM pack     |>.     1 шт.|>.  150 руб.|
+|D-Link I.T.E. Power Supply|AMS1-0501200FV     |220V / 5V DC, 1200mA, OEM pack       |>.     1 шт.|>.  150 руб.|
+|_\5=. Блоки питания постоянного тока, импульсные, модульный форм-фактор [пайка на плату]                      |
+|Traco Power               |TML-15105          |220V / 5V DC, 3000mA, новый в упак.  |>.    10 шт.|>.  300 руб.|
+|Traco Power               |TML-15105          |220V / 5V DC, 3000mA, демонтаж       |>.    10 шт.|>.  150 руб.|
+|НПФ "Сфера СМ"            |SEN15.101.01       |220V / 5V DC, 3000mA, демонтаж       |>.    10 шт.|>.  150 руб.|
+|_\5=. Преобразователи напряжения, импульсные, разные                                                          |
+|HE NavNav Power Supply    |CA-01-5020B        |12V-24V / 5V DC, 2000mA, в прикурив. |>.     1 шт.|>.  150 руб.|
+|_\5=. Блоки питания переменного тока, трансформаторные, адаптерный форм-фактор                                |
+|Zyxel DVE AC Adaptor      |DV-2190ACUP        |220V / 21V AC, 900mA, OEM pack       |>.     1 шт.|>.   50 руб.|
+|DVE AC Adaptor            |DVR-1250ACUP-4814  |220V / 12V AC, 500mA, OEM pack       |>.     1 шт.|>.   50 руб.|
+|OEM AC Adaptor            |AA-091ABN          |220V / 9V AC, 1000mA, OEM pack       |>.     2 шт.|>.   50 руб.|
+|Amigo I.T.E. Power Supply |AM--091000AV       |220V / 9V AC, 1000mA, OEM pack       |>.     2 шт.|>.   50 руб.|
+|LEI I.T.E. Power Supply   |A41090080-C5       |220V / 9V AC, 800mA, OEM pack        |>.     1 шт.|>.   50 руб.|
+|Ktec AC Adaptor           |KA23A90050034G     |220V / 9V AC, 500mA, OEM pack        |>.     2 шт.|>.   50 руб.|
+|_\5=. Источники бесперебойного питания                                                                        |
+|Eaton                     |NV-1400H           |ИБП 840Wtts в н/р сост. без шнуров   |>.     1 шт.|>.  350 руб.|
+|_\5=. Модемы, роутеры и точки доступа WiFi                                                                    |
+|D-Link                    |DSL-2500U          |Модем ADSL, 1 Ethernet, без БП       |>.    16 шт.|>.  300 руб |
+|D-Link                    |DSL-2540U          |Модем ADSL, 4 Ethernet, без БП       |>.     1 шт.|>.  300 руб |
+|Zyxel                     |P-660RT2-EE        |Модем ADSL, 1 Ethernet, без БП       |>.     1 шт.|>.  300 руб |
+|Siemens                   |Sinus 1054         |Точка доступа WiFi, без БП, б/у      |>.    25 шт.|>.  250 руб.|
+|Siemens                   |TS-154 basic       |Точка доступа WiFi, без БП, б/у      |>.     5 шт.|>.  100 руб.|
+|_\5=. Корпуса и аксессуары, пластиковые                                                                       |
+|D-Link                    |подставка          |Подставка пластиковая, новая         |>.  +100 шт.|>.    5 руб.|
+|Edimax                    |BR-6104K           |Корпус пластиковый, серебр., новый   |>.   +30 шт.|>.   30 руб.|
+|Edimax                    |BR-6104KP          |Корпус пластиковый, серебр., новый   |>.   +30 шт.|>.   30 руб.|
+|D-Link                    |DIR-320            |Корпус пластиковый, черный, новый    |>.   +50 шт.|>.   30 руб.|
+|D-Link                    |DSL-2540U          |Корпус пластиковый, черный, новый    |>.     5 шт.|>.   30 руб.|
+|Mikrotik                  |RB-750             |Корпус пластиковый, белый, новый     |>.    10 шт.|>.   30 руб.|
+|Planet                    |XRT-401D + FlyMod. |Корпус пластиковый, черный, новый    |>.   +20 шт.|>.   30 руб.|
+|TP-Link                   |MR-3220            |Корпус пластиковый, белый, новый     |>.   +30 шт.|>.   30 руб.|
+|TP-Link                   |WR-741N            |Корпус пластиковый, белый, новый     |>.   +30 шт.|>.   30 руб.|
+
+
+
+

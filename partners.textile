@@ -1,0 +1,30 @@
+---
+layout:     page
+title:      "Партнёры"
+header:     "Partners"
+group:      navigation
+---
+{% include JB/setup %}
+
+
+h3. Проекты
+
+* "WiFi-IoT.com - On-Line конструктор для умых WiFi модулей: ESP8266, ESP32 и т.д.":http://wifi-iot.com
+
+
+h3. Программы для Android
+
+* "MQTT IoT - удобное приложение для работы с устройствами по протоколу MQTT":https://github.com/Dolfik1/MqttIoT/wiki/Mqtt-Iot
+
+
+h3. Партнёры
+
+* "OctoniX.net":http://octonix.net - Разработка, создание, внедрение программно-аппаратных решений в сфере автоматизации.
+* "U-M.biz":http://u-m.biz/shop - Умная Автоматика для сельского хозяйства. От реле времени до Умного Птичника.
+* "Вайфаюшка.рф":http://mywifi.cc - Управляемая сеть WiFi хотспотов.
+
+* "UBNT.repair":http://ubnt.repair - Очень качественный ремонт оборудования Ubiquiti NanoStation, Loco, Rocket, AirGrid, NanoBridge и т.д.
+
+* "OctoniX [UA] store":https://store7042014.ecwid.com
+* "ESPMeteo - WiFi метеомодуль":http://www.espmeteo.ru/service.html
+

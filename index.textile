@@ -1,0 +1,147 @@
+---
+layout:     page
+title:      Welcome !
+---
+{% include JB/setup %}
+
+
+h3. Популярные страницы
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'best' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. Проекты на "GitHub":https://github.com/ZigFisher
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'github' %}
+  {% include JB/pages_list %}
+</ul>
+
+h3. Все о IoT на базе роутеров
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'bricket' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. Компоненты создания FlyMon DMS
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'flymon' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. ESP8266 и прошивка Homes-Smart [MaksMS]
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'smarthouse' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. Новости из ZFT Lab.
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'zftlab' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. Модули, разработанные в ZFT Lab.
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'modules' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. Роутеры и точки доступа
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'router' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. Linux и всё, что с ним связано
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'linux' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. Полезная информация в виде заметок
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'notes' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. Энергетика и разработки в этой области
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'energy' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. Amateur Radio и цифровая связь
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'hamradio' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. Обеспечение безопасности на авторалли
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'rally' %}
+  {% include JB/pages_list %}
+</ul>
+
+h3. Природа, выезды и экспедиции
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'nature' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. Всякое другое и разное
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'other' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3. Черновики и прочие материалы
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'drafts' %}
+  {% include JB/pages_list %}
+</ul>
