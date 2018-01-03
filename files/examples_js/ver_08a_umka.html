@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="FlyMon manual" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>FlyHeatMaps</title>
+    <link rel="shortcut icon" href="public/favicon.png" />
+
+    <!-- Add styles -->
+    <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- Add scripts -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="javascripts/heatmap.js"></script>
+    <script src="javascripts/mosquitto-1.1.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="content">
+        <canvas id="grid"></canvas>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript">
+    window.context = {
+      mqtt_server: "",
+      mqtt_username: "login@test.net",
+      mqtt_password: "aaaa"
+    };
+    var heatmap = h337.create({
+      container: document.getElementById('content'),
+      opacity: 0.6,
+      // backgroundColor: "pink",
+      radius: 300,
+      // maxOpacity: .5,
+      // minOpacity: 0,
+      blur: .98,
+    });
+
+    var mosq = new Mosquitto();
+
+    var url = "ws://flyhub.org:9001"
+    var device_mqtt_topic = 'mailumka2@gmail.com/wemosD1'
+    var topic = device_mqtt_topic + "/#"
+    mosq.connect(url)
+    mosq.subscribe(topic, 0)
+
+    mosq.onmessage = function(topic, payload, qos) {
+      var t = topic.substring(device_mqtt_topic.length + 1)
+      console.log("topic: ", t, " message: ", payload)
+      payload = Number(payload)
+
+      if (t == "dsw5") {
+        heatmap.addData([{ x: 840, y: 250, value: payload}])
+      }
+      if (t == "dsw2") {
+        heatmap.addData([{ x: 560, y: 500, value: payload}])
+      }
+      if (t == "dsw3") {
+        heatmap.addData([{ x: 1120, y: 500, value: payload}])
+      }
+      if (t == "dsw4") {
+        heatmap.addData([{ x: 840, y: 750, value: payload}])
+      }
+
+
+      if (t == "dsw5") {
+        heatmap.addData([{ x: 560, y: 250, value: payload}])
+      }
+      if (t == "dsw2") {
+        heatmap.addData([{ x: 1120, y: 250, value: payload}])
+      }
+
+      if (t == "dsw3") {
+        heatmap.addData([{ x: 560, y: 750, value: payload}])
+      }
+      if (t == "dsw4") {
+        heatmap.addData([{ x: 1120, y: 750, value: payload}])
+      }
+
+      // Центр
+      if (t == "dsw1") {
+        heatmap.addData([{ x: 840, y: 500, value: payload}])
+      }
+
+
+
+
+    };
+</script>
+
+<script>
+var wrapper = document.getElementById('wrapper');
+var canvas = document.getElementById('grid');
+var context = canvas.getContext('2d');
+var step = 10;
+canvas.height = wrapper.offsetHeight;
+canvas.width = wrapper.offsetWidth;
+
+for (var x = 0.5; x < canvas.width; x += step) {
+context.moveTo(x, 0);
+context.lineTo(x, canvas.height);
+}
+
+for (var y = 0.5; y < canvas.height; y += step) {
+context.moveTo(0, y);
+context.lineTo(canvas.width, y);
+}
+
+context.strokeStyle = "#eee";
+context.stroke();
+</script>
+
+</html>

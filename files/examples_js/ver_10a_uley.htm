@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="FlyMon manual" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>FlyHeatMaps</title>
+    <link rel="shortcut icon" href="public/favicon.png" />
+
+    <!-- Add styles -->
+    <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- Add scripts -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="javascripts/heatmap.js"></script>
+    <script src="javascripts/mosquitto-1.1.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="content">
+        <canvas id="grid"></canvas>
+    </div>
+</div>
+</body>
+
+
+<script type="text/javascript">
+    var content = document.getElementById('content');
+
+    var sensors = {
+      "dsw1": { x: 320,  y: 160, radius: 170}, // Центр - Верх
+      "dsw2": { x: 320,  y: 320, radius: 170}, // Центр - Центр
+      "dsw3": { x: 320,  y: 480, radius: 170}, // Центр - Низ
+    };
+
+    window.context = {
+      mqtt_server: "",
+      mqtt_username: "user@youmail.com",
+      mqtt_password: "mypass"
+    };
+    var heatmaps = {};
+
+    var blueGradient = { 0.25: "rgb(100,100,255)", 1.0: "rgb(100,100,255)"};
+    var greenGradient = { 0.25: "rgb(0,255,0)", 0.55: "rgb(0,255,0)", 0.85: "rgb(0,255,0)", 1.0: "rgb(0,255,0)"};
+    var yellowGradient = { 0.25: "yellow", 1.0: "yellow"};
+    var redGradient = { 0.25: "red", 1.0: "red"};
+
+    for(k in sensors) {
+      var sens = sensors[k];
+      var heatmap = h337.create({
+        container: content,
+        // opacity: 0.,
+        radius: sens["radius"] || 100,
+        gradient: greenGradient,
+        blur: .98,
+        minOpacity: 0.01,
+        maxOpacity: 0.5,
+      });
+      heatmaps[k] = heatmap;
+    }
+
+    var mosq = new Mosquitto();
+
+    var url = "ws://flyhub.org:9001"
+    var device_mqtt_topic = 'tanaseychuk@mail.ru/uley'
+    var topic = device_mqtt_topic + "/#"
+    mosq.connect(url)
+    mosq.subscribe(topic, 0)
+
+    mosq.onmessage = function(topic, payload, qos) {
+      var t = topic.substring(device_mqtt_topic.length + 1)
+      console.log("topic: ", t, " message: ", payload)
+      var value = Number(payload)
+
+      if(heatmaps[t] && sensors[t]) {
+        var sens = sensors[t];
+        var heatmap = heatmaps[t];
+        var g;
+        if (value < 10.0) {
+          g = blueGradient;
+        } else if (value < 20.0) {
+          g = greenGradient;
+        } else if (value < 30) {
+          g = yellowGradient;
+        } else {
+          g = redGradient;
+        }
+        heatmap.configure({gradient: g})
+        heatmap.addData([{x: sens.x, y: sens.y, value: value}]);
+      }
+
+    };
+</script>
+
+<script>
+var wrapper = document.getElementById('wrapper');
+var canvas = document.getElementById('grid');
+var context = canvas.getContext('2d');
+var step = 10;
+// canvas.height = wrapper.offsetHeight;
+// canvas.width = wrapper.offsetWidth;
+canvas.height = 640;
+canvas.width = 640;
+
+
+for (var x = 0.5; x < canvas.width; x += step) {
+context.moveTo(x, 0);
+context.lineTo(x, canvas.height);
+}
+
+for (var y = 0.5; y < canvas.height; y += step) {
+context.moveTo(0, y);
+context.lineTo(canvas.width, y);
+}
+
+context.strokeStyle = "#eee";
+context.stroke();
+</script>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example MQTT Chart</title>
+    <!-- Add scripts -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/mosquitto-1.1.js"></script>
+    <script type="text/javascript" src="javascripts/smoothie.js"></script>
+  </head>
+  <body>
+
+    <h1>Example OnLine MQTT Chart</h1>
+
+    <canvas id="mycanvas" width="1280" height="240"></canvas>
+
+    <script type="text/javascript">
+
+      window.context = {
+        mqtt_server: "",
+        mqtt_username: "user@youmail.com",
+        mqtt_password: "mypass"
+      };
+
+      var mosq = new Mosquitto();
+      var url = "ws://flyhub.org:9001"
+//    var device_mqtt_topic = 'tanaseychuk@mail.ru/uley'
+      var device_mqtt_topic = 'mailumka2@gmail.com/wemosD1'
+      var topic = device_mqtt_topic + "/#"
+      mosq.connect(url)
+      mosq.subscribe(topic, 0)
+
+      var line1 = new TimeSeries();
+      var line2 = new TimeSeries();
+      var line3 = new TimeSeries();
+      var line4 = new TimeSeries();
+      var line5 = new TimeSeries();
+
+      mosq.onmessage = function(topic, payload, qos) {
+        var t = topic.substring(device_mqtt_topic.length + 1)
+        console.log("topic: ", t, " message: ", payload)
+
+        if (t == "dsw1") {
+          line1.append(new Date().getTime(), Number(payload));
+        }
+        if (t == "dsw2") {
+          line2.append(new Date().getTime(), Number(payload));
+        }
+        if (t == "dsw3") {
+          line3.append(new Date().getTime(), Number(payload));
+        }
+        if (t == "dsw4") {
+          line4.append(new Date().getTime(), Number(payload));
+        }
+        if (t == "dsw5") {
+          line5.append(new Date().getTime(), Number(payload));
+        }
+
+      };
+
+      var smoothie = new SmoothieChart({ grid: { sharpLines: false, strokeStyle: 'rgb(125, 0, 0)', fillStyle: 'rgb(60, 0, 0)', lineWidth: 1, millisPerLine: 250, verticalSections: 6 } });
+//    var smoothie = new SmoothieChart({ grid: { sharpLines: false, strokeStyle: 'rgb(125, 0, 0)', fillStyle: 'rgb(60, 0, 0)', lineWidth: 1, millisPerLine: 250, verticalSections: 6 } });
+//    var smoothie = new SmoothieChart({ millisPerPixel:1000, grid: { sharpLines: false, strokeStyle: 'rgb(125, 0, 0)', fillStyle: 'rgb(60, 0, 0)', lineWidth: 1, verticalSections: 6 } });
+      smoothie.addTimeSeries(line1, { strokeStyle: 'rgb(0, 0, 255)', fillStyle: 'rgba(0, 0, 255, 0.3)', lineWidth: 1 });
+      smoothie.addTimeSeries(line2, { strokeStyle: 'rgb(0, 255, 0)', fillStyle: 'rgba(0, 255, 0, 0.4)', lineWidth: 1 });
+      smoothie.addTimeSeries(line3, { strokeStyle: 'rgb(255, 0, 255)', fillStyle: 'rgba(255, 0, 255, 0.3)', lineWidth: 1 });
+      smoothie.addTimeSeries(line4);
+      smoothie.addTimeSeries(line5);
+
+      smoothie.streamTo(document.getElementById("mycanvas"), 25000);
+
+    </script>
+
+    <p><a href="http://zftlab.org">Return to ZFT Lab. page</a></p>
+
+  </body>
+</html>

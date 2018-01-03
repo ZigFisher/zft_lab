@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="FlyMon manual" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>FlyHeatMaps</title>
+    <link rel="shortcut icon" href="public/favicon.png" />
+
+    <!-- Add styles -->
+    <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- Add scripts -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="javascripts/heatmap.js"></script>
+    <script src="javascripts/mosquitto-1.1.js"></script>
+</head>
+
+<body>
+    <div style="position: absolute; left: 0; top: 0; width: 10px; height: 10px; background: blue; border-radius: 5">
+    </div>
+    X: <input><br>
+    Y: <input><br>
+    C: <input><br>
+</div>
+
+</body>
+
+<script>
+window.onload = function () {
+    var elems = document.body.children;
+    var point = elems[0]
+    var fieldX = elems[1];
+    var fieldY = elems[3];
+
+    fieldX.onkeyup = function () {
+        point.style.left = this.value + 'px';
+    }
+
+    fieldY.onkeyup = function () {
+        point.style.top = this.value + 'px';
+    }
+}
+</script>
+
+</html>

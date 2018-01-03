@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="FlyMon manual" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>FlyHeatMaps</title>
+    <link rel="shortcut icon" href="public/favicon.png" />
+
+    <!-- Add styles -->
+    <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- Add scripts -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="javascripts/heatmap.js"></script>
+    <script src="javascripts/mosquitto-1.1.js"></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="content">
+        <canvas id="grid"></canvas>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript">
+    var content = document.getElementById('content');
+    var tooltip = document.querySelector('.tooltip');
+
+    var colorLevels = [
+      {level: 36.7, color: "#0059BA" },
+      {level: 36.8, color: "#006AB8" },
+      {level: 36.9, color: "#007FB7" },
+      {level: 37.0, color: "#0091B6" },
+      {level: 37.1, color: "#00A7B4" },
+      {level: 37.2, color: "#00BEB3" },
+      {level: 37.3, color: "#09C9A0" },
+      {level: 37.4, color: "#17CC82" },
+      {level: 37.5, color: "#23CF68" },
+      {level: 37.6, color: "#2FD14E" },
+      {level: 37.7, color: "#3DD436" },
+      {level: 37.8, color: "#74E049" },
+      {level: 37.9, color: "#9FE959" },
+      {level: 38.0, color: "#BDEF64" },
+      {level: 38.1, color: "#DFF66F" },
+      {level: 38.2, color: "#EDE26E" },
+      {level: 38.3, color: "#E6AF5C" },
+      {level: 38.4, color: "#DE7949" },
+      {level: 38.5, color: "#D8533C" },
+      {level: 38.6, color: "#D2262D" },
+    ];
+
+    var sensors = {
+      "dsw3": { x: 320,  y: 320, radius: 200}, // Центр  - Центр
+      "dsw1": { x: 160,  y: 160, radius: 200}, // Слева  - Верх
+      "dsw2": { x: 160,  y: 480, radius: 200}, // Слева  - Низ
+      "dsw5": { x: 480,  y: 160, radius: 200}, // Справа - Верх
+      "dsw4": { x: 480,  y: 480, radius: 200}, // Справа - Низ
+      "v1":   { x: 320,  y: 160, radius: 180}, // Центр  - Верх
+      "v2":   { x: 320,  y: 480, radius: 180}, // Центр  - Низ
+      "v3":   { x: 160,  y: 320, radius: 180}, // Слева  - Центр
+      "v4":   { x: 480,  y: 320, radius: 180}, // Справа - Центр
+    };
+
+    window.context = {
+      mqtt_server: "",
+      mqtt_username: "user@youmail.com",
+      mqtt_password: "mypass"
+    };
+
+    var heatmaps = {};
+    for(var k in sensors) {
+      var sens = sensors[k];
+      var heatmap = h337.create({
+        container: content,
+        // opacity: 0.,
+        radius: sens.radius || 100,
+        blur: 0.99,
+        minOpacity: 0.01,
+        maxOpacity: 0.5,
+      });
+      heatmaps[k] = heatmap;
+    }
+
+    var mosq = new Mosquitto();
+
+    var url = "ws://flyhub.org:9001";
+    var device_mqtt_topic = 'mailumka2@gmail.com/wemosD1';
+    var topic = device_mqtt_topic + "/#";
+    mosq.connect(url);
+    mosq.subscribe(topic, 0);
+
+    mosq.onmessage = function(topic, payload, qos) {
+      var t = topic.substring(device_mqtt_topic.length + 1);
+      console.log("topic: ", t, " message: ", payload);
+      var value = Number(payload);
+
+      if(heatmaps[t] && sensors[t]) {
+        var sens = sensors[t];
+        var heatmap = heatmaps[t];
+        var g;
+        var colorLevel = colorLevels[0];
+        for (var i in colorLevels) {
+          if (value > colorLevels[i].level) {
+            colorLevel = colorLevels[i];
+          }
+        }
+
+        heatmap.configure({gradient: { 0.25: colorLevel.color, 1.0: colorLevel.color }});
+        heatmap.addData([{x: sens.x, y: sens.y, value: value}]);
+      }
+
+    };
+</script>
+
+
+<script>
+var wrapper = document.getElementById('wrapper');
+var canvas = document.getElementById('grid');
+var context = canvas.getContext('2d');
+var step = 10;
+// canvas.height = wrapper.offsetHeight;
+// canvas.width = wrapper.offsetWidth;
+canvas.height = 640;
+canvas.width = 640;
+
+
+for (var x = 0.5; x < canvas.width; x += step) {
+context.moveTo(x, 0);
+context.lineTo(x, canvas.height);
+}
+
+for (var y = 0.5; y < canvas.height; y += step) {
+context.moveTo(0, y);
+context.lineTo(canvas.width, y);
+}
+
+context.strokeStyle = "#eee";
+context.stroke();
+</script>
+
+</html>
