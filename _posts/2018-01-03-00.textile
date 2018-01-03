@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Current version of ZFT_Lab site - http://zftlab.org"
+title:      "ZFT_Lab - current version of my site - http://zftlab.org"
 tagline:    ""
 category:   ""
 group:      github

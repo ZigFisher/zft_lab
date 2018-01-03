@@ -1,1 +1,1 @@
-# Current version of ZFT_Lab site - <http://zftlab.org>
+# ZFT_Lab - current version of my site - <http://zftlab.org>
