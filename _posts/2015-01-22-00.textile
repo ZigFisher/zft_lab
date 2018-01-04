@@ -62,3 +62,5 @@ h3. Ссылки
 * "GitHub: Atmega328p-based 1200 Baud AFSK radio modem":https://github.com/markqvist/MicroModem
 * "GitHub: APRS fork of MicroModem":https://github.com/markqvist/MicroAPRS
 * "GitHub: Standalone digipeater firmware for MicroModem":https://github.com/markqvist/MicroDigi
+* -
+* "GitHub: A KISS speaking TNC for AX.25 that uses 802.11 [ESP8266]":https://github.com/benjojo/kiss_esp
