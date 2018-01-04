@@ -55,6 +55,7 @@ h3. Ссылки
 * "APRS symbol table":http://www.zl2ko.org.nz/usefullinfo/APRS_Symbol_Chart.pdf
 * "APRS-IS Callsign Passcode Generator":http://www.george-smart.co.uk/wiki/APRS_Callpass
 * "Форум: APRS и другие виды пакетной связи":http://www.cqham.ru/forum/forumdisplay.php?28-APRS-%E8-%E4%F0%F3%E3%E8%E5-%E2%E8%E4%FB-%EF%E0%EA%E5%F2%ED%EE%E9-%F1%E2%FF%E7%E8
+* "The JNOS 2.0 project":http://www.langelaar.net/projects/jnos2/
 * -
 * "The unsigned.io website":http://unsigned.io/
 * "GitHub: An APRS library for the Arduino IDE":https://github.com/markqvist/LibAPRS
