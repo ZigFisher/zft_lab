@@ -42,10 +42,14 @@ h3. Внешние ссылки
 * "MySKU: Sricam SP012 720P ультрабюджетная камера в старом корпусе 'чебурашки'":https://mysku.ru/blog/china-stores/41168.html
 * "MySKU: IP WIFI камера Sricam SP009 за $17.99":https://mysku.ru/blog/discounts/45953.html
 * "MySKU: Хорошая цена на IP-камеру Sricam SP012 720P H.264 Wifi ONVIF $22.13":https://mysku.ru/blog/discounts/45592.html
+* "MySKU: Недорогая WiFi IP камера с ночным видением, 720Р и ONVIF за $17.09":https://mysku.ru/blog/discounts/44688.html
 * "MySKU: Акция на IP камеры Sricam":https://mysku.ru/blog/discounts/58937.html
 * "MySKU: Sricam SP006 P2P 720P IR-CUT IP Security Camera":https://mysku.ru/blog/china-stores/31796.html
 * "4PDA: Обсуждение IP WIFI камера Sricam SP009":https://4pda.ru/forum/index.php?showtopic=681058&st=0
 * "HabraHabr: Как я взломал свою ip-камеру и нашел там бекдор":https://habrahabr.ru/post/316296/
+* "Grain Media 8136S / 8138S are Low Cost HD IP Camera SoCs":https://www.cnx-software.com/2015/06/30/grain-media-8136s-8138s-are-low-cost-hd-ip-camera-socs/
+* "GM8135S GM8136S IPCamera SDK Development Kit":https://www.englishtaobao.net/product/529216631062/
+
 
 
 
