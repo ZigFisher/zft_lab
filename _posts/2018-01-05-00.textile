@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "IPCam SP009 и SP012 от компании Sricam с SoC GM8135S"
+title:      "SoC GM8135S на IPCam SP009 и SP012 от компании Sricam"
 tagline:    ""
 category:   ""
 group:      drafts
