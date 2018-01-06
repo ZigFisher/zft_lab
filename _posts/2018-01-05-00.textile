@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      "SoC GM8135S на IPCam SP009 и SP012 от компании Sricam"
+title:      "IPCam SP009 и SP012 от компании Sricam - SoC GM8135S"
 tagline:    ""
 category:   ""
 group:      drafts
-tags:       [ipcam]
+tags:       [gm8135s, ipcam, sricam]
 ---
 
 
@@ -82,7 +82,6 @@ h3. Внешние ссылки
 * "Grain Media 8136S / 8138S are Low Cost HD IP Camera SoCs":https://www.cnx-software.com/2015/06/30/grain-media-8136s-8138s-are-low-cost-hd-ip-camera-socs/
 * "GM8135S GM8136S IPCamera SDK Development Kit":https://www.englishtaobao.net/product/529216631062/
 * "GitHub: GM8136/GM8135S firmware tools":https://github.com/zzerrg/gmfwtools
-
-
-
-
+* "GitHub: RTSP Server for the Grain Media SOC":https://github.com/willthrom/rtspServer_gm
+* "GitHub: Toolset for Mijia 1080p to enhance the features of this Xiaomi Camera":https://github.com/Filipowicz251/mijia-1080P-hacks | "Releases":https://github.com/Filipowicz251/mijia-1080P-hacks/releases | "Wiki":https://github.com/Filipowicz251/mijia-1080P-hacks/wiki/Issues-installing-and-keeping-the-hack
+* "GitHub: Make SPI flash image script for GM8135S":https://github.com/woofilian/sharedmemmory/blob/master/system/output/make_spi_flash_image.sh
