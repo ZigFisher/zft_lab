@@ -16,13 +16,13 @@ p. Получил 2018.01.05 две IP камеры от Sricam - SP009 и SP012
 
 p. Пока разбираюсь, но в будущем планирую сделать обзор с примером модификации прошивки.
 
-p. Самое важное и интересное - ссылки внизу по этому SoC
+p. Самое важное и интересное - ссылки внизу по этому SoC !!!
 
 !/images/2018010550.jpg!
 
 
-* rtsp://192.168.1.68:554/onvif2
-* rtsp://192.168.1.68:554/onvif1
+* rtsp://192.168.1.68:554/onvif1 # for HD resolution 1280x720
+* rtsp://192.168.1.68:554/onvif2 # for LD resolution 320x180
 
 ---
 
@@ -89,6 +89,10 @@ h3. Внешние ссылки
 
 * "4PDA: Обсуждение IP WIFI камера Sricam SP009":https://4pda.ru/forum/index.php?showtopic=681058&st=0
 * "HabraHabr: Как я взломал свою ip-камеру и нашел там бекдор":https://habrahabr.ru/post/316296/
+* "Обзор IP камеры Sricam SP007":https://texnoera.com/elektronika/obzor-ip-kamery-sricam-sp007.html
+
+* "Sricam SP009 P2P HD IP Camera review":http://www.gadgetvictims.com/2016/04/sricam-sp009-p2p-hd-ip-camera-review.html
+* "Sricam SP012 P2P HD IP Camera review":http://www.gadgetvictims.com/2016/05/sricam-sp012-p2p-hd-ip-camera-review.html
 
 * "Grain Media - Economic H.264 IP Camera Application":http://www.grain-media.com/html/8136S_8135S.htm
 * "Grain Media 8136S / 8138S are Low Cost HD IP Camera SoCs":https://www.cnx-software.com/2015/06/30/grain-media-8136s-8138s-are-low-cost-hd-ip-camera-socs/
