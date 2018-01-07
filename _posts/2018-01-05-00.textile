@@ -12,11 +12,17 @@ h3. Введение
 
 p. Получил 2018.01.05 две IP камеры от Sricam - SP009 и SP012.
 
+!/images/2018010551.jpg!
+
 p. Пока разбираюсь, но в будущем планирую сделать обзор с примером модификации прошивки.
 
 p. Самое важное и интересное - ссылки внизу по этому SoC
 
 !/images/2018010550.jpg!
+
+
+* rtsp://192.168.1.68:554/onvif2
+* rtsp://192.168.1.68:554/onvif1
 
 ---
 
@@ -80,12 +86,19 @@ h3. Внешние ссылки
 * "MySKU: Недорогая WiFi IP камера с ночным видением, 720Р и ONVIF за $17.09":https://mysku.ru/blog/discounts/44688.html
 * "MySKU: Акция на IP камеры Sricam":https://mysku.ru/blog/discounts/58937.html
 * "MySKU: Sricam SP006 P2P 720P IR-CUT IP Security Camera":https://mysku.ru/blog/china-stores/31796.html
+
 * "4PDA: Обсуждение IP WIFI камера Sricam SP009":https://4pda.ru/forum/index.php?showtopic=681058&st=0
 * "HabraHabr: Как я взломал свою ip-камеру и нашел там бекдор":https://habrahabr.ru/post/316296/
+
 * "Grain Media - Economic H.264 IP Camera Application":http://www.grain-media.com/html/8136S_8135S.htm
 * "Grain Media 8136S / 8138S are Low Cost HD IP Camera SoCs":https://www.cnx-software.com/2015/06/30/grain-media-8136s-8138s-are-low-cost-hd-ip-camera-socs/
 * "GM8135S GM8136S IPCamera SDK Development Kit":https://www.englishtaobao.net/product/529216631062/
+
 * "GitHub: GM8136/GM8135S firmware tools":https://github.com/zzerrg/gmfwtools
 * "GitHub: RTSP Server for the Grain Media SOC":https://github.com/willthrom/rtspServer_gm
 * "GitHub: Toolset for Mijia 1080p to enhance the features of this Xiaomi Camera":https://github.com/Filipowicz251/mijia-1080P-hacks | "Releases":https://github.com/Filipowicz251/mijia-1080P-hacks/releases | "Wiki":https://github.com/Filipowicz251/mijia-1080P-hacks/wiki/Issues-installing-and-keeping-the-hack
 * "GitHub: Make SPI flash image script for GM8135S":https://github.com/woofilian/sharedmemmory/blob/master/system/output/make_spi_flash_image.sh
+
+* "IZTOUCH Software & Utilities":http://www.iztouch.com/download/ | "Android":https://play.google.com/store/apps/details?id=com.xapcamera.iztouch&hl=en
+* "Open Source Video Surveillance Software":http://www.ispyconnect.com/
+
