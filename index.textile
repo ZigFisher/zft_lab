@@ -5,7 +5,7 @@ title:      Welcome !
 {% include JB/setup %}
 
 
-h3. Популярные страницы
+h3(#best). Популярные страницы
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -14,7 +14,7 @@ h3. Популярные страницы
 </ul>
 
 
-h3. Проекты на "GitHub":https://github.com/ZigFisher
+h3(#github). Проекты на "GitHub":https://github.com/ZigFisher
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -22,7 +22,7 @@ h3. Проекты на "GitHub":https://github.com/ZigFisher
   {% include JB/pages_list %}
 </ul>
 
-h3. Все о IoT на базе роутеров
+h3(#bricket). Все о IoT на базе роутеров
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -31,7 +31,16 @@ h3. Все о IoT на базе роутеров
 </ul>
 
 
-h3. Компоненты создания FlyMon DMS
+h3(#ipcam). Все о IP видеокамерах, промышленных и самодельных
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'ipcam' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+h3(#flymon). Компоненты создания FlyMon DMS
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -40,7 +49,7 @@ h3. Компоненты создания FlyMon DMS
 </ul>
 
 
-h3. ESP8266 и прошивка Homes-Smart [MaksMS]
+h3(#smarthouse). ESP8266 и прошивка Homes-Smart [MaksMS]
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -49,7 +58,7 @@ h3. ESP8266 и прошивка Homes-Smart [MaksMS]
 </ul>
 
 
-h3. Новости из ZFT Lab.
+h3(#zftlab). Новости из ZFT Lab.
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -58,7 +67,7 @@ h3. Новости из ZFT Lab.
 </ul>
 
 
-h3. Модули, разработанные в ZFT Lab.
+h3(#modules). Модули, разработанные в ZFT Lab.
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -67,7 +76,7 @@ h3. Модули, разработанные в ZFT Lab.
 </ul>
 
 
-h3. Роутеры и точки доступа
+h3(#router). Роутеры и точки доступа
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -76,7 +85,7 @@ h3. Роутеры и точки доступа
 </ul>
 
 
-h3. Linux и всё, что с ним связано
+h3(#linux). Linux и всё, что с ним связано
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -85,7 +94,7 @@ h3. Linux и всё, что с ним связано
 </ul>
 
 
-h3. Полезная информация в виде заметок
+h3(#notes). Полезная информация в виде заметок
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -94,7 +103,7 @@ h3. Полезная информация в виде заметок
 </ul>
 
 
-h3. Энергетика и разработки в этой области
+h3(#energy). Энергетика и разработки в этой области
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -103,7 +112,7 @@ h3. Энергетика и разработки в этой области
 </ul>
 
 
-h3. Amateur Radio и цифровая связь
+h3(#hamradio). Amateur Radio и цифровая связь
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -112,7 +121,7 @@ h3. Amateur Radio и цифровая связь
 </ul>
 
 
-h3. Обеспечение безопасности на авторалли
+h3(#rally). Обеспечение безопасности на авторалли
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -120,7 +129,7 @@ h3. Обеспечение безопасности на авторалли
   {% include JB/pages_list %}
 </ul>
 
-h3. Природа, выезды и экспедиции
+h3(#nature). Природа, выезды и экспедиции
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -129,7 +138,7 @@ h3. Природа, выезды и экспедиции
 </ul>
 
 
-h3. Всякое другое и разное
+h3(#other). Всякое другое и разное
 
 <ul>
   {% assign pages_list = site.posts %}
@@ -138,7 +147,7 @@ h3. Всякое другое и разное
 </ul>
 
 
-h3. Черновики и прочие материалы
+h3(#drafts). Черновики и прочие материалы
 
 <ul>
   {% assign pages_list = site.posts %}
