@@ -4,7 +4,7 @@ title:      "Моддинг прошивки для IP камеры HI3518E_50H1
 tagline:    ""
 category:   ""
 group:      ipcam
-tags:       [hi3518, ipcam, zftlab]
+tags:       [hi3518e, ipcam, zftlab]
 ---
 
 
