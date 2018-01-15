@@ -14,7 +14,7 @@ h3(#best). "Популярные страницы":/#best
 </ul>
 
 
-h3(#github). Проекты на "GitHub":https://github.com/ZigFisher
+h3(#github). "Проекты на GitHub":/#github
 
 <ul>
   {% assign pages_list = site.posts %}
