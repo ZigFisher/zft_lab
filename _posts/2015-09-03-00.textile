@@ -344,7 +344,7 @@ h3. Внешние ссылки
 * "Распаковка, редактирование и упаковка прошивок видеорегистраторов и IP камер из Китая":http://gigamir.net/techno/pub622371
 * "Распаковка, редактирование и упаковка прошивок видеорегистраторов и IP камер из Китая":https://special.habrahabr.ru/kyocera/p/213411/
 * -
-* "Hot firmware for HI3518E based devices !":http://wiki.xm030.com/index.php/IPC%E7%A8%8B%E5%BA%8F%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80
+* "Hot firmware for HI3518E based devices !":https://pan.sohu.net/f/MTcxMDIsaGloYmM.htm
 * "Best software archive":http://www.cctvdiscover.com/download/Files/IPC/
 * "Firmware for IPC18E_50H10L_S38 V4.0.R12.00006510.1":https://pan.sohu.net/f/MTY2NzYsaGRkaWQ.htm
 * "Обновляемые прошивки на IP-камеры и мини-NVR":http://www.ipcam-cd.com/
