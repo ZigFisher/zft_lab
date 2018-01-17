@@ -159,7 +159,7 @@ h3. Внутренние ссылки
 h3. Внешние ссылки
 
 * "Старая ссылка статьи на blog.flyrouter.net":http://blog.flyrouter.net/2013/03/1-2013.html
-
+* -
 * "lenta.ru: В Севастополе в неработающих лифтах включили гимн России":http://lenta.ru/news/2016/03/01/lift/
 * "news.sevas.com:":http://news.sevas.com/politics/lifty_ne_rabotayut_no_gimn_rossii_zvuchit_v_sevastopole_fevral_2016_video
 * "pikabu.ru":http://pikabu.ru/story/v_liftakh_sevastopolya_kruglosutochno_zvuchit_gimn_rossii_4033285

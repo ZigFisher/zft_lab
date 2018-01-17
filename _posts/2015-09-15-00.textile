@@ -23,6 +23,7 @@ h3. Внешние ссылки
 * "Habrahabr: Радиоприемник 60-1700 МГц на RTL2832 за 20 баксов или SDR для начинающих":http://habrahabr.ru/post/149698/
 * "Habrahabr: USB TV-тюнеры на rtl2832 — или как услышать в радиоэфире все за 600 рублей":http://habrahabr.ru/post/149702/
 * "UA6HJQ: Установка и настройка RTL SDR УКВ приёмника":http://ua6hjq.qrz.ru/sdr/rtlsdr.htm
+* "Калибровочный генератор для SunSDR своими руками":https://eesdr.com/ru/support-ru/17-articles-ru/39-ee-sa-008-ru
 * -
 * "RTL-SDR and GNU Radio with Realtek RTL2832U [много инфо]":http://superkuh.com/rtlsdr.html
 * "Osmocom SDR RTL2832U [много инфо]":http://sdr.osmocom.org/trac/wiki/rtl-sdr
