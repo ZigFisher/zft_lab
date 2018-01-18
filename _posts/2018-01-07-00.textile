@@ -28,7 +28,7 @@ p=. Консольный вывод информации о сетевых ин�
 
 h3. Патчи к прошивкам
 
-* "IPC_HI3516C_53H20L_S39_romfs_ZFTLAB-20180118.bin":/files/firmware_ipcam/IPC_HI3516C_53H20L_S39_romfs_ZFTLAB-20180118.bin - патч активации telnet в прошивке General_HZXM_IPC_HI3516C_53H20L_S38_V4.02.R11.Nat.OnvifS.20160511_ALL.bin
+* "IPC_HI3516C_53H20L_S39_romfs_ZFTLAB-20180118.bin":/files/firmware_ipcam/IPC_HI3516C_53H20L_S39_romfs_ZFTLAB-20180118.bin - патч раздела romfs активирующий telnet в прошивке General_HZXM_IPC_HI3516C_53H20L_S38_V4.02.R11.Nat.OnvifS.20160511_ALL.bin
 
 ---
 
