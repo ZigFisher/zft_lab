@@ -1,0 +1,36 @@
+---
+layout:     post
+title:      "Моддинг прошивки IP камеры HI3516C_53H20L_S39 - ID xxxx"
+tagline:    ""
+category:   ""
+group:      ipcam
+tags:       [hi3516c, ipcam, zftlab]
+---
+
+
+h3. Введение
+
+p. Начало работы над новым типом PCB. Материал в стадии оформления.
+
+---
+
+h3. Патчи к прошивкам
+
+* "IPC_HI3516C_53H20L_S39_romfs_ZFTLAB-20180118.bin":/files/firmware_ipcam/IPC_HI3516C_53H20L_S39_romfs_ZFTLAB-20180118.bin - патч раздела romfs активирующий telnet в прошивке General_HZXM_IPC_HI3516C_53H20L_S38_V4.02.R11.Nat.OnvifS.20160511_ALL.bin
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'ipcam' %}
+  {% include JB/pages_list %}
+</ul>
+
+---
+
+h3. Внешние ссылки
+
+* -
+
