@@ -89,14 +89,14 @@ device.mac=00:12:14:01:38:CA
 device.tid=0012140138CA
 #
 vtund.enable=1
-vtund.server=vbox3.flymon.net
-vtund.enable=5000
+vtund.server=test.flymon.net
+vtund.port=7321
 vtund.password=02e3e2266b42f51319dfdbf5699eec724e6f3882a
 #
 
 ---
 
-h3. Патчи к прошивкам
+h3. Прошивки и патчи к ним
 
 * -
 
