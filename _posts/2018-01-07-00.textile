@@ -93,6 +93,13 @@ vtund.server=test.flymon.net
 vtund.port=7321
 vtund.password=02e3e2266b42f51319dfdbf5699eec724e6f3882a
 #
+wifi.enable=1
+wifi.autodetect=1
+wifi.ssid=HotSpot
+wifi.key=bublik2018
+wifi.psk=08b0623daf5ac43dc92d7e65a5d54182791e940055606e14093593e8821413db
+wifi.network=dhcp
+#
 
 p. Расчёт максимального размера разделов, любезно предоставленный ESonya
 
