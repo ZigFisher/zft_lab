@@ -66,7 +66,7 @@ p. Прошивка содержит дополнительные скрипты
 
 * bwm-ng -
 * dropbear -
-* haserl -
+* haserl - простой CGI интерпретатор
 * ipcam.conf - конфигурационный файл системы, пример представлен ниже
 * klogd - аплет,
 * logread - аплет,
@@ -93,6 +93,16 @@ vtund.server=test.flymon.net
 vtund.port=7321
 vtund.password=02e3e2266b42f51319dfdbf5699eec724e6f3882a
 #
+
+p. Расчёт максимального размера разделов, любезно предоставленный ESonya
+
+pre. #####################################
+custom-x.cramfs.img   40000h   262144
+romfs-x.cramfs.img   370000h  3604480
+user-x.cramfs.img    280000h  2621440
+web-x.cramfs.img     140000h  1310720
+#####################################
+
 
 ---
 
