@@ -122,9 +122,9 @@ pre. #
 device_name=IPCam                 # Имя устройства
 device_tid=0012140138CA           # Идентификатор устройства на базе MAC eth0
 storage_enable=0                  # Активация драйвера USB флешки
-telegram_enable=                  # -пока не используется-
-telegram_token=                   # -пока не используется-
-telegram_rupor=                   # -пока не используется-
+telegram_enable=0                 # -пока не используется- Активация
+telegram_token=off                # -пока не используется- Токен бота
+telegram_rupor=off                # -пока не используется- ID чат-группы
 vtund_enable=1                    # Активация VTUNd клиента
 vtund_server=vbox3.flymon.net     # DNS имя или IP адрес VTUNd сервера
 vtund_port=7321                   # -пока не используется- Жёстко 5000
