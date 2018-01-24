@@ -49,7 +49,7 @@ p. Принять участие в тестировании можно посл
 p. Прошивка позволяет подключать через USB интерфейс:
 
 * Flash-накопители ёмкостью до 32Gb с файловой системой VFAT
-* Wi-Fi донглы на чипсетах MT7601 и RT3070 (другие пока не поддерживаются)
+* Wi-Fi донглы на чипсетах MT7601 и RT3070 (в планах добавить ещё поддержку r8188eu)
 * 3G/4G модемы, работающие в режиме стандартных портов ввода-вывода ttyACM и ttyUSB (тест)
 
 p. Прошивка позволяет строить L2 VPN туннели:
@@ -166,6 +166,7 @@ web-x.cramfs.img     140000h  1310720
 h3. В планах
 
 * Добавить поддержку USB 1.1 устройств через драйвер ядра HIUSB OHCI
+* Добавить поддержку USB WiFi донгла Realtek r8188eu
 
 ---
 
@@ -188,5 +189,5 @@ h3. Внутренние ссылки
 
 h3. Внешние ссылки
 
-* -
-
+* "Описание файла конфигурации для wpa_supplicant":http://manpages.ylsoftware.com/ru/wpa_supplicant.conf.5.html
+* "Rename a Linux network interface without Udev / Reboot":http://kernelpanik.net/rename-a-linux-network-interface-without-udev/
