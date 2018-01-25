@@ -123,7 +123,7 @@ h3. Модули ядра (3.0.8)
 
 ---
 
-h3. Пример конфигурационного файла /mnt/mtd/ipcam.conf
+h3. Пример конфигурационного файла /etc/ipcam.conf
 
 pre. #
 # ZFT Lab. 2018 | http://zftlab.org/pages/2018010700.html
@@ -131,36 +131,36 @@ pre. #
 #
 device_name=IPCam                 # Имя устройства
 device_tid=0012140138CA           # Идентификатор устройства на базе MAC eth0
-getty_enable=0
-mqtt_enable=0
-mqtt_server=ipcam.flymon.net
-mqtt_port=1883
-mqtt_login=demo
-mqtt_password=test2018
-sshd_enable=1
-sshd_port=22
+getty_enable=0                    # Активация доступа в консольк камеры
+mqtt_enable=0                     # -пока не используется- Активация MQTT клиента
+mqtt_server=ipcam.flymon.net      # -пока не используется- DNS имя или IP адрес MQTT сервера
+mqtt_port=1883                    # -пока не используется- Порт MQTT сервера
+mqtt_login=demo                   # -пока не используется- Логин MQTT клиента (email)
+mqtt_password=test2018            # -пока не используется- Пароль MQTT клиента
+sshd_enable=1                     # Активация SSH сервера (заблокирован)
+sshd_port=22                      # Порт SSH сервера
 storage_enable=0                  # Активация драйвера USB флешки
-syslogd_enable=0
-telegram_enable=0                 # -пока не используется- Активация
-telegram_token=none               # -пока не используется- Токен бота
-telegram_rupor=none               # -пока не используется- ID чат-группы
-telnetd_enable=1
-telnetd_port=23
+syslogd_enable=0                  # Активация SYSLOGd и KLOGd
+telegram_enable=0                 # -не используется- Активация Telegram бота
+telegram_token=none               # -не используется- Токен Telegram бота
+telegram_rupor=none               # -не используется- ID чат-группы в Telegram
+telnetd_enable=1                  # Активация Telnet сервера
+telnetd_port=23                   # Порт Telnet сервера
 vtund_enable=1                    # Активация VTUNd клиента
 vtund_server=ipcam.flymon.net     # DNS имя или IP адрес VTUNd сервера
-vtund_port=7321                   # -пока не используется- Жёстко 5000
-vtund_password=02e3e2266b9d...    # -пока не используется- Автогенерация
-webface_enable=1
-webface_port=81
+vtund_port=7321                   # -не используется- Фиксировано 5000
+vtund_password=02e3e2266b9d...    # -не используется- Автогенерация
+webface_enable=1                  # Активация HTTP сервера с альтернативным интерфейсом
+webface_port=81                   # Порт HTTP сервера
 wifi_enable=1                     # Активация драйвера USB WiFi (только MT7601 и RT3070)
-wifi_ssid=CRMTGA                  # SSID точки доступа
+wifi_ssid=CRMTGA                  # SSID WiFi точки доступа
 wifi_password=crmtga2008fly       # Пароль точки доступа (psk создаётся автоматически)
-wifi_type=auto                    # -пока не используется- Автодетект mt7601/rt3070
-wifi_iface=auto                   # -пока не используется- Автодетект ra0/eth2
-wifi_psk=auto                     # -пока не используется- Автогенерация psk
-wifi_proto=auto                   # -пока не используется- Жёстко WPA2
-wifi_auth=auto                    # -пока не используется- Жёстко AES/CCMP
-wifi_network=dhcp                 # -пока не используется- Жёстко DHCP
+wifi_type=auto                    # -не используется- Автодетект mt7601/rt3070/rtl8188
+wifi_iface=auto                   # -не используется- Автодетект (ra0/eth2)=>wlan0
+wifi_psk=auto                     # -не используется- Автогенерация psk
+wifi_proto=auto                   # -не используется- Фиксировано WPA2
+wifi_auth=auto                    # -не используется- Фиксировано AES/CCMP
+wifi_network=dhcp                 # -не используется- Фиксировано DHCP
 #
 
 ---
@@ -176,10 +176,11 @@ web-x.cramfs.img     140000h  1310720
 
 ---
 
-h3. В планах
+h3. План работ
 
 * Добавить поддержку USB 1.1 устройств через драйвер ядра HIUSB OHCI
-* Добавить поддержку USB WiFi донгла Realtek r8188eu
+* -
+* -Добавить поддержку USB WiFi донгла Realtek rtl8188-
 
 ---
 
