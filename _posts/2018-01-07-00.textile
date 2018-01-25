@@ -88,38 +88,51 @@ h3. Программы
 
 ---
 
-h3. Аплеты Busybox
+h3. Дополнительные аплеты из busybox2
 
-* klogd - аплет,
-* logread - аплет,
-* syslogd - аплет,
+* brctl
+* crond
+* df dmesg
+* hostname httpd
+* klogd
+* logger logread lsusb
+* microcom mkfs.vfat
+* nc nice ntpd
+* sendmail sha1sum sort syslogd
+* tail telnet tr
+* uniq uptime
+* vi
+* wget
+
+pre. ls -la /bin /sbin | awk '/busybox2/ {print $9}' | sort
 
 ---
 
 h3. Скрипты
 
-* microconf - скрипт, отвечающий за генерацию и проверку основного конфига /mnt/mtd/ipcam.conf
+* ipcam_plugin - скрипт,
+* ipcam_setup - скрипт, отвечающий за генерацию и проверку основного конфига /etc/ipcam.conf
+* ipcam_tunnel - скрипт,
+* ipcam_wifi - скрипт,
 * tapip - скрипт,
-* tuneller - скрипт,
-* usb_storage - скрипт,
-* usb_wifi - скрипт,
 * wifi - скрипт,
-
----
-
-h3. Конфигурационные файлы
-
-* /mnt/mtd/ipcam.conf - основной конфигурационный файл системы, пример представлен ниже
-* /var/tmp/vtund.conf - файл конфигурации VTUNd, генерируется автоматически
-* /var/tmp/wpa_supplicant.conf - файл конфигурации WPA/WPA2 суппликанта, генерируется автоматически
 
 ---
 
 h3. Модули ядра (3.0.8)
 
+* 8188eu.ko (884060) - поддержка USB WiFi донгла на чипе RTL8188
 * mt7601Usta.ko (1030420) - поддержка USB WiFi донгла на чипе MT7601
 * rt3070sta.ko (793339) - поддержка USB WiFi донгла на чипе RT3070
 * usb-storage.ko (80334) - поддержка USB Flash донгла (диск доступен как /dev/sda)
+
+---
+
+h3. Конфигурационные файлы
+
+* /etc/ipcam.conf - основной конфигурационный файл системы, пример представлен ниже
+* /var/tmp/vtund.conf - файл конфигурации VTUNd, генерируется автоматически
+* /var/tmp/wpa_supplicant.conf - файл конфигурации WPA/WPA2 суппликанта, генерируется автоматически
 
 ---
 
@@ -131,7 +144,7 @@ pre. #
 #
 device_name=IPCam                 # Имя устройства
 device_tid=0012140138CA           # Идентификатор устройства на базе MAC eth0
-getty_enable=0                    # Активация доступа в консольк камеры
+getty_enable=0                    # Активация доступа в консоль камеры
 mqtt_enable=0                     # -пока не используется- Активация MQTT клиента
 mqtt_server=ipcam.flymon.net      # -пока не используется- DNS имя или IP адрес MQTT сервера
 mqtt_port=1883                    # -пока не используется- Порт MQTT сервера
