@@ -178,6 +178,7 @@ yandex_enable=0                   # -не используется- Актива
 yandex_login=ipcam@yandex.com     # -не используется- Логин Yandex.Disk клиента (email)
 yandex_password=test2018          # -не используется- Пароль Yandex.Disk клиента
 yandex_folder=none                # -не используется- Папка для складирования снапшотов
+yandex_interval=0                 # -не используется- Интервал загрузки на Yandex.Disk
 #
 
 ---
@@ -196,6 +197,7 @@ web-x.cramfs.img     140000h  1310720
 h3. План работ
 
 * Добавить поддержку USB 1.1 устройств через драйвер ядра HIUSB OHCI
+* Сделать возможным изменение пароля у root и создание новых пользователей в системе
 * -
 * -Добавить поддержку USB WiFi донгла Realtek rtl8188-
 
@@ -203,7 +205,7 @@ h3. План работ
 
 h3. Прошивки и патчи к ним
 
-* Принять участие в тестировании можно после письменного обращения на контактный Email.
+* Принять участие в тестировании можно после письменного обращения на контактный Email или в группу Telegram.
 * По мере тесттирования, прошивки с частью функционала будут лежать в открытом доступе.
 
 ---
@@ -220,5 +222,8 @@ h3. Внутренние ссылки
 
 h3. Внешние ссылки
 
+* "Форум videon.spb.ru: Расширенная модификация прошивки для камер Xiong Mai":http://forum.videon.spb.ru/viewtopic.php?f=24&t=11357
+* "Форум taker.im: Расширенная модификация прошивки для камер Xiong Mai":http://www.taker.im/phpBB2/topic/158005-%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D0%BA%D0%B0%D0%BC%D0%B5%D1%80-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D0%BD%D0%B0%D0%B1%D0%BB%D1%8E%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F/page__st__2560#entry3153006 | "обсуждение":http://www.taker.im/phpBB2/topic/158005-%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D0%BA%D0%B0%D0%BC%D0%B5%D1%80-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D0%BD%D0%B0%D0%B1%D0%BB%D1%8E%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F/page__st__2560
+* -
 * "Описание файла конфигурации для wpa_supplicant":http://manpages.ylsoftware.com/ru/wpa_supplicant.conf.5.html
 * "Rename a Linux network interface without Udev / Reboot":http://kernelpanik.net/rename-a-linux-network-interface-without-udev/
