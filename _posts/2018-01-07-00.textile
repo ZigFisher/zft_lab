@@ -196,7 +196,7 @@ yandex_interval=0                 # -не используется- Интерв
 
 h3. IPCam - Telegram
 
-p. Ознакомиться с примером работы Telegram бота на камере можно зайдя в отдельную группу https://t.me/joinchat/FhtyHw3wQVxqhWEE05sYKA и выполнив команду /menu запросить кнопкой снапшот.
+p. Ознакомиться с примером работы Telegram бота на камере можно зайдя в отдельную группу "https://t.me/joinchat/FhtyHw3wQVxqhWEE05sYKA":https://t.me/joinchat/FhtyHw3wQVxqhWEE05sYKA и выполнив команду /menu запросить кнопкой снапшот.
 
 ---
 
@@ -230,6 +230,13 @@ h3. План разработки и тестирования
 * Создать меню для изменения настроек через telnet/ssh без использования редактора vi
 * -
 * -Добавить поддержку USB WiFi донгла Realtek rtl8188-
+
+---
+
+h3. Список протестированных USB устройств
+
+* WiFi донгл TP-Link TL-WN727N V4.0 (чип MT7601)
+* WiFi донгл TP-Link TL-WN725N (чип RTL8188)
 
 ---
 
