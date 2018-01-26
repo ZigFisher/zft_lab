@@ -274,7 +274,7 @@ h3. Donate
 p. Если вам пригодилась информация с этого блога (прошивки, схемы, инструкции) и вы заинтересованы в его развитии и/или используете материалы в коммерческих целях, пожалуйста перечислите небольшую сумму в качестве donate (пожертвование).
 
 <html>
- <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410011741171832&quickpay=shop&payment-type-choice=on&writer=seller&targets=XM+IPCam+firmware+research&targets-hint=&default-sum=100&button-text=03&comment=on&hint=&successURL=" width="640" height="300"></iframe>
+ <iframe frameborder="0" width="640" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410011741171832&quickpay=shop&payment-type-choice=on&writer=seller&targets=XM+IPCam+firmware+research&targets-hint=&default-sum=100&button-text=03&comment=on&hint=&successURL="></iframe>
 </html>
 
 ---
