@@ -157,6 +157,8 @@ pre. #
 #
 device_name=IPCam                 # Имя устройства
 device_tid=0012140138CA           # Идентификатор устройства на базе MAC eth0
+#
+crond_enable=1                    # Активация Crond (выполнение задач по разписанию)
 getty_enable=0                    # Активация доступа в консоль камеры
 mqtt_enable=0                     # -пока не используется- Активация MQTT клиента
 mqtt_server=ipcam.flymon.net      # -пока не используется- DNS имя или IP адрес MQTT сервера
@@ -189,11 +191,10 @@ wifi_auth=auto                    # -не используется- Фиксир
 wifi_network=dhcp                 # -не используется- Фиксировано DHCP
 yandex_enable=0                   # Активация сервиса отправки на Yandex.Disk
 yandex_folder=Public              # Папка для складирования снапшотов
-yandex_interval=300               # -не используется- Интервал загрузки фото на Yandex.Disk
 yandex_login=ipcam                # Логин для Yandex.Disk клиента
 yandex_password=test2018          # Пароль для Yandex.Disk клиента
 yandex_timeout=30                 # Таймаут соединения с Yandex.Disk
-yandex_ukraine=0                  # Перекладывает маршрут на Yandex через VPN сервера ZFT Lab.
+yandex_vtund=0                    # Перекладывает маршрут на Yandex через VPN сервер ZFT Lab.
 #
 
 ---
@@ -236,7 +237,7 @@ p. *Модуль Yandex* - это набор из программ и скрип
 
 p. При выполнении в консоли команды ipcam_yandex, снапшот будет отправлен в облако, в папку Public/IPCam. Название папки и имя устройства так-же можно задать в конфигурационном файле. Предлагаемая сообществом структура каталогов пока в разработке.
 
-p. Для жителей Украины существует специальная опция yandex_ukraine, включающая маршрутизацию через тестовый VPN туннель. Для тестового циклического запуска отправки снапшотов в облако можно выполнить в консоли команду, представленную ниже.
+p. Для жителей Украины существует специальная опция yandex_vtund, включающая маршрутизацию через тестовый VPN туннель. Для тестового циклического запуска отправки снапшотов в облако можно выполнить в консоли команду, представленную ниже.
 
 pre. (while true ; do sleep 60; /bin/ipcam_yandex; done) &
 
@@ -281,13 +282,13 @@ h3. План разработки и тестирования
 
 ---
 
-h3. Donate
+h3. Благодарности
 
-p. Если вам пригодилась информация с этого блога (прошивки, схемы, инструкции) и вы заинтересованы в его развитии и/или используете материалы в коммерческих целях, пожалуйста перечислите небольшую сумму в качестве donate (пожертвование).
+p. Данный проект является результатом совместной работы многих хороших людей, а именно:
 
-<html>
- <iframe frameborder="0" width="640" height="300" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410011741171832&quickpay=shop&payment-type-choice=on&writer=seller&targets=XM+IPCam+firmware+research&targets-hint=&default-sum=100&button-text=03&comment=on&hint=&successURL="></iframe>
-</html>
+* "Octonix":http://octonix.net Виталий из Киева
+* "ESonya":http://www.cctvsp.ru/ - Игорь из Сергиева Посада
+* "max380":# - Максим из Екатеринбурга
 
 ---
 
@@ -313,3 +314,13 @@ h3. Внешние ссылки
 * "Rename a Linux network interface without Udev / Reboot":http://kernelpanik.net/rename-a-linux-network-interface-without-udev/
 * "Команда curl. Обмен данными с сервером":http://osxh.ru/terminal/command/curl
 * "Using Curl commands with Webdav":http://www.qed42.com/blog/using-curl-commands-webdav
+
+---
+
+h3. Donate
+
+p. Если вам пригодилась информация с этого блога (прошивки, схемы, инструкции) и вы заинтересованы в его развитии и/или используете материалы в коммерческих целях, пожалуйста перечислите небольшую сумму в качестве donate (пожертвование).
+
+<html>
+ <iframe frameborder="0" width="640" height="300" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410011741171832&quickpay=shop&payment-type-choice=on&writer=seller&targets=XM+IPCam+firmware+research&targets-hint=&default-sum=100&button-text=03&comment=on&hint=&successURL="></iframe>
+</html>
