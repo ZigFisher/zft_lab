@@ -264,6 +264,8 @@ h3. Прошивки для IPCam и история изменений
 
 * Получить свежие прошивки и принять участие в тестировании можно в группе "Telegram":https://t.me/joinchat/FhtyHxDpQsv8HlRliQDgqw (см. ссылки ниже)
 
+* 2017.02.01 Публичный релиз на канале Telegram и сайте "FlyRouter.net":http://flyrouter.net/downloads/software/ipcam/ [menu (продолжение)]
+* 2017.01.31 Публичный релиз на канале Telegram и сайте "FlyRouter.net":http://flyrouter.net/downloads/software/ipcam/ [ftpd, ftpput, menu (продолжение)]
 * 2017.01.30 Публичный релиз на канале Telegram и сайте "FlyRouter.net":http://flyrouter.net/downloads/software/ipcam/ [menu (начало), мелкие исправления]
 * 2017.01.29 Публичный релиз на канале Telegram и сайте "FlyRouter.net":http://flyrouter.net/downloads/software/ipcam/ [mqtt, мелкие исправления]
 * 2017.01.28 Публичный релиз на канале Telegram и сайте "FlyRouter.net":http://flyrouter.net/downloads/software/ipcam/ [crond, telegram, мелкие исправления]
