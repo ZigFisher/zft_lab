@@ -292,16 +292,17 @@ h3. Благодарности
 
 p. Данный проект является результатом дополнительной совместной работы многих хороших людей, а именно:
 
-* "Octonix":https://www.facebook.com/octonix.net/ - Виталий из Киева
-* "ESonya":http://www.cctvsp.ru/ - Игорь из Сергиева Посада
-* "max380":/ - Максим из Екатеринбурга
-* "Oleg34":https://vk.com/id379460034 - Олег из Волгограда
+* "ESonya":http://www.cctvsp.ru/ - Игорь, г.Сергиев Посад
+* "FlyRouter":http://zftlab.org - Игорь, г.Симферополь
+* "max380":/ - Максим, г.Екатеринбург
+* "Octonix":https://www.facebook.com/octonix.net/ - Виталий, г.Киев
+* "Oleg34":https://vk.com/id379460034 - Олег, г.Волгоград
 
 p. Так-же выражаем благодарость общественному активу тестировщиков:
 
-* "bulka58807":http://forum.videon.spb.ru/memberlist.php?mode=viewprofile&u=9751 - Андрей из Екатеринбурга
-* "VFuchs":http://www.taker.im/phpBB2/user/428686-vfuchs/ - Василий из Курска
-* "Wolodya":/ - Владимир из Львова
+* "bulka58807":http://forum.videon.spb.ru/memberlist.php?mode=viewprofile&u=9751 - Андрей, г.Екатеринбург
+* "VFuchs":http://www.taker.im/phpBB2/user/428686-vfuchs/ - Василий, г.Курск
+* "Wolodya":/ - Владимир, г.Львов
 
 p. Отдельно выражаем благодарность компании "MultiXvision":http://multixvision.ru/ за предоставленное для тестов оборудование.
 

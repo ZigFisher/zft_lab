@@ -1,0 +1,47 @@
+---
+layout:     post
+title:      "Трюки и хаки при работе с IPCam от XM"
+tagline:    ""
+category:   ""
+group:      ipcam
+tags:       [hi3518e, ipcam, zftlab]
+---
+
+
+h3. Введение
+
+p. Материал в стадии оформления. Последнее обновление - 2018.02.04
+
+---
+
+h3. Благодарности
+
+p. Данный проект является результатом дополнительной совместной работы многих хороших людей, а именно:
+
+* "ESonya":http://www.cctvsp.ru/ - Игорь, г.Сергиев Посад
+* "FlyRouter":http://zftlab.org - Игорь, г.Симферополь
+* "max380":/ - Максим, г.Екатеринбург
+* "Octonix":https://www.facebook.com/octonix.net/ - Виталий, г.Киев
+* "Oleg34":https://vk.com/id379460034 - Олег, г.Волгоград
+
+---
+
+h3. Создание полного бекапа с Flash устройства (ff, fullflash)
+
+
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'ipcam' %}
+  {% include JB/pages_list %}
+</ul>
+
+---
+
+h3. Внешние ссылки
+
+* -
