@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Telegram, MQTT, Яндекс.Диск, WiFi и другие плюшки в IP камерах от Xiong Mai"
+title:      "Telegram, MQTT, Яндекс.Диск, WiFi и плюшки в IP камерах от Xiong Mai"
 tagline:    ""
 category:   ""
 group:      ipcam
