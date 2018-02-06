@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Моддинг прошивки IP камеры HI3518E_50H10L_S39 - ID 6510"
+title:      "Telegram, MQTT, Yandex.Disk, Vtun, WiFi и многое другое в IP камерах от Xiong Mai"
 tagline:    ""
 category:   ""
 group:      ipcam
