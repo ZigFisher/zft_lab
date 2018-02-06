@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Telegram, MQTT, Яндекс.Диск, WiFi и плюшки в IP камерах от Xiong Mai"
+title:      "Telegram, MQTT, Яндекс.Диск, WiFi и т.д. в IP камерах от Xiong Mai"
 tagline:    ""
 category:   ""
 group:      ipcam
@@ -22,13 +22,21 @@ p. Последнее обновление - 2018.02.07
 
 ---
 
-h3. Файлы проекта
+h3. Файлы прошивок
+
+p. Файлы прошивок для IP камер размещены на серверах "ZFT Lab.":http://zftlab.org | "FlyRouter team":http://flyrouter.net и и ссылки на них, для удобства использования, сведены в таблицу ниже.
 
 |=. Модель камеры          |=. ID    |=. Оригинальная прошивка                                                                                                                                  |=. Каталог прошивок от ZFT Lab.                                                                                           |
 |=. HI3518E_50H10L_S39     |=. 06510 |=. "IPC_HI3518E_50H10L_S38":https://zftlab.org/files/firmware_ipcam/General_HZXM_IPC_HI3518E_50H10L_S38_V4.02.R12.Nat.OnvifS.20170727_ALL.bin             |                                                                                                                          |
 |=. HI3518EV200_50H10L_S38 |=. 18510 |=. "IPC_HI3518EV200_50H10L_S38":https://zftlab.org/files/firmware_ipcam/General_HZXM_IPC_HI3518EV200_50H10L_S38_V4.02.R12.Nat.OnvifS.20171010_ALL.bin     |=. "IPC_HI3518EV200_50H10L_S38_NOWIFI":http://flyrouter.net/downloads/software/ipcam/IPC_HI3518EV200_50H10L_S38_NOWIFI/   |
 |=. HI3518EV200_50H20L_S38 |=. 18520 |=. "IPC_HI3518EV200_50H20L_S38":https://zftlab.org/files/firmware_ipcam/General_HZXM_IPC_HI3518EV200_50H20L_S38_V4.02.R12.Nat.OnvifS.HIK.20180104_ALL.bin |=. "IPC_HI3518EV200_50H20L_S38_NOWIFI":http://flyrouter.net/downloads/software/ipcam/IPC_HI3518EV200_50H20L_S38_NOWIFI/   |
 |                          |         |                                                                                                                                                          |                                                                                                                          |
+
+---
+
+h3. Техподдержка
+
+p. Техподдержка проекта осуществляется только на канале "Telegram - XM IPCam modding":https://t.me/joinchat/FhtyHxDpQsv8HlRliQDgqw
 
 ---
 
