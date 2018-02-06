@@ -20,12 +20,11 @@ p. Материал по проекту находится в стадии оф�
 
 p. Последнее обновление - 2018.02.07
 
----
 
-|=. Модель камеры          |=. ID    |=. Оригинальная прошивка камеры                                                                                                                |=. Прошивка от ZFT Lab. |
-|=. HI3518E_50H10L_S39     |=. 06510 |=. "IPC_HI3518E_50H10L_S38":https://zftlab.org/files/firmware_ipcam/General_HZXM_IPC_HI3518E_50H10L_S38_V4.02.R12.Nat.OnvifS.20170727_ALL.bin  |                        |
-|=. HI3518EV200_50H10L_S38 |=. 18510 |=.                                                                                                                                             |                        |
-|=. HI3518EV200_50H20L_S38 |=. 18510 |=.                                                                                                                                             |                        |
+|=. Модель камеры          |=. ID    |=. Оригинальная прошивка камеры                                                                                                                |=. Модифицированные прошивки от ZFT Lab.                                                                                  |
+|=. HI3518E_50H10L_S39     |=. 06510 |=. "IPC_HI3518E_50H10L_S38":https://zftlab.org/files/firmware_ipcam/General_HZXM_IPC_HI3518E_50H10L_S38_V4.02.R12.Nat.OnvifS.20170727_ALL.bin  |                                                                                                                          |
+|=. HI3518EV200_50H10L_S38 |=. 18510 |=.                                                                                                                                             |=. "IPC_HI3518EV200_50H10L_S38_NOWIFI":http://flyrouter.net/downloads/software/ipcam/IPC_HI3518EV200_50H10L_S38_NOWIFI/   |
+|=. HI3518EV200_50H20L_S38 |=. 18510 |=.                                                                                                                                             |=. "IPC_HI3518EV200_50H20L_S38_NOWIFI":http://flyrouter.net/downloads/software/ipcam/IPC_HI3518EV200_50H20L_S38_NOWIFI/   |
 
 
 ---
