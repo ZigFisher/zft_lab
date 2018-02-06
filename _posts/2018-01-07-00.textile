@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Telegram, MQTT, Yandex.Disk, Vtun, WiFi и многое другое в IP камерах от Xiong Mai"
+title:      "Telegram, MQTT, 3G/4G, Yandex.Disk, Vtun, WiFi в IP камерах от Xiong Mai"
 tagline:    ""
 category:   ""
 group:      ipcam
