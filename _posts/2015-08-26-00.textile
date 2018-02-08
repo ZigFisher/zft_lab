@@ -3,7 +3,7 @@ layout:     post
 title:      "Модернизация IP Web-камеры - passive PoE"
 tagline:    ""
 category:   ""
-group:      router
+group:      ipcam
 tags:       [hwmod, webcam, poe]
 ---
 

@@ -3,8 +3,8 @@ layout:     post
 title:      "Обновление заводских WEB-интерфейсов у IPC и NVR"
 tagline:    ""
 category:   ""
-group:      drafts
-tags:       [hi3518e,mxv]
+group:      ipcam
+tags:       [hi3518e, mxv]
 ---
 
 

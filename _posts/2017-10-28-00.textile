@@ -80,10 +80,11 @@ pre. <html>
 
 h3. Внутренние ссылки
 
-* "Хакинг IP-камер на базе SoC HI3518":https://zftlab.org/pages/2015090300.html
-* "Модернизация IP Web-камеры - passive PoE":https://zftlab.org/pages/2015082600.html
-* "Обновление заводских WEB-интерфейсов у IPC и NVR":https://zftlab.org/pages/2016110300.html
-* "Подбор оборудования для видеонаблюдения":https://zftlab.org/pages/2014041100.html
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'ipcam' %}
+  {% include JB/pages_list %}
+</ul>
 
 ---
 

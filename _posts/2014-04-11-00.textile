@@ -3,7 +3,7 @@ layout:     post
 title:      "Подбор оборудования для видеонаблюдения"
 tagline:    ""
 category:   ""
-group:      drafts
+group:      ipcam
 tags:       [video]
 ---
 
