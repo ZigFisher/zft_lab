@@ -48,7 +48,7 @@ p{color:green}. Просьба - присылайте ID проверенных 
 
 h3. Компоненты для разработчиков
 
-p. Готовые для использования программы и библиотеки доступны по "ссылке":http://flyrouter.net/downloads/software/ipcam/For_Developers/
+p. Готовые для использования программы, библиотеки и китайские SDK доступны по ссылкам ниже.
 
 ---
 
@@ -95,3 +95,4 @@ h3. Внутренние ссылки
 h3. Внешние ссылки
 
 * "ZFT Lab. & Yandex.Disk: Китайские SDK для процессоров Hisilicon":https://yadi.sk/d/bFlKO3843SFV8v/SDK
+* "ZFT Lab. & FlyRouter: Готовые для использования программы и библиотеки":http://flyrouter.net/downloads/software/ipcam/For_Developers/
