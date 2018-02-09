@@ -74,11 +74,12 @@ p. Для удобства пользователей ссылки на файл
 |=. IPC_HI3518EV200_50H20L |=. 18520   |=. "IPC_HI3518EV200_50H20L":https://zftlab.org/files/firmware_ipcam/General_HZXM_IPC_HI3518EV200_50H20L_S38_V4.02.R12.Nat.OnvifS.HIK.20180104_ALL.bin |=. "IPC_HI3518EV200_50H20L_NOWIFI":http://flyrouter.net/downloads/software/ipcam/IPC_HI3518EV200_50H20L_NOWIFI/  |
 |                          |           |                                                                                                                                                      |                                                                                                                 |
 
-p. Для продвинутых пользователей доступны тестовые OpenSource прошивки (без поддержки Video, только ядро+сеть).
+p. Для продвинутых пользователей доступны тестовые OpenSource прошивки (без поддержки Video - ядро+сеть).
 
-|<. Для любых камер на базе HI3518Cv1 и HI3518Ev1 |={color:blue}. "тестирование":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |
-|<. Для любых камер на базе HI3518Cv2 и HI3518Ev2 |={color:blue}. "тестирование":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |
-|                                                 |                                                                                                           |
+|<. Для любых устройств XM на базе HI3518Cv1 и HI3518Ev1 |=. "тестирование":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |
+|<. Для любых устройств XM на базе HI3518Cv2 и HI3518Ev2 |=. "тестирование":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |
+|<. Для любых устройств XM на базе HI3520v1 и HI3521v1   |={color:orange}. в разработке                                                                  |
+|                                                        |                                                                                               |
 
 p. Тестирование прошло успешно на устройствах: 06510, 18510, 18520
 
