@@ -388,6 +388,8 @@ h3. Внешние ссылки
 * "Rename a Linux network interface without Udev / Reboot":http://kernelpanik.net/rename-a-linux-network-interface-without-udev/
 * "Команда curl. Обмен данными с сервером":http://osxh.ru/terminal/command/curl
 * "Using Curl commands with Webdav":http://www.qed42.com/blog/using-curl-commands-webdav
+* -
+* "This page will summarize informations to use the GSM/GPRS/3G module":http://www.armadeus.org/wiki/index.php?title=GSM/GPRS
 
 ---
 
