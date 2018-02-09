@@ -76,10 +76,11 @@ p. Для удобства пользователей ссылки на файл
 
 p. Для продвинутых пользователей доступны тестовые OpenSource прошивки (без поддержки Video, только ядро+сеть).
 
-|_=. Группа устройств XM                          |_=. Успешные рапорты |_=. Ссылки на каталоги с прошивками                                                                        |
-|<. Для любых камер на базе HI3518Cv1 и HI3518Ev1 |=. 06510             |={color:blue}. "тестирование":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |
-|<. Для любых камер на базе HI3518Cv2 и HI3518Ev2 |=. 18510, 18520      |={color:blue}. "тестирование":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |
-|                                                 |                     |                                                                                                           |
+|<. Для любых камер на базе HI3518Cv1 и HI3518Ev1 |={color:blue}. "тестирование":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |
+|<. Для любых камер на базе HI3518Cv2 и HI3518Ev2 |={color:blue}. "тестирование":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |
+|                                                 |                                                                                                           |
+
+p. Тестирование прошло успешно на устройствах: 06510, 18510, 18520
 
 p. Компоненты для разработчиков прошивок (готовые программы и библиотеки) доступны по "ссылке":http://flyrouter.net/downloads/software/ipcam/For_Developers/
 
