@@ -46,48 +46,6 @@ p{color:green}. Просьба - присылайте ID проверенных 
 
 ---
 
-h3. Компоненты для разработчиков
-
-p. Готовые для использования программы, библиотеки и китайские SDK доступны по ссылкам ниже.
-
-|<. busybox              |<. libc                                         | скачать |
-|<. bwm-ng               |<. libc                                         | скачать |
-|<. chat                 |<. libc                                         | скачать |
-|<. curl                 |<. libc, libcurl                                | скачать |
-|<. dropbear             |<. libc                                         | скачать |
-|<. etherdump            |<. libc                                         | скачать |
-|<. haserl               |<. libc                                         | скачать |
-|<. homes-smart          |<. libc, libusb-compat                          | скачать |
-|<. httping              |<. libc                                         | скачать |
-|<. iw                   |<. libc, libnl-tiny                             | скачать |
-|<. iwinfo               |<. libc, libiwinfo                              | скачать |
-|<. jsonfilter           |<. libc, libubox, libjson-c                     | скачать |
-|<. libblobmsg-json      |<. libc, libjson-c, libubox                     | скачать |
-|<. libc                 |<. libgcc                                       | скачать |
-|<. libcares             |<. libc                                         | скачать |
-|<. libcurl              |<. libc, libpolarssl                            | скачать |
-|<. libgcc               |<. -                                            | скачать |
-|<. libiwinfo            |<. libc, libnl-tiny, libuci                     | скачать |
-|<. libjson-c            |<. libc                                         | скачать |
-|<. libmosquitto         |<. libc, libpthread, librt, libcares            | скачать |
-|<. libnl-tiny           |<. libs                                         | скачать |
-|<. libpolarssl          |<. libc                                         | скачать |
-|<. librt                |<. libpthread                                   | скачать |
-|<. libubox              |<. libc                                         | скачать |
-|<. libubus              |<. libc, libubox                                | скачать |
-|<. libuci               |<. libc, libubox                                | скачать |
-|<. libusb               |<. libc, libpthread, librt                      | скачать |
-|<. libusb-compat        |<. libc, libusb                                 | скачать |
-|<. libuuid              |<. libc                                         | скачать |
-|<. mosquitto-client     |<. libc, librt, libuuid, libcares, libmosquitto | скачать |
-|<. ppp                  |<. libc, kmod-ppp                               | скачать |
-|<. usb-modeswitch       |<. libc, libubox, libblobmsg-json, libusb       | скачать |
-|<. usbreset             |<. libc                                         | скачать |
-|<. vtun-lite            |<. libc, kmod-tun                               | скачать |
-|<. wpad-mini            |<. libc, libnl-tiny, libubus                    | скачать |
-
----
-
 h3. Загрузка экспериментальных прошивок
 
 p. Настройте TFTP сервер и положите на него соответствующий фаил uImage
@@ -115,6 +73,49 @@ p. Посылая сигнал -SIGUSR1 демону snapshotd можно доб
 pre. # snapshotd -p /tmp/ -f snap.jpg rtsp://127.0.0.1:554/0        // запуск демона в консоли
 
 p. Альтернативный вариант для получения снапшотов и роликов - использовать утилиту *sample_venc*
+
+---
+
+h3. Компоненты для разработчиков
+
+p. Готовые для использования программы, библиотеки и китайские SDK доступны по ссылкам ниже.
+
+|<. busybox              |<. libc                                         | скачать |
+|<. bwm-ng               |<. libc                                         | скачать |
+|<. chat                 |<. libc                                         | скачать |
+|<. curl                 |<. libc, libcurl                                | скачать |
+|<. dropbear             |<. libc                                         | скачать |
+|<. empty                |<. libc, libutil                                | скачать |
+|<. etherdump            |<. libc                                         | скачать |
+|<. haserl               |<. libc                                         | скачать |
+|<. homes-smart          |<. libc, libusb-compat                          | скачать |
+|<. httping              |<. libc                                         | скачать |
+|<. iw                   |<. libc, libnl-tiny                             | скачать |
+|<. iwinfo               |<. libc, libiwinfo                              | скачать |
+|<. jsonfilter           |<. libc, libubox, libjson-c                     | скачать |
+|<. libblobmsg-json      |<. libc, libjson-c, libubox                     | скачать |
+|<. libc                 |<. libgcc                                       | скачать |
+|<. libcares             |<. libc                                         | скачать |
+|<. libcurl              |<. libc, libpolarssl                            | скачать |
+|<. libgcc               |<. -                                            | скачать |
+|<. libiwinfo            |<. libc, libnl-tiny, libuci                     | скачать |
+|<. libjson-c            |<. libc                                         | скачать |
+|<. libmosquitto         |<. libc, libpthread, librt, libcares            | скачать |
+|<. libnl-tiny           |<. libs                                         | скачать |
+|<. libpolarssl          |<. libc                                         | скачать |
+|<. librt                |<. libpthread                                   | скачать |
+|<. libubox              |<. libc                                         | скачать |
+|<. libubus              |<. libc, libubox                                | скачать |
+|<. libuci               |<. libc, libubox                                | скачать |
+|<. libusb               |<. libc, libpthread, librt                      | скачать |
+|<. libusb-compat        |<. libc, libusb                                 | скачать |
+|<. libuuid              |<. libc                                         | скачать |
+|<. mosquitto-client     |<. libc, librt, libuuid, libcares, libmosquitto | скачать |
+|<. ppp                  |<. libc, libutil, kmod-ppp                      | скачать |
+|<. usb-modeswitch       |<. libc, libubox, libblobmsg-json, libusb       | скачать |
+|<. usbreset             |<. libc                                         | скачать |
+|<. vtund                |<. libc, kmod-tun                               | скачать |
+|<. wpa-supplicant       |<. libc, libnl-tiny                             | скачать |
 
 ---
 
