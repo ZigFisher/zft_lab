@@ -3,7 +3,7 @@ layout:     post
 title:      "Просмотр 'псевдо-видео' с IP камеры в любом браузере"
 tagline:    ""
 category:   ""
-group:      router
+group:      ipcam
 tags:       [hwmod, webcam]
 ---
 

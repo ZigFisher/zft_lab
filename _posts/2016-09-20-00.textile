@@ -3,7 +3,7 @@ layout:     post
 title:      "Использование mjpg-streamer и различные USB UVC видеокамеры"
 tagline:    ""
 category:   ""
-group:      bricket
+group:      ipcam
 tags:       [video, uvc]
 ---
 
