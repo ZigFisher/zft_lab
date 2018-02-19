@@ -33,8 +33,20 @@ p. Команды обновления проекта "XM IPCam modding":https:/
 pre. #
 cd chaos_calmer
 git pull
+./scripts/feeds update -a
+#./scripts/feeds install -a
 cp -v target/linux/hisilicon/examples/.config_current ./.config
 make clean && make -j1 V=s
+
+pre. #
+# Добавление программ из Glutinium
+cd chaos_calmer
+cp ./feeds.conf.default ./feeds.conf
+echo "src-git glutinium https://github.com/ZigFisher/Glutinium.git" >>./feeds.conf
+./scripts/feeds update glutinium
+./scripts/feeds list -r glutinium
+./scripts/feeds install empty etherdump homes-smart httping i2c-telemetry i2c-tools littlewire mercury236 microbe mini_snmpd remserial rs485conf vtun-lite 
+#
 
 ---
 
