@@ -30,7 +30,6 @@ p. С 2018.02.15 все компоненты (утилиты и библиоте
 
 h3. Архив прошивок
 
-|                                                                |                                                                                          |                                                                                          |
 |_=. Список поддерживаемых платформ                              |_=. Сборка Buildroot                                                                      |_=. Сборка OpenWrt                                                                        |
 |<. Для любых устройств XM с SoC HI3518Cv1, HI3518Cv1, HI3518Ev1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |
 |<. Для любых устройств XM с SoC HI3518Cv2, HI3518Ev2            |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |={color:orange}. в разработке                                                             |
