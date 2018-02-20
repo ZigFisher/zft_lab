@@ -56,13 +56,13 @@ h3. Архив прошивок
 
 p. Экспериментальные Open Source прошивки (без поддержки Video, только ядро и сеть).
 
-|_=. Список поддерживаемых платформ                      |_=. Сборка Buildroot                                                                      |_=. Сборка OpenWrt             |
-|<. Для любых устройств XM на базе HI3518Cv1 и HI3518Ev1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |={color:orange}. в разработке  |
-|<. Для любых устройств XM на базе HI3518Cv2 и HI3518Ev2 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |={color:orange}. в разработке  |
-|<. Для любых устройств XM на базе HI3520?v1 и HI3521?v1 |={color:orange}. в разработке                                                             |={color:orange}. в разработке  |
-|<. Для любых устройств XM на базе HI3520?v2             |={color:orange}. в разработке                                                             |={color:orange}. в разработке  |
-|<. Для любых устройств Longse на базе HI3518Ev2         |={color:orange}. в разработке                                                             |={color:orange}. в разработке  |
-|                                                        |                                                                                          |                               |
+|_=. Список поддерживаемых платформ                              |_=. Сборка Buildroot                                                                      |_=. Сборка OpenWrt                                                                        |
+|<. Для любых устройств XM с SoC HI3518Cv1, HI3518Cv1, HI3518Ev1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |
+|<. Для любых устройств XM с SoC HI3518Cv2, HI3518Ev2            |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |={color:orange}. в разработке                                                             |
+|<. Для любых устройств XM с SoC HI3520?v1,HI3521?v1             |={color:orange}. в разработке                                                             |={color:orange}. в разработке                                                             |
+|<. Для любых устройств XM с SoC HI3520?v2                       |={color:orange}. в разработке                                                             |={color:orange}. в разработке                                                             |
+|<. Для любых устройств Longse с SoC HI3518Ev2                   |={color:orange}. в разработке                                                             |={color:orange}. в разработке                                                             |
+|                                                                |                                                                                          |                                                                                          |
 
 p. Тестирование выполнено успешно на IPCam: 06510, 18510, 18520
 
