@@ -28,7 +28,7 @@ p. В текущих тестовых прошивках пока нет под�
 
 p. С 2018.02.15 все компоненты (утилиты и библиотеки) в проекте "XM IPCam modding":https://zftlab.org/pages/2018010700.html собираются при помощи нашего "OpenWrt toolchain":https://github.com/ZigFisher/chaos_calmer размещённого на "GitHub":https://github.com/ZigFisher и там-же находится простейшая "Вики":https://github.com/ZigFisher/chaos_calmer/wiki/IPCam-with-Hisilicon-SoC's для сбора информации об различных IPCam в группе "Telegram":http://t.me/joinchat/FhtyHxDpQsv8HlRliQDgqw
 
-p. С 2018.02.21 начано постепенное заполнение информации в "OpenWrt Wiki":https://openwrt.org/docs/hardware/soc#hisilicon
+p. С 2018.02.21 начат сбор изаполнение информации в "OpenWrt Wiki":https://openwrt.org/docs/hardware/soc#hisilicon
 
 ---
 
