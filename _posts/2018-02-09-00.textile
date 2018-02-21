@@ -18,13 +18,13 @@ p{color:blue}. Просьба - при использовании материа
 
 ---
 
-h3. Open Source project - Buildroot & OpenWrt
+h3. Эксперименты Buildroot & OpenWrt
 
-p. Данные прошивки предназначены исключительно для опытных пользователей, умеющих работать с UART консолью, TFTP сервером и командами U-boot.
+p. Данные прошивки предназначены исключительно для экспериментов и опытных пользователей, умеющих работать с UART консолью, TFTP сервером и командами U-boot.
 
-p. В тестовых прошивках пока нет поддержки Video, запись на FLASH не производится, старт системы происходит из памяти. Сейчас проверяется возможность загрузки ядра Linux на разных процессорах Hisilicon, работа интерфейсов Ethernet и USB, поддержка минимальной файловой системы, автоматическое детектирование сенсоров.
+p. В текущих тестовых прошивках пока нет поддержки Video, запись на FLASH не производится, старт системы происходит из памяти. Сейчас проверяется возможность загрузки ядра Linux на разных процессорах Hisilicon, работа интерфейсов Ethernet и USB, поддержка минимальной файловой системы, автоматическое детектирование сенсоров.
 
-p. С 2018.02.15 все компоненты (утилиты и библиотеки) собираются при помощи нашего "OpenWrt toolchain":https://github.com/ZigFisher/chaos_calmer размещённого на "GitHub":https://github.com/ZigFisher и там-же находится простейшая "Вики":https://github.com/ZigFisher/chaos_calmer/wiki/IPCam-with-Hisilicon-SoC's для сбора информации об различных IPCam в группе "Telegram - XM IPCam modding":http://t.me/joinchat/FhtyHxDpQsv8HlRliQDgqw
+p. С 2018.02.15 все компоненты (утилиты и библиотеки) в проекте "XM IPCam modding":https://zftlab.org/pages/2018010700.html собираются при помощи нашего "OpenWrt toolchain":https://github.com/ZigFisher/chaos_calmer размещённого на "GitHub":https://github.com/ZigFisher и там-же находится простейшая "Вики":https://github.com/ZigFisher/chaos_calmer/wiki/IPCam-with-Hisilicon-SoC's для сбора информации об различных IPCam в группе "Telegram":http://t.me/joinchat/FhtyHxDpQsv8HlRliQDgqw
 
 ---
 
@@ -32,7 +32,7 @@ h3. Архив прошивок
 
 |_=. Список поддерживаемых платформ                              |_=. Сборка Buildroot                                                                      |_=. Сборка OpenWrt                                                                        |
 |<. Для любых устройств XM с SoC HI3518Cv1, HI3518Cv1, HI3518Ev1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |
-|<. Для любых устройств XM с SoC HI3518Cv2, HI3518Ev2            |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v1/ |={color:green}. скоро                                                                     |
+|<. Для любых устройств XM с SoC HI3518Cv2, HI3518Ev2            |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/HI_SoC_v2/ |={color:green}. скоро                                                                     |
 |<. Для любых устройств XM с SoC HI3520?v1,HI3521?v1             |={color:orange}. в разработке                                                             |={color:orange}. в разработке                                                             |
 |<. Для любых устройств XM с SoC HI3520?v2                       |={color:orange}. в разработке                                                             |={color:orange}. в разработке                                                             |
 |<. Для любых устройств Longse с SoC HI3518Ev2                   |={color:orange}. в разработке                                                             |={color:orange}. в разработке                                                             |
@@ -72,16 +72,6 @@ p. По-умолчанию, пароль для root не установлен, 
 
 ---
 
-p. -RTSP потоки доступны по адресам rtsp://192.168.1.15:554/0 и rtsp://192.168.1.15:554/1- (отключено!)
-
-p. -Посылая сигнал -SIGUSR1 демону snapshotd можно добиться получения снимков (тестовая функция)-
-
-pre. # snapshotd -p /tmp/ -f snap.jpg rtsp://127.0.0.1:554/0        // запуск демона в консоли
-
-p. -Альтернативный вариант для получения снапшотов и роликов - использовать утилиту *sample_venc*-
-
---
-
 p. Команды для инициализации и обновления проекта 
 
 pre. #
@@ -104,6 +94,16 @@ echo "src-git glutinium https://github.com/ZigFisher/Glutinium.git" >>./feeds.co
 ./scripts/feeds install littlewire  micronucleus mercury236 microbe mini_snmpd remserial
 ./scripts/feeds install rs485conf tg-bot1 vtun-lite
 #
+
+---
+
+p. -RTSP потоки доступны по адресам rtsp://192.168.1.15:554/0 и rtsp://192.168.1.15:554/1-
+
+p. -Посылая сигнал -SIGUSR1 демону snapshotd можно добиться получения снимков (тестовая функция)-
+
+p. -Альтернативный вариант для получения снапшотов и роликов - использовать утилиту *sample_venc*-
+
+p. -snapshotd -p /tmp/ -f snap.jpg rtsp://127.0.0.1:554/0-
 
 ---
 
