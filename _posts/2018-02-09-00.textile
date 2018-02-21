@@ -80,27 +80,43 @@ p. По-умолчанию, пароль для root не установлен, 
 ---
 
 
-h3. Инициализация и обновление проекта
+h3. Подготовка, установка и обновление кода проекта
+
+p. Подготовка в Debian/Ubuntu
+
+pre. #
+sudo apt-get install --no-install-recommends build-essential gawk git libncurses-dev python \
+   subversion unzip zlib1g-dev
+
+p. Первичная установка
+
+pre. #
+git clone https://github.com/ZigFisher/chaos_calmer.git
+cd chaos_calmer
+cp ./feeds.conf.default ./feeds.conf
+./scripts/feeds update -a
+./scripts/feeds install -a
+cp -v target/linux/hisilicon/examples/.config_current ./.config
+make clean && make -j1 V=s
+
+p. Добавление некоторых программ из Glutinium
+
+pre. #
+cd chaos_calmer
+echo "src-git glutinium https://github.com/ZigFisher/Glutinium.git" >>./feeds.conf
+./scripts/feeds update glutinium
+./scripts/feeds list -r glutinium    # вывод списка доступных пакетов
+./scripts/feeds install empty etherdump homes-smart httping i2c-telemetry i2c-tools
+./scripts/feeds install littlewire micronucleus mercury236 microbe mini_snmpd remserial
+./scripts/feeds install rs485conf tg-bot1 vtun-lite
+
+p. Обновление кода и рестарт сборки (ежедневно)
 
 pre. #
 cd chaos_calmer
 git pull
-./scripts/feeds update -a
-#./scripts/feeds install -a
 cp -v target/linux/hisilicon/examples/.config_current ./.config
 make clean && make -j1 V=s
-#
-
-pre. #
-# Добавление программ из Glutinium
-cd chaos_calmer
-cp ./feeds.conf.default ./feeds.conf
-echo "src-git glutinium https://github.com/ZigFisher/Glutinium.git" >>./feeds.conf
-./scripts/feeds update glutinium
-./scripts/feeds list -r glutinium
-./scripts/feeds install empty etherdump homes-smart httping i2c-telemetry i2c-tools
-./scripts/feeds install littlewire  micronucleus mercury236 microbe mini_snmpd remserial
-./scripts/feeds install rs485conf tg-bot1 vtun-lite
 #
 
 
