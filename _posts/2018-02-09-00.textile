@@ -42,6 +42,8 @@ h3. Архив прошивок
 |<. Для любых устройств Longse с SoC HI3518Ev2                   |={color:orange}. в разработке                                                             |={color:orange}. в разработке                                                             |
 |                                                                |                                                                                          |                                                                                          |
 
+p. Все пакеты программ, библиотек и модулей ядра для OpenWrt доступны (в формате .ipk) по "ссылке":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/packages/ 
+
 p. Тестирование выполнено успешно на XM IPCam: 02532, 06510, 18510, 18520
 
 p. Тестирование выполнено успешно на XM NVR: 00117
