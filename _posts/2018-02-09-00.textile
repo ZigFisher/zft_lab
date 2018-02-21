@@ -86,7 +86,7 @@ p. Подготовка в Debian/Ubuntu
 
 pre. #
 sudo apt-get install --no-install-recommends build-essential gawk git libncurses-dev python \
-   subversion unzip zlib1g-dev
+    subversion unzip zlib1g-dev
 
 p. Первичная установка
 
@@ -106,9 +106,9 @@ cd chaos_calmer
 echo "src-git glutinium https://github.com/ZigFisher/Glutinium.git" >>./feeds.conf
 ./scripts/feeds update glutinium
 ./scripts/feeds list -r glutinium    # вывод списка доступных пакетов
-./scripts/feeds install empty etherdump homes-smart httping i2c-telemetry i2c-tools
-./scripts/feeds install littlewire micronucleus mercury236 microbe mini_snmpd remserial
-./scripts/feeds install rs485conf tg-bot1 vtun-lite
+./scripts/feeds install empty etherdump homes-smart httping i2c-telemetry i2c-tools \
+    littlewire micronucleus mercury236 microbe mini_snmpd remserial rs485conf tg-bot1 \
+    vtun-lite
 
 p. Обновление кода и рестарт сборки (ежедневно)
 
