@@ -84,14 +84,12 @@ h3. Подготовка, установка и обновление кода п
 
 p. Подготовка в Debian/Ubuntu
 
-pre. #
-sudo apt-get install --no-install-recommends build-essential gawk git libncurses-dev python \
+pre. sudo apt-get install --no-install-recommends build-essential gawk git libncurses-dev python \
     subversion unzip zlib1g-dev
 
 p. Первичная установка
 
-pre. #
-git clone https://github.com/ZigFisher/chaos_calmer.git
+pre. git clone https://github.com/ZigFisher/chaos_calmer.git
 cd chaos_calmer
 cp ./feeds.conf.default ./feeds.conf
 ./scripts/feeds update -a
@@ -101,8 +99,7 @@ make clean && make -j1 V=s
 
 p. Добавление некоторых программ из Glutinium
 
-pre. #
-cd chaos_calmer
+pre. cd chaos_calmer
 echo "src-git glutinium https://github.com/ZigFisher/Glutinium.git" >>./feeds.conf
 ./scripts/feeds update glutinium
 ./scripts/feeds list -r glutinium    # вывод списка доступных пакетов
@@ -112,12 +109,10 @@ echo "src-git glutinium https://github.com/ZigFisher/Glutinium.git" >>./feeds.co
 
 p. Обновление кода и рестарт сборки (ежедневно)
 
-pre. #
-cd chaos_calmer
+pre. cd chaos_calmer
 git pull
 cp -v target/linux/hisilicon/examples/.config_current ./.config
 make clean && make -j1 V=s
-#
 
 
 ---
