@@ -166,3 +166,6 @@ h3. Внешние ссылки
 * "FlyRouter: Готовые для использования программы и библиотеки":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/
 * "OpenWrt Wiki - сбор информации по Hisilicon":https://openwrt.org/docs/hardware/soc#hisilicon
 * "Дискуссия на английском языке на китайском форуме 'OpenIPCam'":http://www.openipcam.com/forum/index.php/topic,2093.0.html
+
+* "Hacking Jovision JVS-HI3518ESIV200":https://drive.google.com/drive/folders/1vimrJNaqoiK6gA02aLNeIFpeCcI8_Uhp
+* "Hacking Haiwvision 960p":https://yadi.sk/d/G3EUYAH23SR4o6
