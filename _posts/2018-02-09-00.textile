@@ -35,19 +35,21 @@ p. С 2018.02.21 начат сбор изаполнение информации
 
 h3. Архив прошивок
 
-|_=. Список поддерживаемых платформ                     |_=. Сборка Buildroot                                                        |_=. Сборка OpenWrt                                                        |
-|<. Для устройств с SoC HI3516Cv1, HI3518Cv1, HI3518Ev1 |=. "скачать":/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v1 |=. "скачать":/downloads/software/ipcam/Open_Source_Project/openwrt/soc_v1 |
-|<. Для устройств с SoC HI3516Cv2, HI3518Cv2, HI3518Ev2 |=. "скачать":/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v2 |={color:green}. скоро                                                     |
-|<. Для устройств с SoC HI3520Dv1, HI3521Dv1, HI3520?v2 |={color:orange}. в разработке                                               |={color:orange}. в разработке                                             |
-|                                                       |                                                                            |                                                                          |
+|_=. Список поддерживаемых платформ                     |_=. Сборка Buildroot                                                                            |_=. Сборка OpenWrt                                                                            |
+|<. Для устройств с SoC HI3516Cv1, HI3518Cv1, HI3518Ev1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/openwrt/soc_v1 |
+|<. Для устройств с SoC HI3516Cv2, HI3518Cv2, HI3518Ev2 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v2 |={color:green}. скоро                                                                         |
+|<. Для устройств с SoC HI3520Dv1, HI3521Dv1, HI3520?v2 |={color:orange}. в разработке                                                                   |={color:orange}. в разработке                                                                 |
+|                                                       |                                                                                                |                                                                                              |
 
 p. Все пакеты программ, библиотек и модулей ядра для OpenWrt доступны (в формате .ipk) по "ссылке":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/openwrt_packages/
 
-p. Тестирование выполнено успешно на XM IPCam: 
+p. Тестирование выполнено успешно на IPCam:
 
-* 02532 - HI3516Cv1
-* 06510 - HI3518Ev1
-* 18510 - HI3518Ev2 ; 18520 - HI3518Ev2
+* XM 02532 => HI3516Cv1
+* XM 06510 => HI3518Ev1
+* XM 18510 => HI3518Ev2 ; XM 18520 => HI3518Ev2
+
+* NVSIP unknown => HI3518Ev1 + RTL8201 PHY
 
 p. Тестирование выполнено успешно на XM NVR: 00117
 
