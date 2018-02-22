@@ -35,10 +35,10 @@ p. Начат сбор и запись информации в "OpenWrt Wiki":ht
 
 h3. Архив прошивок
 
-p. Внимание! Если у вас камера не XM производителя и имеет на плате внешний Ethernet PHY (RTL8201 или IP101) - пробуйте использовать в первую очередь прошивки с именами -notXM.
+p. Внимание! Если у вас камера не XM производителя и имеет на плате внешний Ethernet PHY (RTL8201 или IP101) - пробуйте использовать в первую очередь прошивки с именами -noXM.
 
 |_=. Список поддерживаемых платформ     |_\2=. Сборка Buildroot                                                                                                                                                                          |_\2=. Сборка OpenWrt                                                                                                                                                                         |
-|=. и разделение по типам Ethernet PHY  |=. for XM dev                                                                                  |=. for notXM dev                                                                                |=. for XM dev                                                                                 |=. for notXM dev                                                                              |
+|=. и разделение по типам Ethernet PHY  |=. for XM dev                                                                                  |=. for noXM dev                                                                                 |=. for XM dev                                                                                 |=. for noXM dev                                                                               |
 |=. SoC HI3516Cv1, HI3518Cv1, HI3518Ev1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v1|=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/openwrt/soc_v1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/openwrt/soc_v1 |
 |=. SoC HI3516Cv2, HI3518Cv2, HI3518Ev2 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v2|=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v2 |={color:green}. скоро                                                                         |={color:green}. скоро                                                                         |
 |=. SoC HI3520Dv1, HI3521Dv1, HI3520?v2 |={color:orange}. в разработке                                                                  |={color:orange}. в разработке                                                                   |={color:orange}. в разработке                                                                 |={color:orange}. в разработке                                                                 |
@@ -53,7 +53,9 @@ p. Тестирование выполнено успешно на IPCam:
 * XM 18510 (HI3518Ev2) ; XM 18520 (HI3518Ev2)
 * NVSIP unknown (HI3518Ev1 + RTL8201 PHY)
 
-p. Тестирование выполнено успешно на XM NVR: 00117
+p. Тестирование выполнено успешно на  NVR:
+
+* XM 00117
 
 p{color:green}. Просьба: присылайте ID проверенных устройств и не стесняйтезь задавать вопросы группе "Telegram":http://t.me/joinchat/FhtyHxDpQsv8HlRliQDgqw
 
