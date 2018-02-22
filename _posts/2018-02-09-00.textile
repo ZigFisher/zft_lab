@@ -35,7 +35,7 @@ p. С 2018.02.21 начат сбор изаполнение информации
 
 h3. Архив прошивок
 
-p. Внимание! Если у вас камера не XM производителя и имеет на плате внешний Ethernet PHY (маленький квадратный чип RTL8201 или IP101) - пробуйте прошивки с именем *for-notXM*.
+p. Внимание! Если у вас камера не XM производителя и имеет на плате внешний Ethernet PHY (маленький квадратный чип *RTL8201* или *IP101*) - пробуйте использовать в первую очередь прошивки с именами *-for-notXM*.
 
 |_=. Список поддерживаемых платформ                     |_=. Сборка Buildroot                                                                            |_=. Сборка OpenWrt                                                                            |
 |<. Для устройств с SoC HI3516Cv1, HI3518Cv1, HI3518Ev1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/openwrt/soc_v1 |
