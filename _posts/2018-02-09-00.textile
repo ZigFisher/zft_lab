@@ -38,7 +38,7 @@ p. Дискуссия на китайском форуме "OpenIPCam":http://ww
 
 p=. !/images/2018020901.jpg!
 
-p=. Старт OpenWrt на плате XM IPCam 
+p=. Старт OpenWrt на модуле XM IPCam с SoC HI3518Ev1
 
 
 ---

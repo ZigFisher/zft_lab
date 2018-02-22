@@ -109,5 +109,6 @@ h3. Внешние ссылки
 
 * "IZTOUCH Software & Utilities":http://www.iztouch.com/download/ | "Android":https://play.google.com/store/apps/details?id=com.xapcamera.iztouch&hl=en
 * "Open Source Video Surveillance Software":http://www.ispyconnect.com/
+* "Forum OpenIPCam: Need GM8135S SDK":http://www.openipcam.com/forum/index.php/topic,1482.0.html
 
 * "Taobao: Модуль XM IPG-50V10PL-S - ¥31.00":https://item.taobao.com/item.htm?id=536070136778 "[ESonya, TNX for this link!]":http://www.taker.im/phpBB2/topic/158005-обзор-камер-видеонаблюдения/page__st__2540
