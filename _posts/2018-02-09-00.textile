@@ -32,6 +32,15 @@ p. Начат сбор информации в "OpenWrt Wiki":https://openwrt.or
 
 p. Дискуссия на китайском форуме "OpenIPCam":http://www.openipcam.com/forum/index.php/topic,2093.0.html
 
+
+---
+
+
+p=. !/images/2018020901.jpg!
+
+p=. Старт OpenWrt на плате XM IPCam 
+
+
 ---
 
 
