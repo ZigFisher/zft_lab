@@ -55,7 +55,7 @@ p. Внимание! Если у вас камера не XM производи�
 |=. SoC HI3520Dv1, HI3521Dv1, HI3520?v2 |={color:orange}. в разработке                                                                  |={color:orange}. в разработке                                                                   |={color:orange}. в разработке                                                                 |={color:orange}. в разработке                                                                 |
 |                                       |                                                                                               |                                                                                                |                                                                                              |                                                                                              |
 
-p. Исходники прошивок и программ | "GitHub":https://github.com/ZigFisher | "Buildroot":https://github.com/ZigFisher/hi35xx-buildroot | "OpenWrt":https://github.com/ZigFisher/chaos_calmer | "Glutinium":https://github.com/ZigFisher/Glutinium
+p. Исходники прошивок и программ на GitHub: "Buildroot":https://github.com/ZigFisher/hi35xx-buildroot | "OpenWrt":https://github.com/ZigFisher/chaos_calmer | "Glutinium":https://github.com/ZigFisher/Glutinium
 
 p. Все пакеты программ, библиотек и модулей ядра для OpenWrt доступны (в формате .ipk) по "ссылке":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/openwrt_packages/
 
