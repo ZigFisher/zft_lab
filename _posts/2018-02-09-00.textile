@@ -173,20 +173,25 @@ h3. Внешние ссылки
 * "OpenWrt Wiki - сбор информации по Hisilicon":https://openwrt.org/docs/hardware/soc#hisilicon
 * "Дискуссия на английском языке на китайском форуме 'OpenIPCam'":http://www.openipcam.com/forum/index.php/topic,2093.0.html
 
+* "Sofiactl is an open source cross-platform tool and sdk to control Sofia powered Hi35xx DVR devices":https://github.com/667bdrm/sofiactl
+* "LIVE555 Streaming Media":http://www.live555.com/
+
 * "Jovision JVS-HI3518ESIV200 IPCam":https://drive.google.com/drive/folders/1vimrJNaqoiK6gA02aLNeIFpeCcI8_Uhp
 * "Haiwvision 960p IPCam":https://yadi.sk/d/G3EUYAH23SR4o6
 * "Sinocam IPCam":https://yadi.sk/d/7FKeRUX03Si4w3
-
 
 ---
 
 
 h3. Klondike of Chinese software solutions hosted by the GitHub
 
-* https://github.com/jjzhang166/avWare/tree/master/App/Build/Platform
-* https://github.com/Yoko2012/lvjh_ipcamera_hisi3518
-* https://github.com/chenyq123/3516a_sample/tree/master/sample
-* https://github.com/liuzhiping1/mywork_idt/tree/master/lib
-* https://github.com/ivysboy/wuyuanswork/tree/master/sample/hkipc_3518E-zqj
-* https://github.com/jun384668960/Hi3518E_Camera/tree/master/trunk
-* https://github.com/whwxxstsyd/Hisi3518e_MySDK
+* "https://github.com/hicat-tech/libhicat":https://github.com/hicat-tech/libhicat
+* "https://github.com/jjzhang166/avWare/tree/master/App/Build/Platform":https://github.com/jjzhang166/avWare/tree/master/App/Build/Platform
+* "https://github.com/Yoko2012/lvjh_ipcamera_hisi3518":https://github.com/Yoko2012/lvjh_ipcamera_hisi3518
+* "https://github.com/chenyq123/3516a_sample/tree/master/sample":https://github.com/chenyq123/3516a_sample/tree/master/sample
+* "https://github.com/liuzhiping1/mywork_idt/tree/master/lib":https://github.com/liuzhiping1/mywork_idt/tree/master/lib
+* "https://github.com/ivysboy/wuyuanswork/tree/master/sample/hkipc_3518E-zqj":https://github.com/ivysboy/wuyuanswork/tree/master/sample/hkipc_3518E-zqj
+* "https://github.com/jun384668960/Hi3518E_Camera/tree/master/trunk":https://github.com/jun384668960/Hi3518E_Camera/tree/master/trunk
+* "https://github.com/whwxxstsyd/Hisi3518e_MySDK":https://github.com/whwxxstsyd/Hisi3518e_MySDK
+* "https://github.com/justchen/imedia_rtsp/tree/master/src":https://github.com/justchen/imedia_rtsp/tree/master/src
+* "https://github.com/Yoko2012/rapidonvif":https://github.com/Yoko2012/rapidonvif
