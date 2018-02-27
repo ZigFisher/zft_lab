@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Датчики и телеметрия это просто - Digispark, Micronucleus, OpenWrt"
+title:      "Датчики и телеметрия - Digispark, Micronucleus, OpenWrt"
 tagline:    ""
 category:   ""
 group:      ipcam
@@ -14,7 +14,18 @@ h3. Введение
 ---
 
 
-h3. Прошивка Digispark
+h3. Digispark на ATtiny45 и его клоны
+
+
+---
+
+h3. Micronucleus - загрузчик, программа и виды прошивок
+
+
+---
+
+
+h3. Обновление прошивки на Digispark
 
 p. Выполните команду на роутере "Bricket" или на любой HI351X IPCam с прошивкой OpenWrt от "ZFT Lab.":zftlab.org
 
