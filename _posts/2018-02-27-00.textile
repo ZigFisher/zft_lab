@@ -1,0 +1,59 @@
+---
+layout:     post
+title:      "Датчики и телеметрия это просто - Digispark, Micronucleus, OpenWrt"
+tagline:    ""
+category:   ""
+group:      ipcam
+tags:       [digispark, i2c, i2c-tiny-usb, micronucleus, telemetry]
+---
+
+
+h3. Введение
+
+
+---
+
+
+h3. Прошивка Digispark
+
+p. Выполните команду на роутере "Bricket" или на любой HI351X IPCam с прошивкой OpenWrt от "ZFT Lab.":zftlab.org
+
+pre. micronucleus --run --type intel-hex /usr/share/micronucleus/digispark_t85_i2c_tiny_usb.hex
+
+
+--
+
+
+h3. Быстрый старт
+
+p=. !/images/2018010551.jpg!
+
+p. Схема подключения устройств к Digispark, прошитому в I2C-tiny-USB переходник
+
+
+---
+
+
+h3. Внутренние ссылки
+
+* "Использование Little Wire в проектах на базе OpenWRT":https://zftlab.org/pages/2016100400.html
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'ipcam' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+---
+
+
+h3. Внешние ссылки
+
+* "MySKU: Клон Digispark. Тот же ATtiny85, только с USB":https://mysku.ru/blog/china-stores/36691.html
+* "Digispark USB Development Board":http://digistump.com/products/1
+* "BLIT2008-Board mit i2c-tiny-usb-Firmware":http://bralug.de/wiki/BLIT2008-Board_mit_i2c-tiny-usb-Firmware
+* "GitHub: ATTiny usb bootloader with a strong emphasis on bootloader compactness":https://github.com/micronucleus/micronucleus
+* "GitHub: Cheap and simple I²C to USB interface":https://github.com/harbaum/I2C-Tiny-USB
+* "GitHub: I2C-Tiny-USB on Digispark and Adafruit Trinket":https://github.com/harbaum/I2C-Tiny-USB/tree/master/digispark
+* "Aliexpress: Digispark ATtiny85":https://ru.aliexpress.com/item/Free-shipping-Digispark-ATTINY85-General-Micro-USB-Development-Board-for-Arduino-ATTINY85-usb-development-board/32409396629.html
