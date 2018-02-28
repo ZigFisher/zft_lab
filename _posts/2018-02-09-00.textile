@@ -140,6 +140,39 @@ make clean && make -j1 V=s
 ---
 
 
+h3. Список поддерживаемых сенсоров
+
+pre. #
+  ar0130     [1280x720@30]   : libsns_ar0130.so
+  ar0230     [1920x1080@30]  : libsns_ar0230.so 
+  ar0330     [1920x1080@30]  : libsns_ar0330_1080p.so
+  ar0331     [1920x1080@30]  : libsns_ar0331_1080p.so
+  gc1004     [1280x720@30]   : libsns_gc1004.so
+  gc1014     [1280x720@30]   : libsns_gc1014.so
+  himax1375  [1280x720@30]   : libsns_himax1375.so
+  icx692     [1280x720@30]   : libsns_icx692.so
+  imx104     [1280x720@30]   : libsns_imx104.so
+  imx122     [1920x1080@30]  : libsns_imx122.so
+  imx138     [1280x720@30]   : libsns_imx138.so
+  imx222     [1920x1080@30]  : libsns_imx222.so
+  imx236     [1920x1080@30]  : libsns_imx236.so
+  mn34222    [1920x1080@30]  : libsns_mn34222.so
+  mt9m034    [1280x720@30]   : libsns_9m034.so
+  mt9p006    [1920x1080@30]  : libsns_mt9p006.so
+  ov9712     [1280x720@30]   : libsns_ov9712.so
+  ov2718     [1920x1080@25]  : libsns_ov2718.so
+  ov9732     [1280x720@30]   : libsns_ov9732.so
+  ov9750     [1280x720@30]   : libsns_ov9750.so 
+  ov9752     [1280x720@30]   : libsns_ov9752.so
+  po3100k    [1280x720@30]   : libsns_po3100k.so
+  sc1135     [1280x720@30]   : libsns_sc1135.so
+  sc2135     [1920x1080@30]  : libsns_sc2135.so
+  soih22     [1280x720@30]   : libsns_soih22.so
+
+
+---
+
+
 p. -RTSP потоки доступны по адресам rtsp://192.168.1.15:554/0 и rtsp://192.168.1.15:554/1-
 
 p. -Посылая сигнал -SIGUSR1 демону snapshotd можно добиться получения снимков (тестовая функция)-
