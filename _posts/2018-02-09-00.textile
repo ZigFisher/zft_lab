@@ -219,6 +219,8 @@ h3. Внешние ссылки
 h3. Klondike of Chinese software solutions hosted by the GitHub
 
 * "https://github.com/hicat-tech/libhicat":https://github.com/hicat-tech/libhicat
+* "https://github.com/hi35xx/hi35xx-buildroot":https://github.com/hi35xx/hi35xx-buildroot
+* "https://github.com/hi35xx/live-streamer":https://github.com/hi35xx/live-streamer
 * "https://github.com/jjzhang166/avWare/tree/master/App/Build/Platform":https://github.com/jjzhang166/avWare/tree/master/App/Build/Platform
 * "https://github.com/Yoko2012/lvjh_ipcamera_hisi3518":https://github.com/Yoko2012/lvjh_ipcamera_hisi3518
 * "https://github.com/chenyq123/3516a_sample/tree/master/sample":https://github.com/chenyq123/3516a_sample/tree/master/sample
@@ -227,4 +229,11 @@ h3. Klondike of Chinese software solutions hosted by the GitHub
 * "https://github.com/jun384668960/Hi3518E_Camera/tree/master/trunk":https://github.com/jun384668960/Hi3518E_Camera/tree/master/trunk
 * "https://github.com/whwxxstsyd/Hisi3518e_MySDK":https://github.com/whwxxstsyd/Hisi3518e_MySDK
 * "https://github.com/justchen/imedia_rtsp/tree/master/src":https://github.com/justchen/imedia_rtsp/tree/master/src
+* "https://github.com/yao3gang/NVR/tree/master/NVR-16":https://github.com/yao3gang/NVR/tree/master/NVR-16
 * "https://github.com/Yoko2012/rapidonvif":https://github.com/Yoko2012/rapidonvif
+* "https://github.com/9crk/zOnvif":https://github.com/9crk/zOnvif
+* "https://github.com/9crk/onvif":https://github.com/9crk/onvif
+* "https://github.com/9crk/ti_rtsp_c/tree/master/rtsp":https://github.com/9crk/ti_rtsp_c/tree/master/rtsp
+* "https://github.com/9crk/easyRTSP":https://github.com/9crk/easyRTSP
+* "https://github.com/joyeboy/minirtsp":https://github.com/joyeboy/minirtsp
+* "https://bitbucket.org/zhouhua/hicat_rtspserver":https://bitbucket.org/zhouhua/hicat_rtspserver
