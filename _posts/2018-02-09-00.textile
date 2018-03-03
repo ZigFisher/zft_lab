@@ -182,10 +182,12 @@ pre. #
 
 h3. Работа с GPIO
 
-|_=. HARDWARE  |_=. GPIO  |_=. IRCUT ON |_=. IRCUT OFF |_=. ALARM IN |
-|=. XM v1      |=. 0 - 85 |=. 38        |=. 39         |=. ?         |
-|=. XM v2      |=. 0 - 71 |=. 33        |=. 34         |=. 61        |
+|_=. HARDWARE      |_=. GPIO  |_=. IRCUT ON |_=. IRCUT OFF |_=. ALARM IN |_=. SOLAR IN |
+|=. All SoC XM v1  |=. 0 - 85 |=. 38        |=. 39         |=. ?         |             |
+|=. All SoC XM v2  |=. 0 - 71 |=. 33        |=. 34         |=. 61        |             |
+|                  |          |             |              |             |             |
 
+p. Для тестирования и управления используйте утилиту *gpio*.
 
 ---
 
