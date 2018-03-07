@@ -150,48 +150,6 @@ web-x.cramfs.img     140000h  1310720
 
 ---
 
-h3. Программы
-
-* bwm-ng -
-* dropbear -
-* haserl - простой CGI интерпретатор
-* vtund -
-* wpa_passphrase -
-* wpa_supplicant -
-
----
-
-h3. Дополнительные аплеты из busybox2
-
-* brctl
-* crond
-* df dmesg
-* hostname httpd
-* klogd
-* logger logread lsusb
-* microcom mkfs.vfat
-* nc nice ntpd
-* sendmail sha1sum sort syslogd
-* tail telnet tr
-* uniq uptime
-* vi
-* wget
-
-pre. ls -la /bin /sbin | awk '/busybox2/ {print $9}' | sort
-
----
-
-h3. Скрипты
-
-* ipcam_plugin - скрипт,
-* ipcam_setup - скрипт, отвечающий за генерацию и проверку основного конфига /etc/ipcam.conf
-* ipcam_tunnel - скрипт,
-* ipcam_wifi - скрипт,
-* tapip - скрипт,
-* wifi - скрипт,
-
----
-
 h3. Модули ядра (3.0.8)
 
 * 8188eu.ko (884060) - поддержка USB WiFi донгла на чипе RTL8188
