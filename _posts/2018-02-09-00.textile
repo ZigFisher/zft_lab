@@ -48,8 +48,7 @@ h3. Архив прошивок
 
 p. Внимание! Если у вас камера не XM производителя и имеет на плате внешний Ethernet PHY (RTL8201 или IP101) - пробуйте использовать в первую очередь прошивки с именами -UD (unknown device).
 
-|_=. Список поддерживаемых платформ     |_\2=. Сборка "Buildroot":https://github.com/ZigFisher/hi35xx-buildroot                           |_\2=. Сборка "OpenWrt":https://github.com/ZigFisher/chaos_calmer                               |
-|=. и разделение по типам Ethernet PHY  |=. for XM & UD                                                                                   |=. for XM & UD                                                                                 |
+|_=. Список поддерживаемых платформ     |_=. Сборка "Buildroot":https://github.com/ZigFisher/hi35xx-buildroot                             |_=. Сборка "OpenWrt":https://github.com/ZigFisher/chaos_calmer                                 |
 |=. SoC HI3516Cv1, HI3518Cv1, HI3518Ev1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/GitHub_Buildroot/HI35_16C_18ACE_V100/ |=. "скачать":http://flyrouter.net/downloads/software/ipcam/GitHub_OpenWrt/HI35_16C_18ACE_V100/ |
 |=. SoC HI3516Cv2, HI3518Cv2, HI3518Ev2 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/GitHub_Buildroot/HI35_16C_18E_V200/   |=. "скачать":http://flyrouter.net/downloads/software/ipcam/GitHub_OpenWrt/HI35_16C_18E_V200/   |
 |=. SoC HI3520Dv1, HI3521Dv1, HI3520?v2 |={color:orange}. в разработке                                                                    |={color:orange}. в разработке                                                                  |
