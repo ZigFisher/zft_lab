@@ -48,16 +48,16 @@ h3. Архив прошивок
 
 p. Внимание! Если у вас камера не XM производителя и имеет на плате внешний Ethernet PHY (RTL8201 или IP101) - пробуйте использовать в первую очередь прошивки с именами -UD (unknown device).
 
-|_=. Список поддерживаемых платформ     |_\2=. Сборка "Buildroot":https://github.com/ZigFisher/hi35xx-buildroot                                                                                                                          |_\2=. Сборка "OpenWrt":https://github.com/ZigFisher/chaos_calmer                                                                                                                             |
-|=. и разделение по типам Ethernet PHY  |=. for XM                                                                                      |=. for UD                                                                                       |=. for XM                                                                                     |=. for UD                                                                                     |
-|=. SoC HI3516Cv1, HI3518Cv1, HI3518Ev1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v1|=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/openwrt/soc_v1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/openwrt/soc_v1 |
-|=. SoC HI3516Cv2, HI3518Cv2, HI3518Ev2 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v2|=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/buildroot/soc_v2 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/openwrt/soc_v2 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/openwrt/soc_v2 |
-|=. SoC HI3520Dv1, HI3521Dv1, HI3520?v2 |={color:orange}. в разработке                                                                  |={color:orange}. в разработке                                                                   |={color:orange}. в разработке                                                                 |={color:orange}. в разработке                                                                 |
-|                                       |                                                                                               |                                                                                                |                                                                                              |                                                                                              |
+|_=. Список поддерживаемых платформ     |_\2=. Сборка "Buildroot":https://github.com/ZigFisher/hi35xx-buildroot                           |_\2=. Сборка "OpenWrt":https://github.com/ZigFisher/chaos_calmer                               |
+|=. и разделение по типам Ethernet PHY  |=. for XM & UD                                                                                   |=. for XM & UD                                                                                 |
+|=. SoC HI3516Cv1, HI3518Cv1, HI3518Ev1 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/GitHub_Buildroot/HI35_16C_18ACE_V100/ |=. "скачать":http://flyrouter.net/downloads/software/ipcam/GitHub_OpenWrt/HI35_16C_18ACE_V100/ |
+|=. SoC HI3516Cv2, HI3518Cv2, HI3518Ev2 |=. "скачать":http://flyrouter.net/downloads/software/ipcam/GitHub_Buildroot/HI35_16C_18E_V200/   |=. "скачать":http://flyrouter.net/downloads/software/ipcam/GitHub_OpenWrt/HI35_16C_18E_V200/   |
+|=. SoC HI3520Dv1, HI3521Dv1, HI3520?v2 |={color:orange}. в разработке                                                                    |={color:orange}. в разработке                                                                  |
+|                                       |                                                                                                 |                                                                                               |
 
 p. Исходники прошивок и программ на GitHub: "Buildroot":https://github.com/ZigFisher/hi35xx-buildroot | "OpenWrt":https://github.com/ZigFisher/chaos_calmer | "Glutinium":https://github.com/ZigFisher/Glutinium
 
-p. Все пакеты программ, библиотек и модулей ядра для OpenWrt доступны (в формате .ipk) по "ссылке":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/openwrt_packages/
+p. Все пакеты программ, библиотек и модулей ядра для OpenWrt доступны (в формате .ipk) по "ссылке":http://flyrouter.net/downloads/software/ipcam/GitHub_OpenWrt/Packages/
 
 p. Тестирование выполнено успешно на IPCam:
 
@@ -235,7 +235,7 @@ h3. Внешние ссылки
 * "[!] Работаем с MII в U-BOOT":http://gahcep.github.io/blog/2012/07/24/u-boot-mii/
 
 * "Yandex.Disk: Китайские SDK для процессоров Hisilicon":https://yadi.sk/d/bFlKO3843SFV8v/SDK
-* "FlyRouter: Готовые для использования программы и библиотеки":http://flyrouter.net/downloads/software/ipcam/Open_Source_Project/
+* "FlyRouter: Готовые для использования программы и библиотеки":http://flyrouter.net/downloads/software/ipcam/
 * "OpenWrt Wiki - сбор информации по Hisilicon":https://openwrt.org/docs/hardware/soc#hisilicon
 * "Дискуссия на английском языке на китайском форуме 'OpenIPCam'":http://www.openipcam.com/forum/index.php/topic,2093.0.html
 
