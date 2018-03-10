@@ -61,14 +61,13 @@ h3. Архив прошивок
 
 p. Для удобства пользователей ссылки на файлы и каталоги с прошивками сведены в таблицу ниже.
 
-|_=. Модель устройства     |_=. ID     |_=. Оригинальная прошивка                                                                                                                             |_=. Каталог прошивок от "ZFT Lab.":http://zftlab.org                                                                      |
-|/4=. IPC_HI3518E_50H10L   |/4=. 06510 |/4=. "IPC_HI3518E_50H10L":https://zftlab.org/files/firmware_ipcam/General_HZXM_IPC_HI3518E_50H10L_S38_V4.02.R12.Nat.OnvifS.20170727_ALL.bin           |=. "IPC_HI3518E_50H10L_NOWIFI":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/Modding/     |
-|/1=. "IPC_HI3518E_50H10L_MT7601":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/Modding/    |
-|/1=. "IPC_HI3518E_50H10L_RTL8188":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/Modding/   |
-|/1=. "IPC_HI3518E_50H10L_RT3070":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/Modding/    |
-|=. IPC_HI3518EV200_50H10L |=. 18510   |=. "IPC_HI3518EV200_50H10L":https://zftlab.org/files/firmware_ipcam/General_HZXM_IPC_HI3518EV200_50H10L_S38_V4.02.R12.Nat.OnvifS.20171010_ALL.bin     |=. "IPC_HI3518EV200_50H10L_NOWIFI":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018510_HI3518EV200/Modding/ |
-|=. IPC_HI3518EV200_50H20L |=. 18520   |=. "IPC_HI3518EV200_50H20L":https://zftlab.org/files/firmware_ipcam/General_HZXM_IPC_HI3518EV200_50H20L_S38_V4.02.R12.Nat.OnvifS.HIK.20180104_ALL.bin |=. "IPC_HI3518EV200_50H20L_NOWIFI":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018520_HI3518EV200/Modding/ |
-|                          |           |                                                                                                                                                      |                                                                                                                          |
+* "IPC_XiongMai_006510_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/Modding/
+
+|_=. Модель устройства     |_=. Оригинальная прошивка                                                                                                                             |_=. Каталог прошивок от "ZFT Lab.":http://zftlab.org                                                                      |
+|=. IPC_HI3518E_50H10L     |=. "IPC_HI3518E_50H10L":https://zftlab.org/files/firmware_ipcam/General_HZXM_IPC_HI3518E_50H10L_S38_V4.02.R12.Nat.OnvifS.20170727_ALL.bin             |=. "IPC_HI3518E_50H10L_NOWIFI":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/Modding/     |
+|=. IPC_HI3518EV200_50H10L |=. "IPC_HI3518EV200_50H10L":https://zftlab.org/files/firmware_ipcam/General_HZXM_IPC_HI3518EV200_50H10L_S38_V4.02.R12.Nat.OnvifS.20171010_ALL.bin     |=. "IPC_HI3518EV200_50H10L_NOWIFI":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018510_HI3518EV200/Modding/ |
+|=. IPC_HI3518EV200_50H20L |=. "IPC_HI3518EV200_50H20L":https://zftlab.org/files/firmware_ipcam/General_HZXM_IPC_HI3518EV200_50H20L_S38_V4.02.R12.Nat.OnvifS.HIK.20180104_ALL.bin |=. "IPC_HI3518EV200_50H20L_NOWIFI":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018520_HI3518EV200/Modding/ |
+|                          |                                                                                                                                                      |                                                                                                                          |
 
 p. Для продвинутых пользователей доступны экспериментальные *Open Source* прошивки и компоненты (см.ниже).
 
