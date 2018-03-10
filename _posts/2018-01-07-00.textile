@@ -63,8 +63,10 @@ p. Для удобства пользователей ссылки на файл
 
 * "IPC_XiongMai_006510_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/
 * "IPC_XiongMai_006531_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006531_HI3518EV100/
+* "IPC_XiongMai_006538_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006538_HI3518EV100/
 * "IPC_XiongMai_018510_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018510_HI3518EV200/
 * "IPC_XiongMai_018520_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018520_HI3518EV200/
+* "IPC_XiongMai_023650_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_023650_XM510A1/
 
 p. Для продвинутых пользователей доступны экспериментальные прошивки "Buildroot":http://flyrouter.net/downloads/software/ipcam/GitHub_Buildroot/ и "OpenWrt":http://flyrouter.net/downloads/software/ipcam/GitHub_OpenWrt/
 
