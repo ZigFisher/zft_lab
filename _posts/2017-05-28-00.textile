@@ -12,7 +12,15 @@ h3. Введение
 
 p. Проверено - всё работает отлично (см. ссылки-инструкции ниже).
 
+p. Фаил /etc/crontab
+
+pre. 37 0,12  *  *  *  root  /usr/bin/certbot renew --quiet --renew-hook "/usr/sbin/service apache2 reload"
+
+pre. 37 0,12  *  *  *  root  /usr/bin/certbot renew --quiet --renew-hook "/usr/sbin/service nginx reload"
+
+
 ---
+
 
 h3. Внешние ссылки
 
