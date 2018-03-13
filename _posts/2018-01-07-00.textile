@@ -25,6 +25,7 @@ h3. Архив прошивок с моддингом
 p. Для удобства пользователей ссылки на файлы и каталоги с прошивками сведены в таблицу ниже.
 
 * "IPC_XiongMai_001532_HI3516CV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_001532_HI3516CV100/
+* "IPC_XiongMai_002532_HI3516CV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_002532_HI3516CV100/
 * "IPC_XiongMai_006510_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/
 * "IPC_XiongMai_006531_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006531_HI3518EV100/
 * "IPC_XiongMai_006538_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006538_HI3518EV100/
