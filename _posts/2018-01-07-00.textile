@@ -16,7 +16,28 @@ p{color:red}. Используя данный Сайт, Вы выражаете 
 
 p{color:blue}. Просьба - при использовании материалов с сайта в своих проектах, указывать первоисточник. Спасибо!
 
+
 ---
+
+
+h3. Архив прошивок с моддингом
+
+p. Для удобства пользователей ссылки на файлы и каталоги с прошивками сведены в таблицу ниже.
+
+* "IPC_XiongMai_001532_HI3516CV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_001532_HI3516CV100/
+* "IPC_XiongMai_006510_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/
+* "IPC_XiongMai_006531_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006531_HI3518EV100/
+* "IPC_XiongMai_006538_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006538_HI3518EV100/
+* "IPC_XiongMai_014911_HI3516DV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_014911_HI3516DV100/ | Ограничения: vtund в разработке
+* "IPC_XiongMai_018510_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018510_HI3518EV200/
+* "IPC_XiongMai_018520_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018520_HI3518EV200/
+* "IPC_XiongMai_023650_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_023650_XM510A1/         | Ограничения: snapshot и vtund в разработке
+
+p. Для продвинутых пользователей доступны экспериментальные прошивки "Buildroot":http://flyrouter.net/downloads/software/ipcam/GitHub_Buildroot/ и "OpenWrt":http://flyrouter.net/downloads/software/ipcam/GitHub_OpenWrt/
+
+
+---
+
 
 h3. Текущий статус модифицированных прошивок
 
@@ -55,21 +76,6 @@ h3. Текущий статус модифицированных прошиво�
 
 p. Для подключения USB устройств необходимо приобрести или спаять соответствующий кабель.
 
----
-
-h3. Архив прошивок с моддингом
-
-p. Для удобства пользователей ссылки на файлы и каталоги с прошивками сведены в таблицу ниже.
-
-* "IPC_XiongMai_006510_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/
-* "IPC_XiongMai_006531_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006531_HI3518EV100/
-* "IPC_XiongMai_006538_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006538_HI3518EV100/
-* "IPC_XiongMai_014911_HI3516DV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_014911_HI3516DV100/ | Ограничения: vtund в разработке
-* "IPC_XiongMai_018510_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018510_HI3518EV200/
-* "IPC_XiongMai_018520_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018520_HI3518EV200/
-* "IPC_XiongMai_023650_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_023650_XM510A1/         | Ограничения: snapshot и vtund в разработке
-
-p. Для продвинутых пользователей доступны экспериментальные прошивки "Buildroot":http://flyrouter.net/downloads/software/ipcam/GitHub_Buildroot/ и "OpenWrt":http://flyrouter.net/downloads/software/ipcam/GitHub_OpenWrt/
 
 ---
 
