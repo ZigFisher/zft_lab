@@ -55,7 +55,7 @@ tftp 0x82000000 ff.img 0x1000000               // Выгрузка дампа (f
 
 p. Практические примеры
 
-pre. set ipaddr 192.168.1.10; set serverip 192.168.1.254; sf probe 0; sf read 0x82000000 0x0 0x800000; tftp 0x82000000 ff.img 0x800000
+pre. set ipaddr 192.168.1.10; set serverip 192.168.1.254; sf probe 0; sf read 0x82000000 0x0 0x1000000; tftp 0x82000000 ff.img 0x1000000
 
 
 ---
