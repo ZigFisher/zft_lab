@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Модифицируем (+фичи) прошивки IP видеорегистраторов от Xiong Mai"
+title:      "Модифицируем прошивки IP видеорегистраторов от Xiong Mai"
 tagline:    ""
 category:   ""
 group:      ipcam
