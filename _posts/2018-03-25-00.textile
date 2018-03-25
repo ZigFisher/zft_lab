@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Telegram, MQTT, Яндекс.Диск, WiFi и т.д. в IP xVR от Xiong Mai"
+title:      "Модифицируем (+фичи) прошивки IP видеорегистраторов от Xiong Mai"
 tagline:    ""
 category:   ""
 group:      ipcam
