@@ -1,0 +1,66 @@
+---
+layout:     post
+title:      "Telegram, MQTT, Яндекс.Диск, WiFi и т.д. в IP xVR от Xiong Mai"
+tagline:    ""
+category:   ""
+group:      ipcam
+tags:       [hi3520, nvr, zftlab]
+---
+
+
+h3. Введение
+
+p. Материал по проекту находится в стадии оформления. Последнее обновление - 2018.03.25
+
+p{color:red}. Используя данный Сайт, Вы выражаете свое согласие с "«Отказом от ответственности»":/disclaimer.html и принимаете всю ответственность за выполняемые действия с оборудованием и программным обеспечением на себя !
+
+p{color:blue}. Просьба - при использовании материалов с сайта в своих проектах, указывать первоисточник. Спасибо!
+
+
+---
+
+
+h3. Архив прошивок с моддингом
+
+p. Для удобства пользователей ссылки на файлы и каталоги с прошивками сведены в таблицу ниже.
+
+* "NVR_XiongMai_000117_HI3520DV200":http://flyrouter.net/downloads/software/ipnvr/NVR_XiongMai_000117_HI3520DV200/  | Только активирован telnet !
+
+
+---
+
+
+h3. Справочник
+
+* Для инженерного доступа на устройство через telnet (или ssh) используйте логин *root* и пароль *xc3511*
+
+
+---
+
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'ipcam' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+---
+
+h3. Внешние ссылки
+
+* -
+
+
+---
+
+
+h3. Donate
+
+p. Если вам пригодилась информация с этого блога (прошивки, схемы, инструкции) и вы заинтересованы в его развитии и/или используете материалы в коммерческих целях, пожалуйста перечислите небольшую сумму в качестве donate (пожертвование).
+
+<html>
+ <iframe frameborder="0" width="640" height="300" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410011741171832&quickpay=shop&payment-type-choice=on&writer=seller&targets=XM+IPCam+firmware+research&targets-hint=&default-sum=100&button-text=03&comment=on&hint=&successURL="></iframe>
+</html>
