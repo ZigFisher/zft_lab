@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Сбор информации и эксперименты с IP-камерами на базе SoC GM8180"
+title:      "Сбор информации по IP-камерам на базе SoC GM8180"
 tagline:    ""
 category:   ""
 group:      ipcam
