@@ -1,0 +1,33 @@
+---
+layout:     post
+title:      "Сбор информации и эксперименты с IP-камерами на базе SoC GM8180"
+tagline:    ""
+category:   ""
+group:      ipcam
+tags:       [gm8180, ipcam]
+---
+
+
+h3. Введение
+
+p. На данной странице будет собираться информация по IP-камерам на базе SoC "GM8180":http://www.grain-media.com/html/8180.html, которые любезно предоставила для экспериментов компания "Garus":http://garusmicro.ru/
+
+
+---
+
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'ipcam' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+---
+
+
+h3. Внешние ссылки
+
+* "The GM8180 is a highly integrated H.264/MPEG-4/JPEG SoC":http://www.grain-media.com/html/8180.html
