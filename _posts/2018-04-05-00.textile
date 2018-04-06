@@ -1,0 +1,64 @@
+---
+layout:     post
+title:      "Аппаратно-програмный инструментарий для изучения и ремонта устройств"
+tagline:    ""
+category:   ""
+group:      ipcam
+tags:       [ipcam, router, zftlab]
+---
+
+
+h3. Введение
+
+p. На данной странице будет собираться информация по аппаратным и програмным инструментам, используемым при исследовании IP-камер, видеорегистраторов и роутереов.
+
+
+---
+
+
+h3. Управление питанием исследуемого устройства
+
+p. При исследовании множества устройств и частой работе с экспериментальными прошивками, время от времени возникает необходимость перезагружать их, кратковременно отключая кабель или блок питания.
+
+p. В терминальной программе *picocom* по команде Ctrl+A CTRL+P имеется интересная возможность подать импульс одну секунду на вывод DTR (в USB TTL UART переходник), который разорвёт цепь питания у камеры/роутера через реле (например из набора Arduino) или полевой транзистор.
+
+p. Самые дешевые китайские USB TTL UART переходники не имеют выведенного DTR, но это, как правило не проблема - сигнал можно взять непосредственно с вывода микросхемы. Для микросхемы PL-2303HXC, это вывод *2*.
+
+
+---
+
+
+h3. Справочник по некоторым командам модифицированного picocom
+
+* Ctrl+A Ctrl+D - уменьшить скорость работы терминала
+* Ctrl+A Ctrl+O - очистить экран терминала
+* Ctrl+A Ctrl+P - подать импульс 1 сек. для рестарта устройства
+* Ctrl+A Ctrl+Q - прерывание программы и выход
+* Ctrl+A Ctrl+U - увеличить скорость работы терминала
+* Ctrl+A Ctrl+V - вывести информацию о статусе линий
+* Ctrl+A Ctrl+Z - времено выйти в шелл
+
+
+---
+
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'ipcam' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+---
+
+
+h3. Внешние ссылки
+
+* "GitHub: Minimal dumb-terminal emulation program - picocom":https://github.com/npat-efault/picocom
+* "Picocom enhancements":http://shaddack.brutowave.com/projects/sw_picocom-shad/
+* "Add DTR to cheap PL2303":https://hackaday.io/project/10737-add-dtr-to-cheap-pl2303
+
+* "GitHub: JFFS2 filesystem extraction tool":https://github.com/sviehb/jefferson
+* "Как смонтировать jffs2 big-endian образ в Linux":http://www.decker.su/2015/02/mount-jffs2-in-linux.html

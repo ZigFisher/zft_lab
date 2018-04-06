@@ -1,0 +1,33 @@
+---
+layout:     post
+title:      "Сбор информации по IP-камерам Topsee на базе SoC Hisilicon"
+tagline:    ""
+category:   ""
+group:      ipcam
+tags:       [hisilicon, ipcam, topsee]
+---
+
+
+h3. Введение
+
+p. На данной странице будет собираться информация по IP-камерам "Topsee":http://www.en.tpsee.com/deviceupdate/95-1.html на базе SoC Hisilicon, которые любезно предоставила для экспериментов компания "Garus":http://garusmicro.ru/
+
+
+---
+
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'ipcam' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+---
+
+
+h3. Внешние ссылки
+
+* "Topsee firmware for IPCam's":http://www.en.tpsee.com/deviceupdate/95-1.html

@@ -1,0 +1,33 @@
+---
+layout:     post
+title:      "Сбор информации по IP-камерам JVT на базе SoC Hisilicon"
+tagline:    ""
+category:   ""
+group:      ipcam
+tags:       [hisilicon, ipcam, jvt]
+---
+
+
+h3. Введение
+
+p. На данной странице будет собираться информация по IP-камерам "JVT":http://www.jvt.cc/English/product_t.html на базе SoC Hisilicon, которые любезно предоставила для экспериментов компания "Garus":http://garusmicro.ru/
+
+
+---
+
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'ipcam' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+---
+
+
+h3. Внешние ссылки
+
+* "JVT IPC HD Network Module":http://www.jvt.cc/English/product_t.html
