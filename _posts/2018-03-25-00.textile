@@ -26,7 +26,7 @@ h3. Архив прошивок с моддингом
 
 p. Для удобства пользователей ссылки на файлы и каталоги с прошивками сведены в таблицу ниже.
 
-* "NVR_XiongMai_000117_HI3520DV200":http://flyrouter.net/downloads/software/ipnvr/NVR_XiongMai_000117_HI3520DV200/  | Только активирован telnet !
+* "NVR_XiongMai_000117_HI3520DV200":http://flyrouter.net/downloads/software/ipcam/NVR_XiongMai_000117_HI3520DV200/  | Только активирован telnet !
 
 
 ---
