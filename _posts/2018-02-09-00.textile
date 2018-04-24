@@ -30,9 +30,7 @@ p. В текущих тестовых прошивках пока нет под�
 
 p. Теперь все компоненты (утилиты и библиотеки) в проекте "XM IPCam modding":https://zftlab.org/pages/2018010700.html собираются при помощи нашего "OpenWrt toolchain":https://github.com/ZigFisher/chaos_calmer размещённого на "GitHub":https://github.com/ZigFisher и там-же находится простейшая "Вики":https://github.com/ZigFisher/chaos_calmer/wiki/IPCam-with-Hisilicon-SoC's для сбора информации об различных IPCam в группе "Telegram":http://t.me/joinchat/FhtyHxDpQsv8HlRliQDgqw
 
-p. Начат сбор информации в "OpenWrt Wiki":https://openwrt.org/docs/hardware/soc#hisilicon и её запись на отдельной "странице":https://openwrt.org/docs/hardware/soc/soc.hisilicon.hi35xx
-
-p. Дискуссия на китайском форуме "OpenIPCam":http://www.openipcam.com/forum/index.php/topic,2093.0.html
+p. Начат сбор информации в "OpenWrt Wiki":https://openwrt.org/docs/techref/hardware/soc/soc.hisilicon.hi35xx и открыта дискуссия на китайском форуме "OpenIPCam":http://www.openipcam.com/forum/index.php/topic,2093.0.html
 
 
 ---
@@ -237,7 +235,7 @@ h3. Внешние ссылки
 
 * "Yandex.Disk: Китайские SDK для процессоров Hisilicon":https://yadi.sk/d/bFlKO3843SFV8v/SDK
 * "FlyRouter: Готовые для использования программы и библиотеки":http://flyrouter.net/downloads/software/ipcam/
-* "OpenWrt Wiki - сбор информации по Hisilicon":https://openwrt.org/docs/hardware/soc#hisilicon
+* "OpenWrt Wiki - сбор информации по Hisilicon":https://openwrt.org/docs/techref/hardware/soc/soc.hisilicon.hi35xx
 * "Дискуссия на английском языке на китайском форуме 'OpenIPCam'":http://www.openipcam.com/forum/index.php/topic,2093.0.html
 
 * "Sofiactl is an open source cross-platform tool and sdk to control Sofia powered Hi35xx DVR devices":https://github.com/667bdrm/sofiactl
