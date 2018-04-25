@@ -152,7 +152,7 @@
 		"page": "http://funduk.crimeainfo.com",
 		"interval": 10,
 		"check": false,
-		"enable": true,
+		"enable": false,
 		"public": true
 	},
 	{
@@ -164,7 +164,7 @@
 		"page": "http://funduk.crimeainfo.com",
 		"interval": 10,
 		"check": false,
-		"enable": true,
+		"enable": false,
 		"public": true
 	},
 	{
@@ -176,7 +176,7 @@
 		"page": "http://funduk.crimeainfo.com",
 		"interval": 10,
 		"check": false,
-		"enable": true,
+		"enable": false,
 		"public": true
 	},
 	{
@@ -188,7 +188,7 @@
 		"page": "http://funduk.crimeainfo.com",
 		"interval": 10,
 		"check": false,
-		"enable": true,
+		"enable": false,
 		"public": false
 	},
 	{
@@ -200,7 +200,7 @@
 		"page": "http://funduk.crimeainfo.com",
 		"interval": 10,
 		"check": false,
-		"enable": true,
+		"enable": false,
 		"public": true
 	},
 	{
@@ -212,7 +212,7 @@
 		"page": "https://vk.com/artezianinfo",
 		"interval": 10,
 		"check": false,
-		"enable": true,
+		"enable": false,
 		"public": true
 	},
 	{
@@ -224,7 +224,7 @@
 		"page": "https://vk.com/artezianinfo",
 		"interval": 10,
 		"check": false,
-		"enable": true,
+		"enable": false,
 		"public": true
 	},
 	{
