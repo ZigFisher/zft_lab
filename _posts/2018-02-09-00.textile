@@ -119,8 +119,6 @@ cd chaos_calmer
 cp ./feeds.conf.default ./feeds.conf
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-cp -v target/linux/hisilicon/examples/.config_current ./.config
-make clean && make -j1 V=s
 
 p. Добавление некоторых программ из Glutinium
 
@@ -132,12 +130,19 @@ echo "src-git glutinium https://github.com/ZigFisher/Glutinium.git" >>./feeds.co
     littlewire micronucleus mercury236 microbe mini_snmpd remserial rs485conf tg-bot1 \
     vtun-lite
 
-p. Обновление кода и рестарт сборки (ежедневно)
+p. Обновление кода желательно делать еженедельно
 
-pre. cd chaos_calmer
-git pull
-cp -v target/linux/hisilicon/examples/.config_current ./.config
-make clean && make -j1 V=s
+pre. cd chaos_calmer && git pull
+
+p. Для сборки прошивки выполните скрипт *./ZFT_Lab.sh* находящийся в корне системы
+
+
+---
+
+
+p=. !/images/2018020902.jpg!
+
+p=. WEB-интерфейс OpenWrt на модуле XM IPCam
 
 
 ---
