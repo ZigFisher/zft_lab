@@ -351,6 +351,8 @@ h3. Внешние ссылки
 * "Команда curl. Обмен данными с сервером":http://osxh.ru/terminal/command/curl
 * "Using Curl commands with Webdav":http://www.qed42.com/blog/using-curl-commands-webdav
 * -
+* "The easiest way to create Virtual Tunnels over TCP/IP networks - VTUNd":http://vtun.sourceforge.net/
+* -
 * "This page will summarize informations to use the GSM/GPRS/3G module":http://www.armadeus.org/wiki/index.php?title=GSM/GPRS
 
 ---
