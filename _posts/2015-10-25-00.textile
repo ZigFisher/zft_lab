@@ -14,6 +14,49 @@ p. Дополнительная информация будет немного �
 
 ---
 
+h3. Установка Docker в Debian 9 (Stretch)
+
+p. Проверка и удаление возможно имеющихся старых версий Docker
+
+pre. sudo apt-get -y remove docker docker-engine docker.io
+
+p. Обновление списка пакетов и установка необходимых компонентов
+
+pre. sudo apt-get update
+sudo apt-get install -y apt-transport-https ca-certificates wget software-properties-common
+
+p. Добавление GPG ключа для хранилища Docker
+
+pre. wget -O /tmp/docker.gpg https://download.docker.com/linux/debian/gpg 
+sudo apt-key add /tmp/docker.gpg
+
+p. Добавление строки в /etc/apt/sources.list
+
+pre. deb [arch=amd64] https://download.docker.com/linux/debian stretch stable
+
+pre. echo "deb [arch=amd64] https://download.docker.com/linux/debian stretch stable" | sudo tee -a /etc/apt/sources.list.d/docker.list
+
+p. Обновление списка пакетов и установка Docker
+
+pre. sudo apt-get update
+sudo apt-get -y install docker-ce
+
+p. Старт Docker и вслючение автозапуска при перезагрузке
+
+pre. sudo systemctl start docker
+sudo systemctl enable docker
+
+p. Создание группы Docker и внесение текущего пользователя в неё
+
+pre. sudo groupadd docker
+sudo gpasswd -a $USER docker
+
+p. После рестарта Docker готов к эксплуатации
+
+pre. sudo systemctl restart docker
+
+---
+
 h3. Установка Docker в Debian 8 (Jessie)
 
 p. Вписать строку в /etc/apt/sources.list
