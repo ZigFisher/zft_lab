@@ -149,6 +149,10 @@ h3. Внешние ссылки
 * "A minimal Ubuntu base image modified for Docker-friendliness":https://github.com/phusion/baseimage-docker
 * "Automating the creation of docker images":https://www.debian-administration.org/article/698/Automating_the_creation_of_docker_images
 
+* "Как установить Docker на Debian 9 Stretch":https://andreyex.ru/operacionnaya-sistema-debian/kak-ustanovit-docker-na-debian-9-stretch/
+* "Install Docker In Debian 9 Stretch":https://gist.github.com/upbeta01/3b968320b3a579c326ab6cd2a195b10d
+* "How to install Docker on Debian Stretch":https://blog.sleeplessbeastie.eu/2018/03/30/how-to-install-docker-on-debian-stretch/
+
 * "Debian Backports - Instructions":http://backports.debian.org/Instructions/
 * "Docker on Debian Jessie 8.0":https://docs.docker.com/v1.8/installation/debian/
 
