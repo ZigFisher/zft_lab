@@ -73,3 +73,4 @@ h3. Внешние ссылки
 * "AT команды модема Huawei для Hyperterminal":http://trustoff.ru/kak-vvesti-at-komandy-v-modem-cherez-hyperterminal
 * "AT команды модема":http://adatum.ru/at-komanndy-modema.html
 * "Перевод 3G-модема в режим ТОЛЬКО МОДЕМ":http://androidtab.ru/kak-perevesti-3g-modem-v-rezhim-tolko-modem/
+* "AT-команды GSM модема SIM900":https://alex-exe.ru/radio/wireless/gsm-sim900-at-command/

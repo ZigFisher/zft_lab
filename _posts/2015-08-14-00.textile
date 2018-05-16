@@ -12,10 +12,13 @@ h3. Введение
 
 p. Фото, описание и хакинг модулей будут добавлены чуть позже.
 
+pre. chat -e -t 5 '' 'AT+CSQ' 'OK' </dev/ttyUSB0 >/dev/ttyUSB0 ; echo $?
+
 ---
 
 h3. Внешние ссылки
 
+* "GSM модем SIM900":https://alex-exe.ru/radio/wireless/gsm-sim900/
 * "GSM/GPRS модуль SIM800":http://mt-system.ru/catalog/besprovodnye-reshenija/gsm-moduli-simcom/linejka-modulej-i-dokumentacija/sim800
 * "Новый GSM/GPRS-модуль SIM800H: больше функций при меньших габаритах":http://www.wireless-e.ru/preview/pre_08_03_13_SIMCom_800_ws.php
 * "GSM/GPRS модуль SIM900. Часть вторая.":http://we.easyelectronics.ru/part/gsm-gprs-modul-sim900-chast-vtoraya.html
