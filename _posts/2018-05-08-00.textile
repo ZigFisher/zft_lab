@@ -47,5 +47,6 @@ h3. Внутренние ссылки
 h3. Внешние ссылки
 
 * "Dynamic Multipoint VPN [DMVPN]":https://www.cisco.com/c/en/us/products/security/dynamic-multipoint-vpn-dmvpn/index.html
+* "Sourceforge: OpenNHRP":https://sourceforge.net/projects/opennhrp/
 * "DMVPN with Linux":https://patrickpreuss.wordpress.com/2009/02/14/dmvpn-with-linux/
 * "OpenWrt and DMVPN":https://iteachs.com/?post=12
