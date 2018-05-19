@@ -1,0 +1,49 @@
+---
+layout:     post
+title:      "Dynamic Multipoint VPN (DMVPN) на базе OpenWrt роутеров"
+tagline:    ""
+category:   ""
+group:      openwrt
+tags:       [cisco, openwrt, vpn]
+---
+
+
+h3. Введение
+
+p. Организация каналя связи между Cisco <=> OpenWrt
+
+
+---
+
+
+h3. Список необходимых пакетов для экспериментов
+
+* opennhrp
+* kmod-ipsec4
+* quagga quagga-zebra quagga-ospfd
+* gre
+* iptables-mod-nat-extra
+* kmod-natsemi
+* kmod-nf-nathelper-extra
+
+
+---
+
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'openwrt' %}
+  {% include JB/pages_list %}
+</ul>
+
+
+---
+
+
+h3. Внешние ссылки
+
+* "Dynamic Multipoint VPN [DMVPN]":https://www.cisco.com/c/en/us/products/security/dynamic-multipoint-vpn-dmvpn/index.html
+* "DMVPN with Linux":https://patrickpreuss.wordpress.com/2009/02/14/dmvpn-with-linux/
+* "OpenWrt and DMVPN":https://iteachs.com/?post=12
