@@ -12,53 +12,41 @@ h3. Модификация системы питания под источник
 
 p. Устройство TP-Link CPE-210 расчитано на работу от источника питания 24V и выключается при снижении напряжения до 15V, поступающего на неё. Чтобы решить вопрос с работой точки доступа от 12V необходимо произвести небольшие изменения в работа DC/DC преобразователя напряжения.
 
-
 ---
-
 
 p=. !/images/2018050501.jpg!
 
 p=. Большую помощь в поиске решения оказал Сергей Гинали - вот его пояснения
 
-
 ---
-
 
 p=. !/images/2018050502.jpg!
 
 p=. Плата устройства до модификации
 
-
 ---
-
 
 p=. !/images/2018050503.jpg!
 
 p=. Удалена микросхема U9 и установлена перемычка между 6 и 7 выводами микросхемы U11
 
-
 ---
-
 
 h3. Первичная прошивка
 
-p. Первоначально необходимо скачать с транка OpenWrt "factory":https://downloads.openwrt.org/snapshots/targets/ar71xx/generic/openwrt-ar71xx-generic-cpe210-220-v1-squashfs-factory.bin прошивку и загрузить её на устройство через родной WEB-интерфейс, так как прошить сразу "Chaos Calmer" система не даёт.
-
+p. Первоначально необходимо скачать с транка OpenWrt "прошивку":https://downloads.openwrt.org/snapshots/targets/ar71xx/generic/openwrt-ar71xx-generic-cpe210-220-v1-squashfs-factory.bin прошивку и загрузить её на устройство через родной WEB-интерфейс, так как прошить сразу "Chaos Calmer" система не даёт.
 
 ---
-
 
 h3. Откат на стабильную версию OpenWrt-15.05 "Chaos Calmer"
 
-p. После успешной прошивки устройства на транк OpenWrt есть смысл откатиться до стабильной "Chaos Calmer" через команду mtd, как как "sysupgrade": не работает в связи с изменением названия платы в device_info.
+p. После успешной прошивки устройства на транк OpenWrt есть смысл откатиться до стабильной "Chaos Calmer" через команду mtd, как как команда sysupgrade не работает в связи с изменением названия платы в device_info.
 
-p. Скачайте прошивку "sysupgrade":https://archive.openwrt.org/chaos_calmer/15.05/ar71xx/generic/openwrt-15.05-ar71xx-generic-cpe210-220-510-520-squashfs-sysupgrade.bin загрузите на устройство и обновите командой ниже.
+p. Скачайте "прошивку":https://archive.openwrt.org/chaos_calmer/15.05/ar71xx/generic/openwrt-15.05-ar71xx-generic-cpe210-220-510-520-squashfs-sysupgrade.bin загрузите на устройство и обновите командой ниже.
 
 pre. mtd -r write openwrt-15.05-ar71xx-generic-cpe210-220-510-520-squashfs-sysupgrade.bin
 
-
 ---
-
 
 h3. Внутренние ссылки
 
@@ -68,9 +56,7 @@ h3. Внутренние ссылки
   {% include JB/pages_list %}
 </ul>
 
-
 ---
-
 
 h3. Внешние ссылки
 
