@@ -198,7 +198,7 @@ LibCrypto : g_cryptotype = 1
 00:12:16:d8:6f:89
 *************************************************
 |                      SYSTEM INFO
-|                 ID:           8043420004748432
+|                 ID:           8043421804748432
 |       product type:           53H13
 |            product:           HI3518E_53H13_S39
 |      video channel:           1
