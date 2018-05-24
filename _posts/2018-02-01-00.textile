@@ -189,6 +189,40 @@ p. Выполните в консоли, нажав Ctrl+C для останов
 
 ---
 
+h3. Получение базовой информации по плате XM
+
+p. Ддя получения базовой информации по плате XM выполните команду *dvrbox* в консоли
+
+pre. # dvrbox
+LibCrypto : g_cryptotype = 1
+00:12:16:d8:6f:89
+*************************************************
+|                      SYSTEM INFO
+|                 ID:           8043420004748432
+|       product type:           53H13
+|            product:           HI3518E_53H13_S39
+|      video channel:           1
+|      audio channel:           1
+|           alarm in:           1
+|          alarm out:           1
+| forward video chip:           AR0130
+|           DSP chip:           HI3518E
+|  analog audio mode:           voice codec
+|           talkback:           voice codec
+|    back video chip:           no chip
+|    store interface:           SDIO
+|    matrix surpport:           No
+| wireless interface:           USB
+|    hardware encode:           encode chip
+|   hardware version:           1
+|    video_interface:           BNC
+|      net_interface:           Ethernet
+|  hardware info len:           8
+*************************************************
+LIBDVR: Complied at Sep 12 2016 10:37:43 SVN:1579
+
+---
+
 h3. Внутренние ссылки
 
 <ul>
