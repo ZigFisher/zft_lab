@@ -17,19 +17,18 @@ p. Надо найти время и наконец-таки описать па
 h3. Пример вывода информации с электросчётчика
 
 pre. root@Telegram_IPCam:~# mercury236 /dev/ttyUSB0
-
-  Voltage (V):                          0.00     0.00     0.00
-  Current (A):                          0.00     0.00     0.00
-  Cos(f):                               0.00     0.00     0.00 (    0.00)
-  Frequency (Hz):                       0.00
-  Phase angles (deg):                   0.00     0.00     0.00
-  Active power (W):                     0.00     0.00     0.00 (    0.00)
-  Reactive power (VA):                  0.00     0.00     0.00 (    0.00)
-  Total consumed, all tariffs (KW):     0.00
-    including day tariff (KW):          0.00
-    including night tariff (KW):        0.00
-  Yesterday consumed (KW):              0.00
-  Today consumed (KW):                  0.00
+  Voltage (V):                       0.00   0.00   0.00
+  Current (A):                       0.00   0.00   0.00
+  Cos(f):                            0.00   0.00   0.00 ( 0.00)
+  Frequency (Hz):                    0.00
+  Phase angles (deg):                0.00   0.00   0.00
+  Active power (W):                  0.00   0.00   0.00 ( 0.00)
+  Reactive power (VA):               0.00   0.00   0.00 ( 0.00)
+  Total consumed, all tariffs (KW):  0.00
+    including day tariff (KW):       0.00
+    including night tariff (KW):     0.00
+  Yesterday consumed (KW):           0.00
+  Today consumed (KW):               0.00
 
 ---
 
