@@ -16,6 +16,20 @@ p=. <iframe src="https://ipeye.ru/ipeye_service/api/iframe.php?iframe_player=1&d
 
 ---
 
+h3. Код для вставок видео на сайты и социальные сети
+
+p. Вид с мачты
+
+pre. <iframe src="https://ipeye.ru/ipeye_service/api/iframe.php?iframe_player=1&dev=8871faf9bd514175b215caccc902942a&autoplay=1"
+width="640" height="480" frameBorder="0" seamless="seamless" allowfullscreen>Ваш браузер не поддерживает фреймы!</iframe>
+
+p. Вид с кухни
+
+pre. <iframe src="https://ipeye.ru/ipeye_service/api/iframe.php?iframe_player=1&dev=58c2e00d39e34aecb5f03c4d31bd3df0&autoplay=1" 
+width="640" height="480" frameBorder="0" seamless="seamless" allowfullscreen>Ваш браузер не поддерживает фреймы!</iframe>
+
+---
+
 h3. Внешние ссылки
 
 * "Сайт Артезианской Археологической Экспедиции":http://artezian.info/info/
