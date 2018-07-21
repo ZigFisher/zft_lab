@@ -1,0 +1,23 @@
+---
+layout:     post
+title:      "Артезианская Археологическая Экспедиция - 2018"
+tagline:    ""
+category:   ""
+group:      nature
+tags:       [artezian,nature]
+---
+
+
+h3. Видеомониторинг в лагере ААЭ
+
+p=. <iframe src="https://ipeye.ru/ipeye_service/api/iframe.php?iframe_player=1&dev=8871faf9bd514175b215caccc902942a&autoplay=1" width="640" height="480" frameBorder="0" seamless="seamless" allowfullscreen>Ваш браузер не поддерживает фреймы!</iframe>
+
+p=. <iframe src="https://ipeye.ru/ipeye_service/api/iframe.php?iframe_player=1&dev=58c2e00d39e34aecb5f03c4d31bd3df0&autoplay=1" width="640" height="480" frameBorder="0" seamless="seamless" allowfullscreen>Ваш браузер не поддерживает фреймы!</iframe>
+
+---
+
+h3. Внешние ссылки
+
+* "Сайт Артезианской Археологической Экспедиции":http://artezian.info/info/
+* "Артезианская археологическая экспедиция (ААЭ VK)":http://vk.com/club11636478
+* "Лагерь при Артезианской Археологической Экспедиции":http://www.archae.ru/projects/artesian-expedition/
