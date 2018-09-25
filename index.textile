@@ -155,9 +155,3 @@ h3(#drafts). Черновики и прочие материалы
   {% include JB/pages_list %}
 </ul>
 
-
-h3(#partners). Партнёры
-
-<ul>
-  Партнер: <a href="https://jooble.org/" target="blank">Jooble<br>
-</ul>
