@@ -154,3 +154,8 @@ h3(#drafts). Черновики и прочие материалы
   {% assign group = 'drafts' %}
   {% include JB/pages_list %}
 </ul>
+
+
+h3(#partners). Партнёры
+
+* Партнер: <a href="https://jooble.org/ " target="blank">Jooble
