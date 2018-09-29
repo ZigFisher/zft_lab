@@ -56,3 +56,5 @@ h3. Внешние ссылки
 
 * "CyberWrt модуль - Меркурий-200":http://cyber-place.ru/showthread.php?t=1307
 
+* "Zabbix: template Pwr Mercury236 (Меркурий 236)":https://share.zabbix.com/power-ups/template-pwr-mercury236-236
+
