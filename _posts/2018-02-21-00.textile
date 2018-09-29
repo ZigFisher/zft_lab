@@ -49,6 +49,7 @@ h3. Внешние ссылки
 * "GitHub: Mercury 236 power meter RS485 communication utility [ZFT Lab. version]":https://github.com/ZigFisher/Glutinium/tree/master/mercury236
 * "GitHub: Mercury 236 power meter communication utility. [by Shden]":https://github.com/Shden/mercury236
 
+* "Habr: Zabbix 3.4 - массовый сбор данных на примерах счетчика Меркурий и smartmontools":https://habr.com/company/zabbix/blog/337856/
 * "Habr: Выводим счетчик электроэнергии в интернет":https://habr.com/post/169069/
 * "Habr: Записки IoT-провайдера. Зоопарк приборов учета":https://habr.com/post/359429/#comment_15919745
 * "Habr: Обзор и устройство современных счётчиков электроэнергии":https://habr.com/post/421653/#comment_19060241
