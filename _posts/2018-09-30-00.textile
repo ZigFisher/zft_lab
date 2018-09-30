@@ -84,5 +84,6 @@ h3. Внешние ссылки
 * "Sending/reading SMS of a Huawei 3G dongle":https://nyman.re/gcom-huawei-reading-sms/
 * "Gist:comgt/gcom script to send textmessage/SMS with umts stick":https://gist.github.com/cfra/f401a3d72f8203b3260dd7c107f26f0b
 
-* "FORUMHOUSE.ru: хороший и информационный ответ":https://www.forumhouse.ru/threads/271511/page-149#post-12659011
+* "FORUMHOUSE.ru: мой пост":https://www.forumhouse.ru/threads/225639/page-41#post-22485903
+* "FORUMHOUSE.ru: хороший, информативный ответ коллеги":https://www.forumhouse.ru/threads/271511/page-149#post-12659011
 * "FORUMHOUSE.ru: вводная информация":https://www.forumhouse.ru/threads/225639/page-4#post-14406041
