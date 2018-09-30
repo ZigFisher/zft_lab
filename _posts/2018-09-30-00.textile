@@ -1,0 +1,85 @@
+---
+layout:     post
+title:      "Получение данных по протоколу Megatec с UPS Энергия ПН-500 и других"
+tagline:    ""
+category:   ""
+group:      drafts
+tags:       [linux, ups]
+---
+
+
+h3. Введение
+
+p. В процессе сбора информации.
+
+p. Все эксперименты проводились с имеющимся в наличии UPS Энергия ПН-500, но судя по отзывам, описанная методика подходит и под другие устройства этого производителя, которые имеют RS232 порт.
+
+p. Протокол Megatec прекрасно описан на странице Network UPS Tools - "Megatec Protocol information":https://networkupstools.org/protocols/megatec.html
+
+p. Команды, которые гарантированно поддерживают Энергия ПН-500 и старшие модели: F, I, Q1
+
+p. Пример строки, полученной от UPS (в тестовом режиме, без аккумулятора):
+
+pre. (240.9 240.9 201.5 000 50.0 2.22 48.0 00000001
+
+---
+
+h3. Пример простейшей программы на C++ для OpenWrt устройств
+
+p. Код будет доступен в самое ближайшее время в репозитории "Glutinium":https://github.com/ZigFisher/Glutinium
+
+---
+
+h3. Пример простейшего скрипта на PERL
+
+pre. #!/usr/bin/perl
+#
+$port = "/dev/ttyUSB0";
+system "stty 2400 ixon -echo < $port";
+open(COM, "+>$port") or die "Can't open $port";
+select(COM);
+$| = 1;
+#
+printf("Q1\r");
+sleep(1);
+sysread(COM, my ($line), 50);
+printf(stderr $line);
+#
+close(COM);
+
+---
+
+h3. Пример простейшего скрипта COMGT для OpenWrt устройств
+
+p. Скрипт в стадии отладки, будет дополнен
+
+pre. #
+opengt
+  :init
+    set com 2400n81
+    set senddelay 0.05
+    send "Q1^m"
+    waitquiet 1 0.2
+    waitfor 3 "("
+    get 1 " " $s
+    print "Informex: ",$s,"\n"
+
+---
+
+h3. Внешние ссылки
+
+* "Network UPS Tools: Megatec Protocol information":https://networkupstools.org/protocols/megatec.html
+* "Network UPS Tools: Hardware compatibility list":https://networkupstools.org/stable-hcl.html
+
+* "OpenUPSmart is a UNIX based daemon mainly for the no name UPS":http://openupsmart.sourceforge.net/
+
+* "Serielle Schnittstellen: RS-232 oder V.24":https://www.cc-c.de/german/linux/linux-serial.php
+* "Perl Skript/Programm zur USV-Überwachung":https://www.cc-c.de/german/linux/linux-usv.php
+* "Die serielle Schnittstelle":http://www.netzmafia.de/skripten/hardware/PC-Schnittstellen/seriell.html
+
+* "Comgt is a scripting language interpreter":http://manpages.ubuntu.com/manpages/bionic/man1/comgt.1.html
+* "Sending/reading SMS of a Huawei 3G dongle":https://nyman.re/gcom-huawei-reading-sms/
+* "Gist:comgt/gcom script to send textmessage/SMS with umts stick":https://gist.github.com/cfra/f401a3d72f8203b3260dd7c107f26f0b
+
+* "FORUMHOUSE.ru: хороший и информационный ответ":https://www.forumhouse.ru/threads/271511/page-149#post-12659011
+* "FORUMHOUSE.ru: вводная информация":https://www.forumhouse.ru/threads/225639/page-4#post-14406041
