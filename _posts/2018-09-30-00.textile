@@ -75,6 +75,7 @@ h3. Внешние ссылки
 
 * "Habr: Колхозим мониторинг ИБП с протоколом Megatec в Zabbix":https://habr.com/post/397637/
 * "OpenUPSmart is a UNIX based daemon mainly for the no name UPS":http://openupsmart.sourceforge.net/
+* "Simple UPS checker":http://www.sivann.gr/software/upschk.c
 
 * "Serielle Schnittstellen: RS-232 oder V.24":https://www.cc-c.de/german/linux/linux-serial.php
 * "Perl Skript/Programm zur USV-Überwachung":https://www.cc-c.de/german/linux/linux-usv.php
