@@ -12,11 +12,11 @@ h3. Введение
 
 p. В процессе сбора информации.
 
-p. Все эксперименты проводились с имеющимся в наличии UPS Энергия ПН-500, но судя по отзывам, описанная методика подходит и под другие устройства этого производителя, которые имеют RS232 порт.
+p. Все эксперименты проводились с имеющимся в наличии UPS Энергия ПН-500, но судя по отзывам, описанная методика подходит и для другх устройств этого производителя, которые имеют RS232 порт.
 
 p. Протокол Megatec прекрасно описан на странице Network UPS Tools - "Megatec Protocol information":https://networkupstools.org/protocols/megatec.html
 
-p. Команды, которые гарантированно поддерживают Энергия ПН-500 и старшие модели: F, I, Q1
+p. Команды, которые гарантированно поддерживают Энергия ПН-500 и старшие модели данного вендора: F, I, Q1
 
 p. Пример строки, полученной от UPS (в тестовом режиме, без аккумулятора):
 
@@ -71,6 +71,7 @@ h3. Внешние ссылки
 * "Network UPS Tools: Megatec Protocol information":https://networkupstools.org/protocols/megatec.html
 * "Network UPS Tools: Hardware compatibility list":https://networkupstools.org/stable-hcl.html
 
+* "Habr: Колхозим мониторинг ИБП с протоколом Megatec в Zabbix":https://habr.com/post/397637/
 * "OpenUPSmart is a UNIX based daemon mainly for the no name UPS":http://openupsmart.sourceforge.net/
 
 * "Serielle Schnittstellen: RS-232 oder V.24":https://www.cc-c.de/german/linux/linux-serial.php
