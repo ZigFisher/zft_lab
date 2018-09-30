@@ -28,7 +28,7 @@ h3. Пример простейшей программы на C++ для OpenWrt
 
 p. Код доступен в репозитории "Glutinium":https://github.com/ZigFisher/Glutinium
 
-p. Помимо проекта "megatec":https://github.com/ZigFisher/Glutinium/tree/master/megatec там можно найти и "25volt":https://github.com/ZigFisher/Glutinium/tree/master/25volt поддерживающий APC Smart-UPS и Powercom WOW UPS с интерфейсом USB.
+p. Помимо проекта "megatec":https://github.com/ZigFisher/Glutinium/tree/master/megatec там можно найти и "25volt":https://github.com/ZigFisher/Glutinium/tree/master/25volt поддерживающий APC Smart-UPS и Powercom WOW UPS с интерфейсами USB.
 
 ---
 
