@@ -24,7 +24,7 @@ pre. (240.9 240.9 201.5 003 50.0 2.22 48.0 00000001
 
 ---
 
-h3. Пример рабочей программы на C для OpenWrt устройств
+h3. Пример рабочей программы на Си для OpenWrt устройств
 
 p. Код доступен в репозитории "Glutinium":https://github.com/ZigFisher/Glutinium в проекте "megatec":https://github.com/ZigFisher/Glutinium/tree/master/megatec
 
