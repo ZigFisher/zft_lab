@@ -79,6 +79,7 @@ h3. Внешние ссылки
 * "Network UPS Tools: Hardware compatibility list":https://networkupstools.org/stable-hcl.html
 
 * "Habr: Колхозим мониторинг ИБП с протоколом Megatec в Zabbix":https://habr.com/post/397637/
+* "Habr: Мой комментарий по статье Megatec и Zabbix":https://habr.com/post/397637/#comment_19202897
 * "OpenUPSmart is a UNIX based daemon mainly for the no name UPS":http://openupsmart.sourceforge.net/
 * "Simple UPS checker":http://www.sivann.gr/software/upschk.c
 
