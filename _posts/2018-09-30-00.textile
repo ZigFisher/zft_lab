@@ -80,6 +80,7 @@ h3. Внешние ссылки
 
 * "Habr: Колхозим мониторинг ИБП с протоколом Megatec в Zabbix":https://habr.com/post/397637/
 * "Habr: Мой комментарий по статье Megatec и Zabbix":https://habr.com/post/397637/#comment_19202897
+* "Habr: Настройка ИБП Ippon Backpower Pro для автоматического выключения и включения":https://habr.com/post/102032/
 * "OpenUPSmart is a UNIX based daemon mainly for the no name UPS":http://openupsmart.sourceforge.net/
 * "Simple UPS checker":http://www.sivann.gr/software/upschk.c
 
@@ -94,3 +95,5 @@ h3. Внешние ссылки
 * "FORUMHOUSE.ru: мой пост":https://www.forumhouse.ru/threads/225639/page-41#post-22485903
 * "FORUMHOUSE.ru: хороший, информативный ответ коллеги":https://www.forumhouse.ru/threads/271511/page-149#post-12659011
 * "FORUMHOUSE.ru: вводная информация":https://www.forumhouse.ru/threads/225639/page-4#post-14406041
+
+* "Отличная программа для мониторинга UPS от Михаила Черкеса, UR4UEM":http://mikelab.kiev.ua/index.php?page=PROGRAMS/meups
