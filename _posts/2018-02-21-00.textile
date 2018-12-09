@@ -40,6 +40,62 @@ pre. root@Telegram_IPCam:~# mercury236 /dev/ttyUSB0
 
 ---
 
+h3. Анализ протокол обмена со счётчиком Меркурий 206 RN
+
+pre. #
+#
+WRITE   Length 7:    02 00 32 16 2F B3 B3
+READ    Length 11:   02 00 32 16 2F 02 00 32 16 42 75
+#
+WRITE   Length 7:    02 00 32 16 87 B2 0D
+READ    Length 21:   EE FF 7F 1F F7 EE 26 91 D5 01 00 00 00 00 00 00 00 00 00 79 F8
+#
+WRITE   Length 7:    02 00 32 16 66 72 45
+READ    Length 21:   02 F6 FF 9B BA DF FD 8B A8 17 00 00 00 00 00 00 00 00 00 79 F8
+#
+WRITE   Length 7:    02 00 32 16 66 72 45
+READ    Length 10:   02 00 32 16 66 08 12 17 5F E7
+#
+WRITE   Length 7:    02 00 32 16 28 F2 71
+READ    Length 13:   02 00 32 16 28 01 00 00 06 04 15 4B C6
+#
+WRITE   Length 7:    02 00 32 16 29 33 B1
+READ    Length 9:    02 00 32 16 29 03 50 D4 48
+#
+WRITE   Length 7:    02 00 32 16 69 32 41
+READ    Length 13:   02 00 32 16 69 00 00 56 00 87 23 0B BC
+#
+WRITE   Length 7:    02 00 32 16 2C F3 B2
+READ    Length 14:   02 00 32 16 2C 00 18 31 32 09 12 18 74 D1
+3
+WRITE   Length 7:    02 00 32 16 2B B2 70
+READ    Length 14:   02 00 32 16 2B 00 18 31 08 09 12 18 39 EF
+#
+WRITE   Length 7:    02 00 32 16 61 33 87
+READ    Length 14:   02 00 32 16 61 00 18 31 31 09 12 18 B1 3C
+#
+WRITE   Length 7:    02 00 32 16 62 73 86
+READ    Length 14:   02 00 32 16 62 00 18 31 32 09 12 18 F1 6D
+3
+WRITE   Length 8:    02 00 32 16 86 FF CC A5
+READ    Length 24:   02 00 32 16 86 FF 08 01 00 00 03 00 00 00 00 00 00 00 00 00 00
+#
+#
+#
+WRITE   Length 7:    02 00 32 16 63 B2 46
+READ    Length 14:   02 00 32 16 63 22 80 00 00 00 00 00 81 6F
+#
+WRITE   Length 7:    02 00 32 16 81 32 0F
+READ    Length 17:   02 00 32 16 81 49 98 00 3B 01 00 00 00 00 00 72 EA
+#
+WRITE   Length 8:    02 00 32 16 86 00 8C E5
+READ    Length 11:   02 00 32 16 86 00 00 00 00 8B 7B
+#
+WRITE   Length 8:    02 00 32 16 86 02 0D 24
+READ    Length 13:   02 00 32 16 86 02 80 00 00 00 00 26 EF
+
+---
+
 h3. Внутренние ссылки
 
 ---
