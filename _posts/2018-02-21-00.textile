@@ -22,7 +22,7 @@ p=. Варианты подключения различных счётчико�
 
 ---
 
-h3. Пример вывода информации с электросчётчика
+h3. Пример вывода информации с трёхфазного электросчётчика
 
 pre. root@Telegram_IPCam:~# mercury236 /dev/ttyUSB0
   Voltage (V):                       0.00   0.00   0.00
@@ -49,6 +49,7 @@ h3. Внешние ссылки
 * "GitHub: Mercury 236 power meter RS485 communication utility [ZFT Lab. version]":https://github.com/ZigFisher/Glutinium/tree/master/mercury236
 * "GitHub: Mercury 236 power meter communication utility. [by Shden]":https://github.com/Shden/mercury236
 * "GitHub: Python interface to energy meter Mercury 206":https://github.com/sergray/energy-meter-mercury206
+* "GitHub: Get data from energomera SE102 R5.1 powermeter":https://github.com/sinyawskiy/energomera/
 
 * "Habr: Zabbix 3.4 - массовый сбор данных на примерах счетчика Меркурий и smartmontools":https://habr.com/company/zabbix/blog/337856/
 * "Habr: Выводим счетчик электроэнергии в интернет":https://habr.com/post/169069/
@@ -57,6 +58,9 @@ h3. Внешние ссылки
 * "Habr: Получаем данные со счетчиков Меркурий 203.2Т по RS-485":https://habr.com/post/418209/
 * "Habr: Пишем протоколы счетчиков Меркурий 230 и Меркурий 200 для OpenSCADA":https://habr.com/post/315430/
 
+* "Показания со счётчика электроэнергии Меркурий 206 RN":https://www.sinyawskiy.ru/powermeter--2-mercury.html
+* "Показания со счётчика электроэнергии Энергомера СЕ102 R5.1 145-JAN":https://www.sinyawskiy.ru/powermeter--1-se102.html
+
 * "CyberWrt модуль - Меркурий-200":http://cyber-place.ru/showthread.php?t=1307
 * "Учет электроэнергии, считывание информации со счетчика Меркурий 230, протокол счетчика":http://www.ab-log.ru/smart-house/mercury-230
 * "Работа со счетчиков Меркурий 230 через rs-485":https://forum.wirenboard.com/t/rabota-so-schetchikov-merkurij-230-cherez-rs-485/39
@@ -64,6 +68,8 @@ h3. Внешние ссылки
 * "Zabbix: template Pwr Mercury236 (Меркурий 236)":https://share.zabbix.com/power-ups/template-pwr-mercury236-236
 
 * "Incotex: Программы для счётчиков Меркурий":http://www.incotexcom.ru/count_prog.htm
-* "Portmon для Windows - отслеживаниt активности последовательных портов":http://technet.microsoft.com/ru-ru/sysinternals/portmon.aspx
+* "Portmon для Windows - отслеживание активности последовательных портов":http://technet.microsoft.com/ru-ru/sysinternals/portmon.aspx
+
+* "Протокол передачи данных счётчика Энергомера СЕ102":http://www.energomera.ru/software/opisanie_protokola.pdf
 
 * "Я.Энергетик - Учёт электроэнергии и удалённый сбор данных с электросчётчиков":https://yaenergetik.ru/
