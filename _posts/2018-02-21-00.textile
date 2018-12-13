@@ -40,6 +40,16 @@ pre. root@Telegram_IPCam:~# mercury236 /dev/ttyUSB0
 
 ---
 
+h3. Пример команд для диагностики
+
+pre.
+
+pre. remserial -d -m 3 -x 0 -p 2000 -s "9600 -parenb cs8 -cstopb -crtscts -icanon" /dev/ttyUSB0
+
+pre. tcpdump -nnvXS -s 0 -i eth0 port 2000
+
+---
+
 h3. Анализ протокол обмена со счётчиком Меркурий 206 RN
 
 p. Для модели Меркурий 206 RN сетевым адресом являются последние восемь цифр серийного номера перведенные в шестнадцатиричный формат (в примере это 02 00 32 16).
@@ -106,28 +116,23 @@ h3. Внешние ссылки
 
 * "GitHub: Mercury 236 power meter RS485 communication utility [ZFT Lab. version]":https://github.com/ZigFisher/Glutinium/tree/master/mercury236
 * "GitHub: Mercury 236 power meter communication utility. [by Shden]":https://github.com/Shden/mercury236
+* "GitHub: Mercury 206 power meter RS485 communication utility [ZFT Lab. version]":https://github.com/ZigFisher/Glutinium/tree/master/mercury206
 * "GitHub: Python interface to energy meter Mercury 206":https://github.com/sergray/energy-meter-mercury206
 * "GitHub: Get data from energomera SE102 R5.1 powermeter":https://github.com/sinyawskiy/energomera/
-
 * "Habr: Zabbix 3.4 - массовый сбор данных на примерах счетчика Меркурий и smartmontools":https://habr.com/company/zabbix/blog/337856/
 * "Habr: Выводим счетчик электроэнергии в интернет":https://habr.com/post/169069/
 * "Habr: Записки IoT-провайдера. Зоопарк приборов учета":https://habr.com/post/359429/#comment_15919745
 * "Habr: Обзор и устройство современных счётчиков электроэнергии":https://habr.com/post/421653/#comment_19060241
 * "Habr: Получаем данные со счетчиков Меркурий 203.2Т по RS-485":https://habr.com/post/418209/
 * "Habr: Пишем протоколы счетчиков Меркурий 230 и Меркурий 200 для OpenSCADA":https://habr.com/post/315430/
-
 * "Показания со счётчика электроэнергии Меркурий 206 RN":https://www.sinyawskiy.ru/powermeter--2-mercury.html
 * "Показания со счётчика электроэнергии Энергомера СЕ102 R5.1 145-JAN":https://www.sinyawskiy.ru/powermeter--1-se102.html
-
-* "CyberWrt модуль - Меркурий-200":http://cyber-place.ru/showthread.php?t=1307
+* "CyberWrt модуль - Меркурий-200":http://cyber-place.ru/showthread.php?t=1307 | "Мой пост про Меркурий 206":http://cyber-place.ru/showpost.php?p=41471&postcount=136
 * "Учет электроэнергии, считывание информации со счетчика Меркурий 230, протокол счетчика":http://www.ab-log.ru/smart-house/mercury-230
 * "Работа со счетчиков Меркурий 230 через rs-485":https://forum.wirenboard.com/t/rabota-so-schetchikov-merkurij-230-cherez-rs-485/39
-
 * "Zabbix: template Pwr Mercury236 (Меркурий 236)":https://share.zabbix.com/power-ups/template-pwr-mercury236-236
-
 * "Incotex: Программы для счётчиков Меркурий":http://www.incotexcom.ru/count_prog.htm
 * "Portmon для Windows - отслеживание активности последовательных портов":http://technet.microsoft.com/ru-ru/sysinternals/portmon.aspx
-
 * "Протокол передачи данных счётчика Энергомера СЕ102":http://www.energomera.ru/software/opisanie_protokola.pdf
-
+* "Remserial - program acts as a communications bridge between a TCP/IP network and a Linux serial port":http://lpccomp.bc.ca/remserial/
 * "Я.Энергетик - Учёт электроэнергии и удалённый сбор данных с электросчётчиков":https://yaenergetik.ru/
