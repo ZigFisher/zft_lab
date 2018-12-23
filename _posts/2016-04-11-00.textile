@@ -23,7 +23,9 @@ pre. avrdude -c usbasp -p attiny85 -n
 
 p. Прошивка загрузчика micronucleus через программатор USBasp
 
-pre. avrdude -c usbasp -p attiny85 -U flash:w:digispark_micronucleus-v2.03.hex -U lfuse:w:0xe1:m -U hfuse:w:0x5d:m -U efuse:w:0xfe:m
+pre. avrdude -c usbasp -p attiny85 -U flash:w:digispark_micronucleus-v2.03.hex -U lfuse:w:0xe1:m -U hfuse:w:0xdd:m -U efuse:w:0xfe:m
+
+p. Если вы хотите намертво вшить загрузчик в Digispark, используйте hfuse:w:0x5d:m (не рекомендуется)
 
 p. Прошивка Digispark через USB порт
 
@@ -55,7 +57,7 @@ pre. make hex
 
 ---
 
-h3. Digistark pin outs:
+h3. Digispark pin outs:
 
 p. All pins can be used as Digital I/O
 
@@ -85,12 +87,12 @@ h3. Внешние ссылки
 
 * "htu21df temperature and humidity sensor support mqtt & dweetio":https://github.com/bbx10/htu21dflib
 * "A simple program for comunicating with HTU21":https://github.com/balldir/HTU21D-orange-pi
-* -
+
 * "A simple library for ina219 to linux":https://github.com/rudimiv/ina219-linux-lib
 * "Examples ina219 support":https://github.com/alown/ina219
-* -
+
 * "OpenWRT driver for i2c-ch341":https://github.com/mkschreder/hack-ssd1306-openwrt/tree/master/i2c-ch341
 * "OpenWRT driver for i2c-ssd1306fb":https://github.com/mkschreder/hack-ssd1306-openwrt/tree/master/ssd1306fb
-* "":
+
 
 
