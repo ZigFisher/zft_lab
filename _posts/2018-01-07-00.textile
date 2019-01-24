@@ -26,17 +26,18 @@ h3. Архив прошивок с моддингом
 
 p. Для удобства, ссылки на файлы и каталоги с прошивками сведены в таблицу ниже. Список на "FlyRouter.net":http://flyrouter.net/downloads/software/ipcam/
 
-* "IPC_XiongMai_001532_HI3516CV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_001532_HI3516CV100/
-* "IPC_XiongMai_002532_HI3516CV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_002532_HI3516CV100/
-* "IPC_XiongMai_006510_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/
-* "IPC_XiongMai_006531_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006531_HI3518EV100/
-* "IPC_XiongMai_006538_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006538_HI3518EV100/
-* "IPC_XiongMai_014911_HI3516DV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_014911_HI3516DV100/ | Ограничения: vtund в разработке
-* "IPC_XiongMai_018510_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018510_HI3518EV200/
-* "IPC_XiongMai_018520_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018520_HI3518EV200/
-* "IPC_XiongMai_022520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_022520_HI3516CV300/
-* "IPC_XiongMai_023650_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_023650_XM510A1/         | Ограничения: snapshot и vtund в разработке
-* "IPC_XiongMai_023651_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_023651_XM510A1/         | Ограничения: snapshot и vtund в разработке
+* "IPC_XiongMai_00001532_HI3516CV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_001532_HI3516CV100/
+* "IPC_XiongMai_00002532_HI3516CV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_002532_HI3516CV100/
+* "IPC_XiongMai_00006510_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/
+* "IPC_XiongMai_00006531_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006531_HI3518EV100/
+* "IPC_XiongMai_00006538_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006538_HI3518EV100/
+* "IPC_XiongMai_00014911_HI3516DV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_014911_HI3516DV100/   | Ограничения: vtund в разработке
+* "IPC_XiongMai_00018510_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018510_HI3518EV200/
+* "IPC_XiongMai_00018520_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018520_HI3518EV200/
+* "IPC_XiongMai_00022520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_022520_HI3516CV300/
+* "IPC_XiongMai_00023650_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_023650_XM510A1/           | Ограничения: snapshot и vtund в разработке
+* "IPC_XiongMai_00023651_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_023651_XM510A1/           | Ограничения: snapshot и vtund в разработке
+* "IPC_XiongMai_00031520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00031520_HI3516CV300/
 
 p. Для продвинутых пользователей доступны экспериментальные прошивки "Buildroot":http://flyrouter.net/downloads/software/ipcam/GitHub_Buildroot/ и "OpenWrt":http://flyrouter.net/downloads/software/ipcam/GitHub_OpenWrt/
 
@@ -50,30 +51,30 @@ h3. Текущий статус модифицированных прошиво�
 |<. Поддержка сервиса "IPEYE.ru":http://ipeye.ru  |={color:green}. *да*   |
 |<. Отправка снимков в группу Telegram            |={color:green}. *да*   |
 |<. Отправка снимков на Яндекс.Диск               |={color:green}. *да*   |
-|<. Отправка снимков на Google Drive              |=. *!*                 |
-|<. Отправка снимков в хранилище DropBox          |=. *!*                 |
+|<. Отправка снимков на Google Drive              |={color:red}. нет      |
+|<. Отправка снимков в хранилище DropBox          |={color:red}. нет      |
 |<. Отправка снимков по протоколу MQTT            |={color:green}. *да*   |
-|<. Отправка снимков на FTP сервера               |={color:orange}. тест  |
+|<. Отправка снимков на FTP сервера               |={color:blue}. тест    |
 |<. Организация L2/L3 VPN на базе VTUNd           |={color:green}. *да*   |
 |<. Возможность доступа на камеру через UART      |={color:green}. *да*   |
 |<. Возможность доступа на камеру через TELNETd   |={color:green}. *да*   |
 |<. Возможность доступа на камеру через SSHd      |={color:green}. *да*   |
 |<. Возможность доступа на камеру через FTPd      |={color:green}. *да*   |
-|<. Выполнение задач через запросы к INETd        |={color:orange}. тест  |
+|<. Выполнение задач через запросы к INETd        |={color:blue}. тест    |
 |<. Выполнение задач по расписанию через CRONd    |={color:green}. *да*   |
 |<. Выполнение задач по команде из Telegram       |={color:green}. *да*   |
-|<. Выполнение задач по команде из MQTT           |=. *!*                 |
+|<. Выполнение задач по команде из MQTT           |={color:red}. нет      |
 |<. Инструменты для отладки (ksyslogd, logread)   |={color:green}. *да*   |
-|<. Отправка телеметрии по протоколу MQTT         |={color:orange}. тест  |
+|<. Отправка телеметрии по протоколу MQTT         |={color:blue}. тест    |
 |<. Возможность записи видео на USB Flash         |={color:green}. *да*   |
 |<. Возможность записи снимков на USB Flash       |={color:green}. *да*   |
-|<. Меню для настройки модулей в консоли          |={color:orange}. тест  |
-|<. Альтернативный WEB-интерфейс (RO mode)        |={color:orange}. тест  |
-|<. Поддержка USB Hub (только v.2.0)              |={color:green}. *да*   |
-|<. Поддержка USB Flash (до 32Gb, VFAT)           |={color:green}. *да*   |
-|<. Поддержка USB WiFi на чипсете MT7601          |={color:green}. *да*   |
-|<. Поддержка USB WiFi на чипсете RTL8188         |={color:green}. *да*   |
-|<. Поддержка USB WiFi на чипсете RT3070          |={color:green}. *да*   |
+|<. Меню для настройки модулей в консоли          |={color:blue}. тест    |
+|<. Альтернативный WEB-интерфейс (RO mode)        |={color:blue}. тест    |
+|<. Поддержка USB Hub (только v.2.0)              |={color:blue}. тест    |
+|<. Поддержка USB Flash (до 32Gb, VFAT)           |={color:blue}. тест    |
+|<. Поддержка USB WiFi на чипсете MT7601          |={color:blue}. тест    |
+|<. Поддержка USB WiFi на чипсете RTL8188         |={color:blue}. тест    |
+|<. Поддержка USB WiFi на чипсете RT3070          |={color:blue}. тест    |
 |<. Поддержка USB 3G/4G модемов (ACM)             |={color:orange}. тест  |
 |<. Поддержка USB 3G/4G модемов (USBSERIAL)       |={color:orange}. тест  |
 |<. Поддержка USB донглов LittleWire (I2C/1W)     |={color:orange}. тест  |
