@@ -1,0 +1,15 @@
+---
+layout:     post
+title:      "Встреча с принцем - радиолюбителем"
+tagline:    ""
+category:   ""
+group:      hamradio
+tags:       [hamradio, vip]
+---
+
+
+h3. Внешние ссылки
+
+* "DeltaClub: Встреча с принцем - радиолюбителем":https://deltaclub.org.ua/poleznaya-informatsiya/meeting-with-the-prince-amateur-radio.html
+* "Radon: Встреча с принцем - радиолюбителем":http://radon.org.ua/index.php?option=com_content&view=article&id=9322&catid=40&Itemid=62
+* "USOYA: Встреча с принцем - радиолюбителем":http://us0ya.at.ua/news/vstrecha_s_princem_radioljubitelem/2019-01-26-2165
