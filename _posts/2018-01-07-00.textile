@@ -38,6 +38,7 @@ p. Для удобства, ссылки на файлы и каталоги с 
 * "IPC_XiongMai_00023650_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_023650_XM510A1/           | Ограничения: snapshot и vtund в разработке
 * "IPC_XiongMai_00023651_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_023651_XM510A1/           | Ограничения: snapshot и vtund в разработке
 * "IPC_XiongMai_00031520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00031520_HI3516CV300/
+* "IPC_XiongMai_00035520_HI3516EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00035520_HI3516EV100/ | Тестируется
 
 p. Для продвинутых пользователей доступны экспериментальные прошивки "Buildroot":http://flyrouter.net/downloads/software/ipcam/GitHub_Buildroot/ и "OpenWrt":http://flyrouter.net/downloads/software/ipcam/GitHub_OpenWrt/
 
