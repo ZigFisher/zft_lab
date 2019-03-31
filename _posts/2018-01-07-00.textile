@@ -32,6 +32,7 @@ p. Для удобства, ссылки на файлы и каталоги с 
 * "IPC_XiongMai_00006531_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006531_HI3518EV100/
 * "IPC_XiongMai_00006538_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006538_HI3518EV100/
 * "IPC_XiongMai_00014911_HI3516DV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_014911_HI3516DV100/   | Ограничения: vtund в разработке
+* "IPC_XiongMai_00014927_HI3516DV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_014927_HI3516DV100/   | Ограничения: vtund в разработке
 * "IPC_XiongMai_00018510_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018510_HI3518EV200/
 * "IPC_XiongMai_00018520_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018520_HI3518EV200/
 * "IPC_XiongMai_00022520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_022520_HI3516CV300/
