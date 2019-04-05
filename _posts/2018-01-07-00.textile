@@ -43,6 +43,8 @@ p. Общий список устройств находится на "FlyRouter
 * "IPC_XiongMai_00031520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00031520_HI3516CV300/ | Ограничения: vtund по запросу, отдельная fw
 * "IPC_XiongMai_00035520_HI3516EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00035520_HI3516EV100/ | Ограничения: vtund по запросу, отдельная fw
 
+p. Для входа в интерфейс на 81 порту используйте логин *manager* и пароль 1234
+
 p. Для продвинутых пользователей доступны экспериментальные прошивки "Buildroot":http://flyrouter.net/downloads/software/ipcam/GitHub_Buildroot/ и "OpenWrt":http://flyrouter.net/downloads/software/ipcam/GitHub_OpenWrt/
 
 
