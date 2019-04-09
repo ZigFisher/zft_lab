@@ -19,7 +19,23 @@ h3. Сервисы
 h3. Финансы
 
 * "Mycelium Bitcoin Wallet":https://play.google.com/store/apps/details?id=com.mycelium.wallet
+* "MEWconnect":https://play.google.com/store/apps/details?id=com.myetherwallet.mewconnect
 
-h3. Тех.поддержка
+h3. Месенджеры
 
-* "TeamViewer QuickSupport - удаленное управление":https://play.google.com/store/apps/details?id=com.teamviewer.quicksupport.market
+* "Telegram":https://play.google.com/store/apps/details?id=org.telegram.messenger
+* "WhatsApp Messenger":https://play.google.com/store/apps/details?id=com.whatsapp
+
+h3. Другое
+
+* "ConnectBot":https://play.google.com/store/apps/details?id=org.connectbot
+* "Network Analyzer":https://play.google.com/store/apps/details?id=net.techet.netanalyzerlite.an
+* "SimpleSSHD":https://play.google.com/store/apps/details?id=org.galexander.sshd
+* "Todoist: список дел и управление задачами":https://play.google.com/store/apps/details?id=com.todoist
+* "Файловый менеджер":https://play.google.com/store/apps/details?id=com.alphainventor.filemanager
+* "Яндекс.Браузер Лайт":https://play.google.com/store/apps/details?id=com.yandex.browser.lite
+* "Яндекс Почта":https://play.google.com/store/apps/details?id=ru.yandex.mail
+
+* "WiFiAnalyzer (open-source)":https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer
+* "Fing - Сетевые инструменты":https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=ru
+
