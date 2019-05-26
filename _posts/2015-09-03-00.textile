@@ -298,7 +298,6 @@ h3. Внешние ссылки
 
 
 * "MySku: Самая дешевая HD IP-камера":http://mysku.ru/blog/aliexpress/26552.html
-* "Yandex.Disk: Свежие прошивки для камер IPC_HI3518E_50H10L_S38":https://yadi.sk/d/bl8C6poek9mqJ
 * "MySku: Настройка фокуса камеры на бесконечность":http://mysku.ru/blog/aliexpress/26552.html#comment932385
 * "Geektimes: Из аналога в цифру, или IP-камера своими руками":http://geektimes.ru/post/258780/
 * "Форум: Как прошить камеру через загрузчик U-Boot по Telnet":http://forum.videon.spb.ru/viewtopic.php?f=20&t=7550
