@@ -1,0 +1,84 @@
+---
+layout:     post
+title:      "Детали для ремонта IPC и NVR"
+tagline:    ""
+category:   ""
+group:      ipcam
+tags:       [hisilicon, ipcam, jvt, xm]
+---
+
+
+
+h3. Справочник
+
+p. При ремонте устройств проверяйте керамические SMD конденсаторы (0603/0805) - они часто бывают пробиты.
+
+p. Для быстрой диагностики работоспособности DC/DC PWM IAELx/MP1470 проверяйте входное напряжение питания на pin2 (~ 10V-12V) и пониженное стабилизированное напряжение на pin3 (~ 4,9V-5,1V). Если на выходе есть указанное напряжение, то скорее всего микросхема работоспособна, а если нет, то требуется её замена. Для проверки работоспособности остальной части платы можно подать +5V 1A от внешнего источника питания на место пайки pin3, предварительно выпаяв сомнительную микросхему стабилизатора.
+
+---
+
+h3. Компоненты, используемые при ремонте IPC и NVR
+
+|_=. Маркировка     |_=. В каталоге |_=. Aliexpress |
+|_\3=. DC/DC PWM, 5pin                              |
+|=. 9141P           |               |               |
+|=. 9141M           |               |               |
+|=. A30F            |               |               |
+|=. A3QH            |               |               |
+|=. A70D            |               |               |
+|=. A7QH            |               |               |
+|=. AJ0G            |               |               |
+|=. AJPB            |               |               |
+|=. CC6R            |               |               |
+|=. CIDI            |               |               |
+|=. DG6M            |               |               |
+|=. DG6X            |               |               |
+|=. FA265K          |               |               |
+|=. FA26UK          |               |               |
+|=. F40117          |               |               |
+|=. F43311          |               |               |
+|=. F45307          |               |               |
+|=. F46301          |               |               |
+|=. F59101          |               |               |
+|=. IC5EA           |               |               |
+|=. IC5ED           |               |               |
+|=. IC5FA           |               |               |
+|=. ISIK            |               |               |
+|=. KV7LJ           |               |               |
+|=. LDxxx (5HV,7LB) |=. "SY8088AAC":https://datasheet.lcsc.com/szlcsc/Silergy-Corp-SY8088AAC_C79313.pdf | "1":https://www.aliexpress.com/item/20PCS-SY8088AAC-SY8088AA-SY8088A-SY8088-SOT23-5/32242422836.html |
+|=. XE7DN           |               |               |
+|_\3=. DC/DC PWM, 6pin                              |
+|=. 209             |\2. От @ESonya: успешная замена на MP1470GJ |
+|=. C160J           |               |               |
+|=. C16SH           |               |               |
+|=. C16ZJ           |               |               |
+|=. C20AJ           |               |               |
+|=. IADJx (D,E,G)   |=. "MP1470GJ":https://www.alldatasheet.com/datasheet-pdf/pdf/551563/MPS/MP1470GJ.html | "1":https://www.aliexpress.com/item/10pcs-lot-New-MP1470-MP1470GJ-LF-Z-SOT23-6-IADJD-IADIE-Switching-supply-chip/32894587266.html ; "2":https://ru.aliexpress.com/item/Adje-adjd-adjf-adjg-MP1470GJ-MP1470-23-6-10/32865175022.html         |
+|=. J331            |               |               |
+|=. V05             |               |               |
+|_\3=. DC/DC PWM, 8pin                              |
+|=. IAELx (F,G,H)   |=. "MP2314GJ":https://www.alldatasheet.com/datasheet-pdf/pdf/1035001/MPS/MP2314GJ.html    | "1":https://hz.ru.aliexpress.com/item/Free-shipping-20pcs-lot-MP2314-MP2314DJ-SOT23-8-screen-IAE-supply-chip-Authentic-Original/32823634858.html |
+|_\3=. Ethernet PHY, 32pin                          |
+|=. IC IP101GR      |=. ---         | "1":https://hz.ru.aliexpress.com/store/product/5piece-100-New-IP101GR-IP101G-QFN-32-Chipset/1738577_32911838663.html |
+|=. RTL8201F        |=. ---         | "1":https://hz.ru.aliexpress.com/item/100-New-SEMS20-LF-SEMS20-BGA-Chipset/32788285744.html |
+|=. SMSC 8710A      |=. ---         | "1":https://hz.ru.aliexpress.com/item/20pcs-lot-LAN8710A-EZC-TR-LAN8710A-EZC-LAN8710A-8710A-QFN-32-SMSC8710A/32369627555.html |
+
+* SY8088 Top Mark: LD (device code: LD, x = year code, y = week code, z = lot number code)
+
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'ipcam' %}
+  {% include JB/pages_list %}
+</ul>
+
+---
+
+h3. Внешние ссылки
+
+* "Типоразмеры компонентов для монтажа на поверхность - SMD":http://www.cqham.ru/super/smd/dim_chip.htm
+* "Таблица по опознанию и подбору аналогов микросхем БП DC/DC":http://remont-aud.net/dc_dc/
