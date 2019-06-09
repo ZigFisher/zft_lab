@@ -28,7 +28,7 @@ p. Данные прошивки предназначены исключител
 
 p. В текущих тестовых прошивках пока нет поддержки Video, запись на FLASH не производится, старт системы происходит из памяти (INITRAMFS). Сейчас проверяется возможность загрузки ядра Linux на разных процессорах Hisilicon, корректность работы интерфейсов Ethernet и USB, поддержка минимальной файловой системы, автоматическое определение сенсоров.
 
-p. Теперь все компоненты (утилиты и библиотеки) в проекте "XM IPCam modding":https://zftlab.org/pages/2018010700.html собираются при помощи нашего "OpenWrt toolchain":https://github.com/ZigFisher/chaos_calmer размещённого на "GitHub":https://github.com/ZigFisher и там-же находится простейшая "Вики":https://github.com/ZigFisher/chaos_calmer/wiki/IPCam-with-Hisilicon-SoC's для сбора информации об различных IPCam в группе "Telegram":http://t.me/joinchat/FhtyHxDpQsv8HlRliQDgqw
+p. Теперь все компоненты (утилиты и библиотеки) в проекте "XM IPCam modding":https://zftlab.org/pages/2018010700.html собираются при помощи нашего "OpenWrt toolchain":https://github.com/ZigFisher/chaos_calmer размещённого на "GitHub":https://github.com/ZigFisher обсуждение которых происходит в группе "Telegram":http://t.me/joinchat/FhtyHxDpQsv8HlRliQDgqw
 
 p. Начат сбор информации в "OpenWrt Wiki":https://openwrt.org/docs/techref/hardware/soc/soc.hisilicon.hi35xx и открыта дискуссия на китайском форуме "OpenIPCam":http://www.openipcam.com/forum/index.php/topic,2093.0.html
 
