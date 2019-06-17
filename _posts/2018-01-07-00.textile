@@ -37,7 +37,7 @@ p. Общий список устройств находится на "FlyRouter
 * "IPC_XiongMai_00014927_HI3516DV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00014927_HI3516DV100/   | Ограничения: vtund в разработке
 * "IPC_XiongMai_00018510_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00018510_HI3518EV200/
 * "IPC_XiongMai_00018520_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00018520_HI3518EV200/
-* "IPC_XiongMai_00022520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00022520_HI3516CV300/
+* "IPC_XiongMai_00022520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00022520_HI3516CV300/   | Дополнительно: есть поддержка vlan
 * "IPC_XiongMai_00023650_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00023650_XM510A1/           | Ограничения: snapshot в разработке, vtund отсутствует
 * "IPC_XiongMai_00023651_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00023651_XM510A1/           | Ограничения: snapshot в разработке, vtund отсутствует
 * "IPC_XiongMai_00031520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00031520_HI3516CV300/   | Ограничения: vtund по запросу, отдельная fw
