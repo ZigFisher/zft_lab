@@ -28,20 +28,20 @@ p. Для удобства, ссылки на файлы и каталоги с 
 
 p. Общий список устройств находится на "FlyRouter.net":http://flyrouter.net/downloads/software/ipcam/
 
-* "IPC_XiongMai_00001532_HI3516CV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_001532_HI3516CV100/
-* "IPC_XiongMai_00002532_HI3516CV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_002532_HI3516CV100/
-* "IPC_XiongMai_00006510_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006510_HI3518EV100/
-* "IPC_XiongMai_00006531_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006531_HI3518EV100/
-* "IPC_XiongMai_00006538_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_006538_HI3518EV100/
-* "IPC_XiongMai_00014911_HI3516DV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_014911_HI3516DV100/   | Ограничения: vtund в разработке
-* "IPC_XiongMai_00014927_HI3516DV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_014927_HI3516DV100/   | Ограничения: vtund в разработке
-* "IPC_XiongMai_00018510_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018510_HI3518EV200/
-* "IPC_XiongMai_00018520_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_018520_HI3518EV200/
-* "IPC_XiongMai_00022520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_022520_HI3516CV300/
-* "IPC_XiongMai_00023650_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_023650_XM510A1/           | Ограничения: snapshot и vtund в разработке
-* "IPC_XiongMai_00023651_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_023651_XM510A1/           | Ограничения: snapshot и vtund в разработке
-* "IPC_XiongMai_00031520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00031520_HI3516CV300/ | Ограничения: vtund по запросу, отдельная fw
-* "IPC_XiongMai_00035520_HI3516EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00035520_HI3516EV100/ | Ограничения: vtund по запросу, отдельная fw
+* "IPC_XiongMai_00001532_HI3516CV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00001532_HI3516CV100/
+* "IPC_XiongMai_00002532_HI3516CV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00002532_HI3516CV100/
+* "IPC_XiongMai_00006510_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00006510_HI3518EV100/
+* "IPC_XiongMai_00006531_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00006531_HI3518EV100/
+* "IPC_XiongMai_00006538_HI3518EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00006538_HI3518EV100/
+* "IPC_XiongMai_00014911_HI3516DV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00014911_HI3516DV100/   | Ограничения: vtund в разработке
+* "IPC_XiongMai_00014927_HI3516DV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00014927_HI3516DV100/   | Ограничения: vtund в разработке
+* "IPC_XiongMai_00018510_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00018510_HI3518EV200/
+* "IPC_XiongMai_00018520_HI3518EV200":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00018520_HI3518EV200/
+* "IPC_XiongMai_00022520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00022520_HI3516CV300/
+* "IPC_XiongMai_00023650_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00023650_XM510A1/           | Ограничения: snapshot в разработке, vtund отсутствует
+* "IPC_XiongMai_00023651_XM510A1":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00023651_XM510A1/           | Ограничения: snapshot в разработке, vtund отсутствует
+* "IPC_XiongMai_00031520_HI3516CV300":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00031520_HI3516CV300/   | Ограничения: vtund по запросу, отдельная fw
+* "IPC_XiongMai_00035520_HI3516EV100":http://flyrouter.net/downloads/software/ipcam/IPC_XiongMai_00035520_HI3516EV100/   | Ограничения: vtund в разработке
 
 p. Для входа в интерфейс на 81 порту используйте логин *manager* и пароль 1234
 
