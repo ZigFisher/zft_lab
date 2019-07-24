@@ -7,9 +7,8 @@ group:      navigation
 {% include JB/setup %}
 
 
-h3. Personal
+h3. Персональная информация
 
-* <a href="https://ru.linkedin.com/pub/igor-zalatov/79/980/41a" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="См. профиль пользователя Igor Zalatov в LinkedIn" style="vertical-align:middle;" border="0">&nbsp;Мой профиль</span></a>
 * "CV":https://docs.google.com/document/d/1ROnLotmN2VkO80weWm6W92PXqC-5qFui8PnnrmQxnus/pub
 * "GitHub":https://github.com/ZigFisher?tab=repositories
 
@@ -20,20 +19,20 @@ h3. Personal
 
 ---
 
-h3. Firmware
+h3. Прошивки
 
 * "Current firmware for converted TP-Link WA5210G to Ubiquiti devices":http://flyrouter.net/downloads/software/wa5210g/firmware/
 * "Current firmware for RD-010, FlyLift and Lizard projects":http://flyrouter.net/downloads/software/wr741nd/firmware/
 
 ---
 
-h3. Redirected pages
+h3. Страницы переадресации
 
 * "http://wa7510n.blogspot.com":wa7510n.blogspot.com => "http://zftlab.org/pages/2013051100.html":http://zftlab.org/pages/2013051100.html
 
 ---
 
-h3. Donate
+h3. Спонсорская помощь
 
 p. Если вам пригодилась информация с этого блога (прошивки, схемы, инструкции) и вы заинтересованы в его развитии и/или используете материалы в коммерческих целях, пожалуйста перечислите небольшую сумму в качестве donate (пожертвование).
 
