@@ -100,3 +100,4 @@ h3. Внешние ссылки
 
 * "Форумы УКВ портала VHFDX - маяки":http://forum.vhfdx.ru/mayaki
 
+* "CHIRP is a free, open-source tool for programming your amateur radio":https://chirp.danplanet.com/projects/chirp/wiki/Home
