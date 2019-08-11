@@ -62,7 +62,7 @@ pre. #
 usb start                                      // Инициализация USB
 sf probe 0                                     // Разрешение доступа к флешке
 sf read 0x82000000 0x0 0x1000000               // Чтение всей флешки в память
-fatload usb 0:1 0x82000000 dump.bin            // Выгрузка дампа (fullflash) на USB Flash
+fatwrite usb 0:1 0x82000000 ff.img             // Выгрузка дампа (fullflash) на USB Flash
 
 ---
 
