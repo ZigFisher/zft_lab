@@ -12,7 +12,7 @@ h3. Используй то, что под рукою и не ищи себе д
 
 p. Маяк выполнен на базе старой платы от радиостанции Kenwood TK-378 и размещен в пластиковом корпусе от старого SHDSL модема. В качестве управляющего устройства используется Arduino Nano 5V ATmega328.
 
-p. Программирование Arduino производилось при помощи "IDE 1.8.9":https://www.arduino.cc/en/Main/software а программирование радиостанции при помощи "CHIRP":https://chirp.danplanet.com/projects/chirp/wiki/Home в OS Linuux (Debian).
+p. Программирование компонентов производилось в OS Linux (Debian). Arduino - "IDE 1.8.9":https://www.arduino.cc/en/Main/software Радиостанция Kenwood - "CHIRP":https://chirp.danplanet.com/projects/chirp/wiki/Home .
 
 ---
 
