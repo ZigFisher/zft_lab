@@ -86,6 +86,18 @@ p=. Просто демонстрация задней части. Наружу 
 
 ---
 
+p=. !/images/2019081013.jpg!
+
+p=. Программирование Arduino производилось при помощи IDE 1.8.9 в OS Linuux (Debian).
+
+---
+
+p=. !/images/2019081014.jpg!
+
+p=. Программирование радиостанции производилось при помощи CHIRP в OS Linuux (Debian).
+
+---
+
 h3. Внутренние ссылки
 
 <ul>
@@ -101,3 +113,5 @@ h3. Внешние ссылки
 * "Форумы УКВ портала VHFDX - маяки":http://forum.vhfdx.ru/mayaki
 
 * "CHIRP is a free, open-source tool for programming your amateur radio":https://chirp.danplanet.com/projects/chirp/wiki/Home
+* "Arduino IDE software":https://www.arduino.cc/en/Main/software
+
