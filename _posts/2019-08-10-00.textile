@@ -100,12 +100,16 @@ h3. Внутренние ссылки
 
 h3. Внешние ссылки
 
-* "Обсуждение на www.ayan.su":https://www.ayan.su/2019/08/2019-0821-beacn.html
-* "Обсуждение на forum.vhfdx.ru":http://forum.vhfdx.ru/mayaki/jeksperimentalnyj-majak-ru7kfb-na-433-700-(fm)/
-* "Обсуждение на rdrclub.lan23.ru":http://rdrclub.lan23.ru/showthread.php?t=315&page=4&p=9232&viewfull=1#post9232
+* "Обсуждение проекта на ayan.su":https://www.ayan.su/2019/08/2019-0821-beacn.html
+* "Обсуждение проекта на vhfdx.ru":http://forum.vhfdx.ru/mayaki/jeksperimentalnyj-majak-ru7kfb-na-433-700-(fm)/
+* "Обсуждение проекта на rdrclub.lan23.ru":http://rdrclub.lan23.ru/showthread.php?t=315&page=4&p=9232&viewfull=1#post9232
+* "Обсуждение проекта на cqham.ru":http://www.cqham.ru/forum/showthread.php?40504-%DD%EA%F1%EF%E5%F0%E8%EC%E5%ED%F2%E0%EB%FC%ED%FB%E9-%EC%E0%FF%EA-RU7KF-%ED%E0-433-700-(FM)
 
+* "Википедия: Караби-яйла":https://ru.wikipedia.org/wiki/Караби-яйла
 * "Google Maps":https://goo.gl/maps/JrAcx3r41DtCkwu98
 * "Метеостанция 'Караби-яйла'":http://jalita.com/guidebook/crimea/karabi-yayla_meteo.shtml
+
+* "OpenIPC timelapse Karabi":http://ipcam.octonix.net/index.html?config=config_karabi.json
 
 * "CHIRP is a free, open-source tool for programming your amateur radio":https://chirp.danplanet.com/projects/chirp/wiki/Home
 * "Arduino IDE software":https://www.arduino.cc/en/Main/software
