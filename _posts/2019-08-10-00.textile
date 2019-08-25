@@ -109,7 +109,7 @@ h3. Внешние ссылки
 * "Google Maps":https://goo.gl/maps/JrAcx3r41DtCkwu98
 * "Метеостанция 'Караби-яйла'":http://jalita.com/guidebook/crimea/karabi-yayla_meteo.shtml
 
-* "OpenIPC timelapse Karabi":http://ipcam.octonix.net/index.html?config=config_karabi.json
+* "OpenIPC timelapse Karaby":http://ipcam.octonix.net/index.html?config=config_karabi.json
 
 * "CHIRP is a free, open-source tool for programming your amateur radio":https://chirp.danplanet.com/projects/chirp/wiki/Home
 * "Arduino IDE software":https://www.arduino.cc/en/Main/software
