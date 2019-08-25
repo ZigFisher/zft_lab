@@ -43,3 +43,7 @@ h3. Внешние ссылки
 * "Метеостанция 'Караби-яйла'":http://jalita.com/guidebook/crimea/karabi-yayla_meteo.shtml
 
 * "OpenIPC timelapse Karaby":http://ipcam.octonix.net/index.html?config=config_karabi.json
+
+* "APRS.Link - R7KZA info":https://aprs.link/app/aprs/stations/basic?call=R7KZA
+* "APRS.Link - R7KZA map":https://aprs.link/app/aprs/stations/googlemap-R7KZA
+* "APRS.Fi - R7KZA info":https://aprs.fi/#!call=a%2FR7KZA&timerange=3600&tail=3600

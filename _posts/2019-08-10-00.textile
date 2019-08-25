@@ -104,6 +104,7 @@ h3. Внешние ссылки
 * "Обсуждение проекта на vhfdx.ru":http://forum.vhfdx.ru/mayaki/jeksperimentalnyj-majak-ru7kfb-na-433-700-(fm)/
 * "Обсуждение проекта на rdrclub.lan23.ru":http://rdrclub.lan23.ru/showthread.php?t=315&page=4&p=9232&viewfull=1#post9232
 * "Обсуждение проекта на cqham.ru":http://www.cqham.ru/forum/showthread.php?40504-%DD%EA%F1%EF%E5%F0%E8%EC%E5%ED%F2%E0%EB%FC%ED%FB%E9-%EC%E0%FF%EA-RU7KF-%ED%E0-433-700-(FM)
+* "Обсуждение проекта на radon.org.ua":http://radon.org.ua/index.php?option=com_content&view=article&id=9661&catid=38
 
 * "Википедия: Караби-яйла":https://ru.wikipedia.org/wiki/Караби-яйла
 * "Google Maps":https://goo.gl/maps/JrAcx3r41DtCkwu98

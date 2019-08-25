@@ -44,9 +44,9 @@ pre. beacon -c UU8JA -d ALL -s uhf1 "Testing"
 h3. Ссылки
 
 * "Что есть APRS ?":http://habrahabr.ru/post/249901/
+* "Базовое описание работы APRS":http://goryham.qrz.ru/pr/aprs/aprs.htm
 * "Радиолюбительская пакетная связь (Packet Radio) и APRS":http://hamcmw.qrz.ru/pr/index.html
 * "SmallMeteo + роутер в APRS и не только...":http://hamcmw.qrz.ru/techn/smallmeteo.htm
-* "APRX - шлюз и ретранслятор для aprs":http://hamcmw.qrz.ru/pr/aprs/aprx.htm
 * "MySKU: WINBOND W25Q128 - расширяем память роутеру TL-MR3020 для APRS":https://mysku.ru/blog/ebay/59201.html
 
 * "Google Maps APRS":http://aprs.fi/#!lat=44.9341&lng=34.0999
@@ -62,9 +62,16 @@ h3. Ссылки
 * "GitHub: APRS fork of MicroModem":https://github.com/markqvist/MicroAPRS
 * "GitHub: Standalone digipeater firmware for MicroModem":https://github.com/markqvist/MicroDigi
 * "GitHub: An APRS library for the Arduino IDE":https://github.com/markqvist/LibAPRS
+* "GitHub: Software soundcard AX.25 packet modem/TNC and APRS encoder/decoder":https://github.com/wb2osz/direwolf
 * "The unsigned.io website":http://unsigned.io/
 
+* "GitHub: APRX - highly configurable APRS I-gate/Digipeater Daemon":https://github.com/PhirePhly/aprx
+* "Aprx Digipeater Software":https://thelifeofkenneth.com/aprx/
+* "Aprx 2.9 Manual":https://thelifeofkenneth.com/aprx/aprx-manual.pdf
+* "APRX - шлюз и ретранслятор для aprs":http://hamcmw.qrz.ru/pr/aprs/aprx.htm | "APRX - шлюз и ретранслятор для aprs [дубль]":http://ua6hjq.qrz.ru/pr/aprs/aprx.htm
+
 * "GitHub: TinyAPRS firmware - A cheap APRS TNC for HAM":https://github.com/shawnchain/aprs
+* "GitHub: A multitalented APRS / DPRS / APRSIS I-gate":https://github.com/shawnchain/aprx
 
 * "GitHub: A KISS speaking TNC for AX.25 that uses 802.11 [ESP8266]":https://github.com/benjojo/kiss_esp
 
