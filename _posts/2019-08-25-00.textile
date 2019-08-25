@@ -1,0 +1,45 @@
+---
+layout:     post
+title:      "Солнечная энергетика и телеметрия на СП Караби"
+tagline:    ""
+category:   ""
+group:      hamradio
+tags:       [ipcam, karaby, openipc]
+---
+
+
+h3. Информационный лист
+
+p. Сегодня, 2019.08.25 произведена установка телеметрического модуля на СП Караби и произведено переключение всей радиолюбительской аппаратуры на *свою* автономную систему электропитания.
+
+---
+
+p=. !/images/2019082501.jpg!
+
+p=. Тестовый запуск телеметрического модуля в лаборатории.
+
+---
+
+p=. !/images/2019082502.jpg!
+
+p=. Внутренности телеметрического модуля.
+
+---
+
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'hamradio' %}
+  {% include JB/pages_list %}
+</ul>
+
+---
+
+h3. Внешние ссылки
+
+* "Википедия: Караби-яйла":https://ru.wikipedia.org/wiki/Караби-яйла
+* "Google Maps":https://goo.gl/maps/JrAcx3r41DtCkwu98
+* "Метеостанция 'Караби-яйла'":http://jalita.com/guidebook/crimea/karabi-yayla_meteo.shtml
+
+* "OpenIPC timelapse Karabi":http://ipcam.octonix.net/index.html?config=config_karabi.json

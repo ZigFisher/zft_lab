@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Радиолюбительский маяк на 433.700 MHz для СП Караби"
+title:      "Радиолюбительский маяк 433.700 MHz на СП Караби"
 tagline:    ""
 category:   ""
 group:      hamradio

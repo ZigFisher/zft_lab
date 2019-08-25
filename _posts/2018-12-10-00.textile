@@ -8,6 +8,16 @@ tags:       [hamradio, vip]
 ---
 
 
+h3. Внутренние ссылки
+
+<ul>
+  {% assign pages_list = site.posts %}
+  {% assign group = 'hamradio' %}
+  {% include JB/pages_list %}
+</ul>
+
+---
+
 h3. Внешние ссылки
 
 * "DeltaClub: Встреча с принцем - радиолюбителем":https://deltaclub.org.ua/poleznaya-informatsiya/meeting-with-the-prince-amateur-radio.html
